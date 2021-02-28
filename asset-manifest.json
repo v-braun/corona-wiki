@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/corna-wiki/static/css/main.f8a51404.chunk.css",
-    "main.js": "/corna-wiki/static/js/main.9511e9f5.chunk.js",
-    "main.js.map": "/corna-wiki/static/js/main.9511e9f5.chunk.js.map",
-    "runtime-main.js": "/corna-wiki/static/js/runtime-main.aa529ea7.js",
-    "runtime-main.js.map": "/corna-wiki/static/js/runtime-main.aa529ea7.js.map",
-    "static/js/2.245fc737.chunk.js": "/corna-wiki/static/js/2.245fc737.chunk.js",
-    "static/js/2.245fc737.chunk.js.map": "/corna-wiki/static/js/2.245fc737.chunk.js.map",
-    "static/js/3.136ffe1d.chunk.js": "/corna-wiki/static/js/3.136ffe1d.chunk.js",
-    "static/js/3.136ffe1d.chunk.js.map": "/corna-wiki/static/js/3.136ffe1d.chunk.js.map",
-    "index.html": "/corna-wiki/index.html",
-    "static/css/main.f8a51404.chunk.css.map": "/corna-wiki/static/css/main.f8a51404.chunk.css.map",
-    "static/js/2.245fc737.chunk.js.LICENSE.txt": "/corna-wiki/static/js/2.245fc737.chunk.js.LICENSE.txt"
+    "main.css": "/corona-wiki/static/css/main.f8a51404.chunk.css",
+    "main.js": "/corona-wiki/static/js/main.9511e9f5.chunk.js",
+    "main.js.map": "/corona-wiki/static/js/main.9511e9f5.chunk.js.map",
+    "runtime-main.js": "/corona-wiki/static/js/runtime-main.e2bffe90.js",
+    "runtime-main.js.map": "/corona-wiki/static/js/runtime-main.e2bffe90.js.map",
+    "static/js/2.245fc737.chunk.js": "/corona-wiki/static/js/2.245fc737.chunk.js",
+    "static/js/2.245fc737.chunk.js.map": "/corona-wiki/static/js/2.245fc737.chunk.js.map",
+    "static/js/3.136ffe1d.chunk.js": "/corona-wiki/static/js/3.136ffe1d.chunk.js",
+    "static/js/3.136ffe1d.chunk.js.map": "/corona-wiki/static/js/3.136ffe1d.chunk.js.map",
+    "index.html": "/corona-wiki/index.html",
+    "static/css/main.f8a51404.chunk.css.map": "/corona-wiki/static/css/main.f8a51404.chunk.css.map",
+    "static/js/2.245fc737.chunk.js.LICENSE.txt": "/corona-wiki/static/js/2.245fc737.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.aa529ea7.js",
+    "static/js/runtime-main.e2bffe90.js",
     "static/js/2.245fc737.chunk.js",
     "static/css/main.f8a51404.chunk.css",
     "static/js/main.9511e9f5.chunk.js"
