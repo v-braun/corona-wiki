@@ -1,0 +1,26 @@
+@import '../colors.scss';
+
+#about-page{
+    // background-color: blue;
+    padding: 1em;
+
+    a{
+        color: $primary;
+        text-decoration: underline;
+    }
+
+    ul{
+        margin-top: 0.125em;
+        padding-left: 2em;
+    }
+
+    .section-content{
+        margin-top: 0.125em;
+    }
+
+    .inline-ico{
+        height: 20px;
+        top: 5px;
+        position: relative;
+    }
+}

@@ -1,0 +1,12 @@
+.section{
+    .section-title{
+        margin-top: 1em;
+        // font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    > .section-child-full{
+        margin-left: -1em;
+        width: calc(100% + 2em);
+    }
+}

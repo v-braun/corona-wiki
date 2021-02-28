@@ -12,6 +12,7 @@ import AppMenu from './components/app-menu';
 
 import HomePage from './pages/home-page';
 import './app.scss';
+import AboutPage from './pages/about-page';
 
 
 export default class App extends Component{
@@ -31,10 +32,7 @@ export default class App extends Component{
           <main id="app-main-content" className="app-content">
 
             <Switch>
-              {/* <Route path={`/:state/:district`}>
-                <div>Hello</div>
-              </Route> */}
-
+              <Route path={`/about`} component={AboutPage} />
               <Route path={`/:state?/:district?/:area?/:idx?`} component={HomePage} />
             </Switch>            
           </main>
