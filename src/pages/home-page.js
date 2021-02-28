@@ -16,62 +16,51 @@ import './home-page.scss'
 
 class HomePage extends Component{
 
-  constructor(props){
-    super(props)
-
-    this.state = {
-      selectedState: '',
-      selectedStateName: '',
-
-      selectedDistrict: '',
-      selectedDistrictName: ''      
-    };
-
-    
-  }
-
   async stateSelected(abbr){
     if(!abbr) return;
-    if(this.state.selectedState === abbr){
+    if(this.props.match.params.state === abbr){
       // toggle
-      this.setState({
-        selectedState: '',
-        selectedDistrict: '',
-        selectedDistrictName: '',        
-      });
+      this.props.history.push(`/`);
       return;
     }
     
-    this.setState({
-      selectedState: abbr,
-      selectedStateName: geo.states[abbr].name,
-      selectedDistrict: '',
-      selectedDistrictName: '',
-    });
+    this.props.history.push(`/${abbr}`);
   }
 
   async districtSelected(ags, ref){
     if(!ags) return;
-    if(this.state.selectedDistrict === ags){
+    if(this.props.match.params.district === ags){
       // toggle
-      this.setState({selectedDistrict: ''});
+      if(this.props.match.params.state){
+        this.props.history.push(`/${this.props.match.params.state}`);
+      } else{
+        this.props.history.push(`/`);
+      }
       return;
     }
-    
-    this.setState({
-      selectedDistrict: ags,
-      selectedDistrictName: geo.districts[ags].name,
-    });
 
-    console.log('scroll to', ref, ref?.current);
-    setTimeout(() => {
-      ref?.current?.scrollIntoView(true);
-    }, 200);
-    // let el = document.getElementById('');
+    let state = this.props.match.params.state;
+    this.props.history.push(`/${state}/${ags}`);
     
+    setTimeout(() => {
+      ref?.current?.scrollIntoView({behavior:'smooth', block:'center',inline:'center'});
+    }, 400);
+
   }
 
   render(){
+    let stateDisplayName = '';
+    let districtDisplayName = '';
+    let currentState = this.props.match.params.state;
+    let currentDistrict = this.props.match.params.district;
+    if(currentState && geo.states[currentState]){
+      stateDisplayName = geo.states[currentState].name;
+    }
+    if(currentDistrict && geo.districts[currentDistrict]){
+      districtDisplayName = geo.districts[currentDistrict].name;
+    }    
+
+
     return (
       <div id="home-page">
         <section className="section">
@@ -79,87 +68,87 @@ class HomePage extends Component{
           <div className="section-child-full">
               <StateSelector 
                 onClick={(item, ref) => this.stateSelected(item, ref)} 
-                selectedAbbr={this.state.selectedState}  
+                selectedAbbr={currentState}  
               />
           </div>
         </section>
 
-        {this.state.selectedState && 
+        {currentState && 
           <section className="section">
-            <div className="section-title">Verlauf in {this.state.selectedStateName}</div>
+            <div className="section-title">Verlauf in {stateDisplayName}</div>
             <div className="section-child-full">
               <HScroll>
                 <HistoryChart 
-                  title={`Inzidenz in ${this.state.selectedStateName}`}
-                  apiEndpoint={`/states/${this.state.selectedState}/history/incidence/360`}
-                  historyStateOrDistrictProp={this.state.selectedState}
+                  title={`Inzidenz in ${stateDisplayName}`}
+                  apiEndpoint={`/states/${currentState}/history/incidence/360`}
+                  historyStateOrDistrictProp={currentState}
                   historyMetricProp='weekIncidence'
                   />                
                 <HistoryChart 
-                  title={`Infektionen in ${this.state.selectedStateName}`}
-                  apiEndpoint={`/states/${this.state.selectedState}/history/cases/360`}
-                  historyStateOrDistrictProp={this.state.selectedState}
+                  title={`Infektionen in ${stateDisplayName}`}
+                  apiEndpoint={`/states/${currentState}/history/cases/360`}
+                  historyStateOrDistrictProp={currentState}
                   historyMetricProp='cases'
                   />
 
                 <HistoryChart 
-                  title={`Todesfälle in ${this.state.selectedStateName}`}
-                  apiEndpoint={`/states/${this.state.selectedState}/history/deaths/360`}
-                  historyStateOrDistrictProp={this.state.selectedState}
+                  title={`Todesfälle in ${stateDisplayName}`}
+                  apiEndpoint={`/states/${currentState}/history/deaths/360`}
+                  historyStateOrDistrictProp={currentState}
                   historyMetricProp='deaths'
                   />
 
                 <HistoryChart 
-                  title={`Genesungen in ${this.state.selectedStateName}`}
-                  apiEndpoint={`/states/${this.state.selectedState}/history/recovered/360`}
-                  historyStateOrDistrictProp={this.state.selectedState}
+                  title={`Genesungen in ${stateDisplayName}`}
+                  apiEndpoint={`/states/${currentState}/history/recovered/360`}
+                  historyStateOrDistrictProp={currentState}
                   historyMetricProp='recovered'
                   />
           </HScroll>
             </div>
           </section>
         }
-        {this.state.selectedState && 
+        {currentState && 
           <section className="section">
-            <div className="section-title">Landkreise in {this.state.selectedStateName}</div>
+            <div className="section-title">Landkreise in {stateDisplayName}</div>
             <div className="section-child-full">
               <DistrictSelector 
-                selectedStateAbbr={this.state.selectedState}
-                selectedAgs={this.state.selectedDistrict}
+                selectedStateAbbr={currentState}
+                selectedAgs={currentDistrict}
                 onClick={(ags, ref) => this.districtSelected(ags, ref)}
               />
             </div>
           </section>
         }
-        {this.state.selectedDistrict && 
+        {currentDistrict && 
           <section className="section">
-            <div className="section-title">Verlauf in {this.state.selectedDistrictName}</div>
+            <div className="section-title">Verlauf in {districtDisplayName}</div>
             <div className="section-child-full">
               <HScroll>
                 <HistoryChart 
-                  title={`Inzidenz in ${this.state.selectedDistrictName}`}
-                  apiEndpoint={`/districts/${this.state.selectedDistrict}/history/incidence/360`}
-                  historyStateOrDistrictProp={this.state.selectedDistrict}
+                  title={`Inzidenz in ${districtDisplayName}`}
+                  apiEndpoint={`/districts/${currentDistrict}/history/incidence/360`}
+                  historyStateOrDistrictProp={currentDistrict}
                   historyMetricProp='weekIncidence'
                   />                
                 <HistoryChart 
-                  title={`Infektionen in ${this.state.selectedDistrictName}`}
-                  apiEndpoint={`/districts/${this.state.selectedDistrict}/history/cases/360`}
-                  historyStateOrDistrictProp={this.state.selectedDistrict}
+                  title={`Infektionen in ${districtDisplayName}`}
+                  apiEndpoint={`/districts/${currentDistrict}/history/cases/360`}
+                  historyStateOrDistrictProp={currentDistrict}
                   historyMetricProp='cases'
                   />
 
                 <HistoryChart 
-                  title={`Todesfälle in ${this.state.selectedDistrictName}`}
-                  apiEndpoint={`/districts/${this.state.selectedDistrict}/history/deaths/360`}
-                  historyStateOrDistrictProp={this.state.selectedDistrict}
+                  title={`Todesfälle in ${districtDisplayName}`}
+                  apiEndpoint={`/districts/${currentDistrict}/history/deaths/360`}
+                  historyStateOrDistrictProp={currentDistrict}
                   historyMetricProp='deaths'
                   />
 
                 <HistoryChart 
-                  title={`Genesungen in ${this.state.selectedDistrictName}`}
-                  apiEndpoint={`/districts/${this.state.selectedDistrict}/history/recovered/360`}
-                  historyStateOrDistrictProp={this.state.selectedDistrict}
+                  title={`Genesungen in ${districtDisplayName}`}
+                  apiEndpoint={`/districts/${currentDistrict}/history/recovered/360`}
+                  historyStateOrDistrictProp={currentDistrict}
                   historyMetricProp='recovered'
                   />
                 </HScroll>
