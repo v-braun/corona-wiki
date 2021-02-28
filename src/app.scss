@@ -1,0 +1,97 @@
+@import './colors.scss';
+@import './components/__filter-btn';
+
+
+* {
+    box-sizing: border-box;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+//   -webkit-appearance: button;
+  outline:none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+button:active {
+    transform: scale(0.99);
+}
+
+body{
+
+    a, a:hover, a:active, a:visited{
+        color: black;
+        text-decoration: none;
+    }
+
+    .app-header{
+
+        // margin: 0 3em 0 3em;
+        padding: 1em 1em 1em 1em;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: $gray-400;
+        // margin-bottom: 1em;
+        
+        display: flex;
+        align-items: center;
+        .app-title{
+            font-size: 2em;
+            color: darken($color: #db00ff, $amount: 10%);
+            background: linear-gradient(#0067FF, #db00ff);
+
+            
+            background-clip: text;
+            -webkit-text-fill-color: transparent;            
+        }
+    }
+
+    .app-content{
+        // margin: 0 3em 0 3em;
+    }
+
+
+    .color-primary{
+        color: $primary;
+    }
+    .color-dark{
+        color: $primary;
+    }
+    
+
+
+    .fg-incidence{
+        color: $incidence;
+    }
+    .fg-deaths{
+        color: $deaths;
+    }
+    .fg-recovered{
+        color: $recovered;
+    }
+    .fg-cases{
+        color: $cases;
+    }
+
+    .bg-incidence{
+        background-color: $incidence;
+        color: $gray-100;
+    }
+    .bg-deaths{
+        background-color: $deaths;
+        color: $gray-100;
+    }
+    .bg-recovered{
+        background-color: $recovered;
+        color: $gray-100;
+    }
+    .bg-cases{
+        background-color: $cases;
+        color: $gray-100;
+    }
+
+    
+}

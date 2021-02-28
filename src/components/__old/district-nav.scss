@@ -1,0 +1,132 @@
+@import '../colors.scss';
+
+#district-nav{
+    h3{
+        margin-bottom: 0em;
+        // font-size: ;
+    }
+    .states-container{
+    }
+    .filter-btn-container{
+        display: flex;
+        flex-wrap: wrap;
+
+        // overflow-x: scroll;
+        // padding-top: 20px;
+        // padding-bottom: 20px;        
+
+        .filter-btn{
+            padding: 1em;
+            border-style: solid;
+            border-width: 1px;
+            border-color: $gray-500;
+            margin: 0.5em 0.5em 0.5em 0;
+            border-radius: 0.5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            white-space: nowrap;
+
+            max-width: 300px;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+            white-space: pre-wrap;
+            align-items: center;
+            justify-content: center;
+            
+            &.filter-btn-hide{
+                display: none;
+            }
+            &.filter-btn-sel{
+                // border-color: $gray-600;
+                background-color: $primary;
+                color: $white;
+            }
+
+            &:first-child{
+                margin-left: 0;
+            }
+
+
+            &.reset-btn{
+                flex-direction: row;
+            }
+        }
+
+
+        .filter-btn-title{
+            font-size: 1.2rem;
+            align-self: center;
+        }
+        .filter-btn-footer{
+            display: flex;
+            margin-top: 0.5em;
+            .filter-btn-attr{
+                font-size: 0.8em;
+                margin: 0 0.25em 0 0.25em;
+
+                .filter-btn-attr-name{
+                    text-transform: uppercase;
+                }
+                .filter-btn-attr-val{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .filter-btn.filter-btn-area{
+        // background-color: lime !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        > .area-icon-container{
+            margin-right: 1em;
+            min-width: 72px;
+            min-height: 72px;
+            max-width: 72px;
+            max-height: 72px;
+            > img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    
+
+    .rule-header{
+        // display: flex;
+        // flex-direction: column;
+        margin-top: 1em;
+        // .rule-title{
+        //     // font-weight: bold;
+        //     color: $gray-700;
+        // }
+
+        // .rule-desc{
+        //     // padding-left: 1em;
+        //     font-style: italic;
+        //     color: $gray-600;
+        //     &::before{
+        //         content: "(";
+        //     }
+        //     &::after{
+        //         content: ")";
+        //     }
+        // }
+    }
+
+    .rule-body{
+        margin-top: 1em;
+        font-size: 1.2em;
+        padding-left: 1em;
+        .rule-line{
+            
+            // background-color: red;
+            &::before{
+                content: "\2022";
+            }
+        }
+    }    
+}

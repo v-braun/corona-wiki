@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from 'react';
+import {
+  BrowserRouter as Router, 
+  Switch, 
+  Route
+} from "react-router-dom";
+import HomePage from './pages/home-page';
+import './app.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default class App extends Component{
+  render() {
+    return (
+      <Router>
+        <div className="app">
+          <header className="app-header">
+            <img alt="Corona Wiki" src="https://img.icons8.com/nolan/96/coronavirus.png"/>
+            <span className="app-title">Corona Wiki</span>
+          </header>
+          <main className="app-content">
+
+            <Switch>
+              {/* <Route path={`/:state/:district`}>
+                <div>Hello</div>
+              </Route> */}
+
+              <Route path={`/:state?/:district?/:area?/:idx?`} component={HomePage} />
+            </Switch>            
+          </main>
+        </div>
+      </Router>
+    );
+  }
 }
-
-export default App;

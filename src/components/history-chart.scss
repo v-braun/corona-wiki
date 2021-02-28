@@ -1,0 +1,63 @@
+@import '../colors.scss';
+
+.chart-tile {
+    margin: 0.5em 0em 1.5em 0.5em;
+    
+    max-width: calc(100vw - 2em);
+    min-width: calc(100vw - 2em);
+    // width: 200px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #adb5bd;
+    cursor: pointer;
+    border-radius: 1em;
+    padding: 1em;
+
+    &:first-child{
+        margin-left: 0em;
+    }
+    &:last-child{
+        margin-right: 0em;
+    }
+
+    @media (min-width: 576px) { 
+        max-width: calc(500px - 2em);
+        min-width: calc(500px - 2em);        
+    }    
+
+    .chart-ctr{
+        display: flex;
+        flex-direction: column;
+        .chart-title{
+            margin-bottom: 1em;
+        }
+        > .chart-wrapper {
+            height: 200px;
+            min-height: 200px;
+            // height: 100%;
+            width: 100%;
+    
+            g.Series g path{
+                stroke-width: 1 !important;
+            }
+    
+            .tickLabel{
+                font-size: 8px !important;
+            }
+        }
+    }
+
+    &.cases .chart-ctr .chart-wrapper g.Series g path{
+        stroke: $cases !important;
+    }
+    &.weekIncidence .chart-ctr .chart-wrapper g.Series g path{
+        stroke: $incidence !important;
+    }
+    &.deaths .chart-ctr .chart-wrapper g.Series g path{
+        stroke: $deaths !important;
+    }
+    &.recovered .chart-ctr .chart-wrapper g.Series g path{
+        stroke: $recovered !important;
+    }
+}
+

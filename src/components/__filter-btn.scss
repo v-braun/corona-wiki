@@ -1,0 +1,118 @@
+@import '../colors.scss';
+
+.filter-btn{
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $gray-500;
+    // min-width: 320px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: row;
+    // align-items: stretch;
+
+    border-radius: 1em;
+    padding: 1em;
+
+    margin: 0.5em 0em 1.5em 0.5em;    
+    &:first-child{
+        margin-left: 0em;
+    }
+    &:last-child{
+        margin-right: 0em;
+    }    
+
+
+    &.selected{
+        // background-color: $primary;
+        // color: $white;
+        border-color: $primary;
+        border-width: 2px;
+    }
+
+    .header-ctr{
+        display: flex;
+        align-items: center;
+        .ico-ctr{
+            width: 70px;
+            height: 70px;
+            margin-right: 1em;
+            
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+    
+            overflow: hidden;
+    
+            > img{
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+            }
+        }
+    
+        .title-ctr{
+            display: flex;
+            flex-direction: column;
+            white-space: nowrap;
+            flex: 1;
+            .name{
+                font-size: 1.3rem;
+                // margin-top: auto;
+            }
+        }
+    }
+
+
+
+    .stats-ctr{
+        margin-top: 0.5em;
+        padding-top: 0.5em;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-top-color: $gray-400;
+        width: 100%;
+
+        .stats{
+            
+            display: flex;
+            justify-content: space-around;
+
+
+            .stat{
+                display: flex;
+                flex-direction: column;
+                white-space: nowrap;
+                margin-right: 1em;
+                text-align: left;
+               
+                .stat-val{
+                    font-weight: 600;
+                }
+                .stat-val-sub{
+                    font-size: 0.7rem;
+                }
+                
+                .stat-name{
+                    text-transform: uppercase;
+                    font-size: 0.6rem;
+                }
+                
+                &.fg-cases .stat-val-sub{
+                    color: lighten($color: $cases, $amount: 20%);
+                }
+                &.fg-deaths .stat-val-sub{
+                    color: lighten($color: $deaths, $amount: 20%);
+                }
+                &.fg-recovered .stat-val-sub{
+                    color: lighten($color: $recovered, $amount: 10%);
+                }
+            }
+
+
+        }        
+    }
+}

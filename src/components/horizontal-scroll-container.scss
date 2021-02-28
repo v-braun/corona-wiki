@@ -1,0 +1,18 @@
+
+  .h-scroll-cnt{
+    display: flex;
+
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y:hidden;
+
+    scroll-behavior: smooth;
+
+    -webkit-overflow-scrolling:scroll;
+
+    .h-scroll-cnt-inner{
+        display: flex;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+  }
