@@ -4,8 +4,9 @@ Corona Informationen zu einzelnen Bundesländern und Landkreisen.
 
 
 # Screens
-![Corona Wiki - Screen 1](.github/screen-1.jpg?raw=true)
-![Corona Wiki - Screen 2](.github/screen-2.jpg?raw=true)
+<di>
+![Corona Wiki - Screen 1](.github/screen-1.jpg?raw=true | width=200)
+![Corona Wiki - Screen 2](.github/screen-2.jpg?raw=true | width=200)
 
 # Credits
 
