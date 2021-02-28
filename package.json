@@ -4,6 +4,7 @@
   "private": false,
   "homepage": "https://v-braun.github.io/corona-wiki",
   "dependencies": {
+    "@szhsin/react-menu": "^1.7.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.2",
@@ -23,9 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"    
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

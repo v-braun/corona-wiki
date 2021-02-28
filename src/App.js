@@ -4,6 +4,12 @@ import {
   Switch, 
   Route
 } from "react-router-dom";
+
+import AppMenu from './components/app-menu';
+
+
+
+
 import HomePage from './pages/home-page';
 import './app.scss';
 
@@ -12,12 +18,17 @@ export default class App extends Component{
   render() {
     return (
       <Router>
-        <div className="app">
+        <div id="app-main" className="app">
           <header className="app-header">
-            <img alt="Corona Wiki" src="https://img.icons8.com/nolan/96/coronavirus.png"/>
-            <span className="app-title">Corona Wiki</span>
+            <div className="title">
+              <img alt="Corona Wiki" src="https://img.icons8.com/nolan/96/coronavirus.png"/>
+              <span className="app-title">Corona Wiki</span>              
+            </div>
+            
+            <AppMenu />
+              
           </header>
-          <main className="app-content">
+          <main id="app-main-content" className="app-content">
 
             <Switch>
               {/* <Route path={`/:state/:district`}>

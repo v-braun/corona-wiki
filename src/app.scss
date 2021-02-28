@@ -37,16 +37,29 @@ body{
         // margin-bottom: 1em;
         
         display: flex;
-        align-items: center;
-        .app-title{
-            font-size: 2em;
-            color: darken($color: #db00ff, $amount: 10%);
-            background: linear-gradient(#0067FF, #db00ff);
-
-            
-            background-clip: text;
-            -webkit-text-fill-color: transparent;            
+        justify-content: space-between;
+        
+        .title{
+            display: flex;
+            align-items: center;
+            .app-title{
+                font-size: 2em;
+                color: darken($color: #db00ff, $amount: 10%);
+                background: linear-gradient(#0067FF, #db00ff);
+    
+                
+                background-clip: text;
+                -webkit-text-fill-color: transparent;            
+            }
         }
+        .links{
+            display: flex;
+            align-items: flex-end;
+            img{
+                max-height: 30px;
+            }
+        }
+
     }
 
     .app-content{
@@ -95,3 +108,5 @@ body{
 
     
 }
+
+
