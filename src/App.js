@@ -32,8 +32,8 @@ export default class App extends Component{
           <main id="app-main-content" className="app-content">
 
             <Switch>
-              <Route path={`/about`} component={AboutPage} />
-              <Route path={`/:state?/:district?/:area?/:idx?`} component={HomePage} />
+              <Route path={`${process.env.PUBLIC_URL}/about`} component={AboutPage} />
+              <Route path={`${process.env.PUBLIC_URL}/:state?/:district?/:area?/:idx?`} component={HomePage} />
             </Switch>            
           </main>
         </div>

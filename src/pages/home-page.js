@@ -5,6 +5,13 @@ import geo from '../static-data/geo';
 import {StateSelector} from '../components/state-selector';
 import {DistrictSelector} from '../components/district-selector';
 import { HScroll } from '../components/horizontal-scroll-container';
+
+import liveAreas from '../static-data/live-areas';
+ 
+
+
+
+
 // import { Chart } from "react-charts";
 
 import {HistoryChart} from '../components/history-chart';
@@ -20,11 +27,11 @@ class HomePage extends Component{
     if(!abbr) return;
     if(this.props.match.params.state === abbr){
       // toggle
-      this.props.history.push(`/`);
+      this.props.history.push(`${process.env.PUBLIC_URL}`);
       return;
     }
     
-    this.props.history.push(`/${abbr}`);
+    this.props.history.push(`${process.env.PUBLIC_URL}/${abbr}`);
   }
 
   async districtSelected(ags, ref){
@@ -32,15 +39,15 @@ class HomePage extends Component{
     if(this.props.match.params.district === ags){
       // toggle
       if(this.props.match.params.state){
-        this.props.history.push(`/${this.props.match.params.state}`);
+        this.props.history.push(`${process.env.PUBLIC_URL}/${this.props.match.params.state}`);
       } else{
-        this.props.history.push(`/`);
+        this.props.history.push(`${process.env.PUBLIC_URL}`);
       }
       return;
     }
 
     let state = this.props.match.params.state;
-    this.props.history.push(`/${state}/${ags}`);
+    this.props.history.push(`${process.env.PUBLIC_URL}/${state}/${ags}`);
     
     setTimeout(() => {
       ref?.current?.scrollIntoView({behavior:'smooth', block:'center',inline:'center'});
@@ -49,6 +56,7 @@ class HomePage extends Component{
   }
 
   render(){
+    
     let stateDisplayName = '';
     let districtDisplayName = '';
     let currentState = this.props.match.params.state;

@@ -30,8 +30,8 @@ export default class AppMenu extends Component{
     return (
       <div className="app-menu">
         <Menu menuButton={this.menuButton()}>
-          <MenuItem href="/">Home</MenuItem>
-          <MenuItem href="/about">Über</MenuItem>
+          <MenuItem href={process.env.PUBLIC_URL}>Home</MenuItem>
+          <MenuItem href={`${process.env.PUBLIC_URL}/about`}>Über</MenuItem>
         </Menu>
       </div>
     );
