@@ -21,11 +21,11 @@ class HomePage extends Component{
     if(!abbr) return;
     if(this.props.match.params.state === abbr){
       // toggle
-      this.props.history.push(`${process.env.PUBLIC_URL}`);
+      this.props.history.push(`/`);
       return;
     }
     
-    this.props.history.push(`${process.env.PUBLIC_URL}/${abbr}`);
+    this.props.history.push(`/${abbr}`);
   }
 
   async districtSelected(ags, ref){
@@ -33,15 +33,15 @@ class HomePage extends Component{
     if(this.props.match.params.district === ags){
       // toggle
       if(this.props.match.params.state){
-        this.props.history.push(`${process.env.PUBLIC_URL}/${this.props.match.params.state}`);
+        this.props.history.push(`/${this.props.match.params.state}`);
       } else{
-        this.props.history.push(`${process.env.PUBLIC_URL}`);
+        this.props.history.push(`/`);
       }
       return;
     }
 
     let state = this.props.match.params.state;
-    this.props.history.push(`${process.env.PUBLIC_URL}/${state}/${ags}`);
+    this.props.history.push(`/${state}/${ags}`);
     
     setTimeout(() => {
       ref?.current?.scrollIntoView({behavior:'smooth', block:'center',inline:'center'});
@@ -58,18 +58,18 @@ class HomePage extends Component{
     if(this.props.match.params.area === area){
       // toggle
       if(ags){
-        this.props.history.push(`${process.env.PUBLIC_URL}/${state}/${ags}`);
+        this.props.history.push(`/${state}/${ags}`);
       }
       if(state){
-        this.props.history.push(`${process.env.PUBLIC_URL}/${state}`);
+        this.props.history.push(`/${state}`);
       } else{
-        this.props.history.push(`${process.env.PUBLIC_URL}`);
+        this.props.history.push(`/`);
       }
       return;
     }
     
 
-    this.props.history.push(`${process.env.PUBLIC_URL}/${state}/${ags}/${area}`);    
+    this.props.history.push(`/${state}/${ags}/${area}`);    
 
     setTimeout(() => {
       console.log('scroll to', ref)
