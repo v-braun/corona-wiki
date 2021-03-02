@@ -1,0 +1,41 @@
+de:
+  annotations:
+    info: |- 
+      Folgende Regeln gelten Deutschlandweit
+  areas:
+    zusammenkuenfte_privat:
+      status: limit
+      rules:
+        - text: |- 
+            **Eine** Person darf ein Haushalt besuchen
+          icoRef: allow
+        - text: |- 
+            Ein Haushalt darf **eine** Person besuchen
+          icoRef: allow
+        - text: Kinder jünger als **6 Jahre** nicht eingeschlossen
+          icoRef: allow
+        - text: |- 
+            **Mehrere** Personen dürfen **nicht** ein Haushalt besuchen
+          icoRef: forbidden
+        - text: |- 
+            Ein Haushalt darf **nicht** mehrere Personen besuchen
+          icoRef: forbidden
+
+    zusammenkuenfte_oeffentlich:
+      status: limit
+      rules:
+        - text: |- 
+            **Eine** Person darf sich mit einem Haushalt treffen
+          icoRef: allow
+        - text: |- 
+            Ein Haushalt darf sich mit **einer** Person treffen
+          icoRef: allow
+        - text: Kinder jünger als **6 Jahre** nicht eingeschlossen
+          icoRef: allow
+        - text: |- 
+            **Mehrere** Personen dürfen sich **nicht** mit einem Haushalt treffen
+          icoRef: forbidden
+        - text: |- 
+            Ein Haushalt darf sich **nicht** mit mehreren Personen treffen
+          icoRef: forbidden
+            

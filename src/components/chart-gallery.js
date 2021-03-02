@@ -1,4 +1,4 @@
-import { Component, createRef } from 'react';
+import { Component } from 'react';
 import { HistoryChart } from './history-chart';
 import { HScroll } from './horizontal-scroll-container';
 

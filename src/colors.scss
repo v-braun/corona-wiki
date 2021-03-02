@@ -16,8 +16,16 @@ $secondary: #419D78;
 $primary: #d05fcc;
 
 
+$orange: #ffc107;
+$red: #dc3545;
+$blue: #28527a;
+$green: #00917c;
 
-$incidence: #28527a;
+$incidence: $blue;
 $deaths: #5b5b5b;
-$recovered: #00917c;
-$cases: #9b5151;
+$recovered: $green;
+$cases: $red;
+
+$danger: $red;
+$warning: $orange;
+$success: $green;

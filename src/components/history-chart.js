@@ -144,7 +144,7 @@ export class HistoryChart extends Component{
   
   render(){
     return (
-      <div className={`chart-tile ${this.props.historyMetricProp ?? ''}`}>
+      <div className={`chart-tile scroll-item ${this.props.historyMetricProp ?? ''}`}>
         {this.state.chartData.length > 0 && 
           <div className="chart-ctr">
             <div className="chart-title">{this.props.title}</div>

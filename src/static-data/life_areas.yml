@@ -1,188 +1,235 @@
 life_areas:
   zusammenkuenfte_privat:
     id: zusammenkuenfte_privat
-    title: > 
-      Zusammenkünfte in privaten Räumen (kein Abstand, keine MNB)
+    title: |-
+      Zusammenkünfte in privaten Räumen
+    # title: |- 
     ico: https://img.icons8.com/officel/80/000000/meeting-room.png
   zusammenkuenfte_oeffentlich:
     id: zusammenkuenfte_oeffentlich
-    title: Zusammenkünfte im öffentlichen Bereich (kein Abstand, keine MNB)
+    title: Zusammenkünfte im öffentlichen Bereich
+    # title: |- 
     ico: https://img.icons8.com/clouds/100/000000/meeting.png
-  '0003':
+  'gremien':
     id: '0003'
-    title: >
+    title: Gremien
+    examples: 
       - Plenum
-      - Ausschüsse und andere Gremien des Landtages und der kommunalen Vertretungen
-      - Gerichte und Staatsanwaltschaften
+      - Gremien des Landtages
+      - Gremien der kommunalen Vertretungen
+      - Gerichte 
+      - Staatsanwaltschaften
     ico: https://img.icons8.com/officel/80/000000/courthouse.png
   'demonstrationen':
     id: 'demonstrationen'
-    title: Demonstrationen
+    title: |-
+       Demonstrationen
     ico: https://img.icons8.com/officel/80/000000/strike.png
   'messen':
     id: 'messen'
-    title: Messen, gewerbliche Ausstellungen
+    title: |-
+       Messen
+    desc:  |-
+      *bsp.: Messen, Gewerbliche Ausstellungen*
     ico: https://img.icons8.com/fluent/48/000000/exhibitor.png
   'jahrmaerkte':
     id: 'jahrmaerkte'
-    title: Jahrmärkte, Spezialmärkte
+    title: |-
+       Jahrmärkte & Spezialmärkte
     ico: https://img.icons8.com/officel/80/000000/circus-tent.png
   '0007':
     id: '0007'
-    title: > 
-      - Sonstige organisierte *stationäre* Indoor- Veranstaltungen* (einschl. Theater,
-      Kinos, Kulturzentren, Zuschauer Sportveranstaltungen)
-      - Betrieblich notwendige Zusammenkünfte sind hiervon nicht erfasst.
+    title: |-
+      Stationäre Indoor Veranstaltungen
+    desc:  |-
+      *bsp.: Theater, Kinos, Kulturzentren und Zuschauer Sportveranstaltungen*
     ico: https://img.icons8.com/nolan/96/movie-projector.png
   '0008':
     id: '0008'
-    title: Sonstige organisierte nicht-stationäre IndoorVeranstaltungen* (einschl.
-      Theater, Kinos, Kulturzentren, Zuschauer Sportveranstaltungen)  *Betrieblich
-      notwendige Zusammenkünfte sind hiervon nicht erfasst.
+    title: |-
+      **Nicht**-stationäre Indoor Veranstaltungen
+    desc: |-
+      *Theater, Kinos, Kulturzentren und Zuschauer Sportveranstaltungen*
     ico: https://img.icons8.com/color/96/000000/theatre-stage.png
   'outdoor_konzerte':
     id: 'outdoor_konzerte'
-    title: Outdoor Konzerte
+    title: |-
+       Outdoor Konzerte
     ico: https://img.icons8.com/color/96/000000/concert.png
   '0010':
     id: '0010'
-    title: Outdoor Sportveranstaltungen
+    title: |-
+       Outdoor Sportveranstaltungen
     ico: https://img.icons8.com/ios/100/000000/stadium-.png
   '0011':
     id: '0011'
-    title: Osterfeuer
+    title: |-
+       Osterfeuer
     ico: https://img.icons8.com/cotton/64/000000/bonfire.png
   '0012':
     id: '0012'
-    title: Sport –Breitensport
+    title: |-
+       Sport –Breitensport
     ico: https://img.icons8.com/dusk/64/000000/track-and-field.png
   '0013':
     id: '0013'
-    title: Sport –Spitzen- und Profisport
+    title: |-
+       Sport –Spitzen- und Profisport
     ico: https://img.icons8.com/dusk/64/000000/american-football-player.png
   '0014':
     id: '0014'
-    title: Schulsport
+    title: |-
+       Schulsport
     ico: https://img.icons8.com/dusk/64/000000/girl-running--v1.png
   '0015':
     id: '0015'
-    title: Fitnessstudios sowie Kletterhallen und Kletterparks und ähnliche Einrichtungen
+    title: |-
+       Fitnessstudios sowie Kletterhallen und Kletterparks und ähnliche Einrichtungen
     ico: https://img.icons8.com/dusk/64/000000/deadlift.png
   '0016':
     id: '0016'
-    title: Schwimmbäder
+    title: |-
+       Schwimmbäder
     ico: https://img.icons8.com/dusk/64/000000/outdoor-swimming-pool.png
   '0017':
     id: '0017'
-    title: Spielplätze
+    title: |-
+       Spielplätze
     ico: https://img.icons8.com/dusk/64/000000/tire-swing.png
   '0018':
     id: '0018'
-    title: Religiöse Veranstaltungen
+    title: |-
+       Religiöse Veranstaltungen
     ico: https://img.icons8.com/dusk/64/000000/church.png
   '0019':
     id: '0019'
-    title: Hochzeiten, Taufen
+    title: |-
+       Hochzeiten, Taufen
     ico: https://img.icons8.com/ultraviolet/80/000000/city-church.png
   '0020':
     id: '0020'
-    title: Beerdigungen
+    title: |-
+       Beerdigungen
     ico: https://img.icons8.com/officel/64/000000/cemetery.png
   '0021':
     id: '0021'
-    title: Gastronomie mit Essensservice
+    title: |-
+       Gastronomie mit Essensservice
     ico: https://img.icons8.com/dusk/64/000000/waiter.png
   '0022':
     id: '0022'
-    title: Kantinen/ Mensen
+    title: |-
+       Kantinen/ Mensen
     ico: https://img.icons8.com/office/96/000000/restaurant-building.png
   '0023':
     id: '0023'
-    title: Bars
+    title: |-
+       Bars
     ico: https://img.icons8.com/officel/80/000000/beer.png
   '0024':
     id: '0024'
-    title: Discotheken, Clubs
+    title: |-
+       Discotheken, Clubs
     ico: https://img.icons8.com/fluent/96/000000/disco-ball.png
   '0025':
     id: '0025'
-    title: Beherbergung
+    title: |-
+       Beherbergung
     ico: https://img.icons8.com/fluent/96/000000/hostel.png
   '0026':
     id: '0026'
-    title: Körpernahe Dienstleistungen
+    title: |-
+       Körpernahe Dienstleistungen
     ico: https://img.icons8.com/nolan/96/hair-dryer.png
   '0027':
     id: '0027'
-    title: Einzelhandel
+    title: |-
+       Einzelhandel
     ico: https://img.icons8.com/plasticine/100/000000/shop.png
   '0028':
     id: '0028'
-    title: Sonstige Betriebs- und Arbeitsstätten
+    title: |-
+       Sonstige Betriebs- und Arbeitsstätten
     ico: https://img.icons8.com/cotton/64/000000/factory.png
-  '0029':
-    id: '0029'
-    title: Bildung – Kita
+  'kitas':
+    id: 'kitas'
+    title: |-
+       Kitas
     ico: https://img.icons8.com/color/96/000000/seesaw.png
   '0030':
     id: '0030'
-    title: 'Bildung - Schule (ABS, BBS)   * Förderschulen GE, KME, BES und Einzelfälle
-      Taubblinde wie Primarbereich   * Geltungsbereich Stufenplan: siehe Vorbemerkung   *Ab
-      Landesinzidenz-Stufe 3 und niedriger werden für die Beschränkungen im Bildungsbereich
-      regionale Inzidenzen zugrunde gelegt.'
+    title: |- 
+      Schulen
+    desc: |-
+      *ABS, BBS, Förderschulen GE, KME, BES und Einzelfälle Taubblinde wie Primarbereich*
     ico: https://img.icons8.com/cotton/64/000000/school-1-1.png
   '0031':
     id: '0031'
-    title: Bildung - Schulausflüge, fahrten
+    title: |-
+       Bildung - Schulausflüge, fahrten
     ico: https://img.icons8.com/cotton/64/000000/school-bus-2.png
   '0032':
     id: '0032'
-    title: Bildung – Hochschulen   *gilt erst ab Sommersemester 2021, bis dahin bleibt
-      es Regelungen Stufe 4
+    title: |-
+      Hochschulen
     ico: https://img.icons8.com/dusk/64/000000/student-female.png
   '0033':
     id: '0033'
-    title: Einrichtungen der beruflichen Aus-, Fort- und Weiterbildung  (inklusive
-      ihrer Beherbergungsstätten, Kantinen und Mensen)
+    title: |-
+      Einrichtungen d. beruflichen Aus-, Fort- und Weiterbildung 
+    desc: |-
+      *inklusive ihrer Beherbergungsstätten, Kantinen und Mensen*
     ico: https://img.icons8.com/color/96/000000/teacher.png
-  '0034':
-    id: '0034'
-    title: Bildung – Erwachsenenbildung, Fahrschulen (ohne berufliche Aus-, Fort-
-      und Weiterbildung)
-    ico: https://img.icons8.com/color/48/000000/driver-license-card.png
-  '0035':
-    id: '0035'
-    title: Bibliotheken, Büchereien
+  'erwachsenenbildung':
+    id: 'erwachsenenbildung'
+    title: |-
+      Erwachsenenbildung
+    desc: |-
+      *Bsp.: Fahrschulen (ohne berufliche Aus-, Fort-
+      und Weiterbildung)*
+    ico: https://img.icons8.com/color/100/000000/driver-license-card.png
+  'bibliotheken':
+    id: 'bibliotheken'
+    title: |-
+      Bibliotheken, Büchereien
     ico: https://img.icons8.com/color/96/000000/library-building.png
-  '0036':
-    id: '0036'
-    title: Öffentliche Transportmittel
+  'oeffentlich_transportmittel':
+    id: 'oeffentlich_transportmittel'
+    title: |-
+      Öffentliche Transportmittel
     ico: https://img.icons8.com/dusk/64/000000/train.png
-  '0037':
-    id: '0037'
-    title: Touristische Tagesausflüge
+  'tourismus_tagesausflüge':
+    id: 'tourismus_tagesausflüge'
+    title: |-
+       Touristische Tagesausflüge
     ico: https://img.icons8.com/cotton/64/000000/route.png
-  '0038':
-    id: '0038'
-    title: Kulturelle, touristische und andere indoor Einrichtungen  (einschl. Galerien,
-      Ausstellungen, Museen)   *Theater, Opernhäuser u.ä. etc. sind in den Regelungen
-      zu Veranstaltungen erfasst
+  'kultur_indoor':
+    id: 'kultur_indoor'
+    title: |- 
+      Kulturelle un Touristische Indoor Einrichtungen
+    desc: |-
+      *bsp.: Galerien, Ausstellungen und Museen*
     ico: https://img.icons8.com/color/96/000000/physical-gallery.png
-  '0039':
-    id: '0039'
-    title: Kulturelle, touristische und andere outdoor Einrichtungen  (einschl. Freilichtmuseen,
-      Zoos, Tierparks)   *Freilichtbühnen u.ä. sind in den Regelungen zu Veranstaltungen
-      erfasst
+  'kultur_outdoor':
+    id: 'kultur_outdoor'
+    title: |-
+      Kulturelle, touristische und andere Outdoor Einrichtungen
+    desc: |-
+      *bsp.: Freilichtmuseen, Zoos und Tierparks*
     ico: https://img.icons8.com/fluent/96/000000/zoo.png
-  '0040':
-    id: '0040'
-    title: Solarien, Saunen
+  'solarien':
+    id: 'solarien'
+    title: |-
+      Solarien & Saunen
     ico: https://img.icons8.com/dotty/80/000000/sauna.png
-  '0041':
-    id: '0041'
-    title: Prostitution
+  'prostitution':
+    id: 'prostitution'
+    title: |-
+       Prostitution
     ico: https://img.icons8.com/cotton/64/000000/sexy-woman.png
-  '0042':
-    id: '0042'
-    title: Spielbanken, Spielhallen, Wettannahmestellen
+  'gluecksspiel':
+    id: 'gluecksspiel'
+    title: Glückspiel
+    desc: |-
+      *bsp.: Spielbanken, Spielhallen und Wettannahmestellen*
     ico: https://img.icons8.com/plasticine/100/000000/slot-machine.png

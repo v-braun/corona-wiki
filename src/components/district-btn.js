@@ -54,7 +54,7 @@ export class DistrictButton extends Component{
     if(!ico){
       ico = `https://avatars.dicebear.com/api/initials/${this.props.name}.svg`;
     }
-    let classes = 'filter-btn';
+    let classes = 'filter-btn scroll-item';
     if(this.props.selected){
       classes += ' selected';
     }

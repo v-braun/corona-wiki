@@ -4,20 +4,10 @@ import { withRouter } from "react-router-dom";
 import geo from '../static-data/geo';
 import {StateSelector} from '../components/state-selector';
 import {DistrictSelector} from '../components/district-selector';
-import { HScroll } from '../components/horizontal-scroll-container';
 import { ChartGallery } from '../components/chart-gallery';
 
-import liveAreas from '../static-data/live-areas';
- 
-
-
-
-
-// import { Chart } from "react-charts";
-
-import {HistoryChart} from '../components/history-chart';
-
 import './home-page.scss'
+import { LiveAreaSelector } from '../components/live-area-selector';
 
 
 // console.log(districts);
@@ -117,6 +107,20 @@ class HomePage extends Component{
               />
             </div>
           </section>          
+        }
+
+        {currentDistrict && 
+          <section className="section">
+            <div className="section-title">Regelungen in {districtDisplayName}</div>
+            <div className="section-child-full">
+              <LiveAreaSelector 
+                selectedStateAbbr={currentState}
+                selectedAgs={currentDistrict}
+                onClick={() => console.log('selected area')}
+              />
+            </div>
+          </section>
+        
         }
       </div>
 

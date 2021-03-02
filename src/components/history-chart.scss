@@ -1,7 +1,7 @@
 @import '../colors.scss';
 
 .chart-tile {
-    margin: 0.5em 0em 1.5em 0.5em;
+    // margin: 0.5em 0em 1.5em 0.5em;
     
     max-width: calc(100vw - 2em);
     min-width: calc(100vw - 2em);
@@ -13,12 +13,12 @@
     border-radius: 1em;
     padding: 1em;
 
-    &:first-child{
-        margin-left: 0em;
-    }
-    &:last-child{
-        margin-right: 0em;
-    }
+    // &:first-child{
+    //     margin-left: 0em;
+    // }
+    // &:last-child{
+    //     margin-right: 0em;
+    // }
 
     @media (min-width: 576px) { 
         max-width: calc(500px - 2em);

@@ -1,0 +1,108 @@
+@import '../colors.scss';
+
+.filter-btn.area-btn{
+    max-width: 80vw;
+    width: 300px;
+    max-height: 280px;
+    flex-direction: column;
+    // align-items: center;
+    .header-ctr{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        // align-items: center;
+        // flex-direction: row;
+        // text-align: center;
+        .ico-ctr{
+            min-width: 80px;
+            min-height: 80px;
+            max-width: 80px;
+            max-height: 80px;
+        }
+
+        .title-ctr{
+            white-space: normal;
+            text-align: left;
+
+            .title{
+                font-size: 1.2rem;
+                &.title-l{
+                    font-size: 1rem;
+                }
+                &.title-xl{
+                    font-size: 0.8rem;
+                }
+                > p{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .rule-short{
+                text-align: right;
+                margin-top: 0.5em;
+                margin-right: auto;
+                padding: 6px;
+                font-size: 0.7rem;
+                background-color: $gray-300;
+                border-radius: 1em;
+                color: $gray-800;
+                text-transform: uppercase;
+                &.rule-short-na{
+
+                }
+                &.rule-short-danger{
+                    background-color: $danger;
+                    color: white;
+                }
+                &.rule-short-warn{
+                    background-color: $warning;
+                    color: $gray-800;
+                }
+                &.rule-short-success{
+                    background-color: $success;
+                    color: white;
+                }
+            }
+        }
+    }
+    .body-ctr{
+        text-align: left;
+        .desc{
+            font-size: 0.8rem;
+            // font-style: italic;
+
+            margin-top: 0.5em;
+            padding-top: 0.5em;
+            
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-top-color: $gray-400;
+            > p{
+                padding: 0;
+                margin: 0;
+            }
+
+            // > div{
+            //     display: inline-block;
+            //     &::after{
+            //         content: ',';
+            //     }
+            //     &:last-child::after{
+            //         content: '';
+            //     }
+            // }
+        }
+    }
+
+
+
+    .area-md{
+        ul{
+            text-align: left;
+            > li{
+
+            }
+        }
+    }
+}

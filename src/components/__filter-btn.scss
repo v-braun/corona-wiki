@@ -17,13 +17,7 @@
     border-radius: 1em;
     padding: 1em;
 
-    margin: 0.5em 0em 1.5em 0.5em;    
-    &:first-child{
-        margin-left: 0em;
-    }
-    &:last-child{
-        margin-right: 0em;
-    }    
+    
 
 
     &.selected{
