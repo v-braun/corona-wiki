@@ -878,84 +878,83 @@ let geo = {
       "name": "Gifhorn",
       "county": "LK Gifhorn",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Wappen_Landkreis_Gifhorn.svg/109px-Wappen_Landkreis_Gifhorn.svg.png"
     },
     "03153": {
       "ags": "03153",
       "name": "Goslar",
       "county": "LK Goslar",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Wappen_Landkreis_Goslar.svg/115px-Wappen_Landkreis_Goslar.svg.png"
     },
     "03154": {
       "ags": "03154",
       "name": "Helmstedt",
       "county": "LK Helmstedt",
-      "stateAbbreviation": "NI",
-      "ico": null
+      "stateAbbreviation": "NI"
     },
     "03155": {
       "ags": "03155",
       "name": "Northeim",
       "county": "LK Northeim",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Wappen_Landkreis_Northeim.svg/109px-Wappen_Landkreis_Northeim.svg.png"
     },
     "03157": {
       "ags": "03157",
       "name": "Peine",
       "county": "LK Peine",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wappen_Landkreis_Peine.svg/106px-Wappen_Landkreis_Peine.svg.png"
     },
     "03158": {
       "ags": "03158",
       "name": "Wolfenbüttel",
       "county": "LK Wolfenbüttel",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Wappen_Landkreis_Wolfenb%C3%BCttel.svg/109px-Wappen_Landkreis_Wolfenb%C3%BCttel.svg.png"
     },
     "03159": {
       "ags": "03159",
       "name": "Göttingen",
       "county": "LK Göttingen",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Wappen_Landkreis_G%C3%B6ttingen.svg/106px-Wappen_Landkreis_G%C3%B6ttingen.svg.png"
     },
     "03241": {
       "ags": "03241",
       "name": "Region Hannover",
       "county": "Region Hannover",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Wappen_der_Region_Hannover.svg/96px-Wappen_der_Region_Hannover.svg.png"
     },
     "03251": {
       "ags": "03251",
       "name": "Diepholz",
       "county": "LK Diepholz",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Wappen_Landkreis_Diepholz.png/96px-Wappen_Landkreis_Diepholz.png"
     },
     "03252": {
       "ags": "03252",
       "name": "Hameln-Pyrmont",
       "county": "LK Hameln-Pyrmont",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Wappen_Landkreis_Hameln-Pyrmont.svg/109px-Wappen_Landkreis_Hameln-Pyrmont.svg.png"
     },
     "03254": {
       "ags": "03254",
       "name": "Hildesheim",
       "county": "LK Hildesheim",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Wappen_Landkreis_Hildesheim.png/101px-Wappen_Landkreis_Hildesheim.png"
     },
     "03255": {
       "ags": "03255",
       "name": "Holzminden",
       "county": "LK Holzminden",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/DE_Landkreis_Holzminden_COA.svg/94px-DE_Landkreis_Holzminden_COA.svg.png"
     },
     "03256": {
       "ags": "03256",
@@ -969,49 +968,48 @@ let geo = {
       "name": "Schaumburg",
       "county": "LK Schaumburg",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Wappen_Landkreis_Schaumburg.svg/104px-Wappen_Landkreis_Schaumburg.svg.png"
     },
     "03351": {
       "ags": "03351",
       "name": "Celle",
       "county": "LK Celle",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Wappen_Landkreis_Celle.svg/96px-Wappen_Landkreis_Celle.svg.png"
     },
     "03352": {
       "ags": "03352",
       "name": "Cuxhaven",
       "county": "LK Cuxhaven",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Wappen_Landkreis_Cuxhaven.svg/106px-Wappen_Landkreis_Cuxhaven.svg.png"
     },
     "03353": {
       "ags": "03353",
       "name": "Harburg",
       "county": "LK Harburg",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wappen-Landkreis-Harburg.png/103px-Wappen-Landkreis-Harburg.png"
     },
     "03354": {
       "ags": "03354",
       "name": "Lüchow-Dannenberg",
       "county": "LK Lüchow-Dannenberg",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Wappen_Landkreis_L%C3%BCchow-Dannenberg.svg/106px-Wappen_Landkreis_L%C3%BCchow-Dannenberg.svg.png"
     },
     "03355": {
       "ags": "03355",
       "name": "Lüneburg",
       "county": "LK Lüneburg",
-      "stateAbbreviation": "NI",
-      "ico": null
+      "stateAbbreviation": "NI"
     },
     "03356": {
       "ags": "03356",
       "name": "Osterholz",
       "county": "LK Osterholz",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/DEU_Osterholz_COA.svg/111px-DEU_Osterholz_COA.svg.png"
     },
     "03357": {
       "ags": "03357",
@@ -1032,21 +1030,21 @@ let geo = {
       "name": "Stade",
       "county": "LK Stade",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Wappen_Landkreis_Stade.svg/109px-Wappen_Landkreis_Stade.svg.png"
     },
     "03360": {
       "ags": "03360",
       "name": "Uelzen",
       "county": "LK Uelzen",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Wappen_Landkreis_Uelzen.svg/112px-Wappen_Landkreis_Uelzen.svg.png"
     },
     "03361": {
       "ags": "03361",
       "name": "Verden",
       "county": "LK Verden",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Wappen_Landkreis_Verden.png/98px-Wappen_Landkreis_Verden.png"
     },
     "03401": {
       "ags": "03401",
@@ -1074,7 +1072,7 @@ let geo = {
       "name": "Osnabrück",
       "county": "SK Osnabrück",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/DEU_Landkreis_Osnabr%C3%BCck_COA.svg/111px-DEU_Landkreis_Osnabr%C3%BCck_COA.svg.png"
     },
     "03405": {
       "ags": "03405",
@@ -1088,84 +1086,83 @@ let geo = {
       "name": "Ammerland",
       "county": "LK Ammerland",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Wappen_Landkreis_Ammerland.svg/94px-Wappen_Landkreis_Ammerland.svg.png"
     },
     "03452": {
       "ags": "03452",
       "name": "Aurich",
       "county": "LK Aurich",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Wappen_Landkreis_Aurich.svg/106px-Wappen_Landkreis_Aurich.svg.png"
     },
     "03453": {
       "ags": "03453",
       "name": "Cloppenburg",
       "county": "LK Cloppenburg",
-      "stateAbbreviation": "NI",
-      "ico": null
+      "stateAbbreviation": "NI"
     },
     "03454": {
       "ags": "03454",
       "name": "Emsland",
       "county": "LK Emsland",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Wappen_Landkreis_Emsland.svg/100px-Wappen_Landkreis_Emsland.svg.png"
     },
     "03455": {
       "ags": "03455",
       "name": "Friesland",
       "county": "LK Friesland",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/DEU_Landkreis_Friesland_COA.svg/100px-DEU_Landkreis_Friesland_COA.svg.png"
     },
     "03456": {
       "ags": "03456",
       "name": "Grafschaft Bentheim",
       "county": "LK Grafschaft Bentheim",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/DEU_Landkreis_Grafschaft_Bentheim_COA.svg/104px-DEU_Landkreis_Grafschaft_Bentheim_COA.svg.png"
     },
     "03457": {
       "ags": "03457",
       "name": "Leer",
       "county": "LK Leer",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Wappen_Landkreis_Leer.png/94px-Wappen_Landkreis_Leer.png"
     },
     "03458": {
       "ags": "03458",
       "name": "Oldenburg",
       "county": "LK Oldenburg",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Wappen_landkreis_oldenburg.svg/107px-Wappen_landkreis_oldenburg.svg.png"
     },
     "03459": {
       "ags": "03459",
       "name": "Osnabrück",
       "county": "LK Osnabrück",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/DEU_Landkreis_Osnabr%C3%BCck_COA.svg/111px-DEU_Landkreis_Osnabr%C3%BCck_COA.svg.png"
     },
     "03460": {
       "ags": "03460",
       "name": "Vechta",
       "county": "LK Vechta",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/DE_Landkreis_Vechta_COA.svg/107px-DE_Landkreis_Vechta_COA.svg.png"
     },
     "03461": {
       "ags": "03461",
       "name": "Wesermarsch",
       "county": "LK Wesermarsch",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wappen_Landkreis_Wesermarsch.svg/109px-Wappen_Landkreis_Wesermarsch.svg.png"
     },
     "03462": {
       "ags": "03462",
       "name": "Wittmund",
       "county": "LK Wittmund",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/DEU_Landkreis_Wittmund_COA.svg/106px-DEU_Landkreis_Wittmund_COA.svg.png"
     },
     "04011": {
       "ags": "04011",
@@ -2124,7 +2121,7 @@ let geo = {
       "name": "Neckar-Odenwald-Kreis",
       "county": "LK Neckar-Odenwald-Kreis",
       "stateAbbreviation": "BW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Wappen_Neckar-Odenwald-Kreis.png"
     },
     "08226": {
       "ags": "08226",
@@ -2229,28 +2226,28 @@ let geo = {
       "name": "Waldshut",
       "county": "LK Waldshut",
       "stateAbbreviation": "BW",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Waldshut.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/9/92/Wappen_Landkreis_Waldshut.png"
     },
     "08415": {
       "ags": "08415",
       "name": "Reutlingen",
       "county": "LK Reutlingen",
       "stateAbbreviation": "BW",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Reutlingen.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Wappen_Landkreis_Reutlingen.svg/233px-Wappen_Landkreis_Reutlingen.svg.png"
     },
     "08416": {
       "ags": "08416",
       "name": "Tübingen",
       "county": "LK Tübingen",
       "stateAbbreviation": "BW",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Tuebingen.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Wappen_Landkreis_Tuebingen.svg/223px-Wappen_Landkreis_Tuebingen.svg.png"
     },
     "08417": {
       "ags": "08417",
       "name": "Zollernalbkreis",
       "county": "LK Zollernalbkreis",
       "stateAbbreviation": "BW",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Zollernalbkreis.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Wappen_Zollernalbkreis.svg/228px-Wappen_Zollernalbkreis.svg.png"
     },
     "08421": {
       "ags": "08421",
@@ -2264,707 +2261,707 @@ let geo = {
       "name": "Alb-Donau-Kreis",
       "county": "LK Alb-Donau-Kreis",
       "stateAbbreviation": "BW",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Landkreiswappen_des_Landkreises_Alb-Donau-Kreis.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/9/98/Landkreiswappen_des_Landkreises_Alb-Donau-Kreis.png"
     },
     "08426": {
       "ags": "08426",
       "name": "Biberach",
       "county": "LK Biberach",
       "stateAbbreviation": "BW",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Biberach.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Wappen_Landkreis_Biberach.svg/201px-Wappen_Landkreis_Biberach.svg.png"
     },
     "08435": {
       "ags": "08435",
       "name": "Bodenseekreis",
       "county": "LK Bodenseekreis",
       "stateAbbreviation": "BW",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Bodenseekreis_Wappen.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bodenseekreis_Wappen.svg/221px-Bodenseekreis_Wappen.svg.png"
     },
     "08436": {
       "ags": "08436",
       "name": "Ravensburg",
       "county": "LK Ravensburg",
       "stateAbbreviation": "BW",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Ravensburg.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Wappen_Landkreis_Ravensburg.svg/224px-Wappen_Landkreis_Ravensburg.svg.png"
     },
     "08437": {
       "ags": "08437",
       "name": "Sigmaringen",
       "county": "LK Sigmaringen",
       "stateAbbreviation": "BW",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Sigmaringen.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Wappen_Landkreis_Sigmaringen.svg/214px-Wappen_Landkreis_Sigmaringen.svg.png"
     },
     "09161": {
       "ags": "09161",
       "name": "Ingolstadt",
       "county": "SK Ingolstadt",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Wappen_Ingolstadt.svg/280px-Wappen_Ingolstadt.svg.png"
     },
     "09162": {
       "ags": "09162",
       "name": "München",
       "county": "SK München",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Muenchen.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Muenchen_Kleines_Stadtwappen.svg/280px-Muenchen_Kleines_Stadtwappen.svg.png"
     },
     "09163": {
       "ags": "09163",
       "name": "Rosenheim",
       "county": "SK Rosenheim",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_LandkreisRosenheim.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Wappen_Rosenheim_Neu.svg/280px-Wappen_Rosenheim_Neu.svg.png"
     },
     "09171": {
       "ags": "09171",
       "name": "Altötting",
       "county": "LK Altötting",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Altoetting.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Wappen_Landkreis_Altoetting.png/111px-Wappen_Landkreis_Altoetting.png"
     },
     "09172": {
       "ags": "09172",
       "name": "Berchtesgadener Land",
       "county": "LK Berchtesgadener Land",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Berchtesgadener_Land.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Wappen_Landkreis_Berchtesgadener_Land.png/114px-Wappen_Landkreis_Berchtesgadener_Land.png"
     },
     "09173": {
       "ags": "09173",
       "name": "Bad Tölz-Wolfratshausen",
       "county": "LK Bad Tölz-Wolfratshausen",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Bad_Toelz-Wolfratshausen.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Wappen_Landkreis_Bad_Toelz-Wolfratshausen.svg/115px-Wappen_Landkreis_Bad_Toelz-Wolfratshausen.svg.png"
     },
     "09174": {
       "ags": "09174",
       "name": "Dachau",
       "county": "LK Dachau",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Dachau.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Wappen_Landkreis_Dachau.svg/110px-Wappen_Landkreis_Dachau.svg.png"
     },
     "09175": {
       "ags": "09175",
       "name": "Ebersberg",
       "county": "LK Ebersberg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Ebersberg.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Wappen_Landkreis_Ebersberg.png/112px-Wappen_Landkreis_Ebersberg.png"
     },
     "09176": {
       "ags": "09176",
       "name": "Eichstätt",
       "county": "LK Eichstätt",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Eichstaett.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Wappen_Landkreis_Eichstaett.png/112px-Wappen_Landkreis_Eichstaett.png"
     },
     "09177": {
       "ags": "09177",
       "name": "Erding",
       "county": "LK Erding",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Erding.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Wappen_Landkreis_Erding.png/120px-Wappen_Landkreis_Erding.png"
     },
     "09178": {
       "ags": "09178",
       "name": "Freising",
       "county": "LK Freising",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Freising.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Wappen_Landkreis_Freising.png/110px-Wappen_Landkreis_Freising.png"
     },
     "09179": {
       "ags": "09179",
       "name": "Fürstenfeldbruck",
       "county": "LK Fürstenfeldbruck",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Fuerstenfeldbruck.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Wappen_Landkreis_Fuerstenfeldbruck.png/112px-Wappen_Landkreis_Fuerstenfeldbruck.png"
     },
     "09180": {
       "ags": "09180",
       "name": "Garmisch-Partenkirchen",
       "county": "LK Garmisch-Partenkirchen",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Garmisch-Partenkirchen.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Wappen_Landkreis_Garmisch-Partenkirchen.png/116px-Wappen_Landkreis_Garmisch-Partenkirchen.png"
     },
     "09181": {
       "ags": "09181",
       "name": "Landsberg am Lech",
       "county": "LK Landsberg a.Lech",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Landsberg_am_Lech.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wappen_Landkreis_Landsberg_am_Lech.png/110px-Wappen_Landkreis_Landsberg_am_Lech.png"
     },
     "09182": {
       "ags": "09182",
       "name": "Miesbach",
       "county": "LK Miesbach",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Miesbach.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Wappen_Landkreis_Miesbach.png/116px-Wappen_Landkreis_Miesbach.png"
     },
     "09183": {
       "ags": "09183",
       "name": "Mühldorf a. Inn",
       "county": "LK Mühldorf a.Inn",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Wappen_M%C3%BChldorf_am_Inn.svg/280px-Wappen_M%C3%BChldorf_am_Inn.svg.png"
     },
     "09184": {
       "ags": "09184",
       "name": "München",
       "county": "LK München",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Muenchen.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Wappen_Landkreis_Muenchen.png/112px-Wappen_Landkreis_Muenchen.png"
     },
     "09185": {
       "ags": "09185",
       "name": "Neuburg-Schrobenhausen",
       "county": "LK Neuburg-Schrobenhausen",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Neuburg-Schrobenhausen.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Wappen_Landkreis_Neuburg-Schrobenhausen.svg/108px-Wappen_Landkreis_Neuburg-Schrobenhausen.svg.png"
     },
     "09186": {
       "ags": "09186",
       "name": "Pfaffenhofen a.d. Ilm",
       "county": "LK Pfaffenhofen a.d.Ilm",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wappen_Pfaffenhofen_an_der_Ilm.svg/280px-Wappen_Pfaffenhofen_an_der_Ilm.svg.png"
     },
     "09187": {
       "ags": "09187",
       "name": "Rosenheim",
       "county": "LK Rosenheim",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_LandkreisRosenheim.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Wappen_LandkreisRosenheim.png/106px-Wappen_LandkreisRosenheim.png"
     },
     "09188": {
       "ags": "09188",
       "name": "Starnberg",
       "county": "LK Starnberg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Starnberg.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Wappen_Landkreis_Starnberg.svg/104px-Wappen_Landkreis_Starnberg.svg.png"
     },
     "09189": {
       "ags": "09189",
       "name": "Traunstein",
       "county": "LK Traunstein",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_LandkreisTraunstein.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Wappen_LandkreisTraunstein.png/137px-Wappen_LandkreisTraunstein.png"
     },
     "09190": {
       "ags": "09190",
       "name": "Weilheim-Schongau",
       "county": "LK Weilheim-Schongau",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Weilheim-Schongau.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Wappen_Landkreis_Weilheim-Schongau.svg/113px-Wappen_Landkreis_Weilheim-Schongau.svg.png"
     },
     "09261": {
       "ags": "09261",
       "name": "Landshut",
       "county": "SK Landshut",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Landshut.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/DEU_Landshut_COA.svg/280px-DEU_Landshut_COA.svg.png"
     },
     "09262": {
       "ags": "09262",
       "name": "Passau",
       "county": "SK Passau",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Passau.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Wappen_Passau.svg/280px-Wappen_Passau.svg.png"
     },
     "09263": {
       "ags": "09263",
       "name": "Straubing",
       "county": "SK Straubing",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/DEU_Straubing_COA.svg/280px-DEU_Straubing_COA.svg.png"
     },
     "09271": {
       "ags": "09271",
       "name": "Deggendorf",
       "county": "LK Deggendorf",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Deggendorf.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Wappen_Landkreis_Deggendorf.png/106px-Wappen_Landkreis_Deggendorf.png"
     },
     "09272": {
       "ags": "09272",
       "name": "Freyung-Grafenau",
       "county": "LK Freyung-Grafenau",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Freyung-Grafenau.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Wappen_Landkreis_Freyung-Grafenau.png/106px-Wappen_Landkreis_Freyung-Grafenau.png"
     },
     "09273": {
       "ags": "09273",
       "name": "Kelheim",
       "county": "LK Kelheim",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Kelheim.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Wappen_Landkreis_Kelheim.png/111px-Wappen_Landkreis_Kelheim.png"
     },
     "09274": {
       "ags": "09274",
       "name": "Landshut",
       "county": "LK Landshut",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Landshut.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wappen_Landkreis_Landshut.svg/110px-Wappen_Landkreis_Landshut.svg.png"
     },
     "09275": {
       "ags": "09275",
       "name": "Passau",
       "county": "LK Passau",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Passau.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Wappen_Landkreis_Passau.png/105px-Wappen_Landkreis_Passau.png"
     },
     "09276": {
       "ags": "09276",
       "name": "Regen",
       "county": "LK Regen",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Regen.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Wappen_Landkreis_Regen.png/106px-Wappen_Landkreis_Regen.png"
     },
     "09277": {
       "ags": "09277",
       "name": "Rottal-Inn",
       "county": "LK Rottal-Inn",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Rottal-Inn.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Wappen_Landkreis_Rottal-Inn.png/113px-Wappen_Landkreis_Rottal-Inn.png"
     },
     "09278": {
       "ags": "09278",
       "name": "Straubing-Bogen",
       "county": "LK Straubing-Bogen",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Straubing-Bogen.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Wappen_Landkreis_Straubing-Bogen.png/106px-Wappen_Landkreis_Straubing-Bogen.png"
     },
     "09279": {
       "ags": "09279",
       "name": "Dingolfing-Landau",
       "county": "LK Dingolfing-Landau",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Dingolfing-Landau.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Wappen_Landkreis_Dingolfing-Landau.svg/111px-Wappen_Landkreis_Dingolfing-Landau.svg.png"
     },
     "09361": {
       "ags": "09361",
       "name": "Amberg",
       "county": "SK Amberg",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DEU_Amberg_COA.svg/280px-DEU_Amberg_COA.svg.png"
     },
     "09362": {
       "ags": "09362",
       "name": "Regensburg",
       "county": "SK Regensburg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Regensburg.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Wappen_Regensburg.svg/280px-Wappen_Regensburg.svg.png"
     },
     "09363": {
       "ags": "09363",
       "name": "Weiden i.d. OPf.",
       "county": "SK Weiden i.d.OPf.",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/DEU_Weiden_in_der_Oberpfalz_COA.svg/280px-DEU_Weiden_in_der_Oberpfalz_COA.svg.png"
     },
     "09371": {
       "ags": "09371",
       "name": "Amberg-Sulzbach",
       "county": "LK Amberg-Sulzbach",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Amberg-Sulzbach.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Wappen_Landkreis_Amberg-Sulzbach.png/110px-Wappen_Landkreis_Amberg-Sulzbach.png"
     },
     "09372": {
       "ags": "09372",
       "name": "Cham",
       "county": "LK Cham",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Cham.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Wappen_Landkreis_Cham.png/114px-Wappen_Landkreis_Cham.png"
     },
     "09373": {
       "ags": "09373",
       "name": "Neumarkt i.d. OPf.",
       "county": "LK Neumarkt i.d.OPf.",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Wappen_Landkreis_Neumarkt_in_der_Oberpfalz.png/220px-Wappen_Landkreis_Neumarkt_in_der_Oberpfalz.png"
     },
     "09374": {
       "ags": "09374",
       "name": "Neustadt a.d. Waldnaab",
       "county": "LK Neustadt a.d.Waldnaab",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Wappen_Landkreis_Neustadt_an_der_Waldnaab.png"
     },
     "09375": {
       "ags": "09375",
       "name": "Regensburg",
       "county": "LK Regensburg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Regensburg.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Wappen_Landkreis_Regensburg.svg/111px-Wappen_Landkreis_Regensburg.svg.png"
     },
     "09376": {
       "ags": "09376",
       "name": "Schwandorf",
       "county": "LK Schwandorf",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Schwandorf.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wappen_Landkreis_Schwandorf.png/110px-Wappen_Landkreis_Schwandorf.png"
     },
     "09377": {
       "ags": "09377",
       "name": "Tirschenreuth",
       "county": "LK Tirschenreuth",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Tirschenreuth.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Wappen_Landkreis_Tirschenreuth.png/110px-Wappen_Landkreis_Tirschenreuth.png"
     },
     "09461": {
       "ags": "09461",
       "name": "Bamberg",
       "county": "SK Bamberg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Bamberg.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wappen_Bamberg.svg/280px-Wappen_Bamberg.svg.png"
     },
     "09462": {
       "ags": "09462",
       "name": "Bayreuth",
       "county": "SK Bayreuth",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Bayreuth2.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Wappen_von_Bayreuth.svg/280px-Wappen_von_Bayreuth.svg.png"
     },
     "09463": {
       "ags": "09463",
       "name": "Coburg",
       "county": "SK Coburg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Coburg.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/DEU_Coburg_COA.svg/280px-DEU_Coburg_COA.svg.png"
     },
     "09464": {
       "ags": "09464",
       "name": "Hof",
       "county": "SK Hof",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Hof.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/DEU_Hof_COA.svg/280px-DEU_Hof_COA.svg.png"
     },
     "09471": {
       "ags": "09471",
       "name": "Bamberg",
       "county": "LK Bamberg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Bamberg.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Wappen_Landkreis_Bamberg.png/101px-Wappen_Landkreis_Bamberg.png"
     },
     "09472": {
       "ags": "09472",
       "name": "Bayreuth",
       "county": "LK Bayreuth",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Bayreuth2.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Wappen_Landkreis_Bayreuth2.svg/110px-Wappen_Landkreis_Bayreuth2.svg.png"
     },
     "09473": {
       "ags": "09473",
       "name": "Coburg",
       "county": "LK Coburg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Coburg.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Wappen_Landkreis_Coburg.png/108px-Wappen_Landkreis_Coburg.png"
     },
     "09474": {
       "ags": "09474",
       "name": "Forchheim",
       "county": "LK Forchheim",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Forchheim.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wappen_Landkreis_Forchheim.png/108px-Wappen_Landkreis_Forchheim.png"
     },
     "09475": {
       "ags": "09475",
       "name": "Hof",
       "county": "LK Hof",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Hof.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Wappen_Landkreis_Hof.svg/100px-Wappen_Landkreis_Hof.svg.png"
     },
     "09476": {
       "ags": "09476",
       "name": "Kronach",
       "county": "LK Kronach",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Kronach.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Wappen_Landkreis_Kronach.png/111px-Wappen_Landkreis_Kronach.png"
     },
     "09477": {
       "ags": "09477",
       "name": "Kulmbach",
       "county": "LK Kulmbach",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Kulmbach.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Wappen_Landkreis_Kulmbach.png/108px-Wappen_Landkreis_Kulmbach.png"
     },
     "09478": {
       "ags": "09478",
       "name": "Lichtenfels",
       "county": "LK Lichtenfels",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Lichtenfels.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Wappen_Landkreis_Lichtenfels.png/112px-Wappen_Landkreis_Lichtenfels.png"
     },
     "09479": {
       "ags": "09479",
       "name": "Wunsiedel i. Fichtelgebirge",
       "county": "LK Wunsiedel i.Fichtelgebirge",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Wappen_Landkreis_Wunsiedel_im_Fichtelgebirge.png"
     },
     "09561": {
       "ags": "09561",
       "name": "Ansbach",
       "county": "SK Ansbach",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Ansbach.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Wappen_von_Ansbach.svg/280px-Wappen_von_Ansbach.svg.png"
     },
     "09562": {
       "ags": "09562",
       "name": "Erlangen",
       "county": "SK Erlangen",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Wappen_Erlangen.svg/280px-Wappen_Erlangen.svg.png"
     },
     "09563": {
       "ags": "09563",
       "name": "Fürth",
       "county": "SK Fürth",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Fuerth.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/DEU_F%C3%BCrth_COA.svg/280px-DEU_F%C3%BCrth_COA.svg.png"
     },
     "09564": {
       "ags": "09564",
       "name": "Nürnberg",
       "county": "SK Nürnberg",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/DEU_N%C3%BCrnberg_COA_%28klein%29.svg/280px-DEU_N%C3%BCrnberg_COA_%28klein%29.svg.png"
     },
     "09565": {
       "ags": "09565",
       "name": "Schwabach",
       "county": "SK Schwabach",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/DEU_Schwabach_COA.svg/280px-DEU_Schwabach_COA.svg.png"
     },
     "09571": {
       "ags": "09571",
       "name": "Ansbach",
       "county": "LK Ansbach",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Ansbach.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Wappen_Landkreis_Ansbach.png/106px-Wappen_Landkreis_Ansbach.png"
     },
     "09572": {
       "ags": "09572",
       "name": "Erlangen-Höchstadt",
       "county": "LK Erlangen-Höchstadt",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Erlangen-Hoechstadt.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Wappen_Landkreis_Erlangen-Hoechstadt.png/107px-Wappen_Landkreis_Erlangen-Hoechstadt.png"
     },
     "09573": {
       "ags": "09573",
       "name": "Fürth",
       "county": "LK Fürth",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Fuerth.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Wappen_Landkreis_Fuerth.png/108px-Wappen_Landkreis_Fuerth.png"
     },
     "09574": {
       "ags": "09574",
       "name": "Nürnberger Land",
       "county": "LK Nürnberger Land",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_N%C3%BCrnberger_Land.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Wappen_Landkreis_N%C3%BCrnberger_Land.svg/111px-Wappen_Landkreis_N%C3%BCrnberger_Land.svg.png"
     },
     "09575": {
       "ags": "09575",
       "name": "Neustadt a.d. Aisch-Bad Windsheim",
       "county": "LK Neustadt a.d.Aisch-Bad Windsheim",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Wappen_Landkreis_Neustadt_an_der_Aisch-Bad_Windsheim.png/218px-Wappen_Landkreis_Neustadt_an_der_Aisch-Bad_Windsheim.png"
     },
     "09576": {
       "ags": "09576",
       "name": "Roth",
       "county": "LK Roth",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Roth.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Wappen_Landkreis_Roth.png/103px-Wappen_Landkreis_Roth.png"
     },
     "09577": {
       "ags": "09577",
       "name": "Weißenburg-Gunzenhausen",
       "county": "LK Weißenburg-Gunzenhausen",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Wappen_Landkreis_Weissenburg-Gunzenhausen.svg/212px-Wappen_Landkreis_Weissenburg-Gunzenhausen.svg.png"
     },
     "09661": {
       "ags": "09661",
       "name": "Aschaffenburg",
       "county": "SK Aschaffenburg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Aschaffenburg.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wappen_Aschaffenburg.svg/280px-Wappen_Aschaffenburg.svg.png"
     },
     "09662": {
       "ags": "09662",
       "name": "Schweinfurt",
       "county": "SK Schweinfurt",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Schweinfurt.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/DEU_Schweinfurt_COA.svg/280px-DEU_Schweinfurt_COA.svg.png"
     },
     "09663": {
       "ags": "09663",
       "name": "Würzburg",
       "county": "SK Würzburg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Wuerzburg.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Wappen_von_Wuerzburg.svg/280px-Wappen_von_Wuerzburg.svg.png"
     },
     "09671": {
       "ags": "09671",
       "name": "Aschaffenburg",
       "county": "LK Aschaffenburg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Aschaffenburg.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Wappen_Landkreis_Aschaffenburg.svg/280px-Wappen_Landkreis_Aschaffenburg.svg.png"
     },
     "09672": {
       "ags": "09672",
       "name": "Bad Kissingen",
       "county": "LK Bad Kissingen",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Bad_Kissingen.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Wappen_Landkreis_Bad_Kissingen.svg/112px-Wappen_Landkreis_Bad_Kissingen.svg.png"
     },
     "09673": {
       "ags": "09673",
       "name": "Rhön-Grabfeld",
       "county": "LK Rhön-Grabfeld",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Rhoen-Grabfeld.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Wappen_Landkreis_Rhoen-Grabfeld.png/106px-Wappen_Landkreis_Rhoen-Grabfeld.png"
     },
     "09674": {
       "ags": "09674",
       "name": "Haßberge",
       "county": "LK Haßberge",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Hassberge.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wappen_Landkreis_Hassberge.png/108px-Wappen_Landkreis_Hassberge.png"
     },
     "09675": {
       "ags": "09675",
       "name": "Kitzingen",
       "county": "LK Kitzingen",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Kitzingen.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Wappen_Landkreis_Kitzingen.png/112px-Wappen_Landkreis_Kitzingen.png"
     },
     "09676": {
       "ags": "09676",
       "name": "Miltenberg",
       "county": "LK Miltenberg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Miltenberg.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Wappen_Landkreis_Miltenberg.png/109px-Wappen_Landkreis_Miltenberg.png"
     },
     "09677": {
       "ags": "09677",
       "name": "Main-Spessart",
       "county": "LK Main-Spessart",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Main-Spessart.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Wappen_Landkreis_Main-Spessart.png/106px-Wappen_Landkreis_Main-Spessart.png"
     },
     "09678": {
       "ags": "09678",
       "name": "Schweinfurt",
       "county": "LK Schweinfurt",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Schweinfurt.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Wappen_Landkreis_Schweinfurt.png/111px-Wappen_Landkreis_Schweinfurt.png"
     },
     "09679": {
       "ags": "09679",
       "name": "Würzburg",
       "county": "LK Würzburg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Wuerzburg.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wappen_Landkreis_Wuerzburg.png/131px-Wappen_Landkreis_Wuerzburg.png"
     },
     "09761": {
       "ags": "09761",
       "name": "Augsburg",
       "county": "SK Augsburg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Landkreis_Augsburg_Wappen.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Augsburg_wappen.svg/280px-Augsburg_wappen.svg.png"
     },
     "09762": {
       "ags": "09762",
       "name": "Kaufbeuren",
       "county": "SK Kaufbeuren",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Wappen_Kaufbeuren.svg/280px-Wappen_Kaufbeuren.svg.png"
     },
     "09763": {
       "ags": "09763",
       "name": "Kempten (Allgäu)",
       "county": "SK Kempten",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/DEU_Kempten_%28Allg%C3%A4u%29_COA.svg/280px-DEU_Kempten_%28Allg%C3%A4u%29_COA.svg.png"
     },
     "09764": {
       "ags": "09764",
       "name": "Memmingen",
       "county": "SK Memmingen",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Wappen_Memmingen.svg/280px-Wappen_Memmingen.svg.png"
     },
     "09771": {
       "ags": "09771",
       "name": "Aichach-Friedberg",
       "county": "LK Aichach-Friedberg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Landkreiswappen_des_Landkreises_Aichach-Friedberg.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Landkreiswappen_des_Landkreises_Aichach-Friedberg.png/113px-Landkreiswappen_des_Landkreises_Aichach-Friedberg.png"
     },
     "09772": {
       "ags": "09772",
       "name": "Augsburg",
       "county": "LK Augsburg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Landkreis_Augsburg_Wappen.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Landkreis_Augsburg_Wappen.svg/107px-Landkreis_Augsburg_Wappen.svg.png"
     },
     "09773": {
       "ags": "09773",
       "name": "Dillingen a.d. Donau",
       "county": "LK Dillingen a.d.Donau",
       "stateAbbreviation": "BY",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/5/59/Wappen_Landkreis_Dillingen.png"
     },
     "09774": {
       "ags": "09774",
       "name": "Günzburg",
       "county": "LK Günzburg",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Guenzburg.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Wappen_Landkreis_Guenzburg.svg/109px-Wappen_Landkreis_Guenzburg.svg.png"
     },
     "09775": {
       "ags": "09775",
       "name": "Neu-Ulm",
       "county": "LK Neu-Ulm",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Neu-Ulm.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Wappen_Landkreis_Neu-Ulm.svg/102px-Wappen_Landkreis_Neu-Ulm.svg.png"
     },
     "09776": {
       "ags": "09776",
       "name": "Lindau (Bodensee)",
       "county": "LK Lindau",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Lindau_Bodensee.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Wappen_Landkreis_Lindau_Bodensee.png/109px-Wappen_Landkreis_Lindau_Bodensee.png"
     },
     "09777": {
       "ags": "09777",
       "name": "Ostallgäu",
       "county": "LK Ostallgäu",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Ostallgaeu.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wappen_Landkreis_Ostallgaeu.svg/103px-Wappen_Landkreis_Ostallgaeu.svg.png"
     },
     "09778": {
       "ags": "09778",
       "name": "Unterallgäu",
       "county": "LK Unterallgäu",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Unterallgaeu.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Wappen_Landkreis_Unterallgaeu.svg/112px-Wappen_Landkreis_Unterallgaeu.svg.png"
     },
     "09779": {
       "ags": "09779",
       "name": "Donau-Ries",
       "county": "LK Donau-Ries",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_des_Landkreises_Donau-Ries.png"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Wappen_des_Landkreises_Donau-Ries.png/106px-Wappen_des_Landkreises_Donau-Ries.png"
     },
     "09780": {
       "ags": "09780",
       "name": "Oberallgäu",
       "county": "LK Oberallgäu",
       "stateAbbreviation": "BY",
-      "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Oberallgaeu.svg"
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Wappen_Landkreis_Oberallgaeu.svg/115px-Wappen_Landkreis_Oberallgaeu.svg.png"
     }
   }
 };
