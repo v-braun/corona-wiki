@@ -76,7 +76,7 @@ export class LiveAreaSelector extends Component{
             <div className="scroll-item" key={area.id}>
               <LiveAreaButton     
                 ico={area.ico}
-                onClick={id => this.props.onClick(id)}
+                onClick={(id, ref) => this.props.onClick(id, ref)}
                 title={area.title}
                 id={area.id}
                 desc={area.desc}

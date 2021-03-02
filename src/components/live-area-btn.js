@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, createRef } from 'react';
 import PropTypes from 'prop-types'
 import ReactMarkdown from 'react-markdown'
 import './live-area-btn.scss';
@@ -29,6 +29,11 @@ export class LiveAreaButton extends Component{
     ruleShort: PropTypes.string,
     onClick: PropTypes.func.isRequired,
   }
+
+  constructor(props){
+    super(props)
+    this.btnRef = createRef();
+  }
   
  
   renderRuleShort(ruleShort){
@@ -39,6 +44,7 @@ export class LiveAreaButton extends Component{
       case 'limit': return (<div className="rule-short rule-short-warn">Mit Einschränkungen</div>)
       case 'nolimit': return (<div className="rule-short rule-short-success">Ohne Einschränkungen</div>)
       case 'open': return (<div className="rule-short rule-short-success">Geöffnet</div>)
+      case 'allow': return (<div className="rule-short rule-short-success">Erlaubt</div>)
 
       default: return (<div className="rule-short rule-short-unknown">&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;</div>)
     }
@@ -66,7 +72,7 @@ export class LiveAreaButton extends Component{
     } 
 
     return (
-      <button className={classes} type="button" onClick={() => this.props.onClick(this.props.id)}>
+      <button  ref={this.btnRef} className={classes} type="button" onClick={() => this.props.onClick(this.props.id, this.btnRef)}>
         <div className="header-ctr">
           <div className="ico-ctr">
             <img alt={this.props.name} src={ico} />

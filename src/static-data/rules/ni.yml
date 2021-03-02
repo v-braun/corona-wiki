@@ -1,0 +1,33 @@
+ni:
+  annotations:
+    info: |- 
+      Folgende Regeln gelten für das Bundesland Niedersachsen
+  areas:
+    zusammenkuenfte_privat:
+      status: limit
+      rules:
+        - text: |- 
+            todo ...
+          status: forbidden
+        - text: |- 
+            todo ...
+          status: forbidden
+    zusammenkuenfte_oeffentlich_niedersachsen:
+      status: limit
+      rules:
+        - text: |- 
+            **Eine** Person darf sich mit einem Haushalt treffen
+          status: allow
+        - text: |- 
+            Ein Haushalt darf sich mit **einer** Person treffen
+          status: allow
+        - text: Kinder jünger als **6 Jahre** nicht eingeschlossen
+          status: allow
+        - text: |- 
+            **Mehrere** Personen dürfen sich **nicht** mit einem Haushalt treffen
+          status: forbidden
+        - text: |- 
+            Ein Haushalt darf sich **nicht** mit mehreren Personen treffen
+          status: forbidden
+            
+

@@ -1,41 +1,53 @@
 de:
   annotations:
-    info: |- 
-      Folgende Regeln gelten Deutschlandweit
+    warning: |- 
+      ACHTUNG: dies ist eine Preview funktion
+
+      Es wird keine Haftung für die korrektheit der Angaben übernommen!
   areas:
     zusammenkuenfte_privat:
       status: limit
+      reference:
+        date: '2.3.2021'
+        link: ''
       rules:
         - text: |- 
             **Eine** Person darf ein Haushalt besuchen
-          icoRef: allow
+          status: allow
         - text: |- 
             Ein Haushalt darf **eine** Person besuchen
-          icoRef: allow
+          status: allow
         - text: Kinder jünger als **6 Jahre** nicht eingeschlossen
-          icoRef: allow
+          status: allow
         - text: |- 
             **Mehrere** Personen dürfen **nicht** ein Haushalt besuchen
-          icoRef: forbidden
+          status: forbidden
         - text: |- 
             Ein Haushalt darf **nicht** mehrere Personen besuchen
-          icoRef: forbidden
+          status: forbidden
 
     zusammenkuenfte_oeffentlich:
       status: limit
       rules:
         - text: |- 
             **Eine** Person darf sich mit einem Haushalt treffen
-          icoRef: allow
+          status: allow
         - text: |- 
             Ein Haushalt darf sich mit **einer** Person treffen
-          icoRef: allow
+          status: allow
         - text: Kinder jünger als **6 Jahre** nicht eingeschlossen
-          icoRef: allow
+          status: allow
         - text: |- 
             **Mehrere** Personen dürfen sich **nicht** mit einem Haushalt treffen
-          icoRef: forbidden
+          status: forbidden
         - text: |- 
             Ein Haushalt darf sich **nicht** mit mehreren Personen treffen
-          icoRef: forbidden
+          status: forbidden
+    
+    stationaer_indoor:
+      status: limit
+      rules:
+        - text: |- 
+            Bleiben leider Geschlossen
+          status: closed    
             

@@ -49,7 +49,7 @@ export class StateButton extends Component{
     if(!ico){
       ico = `https://avatars.dicebear.com/api/initials/${this.props.abbreviation}.svg`;
     }
-    let classes = 'filter-btn';
+    let classes = 'filter-btn scroll-item';
     if(this.props.selected){
       classes += ' selected';
     }

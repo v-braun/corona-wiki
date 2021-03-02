@@ -11,7 +11,7 @@ life_areas:
     # title: |- 
     ico: https://img.icons8.com/clouds/100/000000/meeting.png
   'gremien':
-    id: '0003'
+    id: 'gremien'
     title: Gremien
     examples: 
       - Plenum
@@ -37,8 +37,8 @@ life_areas:
     title: |-
        Jahrmärkte & Spezialmärkte
     ico: https://img.icons8.com/officel/80/000000/circus-tent.png
-  '0007':
-    id: '0007'
+  'stationaer_indoor':
+    id: 'stationaer_indoor'
     title: |-
       Stationäre Indoor Veranstaltungen
     desc:  |-

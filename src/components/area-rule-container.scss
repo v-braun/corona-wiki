@@ -1,0 +1,103 @@
+@import '../colors.scss';
+
+.area-rules{
+
+    .rule-main-ctr{
+
+        margin-top: 0.5em;
+        padding-top: 0.5em;
+        border-top-style: dashed;
+        border-top-width: 1px;
+        border-top-color: $gray-500;
+
+        &:first-child{
+            border-top-style: solid;
+        }
+                
+        // margin-top: 0.5em;
+
+        .rule-main-ctr-header{
+            display: flex;
+            align-items: center;
+            > .rule-main-ico{
+                $ico-size: 35px;
+                max-width: $ico-size;
+                max-height: $ico-size;
+                min-width: $ico-size;
+                min-height: $ico-size;
+                > img{
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            > .rule-main-title{
+                font-weight: bold;
+                font-size: 0.8rem;
+            }
+        }
+
+        &.rule-main-state{
+            .rule-main-ctr-header{
+                > .rule-main-ico{
+                    padding: 5px;
+                }
+            }
+        }
+
+        .rule-main-ctr-body{
+            padding-top: 0.5em;
+            // padding-bottom: 0.5em;
+            // margin-bottom: 0.5em;
+        }
+    }
+
+    .annotations{
+        font-size: 0.8rem;
+        .annotation{
+            // margin: 10px;
+            padding: 0.5em;
+            border-radius: 0.25em;
+
+            &.warning{
+                background-color: $warning;
+            }
+        }
+
+    }
+
+    .rule-item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5em;
+        
+        // margin-left: 0.25em;
+
+        .rule-ico{
+            box-sizing: border-box;
+
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            // $ico-size-rule: 20px;
+            // padding: 0px 10px 0px 10px;
+            max-width: 35px;
+            max-height: 20px;
+            min-width: 35px;
+            min-height: 20px;
+            > img{
+                max-width: 25px;
+                max-height: 25px;
+                width: 20px;
+                height: 20px;
+            }            
+        }
+        .rule-md{
+            > p{
+                margin: 0;
+            }
+        }
+    }
+}
