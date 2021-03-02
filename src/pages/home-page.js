@@ -5,6 +5,7 @@ import geo from '../static-data/geo';
 import {StateSelector} from '../components/state-selector';
 import {DistrictSelector} from '../components/district-selector';
 import { HScroll } from '../components/horizontal-scroll-container';
+import { ChartGallery } from '../components/chart-gallery';
 
 import liveAreas from '../static-data/live-areas';
  
@@ -85,34 +86,11 @@ class HomePage extends Component{
           <section className="section">
             <div className="section-title">Verlauf in {stateDisplayName}</div>
             <div className="section-child-full">
-              <HScroll>
-                <HistoryChart 
-                  title={`Inzidenz in ${stateDisplayName}`}
-                  apiEndpoint={`/states/${currentState}/history/incidence/360`}
-                  historyStateOrDistrictProp={currentState}
-                  historyMetricProp='weekIncidence'
-                  />                
-                <HistoryChart 
-                  title={`Infektionen in ${stateDisplayName}`}
-                  apiEndpoint={`/states/${currentState}/history/cases/360`}
-                  historyStateOrDistrictProp={currentState}
-                  historyMetricProp='cases'
-                  />
-
-                <HistoryChart 
-                  title={`Todesfälle in ${stateDisplayName}`}
-                  apiEndpoint={`/states/${currentState}/history/deaths/360`}
-                  historyStateOrDistrictProp={currentState}
-                  historyMetricProp='deaths'
-                  />
-
-                <HistoryChart 
-                  title={`Genesungen in ${stateDisplayName}`}
-                  apiEndpoint={`/states/${currentState}/history/recovered/360`}
-                  historyStateOrDistrictProp={currentState}
-                  historyMetricProp='recovered'
-                  />
-          </HScroll>
+              <ChartGallery 
+                metricKey={currentState}
+                title={stateDisplayName}
+                type="states"
+              />
             </div>
           </section>
         }
@@ -132,34 +110,11 @@ class HomePage extends Component{
           <section className="section">
             <div className="section-title">Verlauf in {districtDisplayName}</div>
             <div className="section-child-full">
-              <HScroll>
-                <HistoryChart 
-                  title={`Inzidenz in ${districtDisplayName}`}
-                  apiEndpoint={`/districts/${currentDistrict}/history/incidence/360`}
-                  historyStateOrDistrictProp={currentDistrict}
-                  historyMetricProp='weekIncidence'
-                  />                
-                <HistoryChart 
-                  title={`Infektionen in ${districtDisplayName}`}
-                  apiEndpoint={`/districts/${currentDistrict}/history/cases/360`}
-                  historyStateOrDistrictProp={currentDistrict}
-                  historyMetricProp='cases'
-                  />
-
-                <HistoryChart 
-                  title={`Todesfälle in ${districtDisplayName}`}
-                  apiEndpoint={`/districts/${currentDistrict}/history/deaths/360`}
-                  historyStateOrDistrictProp={currentDistrict}
-                  historyMetricProp='deaths'
-                  />
-
-                <HistoryChart 
-                  title={`Genesungen in ${districtDisplayName}`}
-                  apiEndpoint={`/districts/${currentDistrict}/history/recovered/360`}
-                  historyStateOrDistrictProp={currentDistrict}
-                  historyMetricProp='recovered'
-                  />
-                </HScroll>
+              <ChartGallery 
+                metricKey={currentDistrict}
+                title={districtDisplayName}
+                type="districts"
+              />
             </div>
           </section>          
         }

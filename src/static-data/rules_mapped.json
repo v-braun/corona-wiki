@@ -1,0 +1,1945 @@
+{
+  "life_areas": {
+      "zusammenkuenfte_privat": {
+          "id": "zusammenkuenfte_privat",
+          "title": "Zusammenkünfte in privaten Räumen (kein Abstand, keine MNB)",
+          "ico": "https://img.icons8.com/officel/80/000000/meeting-room.png"
+      },
+      "zusammenkuenfte_oeffentlich": {
+          "id": "zusammenkuenfte_oeffentlich",
+          "title": "Zusammenkünfte im öffentlichen Bereich (kein Abstand, keine MNB)",
+          "ico": "https://img.icons8.com/clouds/100/000000/meeting.png"
+      },
+      "0003": {
+          "id": "0003",
+          "title": "Plenum, Ausschüsse und andere Gremien des Landtages und der kommunalen Vertretungen, Gerichte und Staatsanwaltschaften",
+          "ico": "https://img.icons8.com/officel/80/000000/courthouse.png"
+      },
+      "0004": {
+          "id": "0004",
+          "title": "Demonstrationen",
+          "ico": "https://img.icons8.com/officel/80/000000/strike.png"
+      },
+      "0005": {
+          "id": "0005",
+          "title": "Messen, gewerbliche Ausstellungen",
+          "ico": "https://img.icons8.com/fluent/48/000000/exhibitor.png"
+      },
+      "0006": {
+          "id": "0006",
+          "title": "Jahrmärkte, Spezialmärkte",
+          "ico": "https://img.icons8.com/officel/80/000000/circus-tent.png"
+      },
+      "0007": {
+          "id": "0007",
+          "title": "Sonstige organisierte stationäre Indoor- Veranstaltungen* (einschl. Theater, Kinos, Kulturzentren, Zuschauer Sportveranstaltungen)  *Betrieblich notwendige Zusammenkünfte sind hiervon nicht erfasst.",
+          "ico": "https://img.icons8.com/nolan/96/movie-projector.png"
+      },
+      "0008": {
+          "id": "0008",
+          "title": "Sonstige organisierte nicht-stationäre IndoorVeranstaltungen* (einschl. Theater, Kinos, Kulturzentren, Zuschauer Sportveranstaltungen)  *Betrieblich notwendige Zusammenkünfte sind hiervon nicht erfasst.",
+          "ico": "https://img.icons8.com/color/96/000000/theatre-stage.png"
+      },
+      "0009": {
+          "id": "0009",
+          "title": "Outdoor Konzerte",
+          "ico": "https://img.icons8.com/color/96/000000/concert.png"
+      },
+      "0010": {
+          "id": "0010",
+          "title": "Outdoor Sportveranstaltungen",
+          "ico": "https://img.icons8.com/ios/100/000000/stadium-.png"
+      },
+      "0011": {
+          "id": "0011",
+          "title": "Osterfeuer",
+          "ico": "https://img.icons8.com/cotton/64/000000/bonfire.png"
+      },
+      "0012": {
+          "id": "0012",
+          "title": "Sport –Breitensport",
+          "ico": "https://img.icons8.com/dusk/64/000000/track-and-field.png"
+      },
+      "0013": {
+          "id": "0013",
+          "title": "Sport –Spitzen- und Profisport",
+          "ico": "https://img.icons8.com/dusk/64/000000/american-football-player.png"
+      },
+      "0014": {
+          "id": "0014",
+          "title": "Schulsport",
+          "ico": "https://img.icons8.com/dusk/64/000000/girl-running--v1.png"
+      },
+      "0015": {
+          "id": "0015",
+          "title": "Fitnessstudios sowie Kletterhallen und Kletterparks und ähnliche Einrichtungen",
+          "ico": "https://img.icons8.com/dusk/64/000000/deadlift.png"
+      },
+      "0016": {
+          "id": "0016",
+          "title": "Schwimmbäder",
+          "ico": "https://img.icons8.com/dusk/64/000000/outdoor-swimming-pool.png"
+      },
+      "0017": {
+          "id": "0017",
+          "title": "Spielplätze",
+          "ico": "https://img.icons8.com/dusk/64/000000/tire-swing.png"
+      },
+      "0018": {
+          "id": "0018",
+          "title": "Religiöse Veranstaltungen",
+          "ico": "https://img.icons8.com/dusk/64/000000/church.png"
+      },
+      "0019": {
+          "id": "0019",
+          "title": "Hochzeiten, Taufen",
+          "ico": "https://img.icons8.com/ultraviolet/80/000000/city-church.png"
+      },
+      "0020": {
+          "id": "0020",
+          "title": "Beerdigungen",
+          "ico": "https://img.icons8.com/officel/64/000000/cemetery.png"
+      },
+      "0021": {
+          "id": "0021",
+          "title": "Gastronomie mit Essensservice",
+          "ico": "https://img.icons8.com/dusk/64/000000/waiter.png"
+      },
+      "0022": {
+          "id": "0022",
+          "title": "Kantinen/ Mensen",
+          "ico": "https://img.icons8.com/office/96/000000/restaurant-building.png"
+      },
+      "0023": {
+          "id": "0023",
+          "title": "Bars",
+          "ico": "https://img.icons8.com/officel/80/000000/beer.png"
+      },
+      "0024": {
+          "id": "0024",
+          "title": "Discotheken, Clubs",
+          "ico": "https://img.icons8.com/fluent/96/000000/disco-ball.png"
+      },
+      "0025": {
+          "id": "0025",
+          "title": "Beherbergung",
+          "ico": "https://img.icons8.com/fluent/96/000000/hostel.png"
+      },
+      "0026": {
+          "id": "0026",
+          "title": "Körpernahe Dienstleistungen",
+          "ico": "https://img.icons8.com/nolan/96/hair-dryer.png"
+      },
+      "0027": {
+          "id": "0027",
+          "title": "Einzelhandel",
+          "ico": "https://img.icons8.com/plasticine/100/000000/shop.png"
+      },
+      "0028": {
+          "id": "0028",
+          "title": "Sonstige Betriebs- und Arbeitsstätten",
+          "ico": "https://img.icons8.com/cotton/64/000000/factory.png"
+      },
+      "0029": {
+          "id": "0029",
+          "title": "Bildung – Kita",
+          "ico": "https://img.icons8.com/color/96/000000/seesaw.png"
+      },
+      "0030": {
+          "id": "0030",
+          "title": "Bildung - Schule (ABS, BBS)   * Förderschulen GE, KME, BES und Einzelfälle Taubblinde wie Primarbereich   * Geltungsbereich Stufenplan: siehe Vorbemerkung   *Ab Landesinzidenz-Stufe 3 und niedriger werden für die Beschränkungen im Bildungsbereich regionale Inzidenzen zugrunde gelegt.",
+          "ico": "https://img.icons8.com/cotton/64/000000/school-1-1.png"
+      },
+      "0031": {
+          "id": "0031",
+          "title": "Bildung - Schulausflüge, fahrten",
+          "ico": "https://img.icons8.com/cotton/64/000000/school-bus-2.png"
+      },
+      "0032": {
+          "id": "0032",
+          "title": "Bildung – Hochschulen   *gilt erst ab Sommersemester 2021, bis dahin bleibt es Regelungen Stufe 4",
+          "ico": "https://img.icons8.com/dusk/64/000000/student-female.png"
+      },
+      "0033": {
+          "id": "0033",
+          "title": "Einrichtungen der beruflichen Aus-, Fort- und Weiterbildung  (inklusive ihrer Beherbergungsstätten, Kantinen und Mensen)",
+          "ico": "https://img.icons8.com/color/96/000000/teacher.png"
+      },
+      "0034": {
+          "id": "0034",
+          "title": "Bildung – Erwachsenenbildung, Fahrschulen (ohne berufliche Aus-, Fort- und Weiterbildung)",
+          "ico": "https://img.icons8.com/color/48/000000/driver-license-card.png"
+      },
+      "0035": {
+          "id": "0035",
+          "title": "Bibliotheken, Büchereien",
+          "ico": "https://img.icons8.com/color/96/000000/library-building.png"
+      },
+      "0036": {
+          "id": "0036",
+          "title": "Öffentliche Transportmittel",
+          "ico": "https://img.icons8.com/dusk/64/000000/train.png"
+      },
+      "0037": {
+          "id": "0037",
+          "title": "Touristische Tagesausflüge",
+          "ico": "https://img.icons8.com/cotton/64/000000/route.png"
+      },
+      "0038": {
+          "id": "0038",
+          "title": "Kulturelle, touristische und andere indoor Einrichtungen  (einschl. Galerien, Ausstellungen, Museen)   *Theater, Opernhäuser u.ä. etc. sind in den Regelungen zu Veranstaltungen erfasst",
+          "ico": "https://img.icons8.com/color/96/000000/physical-gallery.png"
+      },
+      "0039": {
+          "id": "0039",
+          "title": "Kulturelle, touristische und andere outdoor Einrichtungen  (einschl. Freilichtmuseen, Zoos, Tierparks)   *Freilichtbühnen u.ä. sind in den Regelungen zu Veranstaltungen erfasst",
+          "ico": "https://img.icons8.com/fluent/96/000000/zoo.png"
+      },
+      "0040": {
+          "id": "0040",
+          "title": "Solarien, Saunen",
+          "ico": "https://img.icons8.com/dotty/80/000000/sauna.png"
+      },
+      "0041": {
+          "id": "0041",
+          "title": "Prostitution",
+          "ico": "https://img.icons8.com/cotton/64/000000/sexy-woman.png"
+      },
+      "0042": {
+          "id": "0042",
+          "title": "Spielbanken, Spielhallen, Wettannahmestellen",
+          "ico": "https://img.icons8.com/plasticine/100/000000/slot-machine.png"
+      }
+  },
+  "stages": {
+      "0001": {
+          "live_area": "0001",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Keine Begrenzung"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Max. 10 Personen oder max. 2 Haushalte, Kinder unter 14 Jahre frei"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Max. 5 Personen 2-Haushalte-Regel Kinder unter 14 Jahre frei"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Eigener Haushalt plus max. 1 Person, Ausnahmen für Kinder unter 6 Jahre"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Eigener Haushalt plus max. 1 Person, Ausnahmen für Kinder unter 6 Jahre"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Nur der eigene Haushalt, keine Besucher (ggf. Ausnahme für Single-Haushalte)"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0002": {
+          "live_area": "0002",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Keine Begrenzung"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Max. 10 Personen oder max. 2 Haushalte, Kinder unter 14 Jahre frei"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Max. 5 Personen 2-Haushalte-Regel Kinder unter 14 Jahre frei"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Eigener Haushalt plus max. 1 Person, Ausnahmen für Kinder unter 6 Jahre"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Eigener Haushalt plus max. 1 Person, Ausnahmen für Kinder unter 6 Jahre"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Nur der eigene Haushalt (ggf. Ausnahme für Single-Haushalte)   Ausgangsbeschränkungen (Begrenzung zeitlich und/ oder räumlich)"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0003": {
+          "live_area": "0003",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Keine Begrenzung, aber mit Hygienekonzepten"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Keine Begrenzung, aber mit Hygienekonzepten"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Keine Begrenzung, aber mit Hygienekonzepten"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Keine Begrenzung, aber mit Hygienekonzepten; Empfehlung Testung"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Empfehlung digitale Formate, Präsenz mit Hygienekonzepten; dringende Empfehlung Testung"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Empfehlung digitale Formate, Präsenz mit Hygienekonzepten; dringende Empfehlung Testung"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0004": {
+          "live_area": "0004",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Keine Begrenzung",
+                      "Zugelassen mit Schutzmaßnahmen"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Keine Begrenzung",
+                      "Zugelassen mit Schutzmaßnahmen"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Keine Begrenzung",
+                      "Zugelassen mit Schutzmaßnahmen"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Keine Begrenzung",
+                      "Zugelassen mit Schutzmaßnahmen"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Erhöhte Anforderungen an Genehmigung"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Deutlich gesteigerte Anforderungen an Genehmigung"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0005": {
+          "live_area": "0005",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Zugelassen mit Hygienekonzepten"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Zugelassen mit Hygienekonzepten"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Bei stabiler positiver Infektionsentwicklung sowie einem R-Faktor <0,8: Zugelassen, aber mit erhöhten Anforderungen an die Hygienekonzepte (insb. Zugangsbegrenzung, durchgängige MNB)",
+                      "Bei stabiler positiver Infektionsentwicklung, aber einem R-Faktor >0,8:  Verbot",
+                      "Bei negativer Infektionsentwicklung:  Verbot"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Verboten"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Verboten"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Verboten"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0006": {
+          "live_area": "0006",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "(Lebensmittel-)Wochenmärkte mit Hygienekonzepten geöffnet (Sortiment wie Einzelhandel), sonstige Märkte mit Genehmigung unter Auflagen"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "(Lebensmittel-)Wochenmärkte mit Hygienekonzepten geöffnet (Sortiment wie Einzelhandel), sonstige Märkte mit Genehmigung unter Auflagen"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Bei stabiler positiver Infektionsentwicklung sowie einem R-Faktor <0,8: (Lebensmittel-)Wochenmärkte mit Hygienekonzepten geöffnet (Sortiment wie Einzelhandel), sonstige Märkte mit Genehmigung unter Auflagen\n\n\nBei stabiler positiver Infektionsentwicklung, aber einem R-Faktor >0,8:  (Lebensmittel-)Wochenmärkte mit Hygienekonzepten geöffnet, sonstige Märkte verboten\n\n\nBei stabiler positiver Infektionsentwicklung, aber einem R-Faktor >0,8:  (Lebensmittel-)Wochenmärkte mit Hygienekonzepten geöffnet, sonstige Märkte verboten"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "(Lebensmittel-)Wochenmärkte mit Hygienekonzepten geöffnet (Sortiment wie Einzelhandel), sonstige Märkte verboten"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "(Lebensmittel-)Wochenmärkte mit Hygienekonzepten geöffnet (Sortiment wie Einzelhandel), sonstige Märkte verboten"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "(Lebensmittel-)Wochenmärkte mit Hygienekonzepten geöffnet (Sortiment wie Einzelhandel), sonstige Märkte verboten"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0007": {
+          "live_area": "0007",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "•  Max. 500 Personen stationär genehmigungsfrei mit Hygienekonzept •  mehr als 500 genehmigungsfrei mit Hygienekonzept nur bei durch Rechtsvorschriften vorgeschriebenen Zusammenkünften •  ansonsten genehmigungspflichtig (dabei aber max. Höchstgrenze 30 Prozent der Zuschauerplätze), •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wurde •  Schachbrettbelegung mit einem reduzierten Abstand von 1m möglich, wenn es sich um Veranstaltungen handelt, bei denen die Besucherinnen und Besucher Interaktion und Kommunikation\nuntereinander vermeiden und es sich bei geschlossenen Räumen um durch eine Lüftungsanlage mit Frischluftzufuhr belüftete Räume handelt."
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "•  Max. 250 Personen stationär genehmigungsfrei mit Hygienekonzept •  mehr als 250 genehmigungsfrei mit Hygienekonzept nur bei durch Rechtsvorschriften vorgeschriebenen Zusammenkünften •  ansonsten genehmigungspflichtig (dabei aber max. Höchstgrenze 30 Prozent der Zuschauerplätze), •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wurde •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2 •  Schachbrettbelegung mit einem reduzierten Abstand von 1m möglich, wenn es sich\num Veranstaltungen handelt, bei denen die Besucherinnen und Besucher Interaktion und Kommunikation untereinander vermeiden und es sich bei geschlossenen Räumen um durch eine Lüftungsanlage mit Frischluftzufuhr belüftete Räume handelt."
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Bei stabiler positiver Infektionsentwicklung sowie einem R-Faktor <0,8: •  Max. 100 Personen stationär genehmigungsfrei mit Hygienekonzept •  mehr als 100 nur bei durch Rechtsvorschriften vorgeschriebenen Zusammenkünften mit erhöhten Anforderungen an Hygienekonzept (keine Ausnahme Abstand/ durchgängige MNB, mit erhöhtem MNB-Standard OPMaske oder FFP2) •  generell keine Ausnahme Abstand •  generell mit durchgängiger MNB-Pflicht •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2\n\n\"Bei stabiler positiver Infektionsentwicklung, aber einem R-Faktor >0,8:  Umstellung auf digitale Formate, als Präsenzveranstaltung zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte.\n\n\nBei negativer Infektionsentwicklung:  Umstellung auf digitale Formate, als Präsenzveranstaltung zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte.\""
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "•  Umstellung auf digitale Formate •  In Präsenz zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte. •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird  •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "•  Umstellung auf digitale Formate •  In Präsenz zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte. •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird  •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Verboten, Umstellung komplett auf Online-Formate"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0008": {
+          "live_area": "0008",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "•  max. 250 Personen mit Hygienekonzept (analog Saalbetrieb),   •  ansonsten genehmigungspflichtig •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "•  max. 100 Personen (analog Saalbetrieb),  •  ansonsten genehmigungspflichtig •  mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Bei stabiler positiver Infektionsentwicklung sowie einem R-Faktor <0,8:  Max. 50 Personen  •  mit durchgängiger MNB- Pflicht, auch bei evtl. Saalbetrieb •  mit erhöhtem MNB-Standard OP-Maske oder FFP2\n\n\nBei stabiler positiver Infektionsentwicklung, aber einem R-Faktor >0,8: Nicht-Stationäre Veranstaltungen verboten\n\n\nBei negativer Infektionsentwicklung:  Nicht-Stationäre Veranstaltungen verboten"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Nicht-Stationäre Veranstaltungen verboten"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Nicht-Stationäre Veranstaltungen verboten."
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      ""
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0009": {
+          "live_area": "0009",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "•  Max. 500 Personen genehmigungsfrei, mit Hygienekonzept •  mehr als 500 genehmigungsfrei nur bei durch Rechtsvorschriften vorgeschriebenen Zusammenkünften •  ansonsten genehmigungspflichtig •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "•  Max. 250 Personen genehmigungsfrei, mit Hygienekonzept •  mehr als 250 genehmigungsfrei nur bei durch Rechtsvorschriften vorgeschriebenen Zusammenkünften •  ansonsten genehmigungspflichtig •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird  •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Bei stabiler positiver Infektionsentwicklung sowie einem R-Faktor <0,8:  Max. 100 Personen  •  mehr als 100 nur bei durch Rechtsvorschriften vorgeschriebenen Zusammenkünften •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird\n\n\nBei stabiler positiver Infektionsentwicklung, aber einem R-Faktor >0,8:  Umstellung auf digitale Formate, zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte\n\nBei negativer Infektionsentwicklung:  Umstellung auf digitale Formate, zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte. Bei negativer Infektionsentwicklung:"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "•  Umstellung auf digitale Formate •  In Präsenz zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte. •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird  •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "•  Umstellung auf digitale Formate •  In Präsenz zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte. •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird  •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Verboten, Umstellung komplett auf Online-Formate"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0010": {
+          "live_area": "0010",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "•  Max. 500 Personen genehmigungsfrei, mit Hygienekonzept •  mehr als 500 genehmigungsfrei nur bei durch Rechtsvorschriften vorgeschriebenen Zusammenkünften •  ansonsten genehmigungspflichtig •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "•  Max. 250 Personen genehmigungsfrei, mit Hygienekonzept •  mehr als 250 genehmigungsfrei nur bei durch Rechtsvorschriften vorgeschriebenen Zusammenkünften •  ansonsten genehmigungspflichtig •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird  •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Bei stabiler positiver Infektionsentwicklung sowie einem R-Faktor <0,8:  Max. 100 Personen  •  mehr als 100 nur bei durch Rechtsvorschriften vorgeschriebenen Zusammenkünften •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird\n\n\nBei stabiler positiver Infektionsentwicklung, aber einem R-Faktor >0,8:  Umstellung auf digitale Formate, zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte\n\nBei negativer Infektionsentwicklung:  Umstellung auf digitale Formate, zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte. Bei negativer Infektionsentwicklung:"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "•  Umstellung auf digitale Formate •  In Präsenz zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte. •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird  •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "•  Umstellung auf digitale Formate •  In Präsenz zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte. •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird  •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Verboten, Umstellung komplett auf Online-Formate"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0011": {
+          "live_area": "0011",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "•  Max. 500 Personen genehmigungsfrei, mit Hygienekonzept •  mehr als 500 genehmigungsfrei nur bei durch Rechtsvorschriften vorgeschriebenen Zusammenkünften •  ansonsten genehmigungspflichtig •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "•  Max. 250 Personen genehmigungsfrei, mit Hygienekonzept •  mehr als 250 genehmigungsfrei nur bei durch Rechtsvorschriften vorgeschriebenen Zusammenkünften •  ansonsten genehmigungspflichtig •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird  •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Bei stabiler positiver Infektionsentwicklung sowie einem R-Faktor <0,8:  Max. 100 Personen  •  mehr als 100 nur bei durch Rechtsvorschriften vorgeschriebenen Zusammenkünften •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird\n\n\nBei stabiler positiver Infektionsentwicklung, aber einem R-Faktor >0,8:  Umstellung auf digitale Formate, zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte\n\nBei negativer Infektionsentwicklung:  Umstellung auf digitale Formate, zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte. Bei negativer Infektionsentwicklung:"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "•  Umstellung auf digitale Formate •  In Präsenz zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte. •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird  •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "•  Umstellung auf digitale Formate •  In Präsenz zugelassen nur durch Rechtsvorschriften vorgeschriebene Sitzungen und Zusammenkünfte. •  generell mit MNB-Pflicht solange nicht Sitzplatz eingenommen wird  •  generell mit erhöhtem MNB- Standard OP-Maske oder FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Verboten, Umstellung komplett auf Online-Formate"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0012": {
+          "live_area": "0012",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "•  Sportanlagen mit Hygienekonzept geöffnet.  Kontaktsport zulässig. •  Zuschauerzahl beschränkt (Bedingungen siehe organisierte Veranstaltungen)"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "•  Sportanlagen mit Hygienekonzept geöffnet. •  Kontaktsport beschränkt auf max. 60 Personen. •  Zuschauerzahl beschränkt (Bedingungen siehe organisierte Veranstaltungen)"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "•  Sportanlagen geöffnet mit erhöhten Anforderungen an Hygienekonzept (Duschen/ Umkleiden geschlossen •  Kontaktsport beschränkt auf max. 30 Personen im Freien; Kontaktsport für Kinder bis 14 Jahre auch Indoor zulässig. •  Sonstige Gruppenangebote in Abhängigkeit qm/Person und Lüftungskonzept) •  Zuschauerzahl beschränkt (Bedingungen siehe organisierte Veranstaltungen)"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "•  Sportanlagen nur für Individualsport geöffnet.  •  Kontaktsport für Kinder bis 14 Jahre als Gruppenangebot im Freien zulässig  Keine Zuschauer."
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "•  Sportanlagen nur für Individualsport geöffnet.  •  Keine Zuschauer."
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Sportanlagen geschlossen"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0013": {
+          "live_area": "0013",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "•  Erlaubt mit Hygienekonzept •  Zuschauerzahl beschränkt (Bedingungen siehe organisierte Veranstaltungen)"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "•  Erlaubt mit Hygienekonzept (insb. regelmäßige Tests bei Kontaktsport) •  Zuschauerzahl beschränkt (Bedingungen siehe organisierte Veranstaltungen)"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "•  Erlaubt mit Hygienekonzept (insb. regelmäßige Tests bei Kontaktsport) •  Zuschauerzahl beschränkt (Bedingungen siehe organisierte Veranstaltungen)"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "•  Erlaubt mit Hygienekonzept (insb. regelmäßige Tests bei Kontaktsport) •  Keine Zuschauer"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "•  Erlaubt mit Hygienekonzept (insb. regelmäßige Tests bei Kontaktsport) •  Keine Zuschauer"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Einstellung, aber in Abhängigkeit von bundesweiten Entscheidungen."
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0014": {
+          "live_area": "0014",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Erlaubt (bis 35 Personen innerhalb festgelegter Kohorten)"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Erlaubt (bis 35 Personen innerhalb festgelegter Kohorten)"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Erlaubt (bis 35 Personen innerhalb festgelegter Kohorten), kein Kontaktsport (incl. Schwimmsport)"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Erlaubt (bis 35 Personen innerhalb festgelegter Kohorten), kein Kontaktsport (incl. Schwimmsport); im Szenario C: kein Schulsport, da Schulschließung"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Erlaubt (bis 35 Personen innerhalb festgelegter Kohorten) im Szenario C: kein Schulsport, da Schulschließung"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "im Szenario C: kein Schulsport, da Schulschließung"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0015": {
+          "live_area": "0015",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      " Geöffnet mit Hygienekonzept  Gruppenangebote in Abhängigkeit qm/Person und Lüftungskonzept)"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "•  Geöffnet mit erhöhten Anforderungen an Hygienekonzept (Duschen/ Umkleiden geschlossen, •  Gruppenangebote in Abhängigkeit qm/Person und Lüftungskonzept)"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0016": {
+          "live_area": "0016",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Bei stabiler positiver Infektionsentwicklung: •  Hallenschwimmbäder für private Nutzung geschlossen. •  Gruppenangebote in Abhängigkeit von Hygienekonzept für bis zu zehn Personen  •  Freibäder mit erhöhten Anforderungen an Hygienekonzept geöffnet (Schließung Dusch-, Umkleideräume)",
+                      "Bei negativer Infektionsentwicklung:  •  Geschlossen für private Nutzung •  Gruppenangebote in Abhängigkeit von Hygienekonzept für bis zu fünf Personen"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "•  Geschlossen für private Nutzung •  Gruppenangebote in Abhängigkeit von Hygienekonzept für bis zu fünf Personen"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Geschlossen für private Nutzung"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Geschlossen für private Nutzung"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0017": {
+          "live_area": "0017",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Geöffnet"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Geöffnet"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Spielplätze drinnen geschlossen; Spielplätze draußen geöffnet"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Spielplätze drinnen geschlossen; Spielplätze draußen geöffnet"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Spielplätze drinnen geschlossen; Spielplätze draußen geöffnet"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0018": {
+          "live_area": "0018",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Gottesdienste mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "•  Gottesdienste mit Hygienekonzept •  MNB: erhöhter Standard OPMaske, FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "•  Gottesdienste mit Hygienekonzept •  MNB: erhöhter Standard OPMaske, FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Empfehlung digitale Formate, Gottesdienste mit erhöhten Anforderungen an Hygienekonzept (insb. Anzeigepflicht bei Gottesdiensten >10, erhöhter MNB-Standard OP-Maske oder FFP2)"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Empfehlung digitale Formate, Gottesdienste mit erhöhten Anforderungen an Hygienekonzept (insb. Anzeigepflicht bei Gottesdiensten >10, erhöhter MNB-Standard OP-Maske oder FFP2)"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Ausschließlich digitale Formate, Gottesdienste in der Regel untersagt, Öffnung Gotteshäuser für private Gebete mit erhöhtem MNB-Standard OP-Maske oder FFP2 erlaubt"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0019": {
+          "live_area": "0019",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "•  Keine Beschränkung Personenzahl bei Zeremonie (soweit Abstand gewahrt ist),  •  bei der anschließenden Feier siehe Regelungen Saalbetrieb"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "•  Keine Beschränkung bei Zeremonie (soweit Abstand gewahrt ist und mit erhöhtem MNB-Standard OPMaske oder FFP2),  •  bei der anschließenden Feier siehe Regelungen Saalbetrieb"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "•  Keine Beschränkung Personenzahl bei Zeremonie (soweit Abstand gewahrt ist und mit erhöhtem MNBStandard OP-Maske oder FFP2),  •  bei der anschließenden Feier siehe Regelungen Saalbetrieb"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Beschränkung Personenzahl bei Zeremonie auf max. 100 Personen (soweit Abstand gewahrt ist und mit erhöhtem MNB-Standard OP-Maske oder FFP2), bei der Feier siehe private Zusammenkünfte"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Zeremonie max. eigener Haushalt bzw. max. 20 Personen"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Zeremonie max. eigener Haushalt bzw. max. 10 Personen"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0020": {
+          "live_area": "0020",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "•  Keine Beschränkung Personenzahl bei Trauerfeier/ Gang zum Grab (soweit Abstand gewahrt ist),  •  bei der anschließenden Feier siehe Regelungen Saalbetrieb"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "•  Keine Beschränkung Personenzahl bei Trauerfeier/ Gang zum Grab (soweit Abstand gewahrt ist und mit erhöhtem MNB-Standard OPMaske oder FFP2) •  bei der anschließenden Feier siehe Regelungen Saalbetrieb"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "•  Keine Beschränkung Personenzahl bei Trauerfeier/ Gang zum Grab (soweit Abstand gewahrt ist und mit erhöhtem MNB-Standard OPMaske oder FFP2) •  bei der anschließenden Feier siehe private Zusammenkünfte"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Beschränkung Personenzahl bei Trauerfeier/ Gang zum Grab auf max. 100 Personen (soweit Abstand gewahrt ist und mit erhöhtem MNB-Standard OP- Maske oder FFP2), bei der Feier siehe private Zusammenkünfte"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Trauerfeier/ Gang zum Grab max. eigener Haushalt bzw. max. 20 Personen"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Trauerfeier/ Gang zum Grab max. eigener Haushalt bzw. max. 10 Personen"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0021": {
+          "live_area": "0021",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept; Saalbetrieb max. 250 Personen (analog nicht-stationäre indoor Veranstaltungen)"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept; Saalbetrieb bis 100 Personen (analog nicht-stationäre indoor Veranstaltungen)"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Bei stabiler positiver Infektionsentwicklung sowie einem R-Faktor <0,8: •  Geöffnet mit Hygienekonzept;  •  Sperrstunde 23:00 Uhr •  kein Saalbetrieb\n\n\nBei stabiler positiver Infektionsentwicklung, aber einem R-Faktor >0,8: •  Geschlossen, nur Außer- Haus-Verkauf •  Ausnahmen: Einrichtungen NuWG, Betreutes Wohnen Autobahngaststätten, Beherbergung (nur Zimmerservice)\n\nBei negativer Infektionsentwicklung:  •  Geschlossen, nur AußerHaus-Verkauf •  Ausnahmen: Einrichtungen NuWG, Betreutes Wohnen Autobahngaststätten, Beherbergung (nur Zimmerservice)"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "•  Geschlossen, nur Außer- Haus-Verkauf •  Ausnahmen: Einrichtungen NuWG, Betreutes Wohnen Autobahngaststätten, Beherbergung (nur Zimmerservice)"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "•  Geschlossen, nur Außer- Haus-Verkauf •  Ausnahmen: Einrichtungen NuWG, Betreutes Wohnen Autobahngaststätten, Beherbergung (nur Zimmerservice)"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "•  Geschlossen, nur Außer- Haus-Verkauf •  Ausnahmen: Einrichtungen NuWG, Betreutes Wohnen Autobahngaststätten, Beherbergung (nur Zimmerservice)"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0022": {
+          "live_area": "0022",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Bei stabiler positiver Infektionsentwicklung sowie einem R-Faktor <0,8: Geöffnet mit Hygienekonzept\n\n\nBei stabiler positiver Infektionsentwicklung, aber einem R-Faktor >0,8:  Geschlossen, nur AußerHaus-Verkauf (analog Gastronomie)  Ausnahmen: Ernährungswirtschaft, Krankenhäuser sowie wenn aus hygienischen oder sonstigen zwingenden Gründen eine Nahrungsaufnahme am Arbeitsplatz nicht möglich ist\n\n\nBei negativer Infektionsentwicklung:   Geschlossen, nur AußerHaus-Verkauf (analog Gastronomie)  Ausnahmen: Ernährungswirtschaft, Krankenhäuser sowie wenn aus hygienischen oder sonstigen zwingenden Gründen eine Nahrungsaufnahme am Arbeitsplatz nicht möglich ist"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      " Geschlossen, nur AußerHaus-Verkauf (analog Gastronomie)  Ausnahmen: Ernährungswirtschaft, Krankenhäuser sowie wenn aus hygienischen oder sonstigen zwingenden Gründen eine Nahrungsaufnahme am Arbeitsplatz nicht möglich ist"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      " Geschlossen, nur AußerHaus-Verkauf (analog Gastronomie)  Ausnahmen: Ernährungswirtschaft, Krankenhäuser sowie wenn aus hygienischen oder sonstigen zwingenden Gründen eine Nahrungsaufnahme am Arbeitsplatz nicht möglich ist"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      " Geschlossen, nur AußerHaus-Verkauf (analog Gastronomie)  Ausnahmen: Ernährungswirtschaft, Krankenhäuser sowie wenn aus hygienischen oder sonstigen zwingenden Gründen eine Nahrungsaufnahme am Arbeitsplatz nicht möglich ist"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0023": {
+          "live_area": "0023",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept Personenbegrenzung mind.  10qm/ Person"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept Personenbegrenzung mind.  10qm/ Person"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0024": {
+          "live_area": "0024",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept, Personenbegrenzung mind.  10qm/ Person"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0025": {
+          "live_area": "0025",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "•  Geöffnet mit Hygienekonzept. •  Restaurantbetrieb siehe Gastronomie mit Essensservice."
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "•  Geöffnet mit Hygienekonzept. •  Restaurantbetrieb siehe Gastronomie mit Essensservice."
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "•  Geöffnet mit Hygienekonzept. •  Restaurantbetrieb siehe Gastronomie mit Essensservice."
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "•  Geöffnet nur für Geschäfts/Dienstreisen und andere notwendige Zwecke, keine Unterbringung für touristische Zwecke.  •  Ausschließlich Zimmerservice"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "•  Geöffnet nur für Geschäfts/Dienstreisen und andere notwendige Zwecke, keine Unterbringung für touristische Zwecke.  •  Ausschließlich Zimmerservice"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "•  Geöffnet nur für Geschäfts/Dienstreisen und andere notwendige Zwecke, keine Unterbringung für touristische Zwecke.  •  Ausschließlich Zimmerservice"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0026": {
+          "live_area": "0026",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept und erhöhtem Standard OP- Maske oder FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Bei stabiler positiver Infektionsentwicklung sowie einem R-Faktor <0,8: Alle körpernahen Dienstleistungen geöffnet mit durchgängiger MNB und mit erhöhtem MNB-Standard OPMaske oder FFP2\n\n\nBei stabiler positiver Infektionsentwicklung, aber einem R-Faktor >0,8: •  Nur Fußpflege und medizinisch notwendige Dienstleistungen mit Hygienekonzept geöffnet •  MNB: erhöhter Standard OPMaske, FFP2\n\n\nBei negativer Infektionsentwicklung:  •  Nur Fußpflege und medizinisch notwendige Dienstleistungen mit Hygienekonzept geöffnet •  MNB: erhöhter Standard OPMaske, FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "•  Nur Fußpflege und medizinisch notwendige Dienstleistungen mit Hygienekonzept geöffnet •  MNB: erhöhter Standard OPMaske, FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "•  Nur Fußpflege und medizinisch notwendige Dienstleistungen mit Hygienekonzept geöffnet •  MNB: erhöhter Standard OPMaske, FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0027": {
+          "live_area": "0027",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "•  Geöffnet mit erhöhten Anforderungen an Hygienekonzept •  Zugangsbegrenzung notwendige Grundversorgung: <800qm Verkaufsfläche mind. 10qm/ Person, >800qm Verkaufsfläche 20qm/Person •  MNB: erhöhter Standard OPMaske, FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "ggf. Öffnung in Abhängigkeit bundesweiter Entscheidung. Voraussetzungen für eine Öffnung wären: •  Geöffnet mit erhöhten Anforderungen an Hygienekonzept •  Zugangsbegrenzung außerhalb notwendiger Grundversorgung: <800qm Verkaufsfläche mind. 20 qm/ Person, >800qm Verkaufsfläche 30 qm/Person, •  Zugangsbegrenzung bei notwendiger Grundversorgung: <800qm Verkaufsfläche mind. 10qm/ Person, >800qm Verkaufsfläche 20qm/Person •  erhöhter MNB-Standard OPMaske oder FFP2)\n\nBei negativer Infektionsentwicklung:  •  Geschlossen mit Ausnahme notwendige Grundversorgung •  Bestell- und Abholservice erlaubt •  Zugangsbegrenzung notwendige Grundversorgung: <800qm Verkaufsfläche mind. 10qm/ Person, >800qm Verkaufsfläche 20qm/Person •  MNB: erhöhter Standard OPMaske, FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "•  Geschlossen mit Ausnahme notwendige Grundversorgung •  Bestell- und Abholservice erlaubt •  Zugangsbegrenzung notwendige Grundversorgung: <800qm Verkaufsfläche mind. 10qm/ Person, >800qm Verkaufsfläche 20qm/Person •  MNB: erhöhter Standard OPMaske, FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "•  Geschlossen mit Ausnahme notwendige Grundversorgung •  Bestell- und Abholservice erlaubt •  Zugangsbegrenzung notwendige Grundversorgung: <800qm Verkaufsfläche mind. 10qm/ Person, >800qm Verkaufsfläche 20qm/Person •  MNB: erhöhter Standard OPMaske, FFP2"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "•  Geschlossen mit Ausnahme notwendige Grundversorgung •  Bestell- und Abholservice erlaubt •  Zugangsbegrenzung notwendige Grundversorgung: <800qm Verkaufsfläche mind. 10qm/ Person, >800qm Verkaufsfläche 20qm/Person •  MNB: erhöhter Standard OPMaske, FFP2"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0028": {
+          "live_area": "0028",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "•  Vorgaben entsprechend SARS-CoV2- Arbeitsschutzregel, -standard und -verordnung •  Für Fahrgemeinschaft zu/ von Arbeitsort gilt Regelung zur Kontaktbeschränkung."
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "•  Vorgaben entsprechend SARS-CoV2- Arbeitsschutzregel, -standard und -verordnung •  Für Fahrgemeinschaft zu/ von Arbeitsort gilt Regelung zur Kontaktbeschränkung."
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "•  Vorgaben entsprechend SARS-CoV2- Arbeitsschutzregel, -standard und -verordnung •  Für Fahrgemeinschaft zu/ von Arbeitsort gilt Regelung zur Kontaktbeschränkung."
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "•  Vorgaben entsprechend SARS-CoV2- Arbeitsschutzregel, -standard und -verordnung •  Für Fahrgemeinschaft zu/ von Arbeitsort gilt Regelung zur Kontaktbeschränkung."
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "•  Vorgaben entsprechend SARS-CoV2- Arbeitsschutzregel, -standard und -verordnung •  Für Fahrgemeinschaft zu/ von Arbeitsort gilt Regelung zur Kontaktbeschränkung •  Berufliche Fort- und Weiterbildung im Distanzlernen mit Ausnahme Prüfungsvorbereitung und notwendige Praxisteile"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "•  Vorgaben entsprechend SARS-CoV2- Arbeitsschutzregel, -standard und -verordnung •  Für Fahrgemeinschaft zu/ von Arbeitsort gilt Regelung zur Kontaktbeschränkung •  Berufliche Fort- und Weiterbildung im Distanzlernen mit Ausnahme Prüfungsvorbereitung und notwendige Praxisteile"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0029": {
+          "live_area": "0029",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Keine MNB\n\nSzenario A als Regelfall (eingeschränkter Regelbetrieb Kita) Szenario B (feste Gruppen) bei Betroffenheit"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Keine MNB\n\nSzenario A als Regelfall (eingeschränkter Regelbetrieb Kita) Szenario B (feste Gruppen) bei Betroffenheit"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Keine MNB\n\n\nSzenario A als Regelfall (eingeschränkter Regelbetrieb Kita)  Szenario B (feste Gruppen) bei Betroffenheit"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "MNB im Hort\n\n\nSzenario B (feste Gruppen)"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "MNB im Hort\n\n\nSzenario C (geschlossen mit bis zu 50 % Notbetreuung)"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "MNB im Hort\n\n\nSzenario C (geschlossen mit bis zu 30 % Notbetreuung)"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0030": {
+          "live_area": "0030",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "MNB in gekennzeichneten Bereichen; MNB im Unterricht ab SEK I bei Betroffenheit Schule; \n\n\nSzenario A (Präsenzunterricht)\n\n\nNotbetreuung nicht erforderlich"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "MNB in gekennzeichneten Bereichen; MNB im Unterricht ab SEK I bei Betroffenheit Schule;   \n\n\nSzenario A (Präsenzunterricht)\n\n\nNotbetreuung nicht erforderlich"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "MNB in gekennzeichneten Bereichen; MNB im Unterricht ab SEK I; \n\n\n•  Szenario A (Präsenzunterricht) als Regelfall; •  Szenario B bei Betroffenheit der Schule für einen Zeitraum von 4 Wochen\n\n\nab Szenario B Notbetreuung"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "MNB in gekennzeichneten Bereichen, MNB im Unterricht ab SEK I;\n\n•  Szenario B als Regelfall; \n•  Szenario C bei Betroffenheit der Schule für einen Zeitraum von 2 Wochen\n\n\nAuch bei positiver Infektionsentwicklung: Mindestlaufzeit nach Wechsel ins Szenario B: 4 Wochen, bei Szenario C: 2 Wochen\t\t\n\n\nNotbetreuung"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "MNB in gekennzeichneten Bereichen, MNB im Unterricht ab Primarbereich\n\n\n•  Szenario B als Regelfall im Primarbereich; •  Szenario C Sek. I / Sek. II BBS, (Abschlussklassen analog Primarbereich); •  Szenario C Primarbereich und Abschlussklassen bei Betroffenheit der Schule für einen Zeitraum von 2 Wochen\n\n\nAuch bei positiver Infektionsentwicklung: Mindestlaufzeit nach Wechsel ins Szenario B: 4 Wochen, bei Szenario C: 2 Wochen\t\t\n\n\nNotbetreuung bis zu 50%"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Durchgängige MNB-Pflicht\n\n\nSzenario C\n\n\nAuch bei positiver Infektionsentwicklung: Mindestlaufzeit nach Wechsel ins Szenario B: 4 Wochen, bei Szenario C: 2 Wochen\t\t\n\n\nNotbetreuung bis zu 30%"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0031": {
+          "live_area": "0031",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Möglich"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Möglich, aber Empfehlung, auf Schulfahrten zu verzichten; Ausnahme: eintägige Fahrten zu außerschulischen Lernorten"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Verbot Ausnahme: eintägige Fahrten zu außerschulischen Lernorten"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Verbot"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Verbot"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Verbot"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0032": {
+          "live_area": "0032",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Entscheidung der jeweiligen Hochschule"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Entscheidung der jeweiligen Hochschule"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Entscheidung der jeweiligen Hochschule"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Verbot Präsenzbetrieb (mit Ausnahme insbesondere Labortätigkeiten, Praktika, praktische und künstlerische Ausbildungsabschnitte und Prüfungen)"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Verbot Präsenzbetrieb (mit Ausnahme insbesondere Labortätigkeiten, Praktika, praktische und künstlerische Ausbildungsabschnitte und Prüfungen)"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Verbot Präsenzbetrieb"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0033": {
+          "live_area": "0033",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "MNB in gekennzeichneten Bereichen, Empfehlung MNB im Unterricht, Präsenzbetrieb mit Hygienekonzept erlaubt   Beherbergungsstätten, Kantinen und Mensen geöffnet nach Vorgaben entsprechend SARSCoV2-Arbeitsschutzregel, standard und -verordnung"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "MNB in gekennzeichneten Bereichen, Empfehlung MNB im Unterricht, Präsenzbetrieb mit Hygienekonzept erlaubt   Beherbergungsstätten, Kantinen und Mensen geöffnet nach Vorgaben entsprechend SARSCoV2-Arbeitsschutzregel, standard und -verordnung"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "MNB in gekennzeichneten Bereichen, Empfehlung MNB im Unterricht, Präsenzbetrieb mit Hygienekonzept erlaubt   Beherbergungsstätten, Kantinen und Mensen geöffnet nach Vorgaben entsprechend SARSCoV2-Arbeitsschutzregel, standard und -verordnung"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "MNB in gekennzeichneten Bereichen, Empfehlung MNB im Unterricht, Präsenzbetrieb mit Hygienekonzept erlaubt   Beherbergungsstätten, Kantinen und Mensen geöffnet nach Vorgaben entsprechend SARSCoV2-Arbeitsschutzregel, standard und -verordnung"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Berufliche Aus-, Fort- und Weiterbildung im Distanzlernen mit Ausnahme Prüfungsvorbereitung und notwendige Praxisteile sowie Prüfungsabnahme mit Hygienekonzept   Beherbergungsstätten, Kantinen und Mensen geöffnet nach Vorgaben entsprechend SARSCoV2-Arbeitsschutzregel, standard und -verordnung"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Berufliche Aus-, Fort- und Weiterbildung im Distanzlernen mit Ausnahme Prüfungsvorbereitung und notwendige Praxisteile sowie Prüfungsabnahme mit Hygienekonzept   Beherbergungsstätten, Kantinen und Mensen geöffnet nach Vorgaben entsprechend SARSCoV2-Arbeitsschutzregel, standard und -verordnung"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0034": {
+          "live_area": "0034",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "MNB in gekennzeichneten Bereichen, Empfehlung MNB im Unterricht\n\n\nPräsenzbetrieb mit Hygienekonzept erlaubt"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "MNB in gekennzeichneten Bereichen, Empfehlung MNB im Unterricht\n\n\nPräsenzbetrieb mit Hygienekonzept erlaubt"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "MNB in gekennzeichneten Bereichen, Empfehlung MNB im Unterricht\n\n\nPräsenzbetrieb mit Hygienekonzept erlaubt"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Verbot Präsenzbetrieb (mit Ausnahme Prüfungen)   Vorbereitungskurse auf nachholende Schulabschlüsse (Zweiter Bildungsweg):  Präsenz im Wechselbetrieb zulässig."
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Verbot Präsenzbetrieb (mit Ausnahme Prüfungen)   Vorbereitungskurse auf nachholende Schulabschlüsse (Zweiter Bildungsweg):  Präsenz im Wechselbetrieb bei Abschlussklassen zulässig. Ansonsten Distanzlernen."
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Verbot Präsenzbetrieb"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0035": {
+          "live_area": "0035",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Geschlossen (ausgenommen wissenschaftliche Bibliotheken wie die Hochschul- und Landesbibliotheken), Bestell- und Abholservice erlaubt"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Geschlossen (ausgenommen wissenschaftliche Bibliotheken wie die Hochschul- und Landesbibliotheken), Bestell- und Abholservice erlaubt"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Geschlossen (ausgenommen wissenschaftliche Bibliotheken wie die Hochschul- und Landesbibliotheken), Bestell- und Abholservice erlaubt"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0036": {
+          "live_area": "0036",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "MNB-Pflicht\n\n\nEmpfehlung außerhalb Rushhour"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "MNB-Pflicht (erhöhter Standard OP-Maske, FFP2)\n\n\nEmpfehlung kapazitätserweiternde Maßnahmen sowie flankierende Maßnahmen zur Entzerrung der Fahrgastströme zu den Hauptverkehrszeiten durch weitgehend zeitlich versetzte Staffelung von Arbeits- und Schulzeiten bzw. Nutzung Homeoffice"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "MNB-Pflicht (erhöhter Standard OP-Maske, FFP2)\n\n\nEmpfehlung kapazitätserweiternde Maßnahmen sowie flankierende Maßnahmen zur Entzerrung der Fahrgastströme zu den Hauptverkehrszeiten durch weitgehend zeitlich versetzte Staffelung von Arbeits- und Schulzeiten bzw. Nutzung Homeoffice"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "MNB-Pflicht (erhöhter Standard OP-Maske, FFP2)\n\n\nEmpfehlung kapazitätserweiternde Maßnahmen sowie flankierende Maßnahmen zur Entzerrung der Fahrgastströme zu den Hauptverkehrszeiten durch weitgehend zeitlich versetzte Staffelung von Arbeits- und Schulzeiten bzw. Nutzung Homeoffice"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "MNB-Pflicht (erhöhter Standard OP-Maske, FFP2)\n\n\nEmpfehlung kapazitätserweiternde Maßnahmen sowie flankierende Maßnahmen zur Entzerrung der Fahrgastströme zu den Hauptverkehrszeiten durch weitgehend zeitlich versetzte Staffelung von Arbeits- und Schulzeiten bzw. Nutzung Homeoffice"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "MNB-Pflicht (erhöhter Standard OP-Maske, FFP2)\n\n\nEmpfehlung kapazitätserweiternde Maßnahmen sowie flankierende Maßnahmen zur Entzerrung der Fahrgastströme zu den Hauptverkehrszeiten durch weitgehend zeitlich versetzte Staffelung von Arbeits- und Schulzeiten bzw. Nutzung Homeoffice"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0037": {
+          "live_area": "0037",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Keine Beschränkungen"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Keine Beschränkungen"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Keine Beschränkungen"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Empfehlung Stay at home   Verbot touristische BusSchiffsreisen oder ähnliches"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Empfehlung Stay at home   Verbot touristische BusSchiffsreisen oder ähnliches"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Empfehlung Stay at home   Verbot touristische Bus- Schiffsreisen oder ähnliches  Bewegungseinschränkung 15km-Radius"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0038": {
+          "live_area": "0038",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept (insbesondere Personenbegrenzung/ Größe Einrichtung)"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept (insbesondere Personenbegrenzung/ Größe Einrichtung)"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Bei stabiler positiver Infektionsentwicklung sowie einem R-Faktor <0,8: Geöffnet mit  erhöhten Anforderungen an Hygienekonzept (insb. durchgängige MNB, erhöhter MNB-Standard OP-Maske oder FFP2, Personenbegrenzung/ Größe Einrichtung)\n\n\nBei stabiler positiver Infektionsentwicklung, aber einem R-Faktor >0,8: geschlossen\n\n\nBei negativer Infektionsentwicklung:  geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0039": {
+          "live_area": "0039",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Geöffnet mit erhöhten Anforderungen an Hygienekonzept (insb. durchgängige MNB, Reduzierung Besucherzahl/ Größe Einrichtung)"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0040": {
+          "live_area": "0040",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Geöffnet"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Solarien geöffnet, Saunen geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Geschlossen"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0041": {
+          "live_area": "0041",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Zugelassen mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Verbot Prostitutionsveranstaltungen und Straßenprostitution, sonstige Prostitution mit Schutzmaßnahmen, ansonsten erlaubt"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Verbot"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Verbot"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Verbot"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Verbot"
+                  ],
+                  "icon": null
+              }
+          }
+      },
+      "0042": {
+          "live_area": "0042",
+          "stages": {
+              "stage1": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage2": {
+                  "lines": [
+                      "Geöffnet mit Hygienekonzept"
+                  ],
+                  "icon": null
+              },
+              "stage3": {
+                  "lines": [
+                      "Geöffnet mit  erhöhten Anforderungen an Hygienekonzept (insb. durchgängige MNB, erhöhter Standard OP-Maske, FFP2)"
+                  ],
+                  "icon": null
+              },
+              "stage4": {
+                  "lines": [
+                      "Verbot"
+                  ],
+                  "icon": null
+              },
+              "stage5": {
+                  "lines": [
+                      "Verbot"
+                  ],
+                  "icon": null
+              },
+              "stage6": {
+                  "lines": [
+                      "Verbot"
+                  ],
+                  "icon": null
+              }
+          }
+      }
+  }
+}
