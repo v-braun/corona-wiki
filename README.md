@@ -2,6 +2,8 @@
 
 Corona Informationen zu einzelnen Bundesländern und Landkreisen.
 
+[Hier geht es direkt zum Wiki](https://v-braun.github.io/corona-wiki)
+
 
 # Screens
 
