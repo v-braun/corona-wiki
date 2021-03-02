@@ -1991,133 +1991,133 @@ let geo = {
         "name": "Stuttgart",
         "county": "SK Stuttgart",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Coat_of_arms_of_Stuttgart.svg/233px-Coat_of_arms_of_Stuttgart.svg.png"
       },
       "08115": {
         "ags": "08115",
         "name": "Böblingen",
         "county": "LK Böblingen",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Wappen_Landkreis_Boeblingen.svg/195px-Wappen_Landkreis_Boeblingen.svg.png"
       },
       "08116": {
         "ags": "08116",
         "name": "Esslingen",
         "county": "LK Esslingen",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Wappen_Landkreis_Esslingen.svg/223px-Wappen_Landkreis_Esslingen.svg.png"
       },
       "08117": {
         "ags": "08117",
         "name": "Göppingen",
         "county": "LK Göppingen",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Wappen_Landkreis_Goeppingen.svg/214px-Wappen_Landkreis_Goeppingen.svg.png"
       },
       "08118": {
         "ags": "08118",
         "name": "Ludwigsburg",
         "county": "LK Ludwigsburg",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Wappen_Landkreis_Ludwigsburg.svg/233px-Wappen_Landkreis_Ludwigsburg.svg.png"
       },
       "08119": {
         "ags": "08119",
         "name": "Rems-Murr-Kreis",
         "county": "LK Rems-Murr-Kreis",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Wappen_Rems-Murr-Kreis.svg/211px-Wappen_Rems-Murr-Kreis.svg.png"
       },
       "08121": {
         "ags": "08121",
         "name": "Heilbronn",
         "county": "SK Heilbronn",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Wappen_Heilbronn.svg/204px-Wappen_Heilbronn.svg.png"
       },
       "08125": {
         "ags": "08125",
         "name": "Heilbronn",
         "county": "LK Heilbronn",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Wappen_Landkreis_Heilbronn.svg/204px-Wappen_Landkreis_Heilbronn.svg.png"
       },
       "08126": {
         "ags": "08126",
         "name": "Hohenlohekreis",
         "county": "LK Hohenlohekreis",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Wappen_Hohenlohekreis.png/223px-Wappen_Hohenlohekreis.png"
       },
       "08127": {
         "ags": "08127",
         "name": "Schwäbisch Hall",
         "county": "LK Schwäbisch Hall",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Wappen_Landkreis_Schwaebisch_Hall.png/198px-Wappen_Landkreis_Schwaebisch_Hall.png"
       },
       "08128": {
         "ags": "08128",
         "name": "Main-Tauber-Kreis",
         "county": "LK Main-Tauber-Kreis",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Wappen_Main-Tauber-Kreis.png"
       },
       "08135": {
         "ags": "08135",
         "name": "Heidenheim",
         "county": "LK Heidenheim",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Wappen_Landkreis_Heidenheim.svg/227px-Wappen_Landkreis_Heidenheim.svg.png"
       },
       "08136": {
         "ags": "08136",
         "name": "Ostalbkreis",
         "county": "LK Ostalbkreis",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Wappen_Ostalbkreis.svg/224px-Wappen_Ostalbkreis.svg.png"
       },
       "08211": {
         "ags": "08211",
         "name": "Baden-Baden",
         "county": "SK Baden-Baden",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Stadtwappen_der_Stadt_Baden-Baden.svg/184px-Stadtwappen_der_Stadt_Baden-Baden.svg.png"
       },
       "08212": {
         "ags": "08212",
         "name": "Karlsruhe",
         "county": "SK Karlsruhe",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/DEU_Karlsruhe_COA.svg/200px-DEU_Karlsruhe_COA.svg.png"
       },
       "08215": {
         "ags": "08215",
         "name": "Karlsruhe",
         "county": "LK Karlsruhe",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/DEU_Landkreis_Karlsruhe_COA.svg/207px-DEU_Landkreis_Karlsruhe_COA.svg.png"
       },
       "08216": {
         "ags": "08216",
         "name": "Rastatt",
         "county": "LK Rastatt",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Wappen_Landkreis_Rastatt.svg/202px-Wappen_Landkreis_Rastatt.svg.png"
       },
       "08221": {
         "ags": "08221",
         "name": "Heidelberg",
         "county": "SK Heidelberg",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Wappen_Heidelbergn.png/218px-Wappen_Heidelbergn.png"
       },
       "08222": {
         "ags": "08222",
         "name": "Mannheim",
         "county": "SK Mannheim",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Wappen_Mannheim.svg/229px-Wappen_Mannheim.svg.png"
       },
       "08225": {
         "ags": "08225",
@@ -2131,168 +2131,168 @@ let geo = {
         "name": "Rhein-Neckar-Kreis",
         "county": "LK Rhein-Neckar-Kreis",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Wappen_Rhein-Neckar-Kreis.png/200px-Wappen_Rhein-Neckar-Kreis.png"
       },
       "08231": {
         "ags": "08231",
         "name": "Pforzheim",
         "county": "SK Pforzheim",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Wappen_Pforzheim.svg/228px-Wappen_Pforzheim.svg.png"
       },
       "08235": {
         "ags": "08235",
         "name": "Calw",
         "county": "LK Calw",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wappen_Landkreis_Calw.svg/229px-Wappen_Landkreis_Calw.svg.png"
       },
       "08236": {
         "ags": "08236",
         "name": "Enzkreis",
         "county": "LK Enzkreis",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Wappen_Enzkreis.svg/200px-Wappen_Enzkreis.svg.png"
       },
       "08237": {
         "ags": "08237",
         "name": "Freudenstadt",
         "county": "LK Freudenstadt",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Wappen_Landkreis_Freudenstadt.svg/188px-Wappen_Landkreis_Freudenstadt.svg.png"
       },
       "08311": {
         "ags": "08311",
         "name": "Freiburg im Breisgau",
         "county": "SK Freiburg i.Breisgau",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/DEU_Freiburg_im_Breisgau_COA.svg/233px-DEU_Freiburg_im_Breisgau_COA.svg.png"
       },
       "08315": {
         "ags": "08315",
         "name": "Breisgau-Hochschwarzwald",
         "county": "LK Breisgau-Hochschwarzwald",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Wappen_Landkreis_Breisgau-Hochschwarzwald.png/234px-Wappen_Landkreis_Breisgau-Hochschwarzwald.png"
       },
       "08316": {
         "ags": "08316",
         "name": "Emmendingen",
         "county": "LK Emmendingen",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Wappen_Landkreis_Emmendingen.png"
       },
       "08317": {
         "ags": "08317",
         "name": "Ortenaukreis",
         "county": "LK Ortenaukreis",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/2/25/Wappen_Ortenaukreis.png"
       },
       "08325": {
         "ags": "08325",
         "name": "Rottweil",
         "county": "LK Rottweil",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Wappen_Landkreis_Rottweil.svg/199px-Wappen_Landkreis_Rottweil.svg.png"
       },
       "08326": {
         "ags": "08326",
         "name": "Schwarzwald-Baar-Kreis",
         "county": "LK Schwarzwald-Baar-Kreis",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Wappen_Schwarzwald-Baar-Kreis.svg/214px-Wappen_Schwarzwald-Baar-Kreis.svg.png"
       },
       "08327": {
         "ags": "08327",
         "name": "Tuttlingen",
         "county": "LK Tuttlingen",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Wappen_Landkreis_Tuttlingen.svg/233px-Wappen_Landkreis_Tuttlingen.svg.png"
       },
       "08335": {
         "ags": "08335",
         "name": "Konstanz",
         "county": "LK Konstanz",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Wappen_Landkreis_Konstanz.png/230px-Wappen_Landkreis_Konstanz.png"
       },
       "08336": {
         "ags": "08336",
         "name": "Lörrach",
         "county": "LK Lörrach",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Wappen_Landkreis_Loerrach.png/200px-Wappen_Landkreis_Loerrach.png"
       },
       "08337": {
         "ags": "08337",
         "name": "Waldshut",
         "county": "LK Waldshut",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Waldshut.png"
       },
       "08415": {
         "ags": "08415",
         "name": "Reutlingen",
         "county": "LK Reutlingen",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Reutlingen.svg"
       },
       "08416": {
         "ags": "08416",
         "name": "Tübingen",
         "county": "LK Tübingen",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Tuebingen.svg"
       },
       "08417": {
         "ags": "08417",
         "name": "Zollernalbkreis",
         "county": "LK Zollernalbkreis",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Zollernalbkreis.svg"
       },
       "08421": {
         "ags": "08421",
         "name": "Ulm",
         "county": "SK Ulm",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Coat_of_arms_of_Ulm.svg/233px-Coat_of_arms_of_Ulm.svg.png"
       },
       "08425": {
         "ags": "08425",
         "name": "Alb-Donau-Kreis",
         "county": "LK Alb-Donau-Kreis",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://www.heraldik-wiki.de/wiki/Datei:Landkreiswappen_des_Landkreises_Alb-Donau-Kreis.png"
       },
       "08426": {
         "ags": "08426",
         "name": "Biberach",
         "county": "LK Biberach",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Biberach.svg"
       },
       "08435": {
         "ags": "08435",
         "name": "Bodenseekreis",
         "county": "LK Bodenseekreis",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://www.heraldik-wiki.de/wiki/Datei:Bodenseekreis_Wappen.svg"
       },
       "08436": {
         "ags": "08436",
         "name": "Ravensburg",
         "county": "LK Ravensburg",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Ravensburg.svg"
       },
       "08437": {
         "ags": "08437",
         "name": "Sigmaringen",
         "county": "LK Sigmaringen",
         "stateAbbreviation": "BW",
-        "ico": null
+        "ico": "https://www.heraldik-wiki.de/wiki/Datei:Wappen_Landkreis_Sigmaringen.svg"
       },
       "09161": {
         "ags": "09161",
