@@ -850,28 +850,28 @@ let geo = {
       "name": "Hamburg",
       "county": "SK Hamburg",
       "stateAbbreviation": "HH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/DEU_Hamburg_COA.svg/171px-DEU_Hamburg_COA.svg.png"
     },
     "03101": {
       "ags": "03101",
       "name": "Braunschweig",
       "county": "SK Braunschweig",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Wappen_Braunschweig.svg/280px-Wappen_Braunschweig.svg.png"
     },
     "03102": {
       "ags": "03102",
       "name": "Salzgitter",
       "county": "SK Salzgitter",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Coat_of_arms_of_Salzgitter.svg/280px-Coat_of_arms_of_Salzgitter.svg.png"
     },
     "03103": {
       "ags": "03103",
       "name": "Wolfsburg",
       "county": "SK Wolfsburg",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/DEU_Wolfsburg_COA.svg/280px-DEU_Wolfsburg_COA.svg.png"
     },
     "03151": {
       "ags": "03151",
