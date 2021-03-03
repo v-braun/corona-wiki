@@ -507,77 +507,77 @@ let geo = {
       "name": "Altmarkkreis Salzwedel",
       "county": "LK Altmarkkreis Salzwedel",
       "stateAbbreviation": "ST",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Wappen_Altmarkkreis_Salzwedel.svg/106px-Wappen_Altmarkkreis_Salzwedel.svg.png"
     },
     "15082": {
       "ags": "15082",
       "name": "Anhalt-Bitterfeld",
       "county": "LK Anhalt-Bitterfeld",
       "stateAbbreviation": "ST",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Wappen_Landkreis_Anhalt-Bitterfeld.svg/107px-Wappen_Landkreis_Anhalt-Bitterfeld.svg.png"
     },
     "15083": {
       "ags": "15083",
       "name": "Börde",
       "county": "LK Börde",
       "stateAbbreviation": "ST",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Wappen_Landkreis_Boerde.png/107px-Wappen_Landkreis_Boerde.png"
     },
     "15084": {
       "ags": "15084",
       "name": "Burgenlandkreis",
       "county": "LK Burgenlandkreis",
       "stateAbbreviation": "ST",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Wappen_Burgenlandkreis.png/107px-Wappen_Burgenlandkreis.png"
     },
     "15085": {
       "ags": "15085",
       "name": "Harz",
       "county": "LK Harz",
       "stateAbbreviation": "ST",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Wappen_Landkreis_Harz.svg/106px-Wappen_Landkreis_Harz.svg.png"
     },
     "15086": {
       "ags": "15086",
       "name": "Jerichower Land",
       "county": "LK Jerichower Land",
       "stateAbbreviation": "ST",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Wappen_Landkreis_Jerichower_Land.svg/106px-Wappen_Landkreis_Jerichower_Land.svg.png"
     },
     "15087": {
       "ags": "15087",
       "name": "Mansfeld-Südharz",
       "county": "LK Mansfeld-Südharz",
       "stateAbbreviation": "ST",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Wappen_Landkreis_Mansfeld-Suedharz.svg/106px-Wappen_Landkreis_Mansfeld-Suedharz.svg.png"
     },
     "15088": {
       "ags": "15088",
       "name": "Saalekreis",
       "county": "LK Saalekreis",
       "stateAbbreviation": "ST",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Wappen_Saalekreis.svg/106px-Wappen_Saalekreis.svg.png"
     },
     "15089": {
       "ags": "15089",
       "name": "Salzlandkreis",
       "county": "LK Salzlandkreis",
       "stateAbbreviation": "ST",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Wappen_Salzlandkreis.svg/106px-Wappen_Salzlandkreis.svg.png"
     },
     "15090": {
       "ags": "15090",
       "name": "Stendal",
       "county": "LK Stendal",
       "stateAbbreviation": "ST",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wappen_Landkreis_Stendal.svg/106px-Wappen_Landkreis_Stendal.svg.png"
     },
     "15091": {
       "ags": "15091",
       "name": "Wittenberg",
       "county": "LK Wittenberg",
       "stateAbbreviation": "ST",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Wappen_Landkreis_Wittenberg.svg/106px-Wappen_Landkreis_Wittenberg.svg.png"
     },
     "16051": {
       "ags": "16051",
@@ -626,119 +626,119 @@ let geo = {
       "name": "Eichsfeld",
       "county": "LK Eichsfeld",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/DEU_Landkreis_Eichsfeld_1995_COA.svg/101px-DEU_Landkreis_Eichsfeld_1995_COA.svg.png"
     },
     "16062": {
       "ags": "16062",
       "name": "Nordhausen",
       "county": "LK Nordhausen",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Wappen_Landkreis_Nordhausen.svg/94px-Wappen_Landkreis_Nordhausen.svg.png"
     },
     "16063": {
       "ags": "16063",
       "name": "Wartburgkreis",
       "county": "LK Wartburgkreis",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Wappen_Wartburgkreis.svg/98px-Wappen_Wartburgkreis.svg.png"
     },
     "16064": {
       "ags": "16064",
       "name": "Unstrut-Hainich-Kreis",
       "county": "LK Unstrut-Hainich-Kreis",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Wappen_Unstrut-Hainich-Kreis.svg/103px-Wappen_Unstrut-Hainich-Kreis.svg.png"
     },
     "16065": {
       "ags": "16065",
       "name": "Kyffhäuserkreis",
       "county": "LK Kyffhäuserkreis",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Wappen_Kyffh%C3%A4userkreis.svg/102px-Wappen_Kyffh%C3%A4userkreis.svg.png"
     },
     "16066": {
       "ags": "16066",
       "name": "Schmalkalden-Meiningen",
       "county": "LK Schmalkalden-Meiningen",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Wappen_Landkreis_Schmalkalden-Meiningen.svg/105px-Wappen_Landkreis_Schmalkalden-Meiningen.svg.png"
     },
     "16067": {
       "ags": "16067",
       "name": "Gotha",
       "county": "LK Gotha",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Wappen_Landkreis_Gotha.svg/110px-Wappen_Landkreis_Gotha.svg.png"
     },
     "16068": {
       "ags": "16068",
       "name": "Sömmerda",
       "county": "LK Sömmerda",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Wappen_Landkreis_S%C3%B6mmerda.svg/102px-Wappen_Landkreis_S%C3%B6mmerda.svg.png"
     },
     "16069": {
       "ags": "16069",
       "name": "Hildburghausen",
       "county": "LK Hildburghausen",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Wappen_Landkreis_Hildburghausen.svg/107px-Wappen_Landkreis_Hildburghausen.svg.png"
     },
     "16070": {
       "ags": "16070",
       "name": "Ilm-Kreis",
       "county": "LK Ilm-Kreis",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Wappen_Ilm-Kreis.svg/108px-Wappen_Ilm-Kreis.svg.png"
     },
     "16071": {
       "ags": "16071",
       "name": "Weimarer Land",
       "county": "LK Weimarer Land",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Wappen_Landkreis_Weimarer_Land.svg/116px-Wappen_Landkreis_Weimarer_Land.svg.png"
     },
     "16072": {
       "ags": "16072",
       "name": "Sonneberg",
       "county": "LK Sonneberg",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Wappen_Landkreis_Sonneberg.svg/105px-Wappen_Landkreis_Sonneberg.svg.png"
     },
     "16073": {
       "ags": "16073",
       "name": "Saalfeld-Rudolstadt",
       "county": "LK Saalfeld-Rudolstadt",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Wappen_Landkreis_Saalfeld-Rudolstadt.svg/106px-Wappen_Landkreis_Saalfeld-Rudolstadt.svg.png"
     },
     "16074": {
       "ags": "16074",
       "name": "Saale-Holzland-Kreis",
       "county": "LK Saale-Holzland-Kreis",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Wappen_Saale-Holzland-Kreis.svg/100px-Wappen_Saale-Holzland-Kreis.svg.png"
     },
     "16075": {
       "ags": "16075",
       "name": "Saale-Orla-Kreis",
       "county": "LK Saale-Orla-Kreis",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Wappen_Saale-Orla-Kreis.svg/115px-Wappen_Saale-Orla-Kreis.svg.png"
     },
     "16076": {
       "ags": "16076",
       "name": "Greiz",
       "county": "LK Greiz",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Wappen_Landkreis_Greiz.svg/113px-Wappen_Landkreis_Greiz.svg.png"
     },
     "16077": {
       "ags": "16077",
       "name": "Altenburger Land",
       "county": "LK Altenburger Land",
       "stateAbbreviation": "TH",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Wappen_Landkreis_Altenburger_Land.svg/115px-Wappen_Landkreis_Altenburger_Land.svg.png"
     },
     "01001": {
       "ags": "01001",
