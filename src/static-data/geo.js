@@ -1743,70 +1743,70 @@ let geo = {
       "name": "Ahrweiler",
       "county": "LK Ahrweiler",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Landkreiswappen_des_Landkreises_Ahrweiler.png/105px-Landkreiswappen_des_Landkreises_Ahrweiler.png"
     },
     "07132": {
       "ags": "07132",
       "name": "Altenkirchen (Westerwald)",
       "county": "LK Altenkirchen",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Wappen_Landkreis_Altenkirchen.png/104px-Wappen_Landkreis_Altenkirchen.png"
     },
     "07133": {
       "ags": "07133",
       "name": "Bad Kreuznach",
       "county": "LK Bad Kreuznach",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Wappen_Landkreis_Bad_Kreuznach.png/87px-Wappen_Landkreis_Bad_Kreuznach.png"
     },
     "07134": {
       "ags": "07134",
       "name": "Birkenfeld",
       "county": "LK Birkenfeld",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Wappen_Landkreis_Birkenfeld.png/110px-Wappen_Landkreis_Birkenfeld.png"
     },
     "07135": {
       "ags": "07135",
       "name": "Cochem-Zell",
       "county": "LK Cochem-Zell",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wappen_Landkreis_Cochem-Zell.png/105px-Wappen_Landkreis_Cochem-Zell.png"
     },
     "07137": {
       "ags": "07137",
       "name": "Mayen-Koblenz",
       "county": "LK Mayen-Koblenz",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wappen_Landkreis_Mayen-Koblenz.png/98px-Wappen_Landkreis_Mayen-Koblenz.png"
     },
     "07138": {
       "ags": "07138",
       "name": "Neuwied",
       "county": "LK Neuwied",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Wappen_Landkreis_Neuwied.png/113px-Wappen_Landkreis_Neuwied.png"
     },
     "07140": {
       "ags": "07140",
       "name": "Rhein-Hunsrück-Kreis",
       "county": "LK Rhein-Hunsrück-Kreis",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Wappen_Rhein-Hunsrueck-Kreis.png/95px-Wappen_Rhein-Hunsrueck-Kreis.png"
     },
     "07141": {
       "ags": "07141",
       "name": "Rhein-Lahn-Kreis",
       "county": "LK Rhein-Lahn-Kreis",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Wappen_Rhein-Lahn-Kreis.png/104px-Wappen_Rhein-Lahn-Kreis.png"
     },
     "07143": {
       "ags": "07143",
       "name": "Westerwaldkreis",
       "county": "LK Westerwaldkreis",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wappen_Westerwaldkreis.png/105px-Wappen_Westerwaldkreis.png"
     },
     "07211": {
       "ags": "07211",
@@ -1820,28 +1820,28 @@ let geo = {
       "name": "Bernkastel-Wittlich",
       "county": "LK Bernkastel-Wittlich",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Wappen_Landkreis_Bernkastel-Wittlich.png/92px-Wappen_Landkreis_Bernkastel-Wittlich.png"
     },
     "07232": {
       "ags": "07232",
       "name": "Eifelkreis Bitburg-Prüm",
       "county": "LK Bitburg-Prüm",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Wappen_Eifelkreis_Bitburg-Pr%C3%BCm.png/107px-Wappen_Eifelkreis_Bitburg-Pr%C3%BCm.png"
     },
     "07233": {
       "ags": "07233",
       "name": "Vulkaneifel",
       "county": "LK Vulkaneifel",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Wappen_Landkreis_Vulkaneifel.png/102px-Wappen_Landkreis_Vulkaneifel.png"
     },
     "07235": {
       "ags": "07235",
       "name": "Trier-Saarburg",
       "county": "LK Trier-Saarburg",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Wappen_Landkreis_Trier-Saarburg.png/111px-Wappen_Landkreis_Trier-Saarburg.png"
     },
     "07311": {
       "ags": "07311",
@@ -1918,70 +1918,70 @@ let geo = {
       "name": "Alzey-Worms",
       "county": "LK Alzey-Worms",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Wappen_Landkreis_Alzey-Worms.png/92px-Wappen_Landkreis_Alzey-Worms.png"
     },
     "07332": {
       "ags": "07332",
       "name": "Bad Dürkheim",
       "county": "LK Bad Dürkheim",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wappen_lk_duew.png/106px-Wappen_lk_duew.png"
     },
     "07333": {
       "ags": "07333",
       "name": "Donnersbergkreis",
       "county": "LK Donnersbergkreis",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Wappen_Donnersbergkreis.png/103px-Wappen_Donnersbergkreis.png"
     },
     "07334": {
       "ags": "07334",
       "name": "Germersheim",
       "county": "LK Germersheim",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Wappen_Landkreis_Germersheim.png/104px-Wappen_Landkreis_Germersheim.png"
     },
     "07335": {
       "ags": "07335",
       "name": "Kaiserslautern",
       "county": "LK Kaiserslautern",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Wappen_Landkreis_Kaiserslautern.png/112px-Wappen_Landkreis_Kaiserslautern.png"
     },
     "07336": {
       "ags": "07336",
       "name": "Kusel",
       "county": "LK Kusel",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Wappen_Landkreis_Kusel.png/108px-Wappen_Landkreis_Kusel.png"
     },
     "07337": {
       "ags": "07337",
       "name": "Südliche Weinstraße",
       "county": "LK Südliche Weinstraße",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Wappen_lk_suew.png/110px-Wappen_lk_suew.png"
     },
     "07338": {
       "ags": "07338",
       "name": "Rhein-Pfalz-Kreis",
       "county": "LK Rhein-Pfalz-Kreis",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Wappen_rheinpfalzkreis.png/110px-Wappen_rheinpfalzkreis.png"
     },
     "07339": {
       "ags": "07339",
       "name": "Mainz-Bingen",
       "county": "LK Mainz-Bingen",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Wappen_Landkreis_Mainz-Bingen.png/105px-Wappen_Landkreis_Mainz-Bingen.png"
     },
     "07340": {
       "ags": "07340",
       "name": "Südwestpfalz",
       "county": "LK Südwestpfalz",
       "stateAbbreviation": "RP",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/DEU_Landkreis_Suedwestpfalz_COA.svg/102px-DEU_Landkreis_Suedwestpfalz_COA.svg.png"
     },
     "08111": {
       "ags": "08111",
