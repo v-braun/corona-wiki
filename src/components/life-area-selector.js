@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types'
 import { HScroll } from './horizontal-scroll-container';
-import liveAreas from '../static-data/life_areas';
-import { LiveAreaButton } from './live-area-btn';
+import lifeAreas from '../static-data/life_areas';
+import { LifeAreaButton } from './life-area-btn';
 
 
 /**
@@ -31,7 +31,7 @@ import { LiveAreaButton } from './live-area-btn';
 }
 >}
 */
-export class LiveAreaSelector extends Component{
+export class LifeAreaSelector extends Component{
 
   static propTypes = {
     onClick: PropTypes.func.isRequired,
@@ -48,7 +48,7 @@ export class LiveAreaSelector extends Component{
   async updateUI(){
     /** @type {Area[]} */
     let result = [];
-    for(let [ , val] of Object.entries(liveAreas)){
+    for(let [ , val] of Object.entries(lifeAreas)){
       result.push({
         id: val.id,
         title: val.title,
@@ -74,7 +74,7 @@ export class LiveAreaSelector extends Component{
         {this.state.areas.map(area => {
           return (
             <div className="scroll-item" key={area.id}>
-              <LiveAreaButton     
+              <LifeAreaButton     
                 ico={area.ico}
                 onClick={(id, ref) => this.props.onClick(id, ref)}
                 title={area.title}

@@ -1,7 +1,7 @@
 import { Component, createRef } from 'react';
 import PropTypes from 'prop-types'
 import ReactMarkdown from 'react-markdown'
-import './live-area-btn.scss';
+import './life-area-btn.scss';
 
 
 /**
@@ -18,7 +18,7 @@ import './live-area-btn.scss';
 }
 >}
 */
-export class LiveAreaButton extends Component{
+export class LifeAreaButton extends Component{
 
   static propTypes = {
     id: PropTypes.string.isRequired,

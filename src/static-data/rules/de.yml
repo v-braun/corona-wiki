@@ -6,48 +6,88 @@ de:
       Es wird keine Haftung für die korrektheit der Angaben übernommen!
   areas:
     zusammenkuenfte_privat:
-      status: limit
-      reference:
-        date: '2.3.2021'
-        link: ''
-      rules:
-        - text: |- 
-            **Eine** Person darf ein Haushalt besuchen
-          status: allow
-        - text: |- 
-            Ein Haushalt darf **eine** Person besuchen
-          status: allow
-        - text: Kinder jünger als **6 Jahre** nicht eingeschlossen
-          status: allow
-        - text: |- 
-            **Mehrere** Personen dürfen **nicht** ein Haushalt besuchen
-          status: forbidden
-        - text: |- 
-            Ein Haushalt darf **nicht** mehrere Personen besuchen
-          status: forbidden
+      rule_sets:
+        - type: date_range
+          from: '2020-01-01'
+          to: '2020-03-07'
+          reference:
+            date: '2.3.2021'
+            link: ''
+          rules:
+            - text: |- 
+                **Eine** Person darf ein Haushalt besuchen
+              status: allow
+            - text: |- 
+                Ein Haushalt darf **eine** Person besuchen
+              status: allow
+            - text: Kinder jünger als **6 Jahre** nicht eingeschlossen
+              status: allow
+            - text: |- 
+                **Mehrere** Personen dürfen **nicht** ein Haushalt besuchen
+              status: forbidden
+            - text: |- 
+                Ein Haushalt darf **nicht** mehrere Personen besuchen
+              status: forbidden
+        - type: incidence_last_days
+          max_incidence: 100
+          over_days: 3
+          reference:
+            date: '3.3.2021'
+            # title: ''
+            link: 'https://www.ndr.de/nachrichten/info/Corona-Gipfel-von-Bund-und-Laendern-Diese-Lockerungen-sind-im-Gespraech,bundlaenderberatungen100.html'
+          rules:
+            - text: "**Ein** Haushalt darf **ein** anderen Haushalt besuchen"
+              status: allow
+            - text: "Zwei Haushalte Zusammen dürfen nicht mehr als **fünf** Personen entsprechen"
+              status: forbidden
+            - text: Kinder jünger als **14 Jahre** nicht eingeschlossen
+              status: allow
 
     zusammenkuenfte_oeffentlich:
-      status: limit
-      rules:
-        - text: |- 
-            **Eine** Person darf sich mit einem Haushalt treffen
-          status: allow
-        - text: |- 
-            Ein Haushalt darf sich mit **einer** Person treffen
-          status: allow
-        - text: Kinder jünger als **6 Jahre** nicht eingeschlossen
-          status: allow
-        - text: |- 
-            **Mehrere** Personen dürfen sich **nicht** mit einem Haushalt treffen
-          status: forbidden
-        - text: |- 
-            Ein Haushalt darf sich **nicht** mit mehreren Personen treffen
-          status: forbidden
+      rule_sets:
+        - type: date_range
+          from: '2020-01-01'
+          to: '2020-03-07'
+          reference:
+            date: '2.3.2021'
+            link: ''
+          rules:
+            - text: |- 
+                **Eine** Person darf sich mit einem Haushalt treffen
+              status: allow
+            - text: |- 
+                Ein Haushalt darf sich mit **einer** Person treffen
+              status: allow
+            - text: Kinder jünger als **6 Jahre** nicht eingeschlossen
+              status: allow
+            - text: |- 
+                **Mehrere** Personen dürfen sich **nicht** mit einem Haushalt treffen
+              status: forbidden
+            - text: |- 
+                Ein Haushalt darf sich **nicht** mit mehreren Personen treffen
+              status: forbidden
+        - type: incidence_last_days
+          max_incidence: 100
+          over_days: 3
+          reference:
+            date: '3.3.2021'
+            # title: ''
+            link: 'https://www.ndr.de/nachrichten/info/Corona-Gipfel-von-Bund-und-Laendern-Diese-Lockerungen-sind-im-Gespraech,bundlaenderberatungen100.html'
+          rules:
+            - text: "**Ein** Haushalt darf sich mit **einem** anderen Haushalt treffen"
+              status: allow
+            - text: "Zwei Haushalte Zusammen dürfen nicht mehr als **fünf** Personen entsprechen"
+              status: forbidden
+            - text: Kinder jünger als **14 Jahre** nicht eingeschlossen
+              status: allow
+
+
     
     stationaer_indoor:
-      status: limit
-      rules:
-        - text: |- 
-            Bleiben leider Geschlossen
-          status: closed    
+      rule_sets:
+        - type: static
+          rules:
+            - text: |- 
+                Bleiben leider Geschlossen
+              status: closed    
             

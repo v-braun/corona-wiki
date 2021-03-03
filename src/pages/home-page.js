@@ -2,14 +2,14 @@ import { Component } from 'react';
 import { withRouter } from "react-router-dom";
 // import * as api from '../services/coronaApi';
 import geo from '../static-data/geo';
-import liveAreas from '../static-data/life_areas';
+import lifeAreas from '../static-data/life_areas';
 
 import {StateSelector} from '../components/state-selector';
 import {DistrictSelector} from '../components/district-selector';
 import { ChartGallery } from '../components/chart-gallery';
 
 import './home-page.scss'
-import { LiveAreaSelector } from '../components/live-area-selector';
+import { LifeAreaSelector } from '../components/life-area-selector';
 import { AreaRuleContainer } from '../components/area-rule-container';
 
 
@@ -91,8 +91,8 @@ class HomePage extends Component{
     if(currentDistrict && geo.districts[currentDistrict]){
       districtDisplayName = geo.districts[currentDistrict].name;
     }
-    if(currentArea && liveAreas[currentArea]){
-      areaDisplayName = liveAreas[currentArea].title;
+    if(currentArea && lifeAreas[currentArea]){
+      areaDisplayName = lifeAreas[currentArea].title;
     }
 
 
@@ -149,7 +149,7 @@ class HomePage extends Component{
           <section className="section">
             <div className="section-title">Regelungen in {districtDisplayName}</div>
             <div className="section-child-full">
-              <LiveAreaSelector 
+              <LifeAreaSelector 
                 selectedStateAbbr={currentState}
                 selectedAgs={currentDistrict}
                 selectedArea={currentArea}

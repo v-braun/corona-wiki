@@ -1,6 +1,6 @@
 import yaml from 'yaml.macro'
 
-const liveAreas = yaml('./life_areas.yml');
+const lifeAreas = yaml('./life_areas.yml');
 
 
-export default liveAreas.life_areas;
+export default lifeAreas.life_areas;

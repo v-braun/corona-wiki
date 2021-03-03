@@ -30,7 +30,10 @@ export class AreaRuleContainer extends Component{
     super(props);
 
     this.state = {
+      /** @type {import('../services/rulesService').RuleSet[]} */
       country: null,
+
+      /** @type {import('../services/rulesService').RuleSet[]} */
       state: null,
       stateIco: null,
       stateName: null,
@@ -127,7 +130,7 @@ export class AreaRuleContainer extends Component{
     let stateIco = this.state.stateIco;
     let countryGlobalAnnotation = this.state.globalCountryAnnotations;
     let stateGlobalAnnotation = this.state.globalStateAnnotations;
-    console.log('countryGlobalAnnotation', countryGlobalAnnotation)
+    console.log('country', country)
     return (
       <div className="area-rules">
         {country &&
@@ -145,7 +148,7 @@ export class AreaRuleContainer extends Component{
               <label className="rule-main-title">Deutschlandweite Regelungen</label>
             </div>
             <div className="rule-main-ctr-body">
-              {country.rules.map((rule, i) => {
+              {country[0].rules.map((rule, i) => {
                 return this.renderRule(rule, i)
               })}
             </div>            
@@ -161,7 +164,7 @@ export class AreaRuleContainer extends Component{
               <label className="rule-main-title">Regelungen in {stateName}</label>
             </div>
             <div className="rule-main-ctr-body">
-              {state.rules.map((rule, i) => {
+              {state[0].rules.map((rule, i) => {
                 return this.renderRule(rule, i)
               })}
             </div>
