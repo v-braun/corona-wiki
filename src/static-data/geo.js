@@ -1253,35 +1253,35 @@ let geo = {
       "name": "Kleve",
       "county": "LK Kleve",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/DEU_Kreis_Kleve_COA.svg/105px-DEU_Kreis_Kleve_COA.svg.png"
     },
     "05158": {
       "ags": "05158",
       "name": "Mettmann",
       "county": "LK Mettmann",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Kreiswappen_des_Kreises_Mettmann.png/118px-Kreiswappen_des_Kreises_Mettmann.png"
     },
     "05162": {
       "ags": "05162",
       "name": "Rhein-Kreis Neuss",
       "county": "LK Rhein-Kreis Neuss",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kreiswappen_des_Rhein-Kreises_Neuss.svg/101px-Kreiswappen_des_Rhein-Kreises_Neuss.svg.png"
     },
     "05166": {
       "ags": "05166",
       "name": "Viersen",
       "county": "LK Viersen",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Kreiswappen_des_Kreises_Viersen.png/120px-Kreiswappen_des_Kreises_Viersen.png"
     },
     "05170": {
       "ags": "05170",
       "name": "Wesel",
       "county": "LK Wesel",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Kreiswappen_des_Kreises_Wesel.svg/120px-Kreiswappen_des_Kreises_Wesel.svg.png"
     },
     "05314": {
       "ags": "05314",
@@ -1309,56 +1309,56 @@ let geo = {
       "name": "Städteregion Aachen",
       "county": "StadtRegion Aachen",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/DEU_Staedteregion_Aachen_COA.svg/102px-DEU_Staedteregion_Aachen_COA.svg.png"
     },
     "05358": {
       "ags": "05358",
       "name": "Düren",
       "county": "LK Düren",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Wappen_Kreis_D%C3%BCren.svg/110px-Wappen_Kreis_D%C3%BCren.svg.png"
     },
     "05362": {
       "ags": "05362",
       "name": "Rhein-Erft-Kreis",
       "county": "LK Rhein-Erft-Kreis",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/DEU_Rhein-Erft-Kreis_COA.svg/105px-DEU_Rhein-Erft-Kreis_COA.svg.png"
     },
     "05366": {
       "ags": "05366",
       "name": "Euskirchen",
       "county": "LK Euskirchen",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Wappen_Kreis_Euskirchen.svg/98px-Wappen_Kreis_Euskirchen.svg.png"
     },
     "05370": {
       "ags": "05370",
       "name": "Heinsberg",
       "county": "LK Heinsberg",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Kreiswappen_des_Kreises_Heinsberg.png/98px-Kreiswappen_des_Kreises_Heinsberg.png"
     },
     "05374": {
       "ags": "05374",
       "name": "Oberbergischer Kreis",
       "county": "LK Oberbergischer Kreis",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Wappen-oberberg-k.png/101px-Wappen-oberberg-k.png"
     },
     "05378": {
       "ags": "05378",
       "name": "Rheinisch-Bergischer Kreis",
       "county": "LK Rheinisch-Bergischer Kreis",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Kreiswappen_des_Rheinisch-Bergischen_Kreises.png/109px-Kreiswappen_des_Rheinisch-Bergischen_Kreises.png"
     },
     "05382": {
       "ags": "05382",
       "name": "Rhein-Sieg-Kreis",
       "county": "LK Rhein-Sieg-Kreis",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rhein-Sieg-Kreis-Wappen.png/101px-Rhein-Sieg-Kreis-Wappen.png"
     },
     "05512": {
       "ags": "05512",
@@ -1386,35 +1386,35 @@ let geo = {
       "name": "Borken",
       "county": "LK Borken",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Wappen_Kreis_Borken.svg/107px-Wappen_Kreis_Borken.svg.png"
     },
     "05558": {
       "ags": "05558",
       "name": "Coesfeld",
       "county": "LK Coesfeld",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/DEU_Kreis_Coesfeld_COA.svg/106px-DEU_Kreis_Coesfeld_COA.svg.png"
     },
     "05562": {
       "ags": "05562",
       "name": "Recklinghausen",
       "county": "LK Recklinghausen",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Kreis_Recklinghausen_Wappen.svg/102px-Kreis_Recklinghausen_Wappen.svg.png"
     },
     "05566": {
       "ags": "05566",
       "name": "Steinfurt",
       "county": "LK Steinfurt",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/DEU_Kreis_Steinfurt_COA.svg/99px-DEU_Kreis_Steinfurt_COA.svg.png"
     },
     "05570": {
       "ags": "05570",
       "name": "Warendorf",
       "county": "LK Warendorf",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Wappen_des_Kreises_Warendorf.svg/97px-Wappen_des_Kreises_Warendorf.svg.png"
     },
     "05711": {
       "ags": "05711",
@@ -1428,42 +1428,42 @@ let geo = {
       "name": "Gütersloh",
       "county": "LK Gütersloh",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Kreiswappen_des_Kreises_G%C3%BCtersloh.svg/98px-Kreiswappen_des_Kreises_G%C3%BCtersloh.svg.png"
     },
     "05758": {
       "ags": "05758",
       "name": "Herford",
       "county": "LK Herford",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Kreiswappen_des_Kreises_Herford.svg/103px-Kreiswappen_des_Kreises_Herford.svg.png"
     },
     "05762": {
       "ags": "05762",
       "name": "Höxter",
       "county": "LK Höxter",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Kreiswappen_des_Kreises_H%C3%B6xter.svg/104px-Kreiswappen_des_Kreises_H%C3%B6xter.svg.png"
     },
     "05766": {
       "ags": "05766",
       "name": "Lippe",
       "county": "LK Lippe",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Kreiswappen_des_Kreises_Lippe.svg/111px-Kreiswappen_des_Kreises_Lippe.svg.png"
     },
     "05770": {
       "ags": "05770",
       "name": "Minden-Lübbecke",
       "county": "LK Minden-Lübbecke",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/DEU_Kreis_Minden-Luebbecke_COA.svg/105px-DEU_Kreis_Minden-Luebbecke_COA.svg.png"
     },
     "05774": {
       "ags": "05774",
       "name": "Paderborn",
       "county": "LK Paderborn",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Kreiswappen_des_Kreises_Paderborn.svg/104px-Kreiswappen_des_Kreises_Paderborn.svg.png"
     },
     "05911": {
       "ags": "05911",
@@ -1505,49 +1505,49 @@ let geo = {
       "name": "Ennepe-Ruhr-Kreis",
       "county": "LK Ennepe-Ruhr-Kreis",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Wappen_des_Ennepe-Ruhr-Kreises.svg/100px-Wappen_des_Ennepe-Ruhr-Kreises.svg.png"
     },
     "05958": {
       "ags": "05958",
       "name": "Hochsauerlandkreis",
       "county": "LK Hochsauerlandkreis",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/DEU_Hochsauerlandkreis_COA.svg/103px-DEU_Hochsauerlandkreis_COA.svg.png"
     },
     "05962": {
       "ags": "05962",
       "name": "Märkischer Kreis",
       "county": "LK Märkischer Kreis",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Kreiswappen_des_M%C3%A4rkischen_Kreises.svg/95px-Kreiswappen_des_M%C3%A4rkischen_Kreises.svg.png"
     },
     "05966": {
       "ags": "05966",
       "name": "Olpe",
       "county": "LK Olpe",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/DEU_Kreis_Olpe_COA.svg/100px-DEU_Kreis_Olpe_COA.svg.png"
     },
     "05970": {
       "ags": "05970",
       "name": "Siegen-Wittgenstein",
       "county": "LK Siegen-Wittgenstein",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/DEU_Kreis_Siegen-Wittgenstein_COA.svg/97px-DEU_Kreis_Siegen-Wittgenstein_COA.svg.png"
     },
     "05974": {
       "ags": "05974",
       "name": "Soest",
       "county": "LK Soest",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/DEU_Kreis_Soest_COA.svg/105px-DEU_Kreis_Soest_COA.svg.png"
     },
     "05978": {
       "ags": "05978",
       "name": "Unna",
       "county": "LK Unna",
       "stateAbbreviation": "NW",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Wappen_Kreis_Unna.png/105px-Wappen_Kreis_Unna.png"
     },
     "06411": {
       "ags": "06411",
