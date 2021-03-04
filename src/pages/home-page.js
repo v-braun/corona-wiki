@@ -152,6 +152,7 @@ class HomePage extends Component{
                 selectedAgs={currentDistrict}
                 selectedArea={currentArea}
                 onClick={(id, ref) => this.areaSelected(id, ref)}
+                districtName={districtDisplayName}
               />
             </div>
           </section>
@@ -165,6 +166,8 @@ class HomePage extends Component{
                 state={currentState}
                 district={currentDistrict}
                 area={currentArea}
+                districtName={districtDisplayName}
+
                 
               />
             </div>

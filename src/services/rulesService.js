@@ -1,5 +1,5 @@
 import rules from '../static-data/rules'
-
+import ruleSetTemplates from '../static-data/rules/rule_set_templates';
 
 /**
  * @typedef {'unknown' | 'closed' | 'forbidden' | 'limit' | 'nolimit' | 'open'} RuleStatus
@@ -91,6 +91,35 @@ export function getSummary(){
 
 /**
  * 
+ * @param {RuleSet[]} ruleSets 
+ */
+function resolveRuleSetReferences(ruleSets){
+  let result = [];
+  for(let item of ruleSets){
+    if(!item.include){
+      result.push(item);
+      continue;
+    }
+
+    let reference = ruleSetTemplates[item.include];
+    if(!reference){
+      console.error('could not find reference', item.include, item);
+      continue; 
+    }
+
+    for(let referencedSet of reference ){
+      referencedSet['__include_tpl_name'] = item.include;
+      result.push(referencedSet);
+    }    
+  
+  }
+
+  return result;
+}
+
+
+/**
+ * 
  * @param {string} state the state (bundesland) to search for
  * @param {string} area the life
  * @returns {{
@@ -114,7 +143,8 @@ export function getRulesFor(state, area){
 
   let existingArea = __summary.areas[area];
   if(!existingArea) return result;
-  result.country = existingArea.country?.rule_sets;
+  let ruleSets = existingArea.country?.rule_sets;
+  result.country = resolveRuleSetReferences(ruleSets)
 
   let stateData = existingArea.states[state];
   if(!stateData) return result;

@@ -11,7 +11,8 @@ import { AreaRuleSet } from './area-rule-set';
 * @augments {Component<{
     area: string, 
     state: string, 
-    district: string
+    district: string,
+    districtName: string,
 }, 
 {
   
@@ -23,7 +24,8 @@ export class AreaRuleContainer extends Component{
     area: PropTypes.string.isRequired,
     state: PropTypes.string.isRequired,
     stateIco: PropTypes.string,
-    district: PropTypes.string.isRequired
+    district: PropTypes.string.isRequired,
+    districtName: PropTypes.string.isRequired,
   }
 
   constructor(props){
@@ -37,6 +39,8 @@ export class AreaRuleContainer extends Component{
       state: null,
       stateIco: null,
       stateName: null,
+
+
       globalCountryAnnotations: null,
       globalStateAnnotations: null,
 
@@ -125,6 +129,7 @@ export class AreaRuleContainer extends Component{
                 ruleSets={country}
                 state={this.props.state}
                 district={this.props.district}
+                districtName={this.props.districtName}
                 noRulesMessage={`Aktuell sind keine Deutschlandweiten Regelungen bekannt`}
               />
             </div>            
@@ -144,6 +149,7 @@ export class AreaRuleContainer extends Component{
                 ruleSets={state}
                 state={this.props.state}
                 district={this.props.district}
+                districtName={this.props.districtName}
               />
             </div>
           </div>        

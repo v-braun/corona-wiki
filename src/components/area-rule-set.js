@@ -24,6 +24,7 @@ export class AreaRuleSet extends Component{
     ruleSets: PropTypes.any.isRequired,
     state: PropTypes.string.isRequired,
     district: PropTypes.string.isRequired,
+    districtName: PropTypes.string.isRequired,
     noRulesMessage: PropTypes.string.isRequired,
   }
 
@@ -83,10 +84,10 @@ export class AreaRuleSet extends Component{
 
   async updateUI(){
     let incidenceHistory = (await api.getHistory(`/districts/${this.props.district}/history/incidence/360`)).data[this.props.district].history;
-    let today = moment();
-    // console.log(today.format('YYYY-MM-DD'));
-
-    //  = [];
+    let today = moment().startOf('day');
+    today = moment('2021-03-08', 'YYYY-MM-DD');
+    
+    
     let matchedRuleSets = this.props.ruleSets.filter(rs => {
       if(!rs.conditions) return true; // RS without conditions are dispayed always
 
@@ -99,7 +100,7 @@ export class AreaRuleSet extends Component{
       if(fromDate && today.isBefore(fromDate)) return false;
       if(toDate && today.isAfter(toDate)) return false;
 
-      if(Number.isFinite(conditions.incidence_days)){
+      if(Number.isFinite(conditions.incidence_days)) {
         let lastDaysIncidence = this.__lastXDays(incidenceHistory, conditions.incidence_days);
         if(!Number.isFinite(conditions.incidence_from) && !Number.isFinite(conditions.incidence_to)){
           console.error(`unexpected conditions.incidence_days (${conditions.incidence_days}) without incidence_from / incidence_from`, rs);
@@ -117,7 +118,7 @@ export class AreaRuleSet extends Component{
         
         return true;
       } else{
-        let currentDateIncidence = this.__lastXDays(incidenceHistory, 1);
+        let currentDateIncidence = this.__lastXDays(incidenceHistory, 1)[0];
         if(Number.isFinite(conditions.incidence_from)){
           if(currentDateIncidence.weekIncidence < conditions.incidence_from) return false;
         }
@@ -127,6 +128,8 @@ export class AreaRuleSet extends Component{
 
         return true;
       }
+
+      
     });
     
     let todayIncidence = this.__lastXDays(incidenceHistory, 1);
@@ -188,44 +191,11 @@ export class AreaRuleSet extends Component{
 
       if(Number.isFinite(this.state.todayIncidence)){
         htmlItems.push(<br />);
-        htmlItems.push(<span>Aktuelle Inzidenz im LK <span className="incidence-value">{this.state.todayIncidence.toFixed(2)}</span> </span>);
-      }      
+        htmlItems.push(<span>Aktuelle Inzidenz im LK {this.props.districtName}: <span className="incidence-value">{this.state.todayIncidence.toFixed(2)}</span> </span>);
+      }
     }
-    //  else{
-    //   htmlItems.push(<span>.</span>);       
-    // }
-
-    // if(dateItems.length == 2){
-    //   htmlItems.push(
-    //     dateItems[0],
-    //     <span>, </span>,
-    //     dateItems[1],
-    //     <span> </span>,
-    //   );
-    // } else{
-    //   htmlItems.push(
-    //     dateItems[0],
-    //     <span> </span>
-    //   );
-    // }
-
-    // if(incidenceItems.length > 0){
-    //   htmlItems.push(
-    //     <span>bei einer Inzidenz </span>
-    //   );      
-    //   if(incidenceItems.length == 2){
-    //     htmlItems.push(
-    //       incidenceItems[0],
-    //       <span> und </span>,
-    //       incidenceItems[1],
-    //       <span>.</span>,
-    //     );        
-    //   } else{
-    //     htmlItems.push(
-    //       incidenceItems[0],
-    //       <span>.</span>
-    //     );        
-    //   }
+    // for(let i = 0; i < htmlItems.length; i++){
+    //   htmlItems[i].key = i.toString();
     // }
 
     return (
@@ -238,6 +208,8 @@ export class AreaRuleSet extends Component{
         </div>
       </div>
     )
+
+    return undefined;
   }
 
   async componentDidMount(){
