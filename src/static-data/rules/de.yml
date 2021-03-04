@@ -7,9 +7,9 @@ de:
   areas:
     zusammenkuenfte_privat:
       rule_sets:
-        - type: date_range
-          from: '2020-01-01'
-          to: '2020-03-07'
+        - conditions:
+            date_from: '2021-01-01'
+            date_to: '2021-03-08'
           reference:
             date: '2.3.2021'
             link: ''
@@ -28,9 +28,11 @@ de:
             - text: |- 
                 Ein Haushalt darf **nicht** mehrere Personen besuchen
               status: forbidden
-        - type: incidence_last_days
-          max_incidence: 100
-          over_days: 3
+        - conditions:
+            incidence_from: 0
+            incidence_to: 100
+            incidence_days: 3
+            date_from: '2021-03-02'
           reference:
             date: '3.3.2021'
             # title: ''
@@ -45,9 +47,9 @@ de:
 
     zusammenkuenfte_oeffentlich:
       rule_sets:
-        - type: date_range
-          from: '2020-01-01'
-          to: '2020-03-07'
+        - conditions:
+            date_from: '2021-01-01'
+            date_to: '2021-03-07'
           reference:
             date: '2.3.2021'
             link: ''
@@ -66,9 +68,11 @@ de:
             - text: |- 
                 Ein Haushalt darf sich **nicht** mit mehreren Personen treffen
               status: forbidden
-        - type: incidence_last_days
-          max_incidence: 100
-          over_days: 3
+
+        - conditions:
+            date_from: '2021-01-01'
+            incidence_to: 100
+            incidence_days: 3
           reference:
             date: '3.3.2021'
             # title: ''
@@ -85,8 +89,7 @@ de:
     
     stationaer_indoor:
       rule_sets:
-        - type: static
-          rules:
+        - rules:
             - text: |- 
                 Bleiben leider Geschlossen
               status: closed    

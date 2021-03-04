@@ -67,6 +67,46 @@
 
     }
 
+    .no-ruleset{
+        font-style: italic;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .rule-set-banner{
+        display: flex;
+        border-color: $primary;
+        border-style: solid;
+        border-width: 1px;
+        // color: white;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        font-size: 0.8rem;
+        margin-bottom: 0.5em;
+        border-radius: 0.5em;
+        align-items: center;
+        .rule-set-banner-ico{
+            max-height: 30px;
+            max-width: 30px;
+            padding: 5px;
+            > img{
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .rule-set-banner-content{
+            .date-value{
+                font-weight: bold;
+            }
+            .incidence-value, .incidence-days{
+                font-weight: bold;
+                color: $incidence;
+
+            }
+        }
+    }
+
     .rule-item{
         display: flex;
         align-items: center;

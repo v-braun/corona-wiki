@@ -12,19 +12,25 @@ import rules from '../static-data/rules'
  * @property {RuleStatus} status
  */ 
 
+/**
+ * @typedef RuleConditions
+ * @type {object}
+ * @property {string} [date_from]
+ * @property {string} [date_to] 
+ * 
+ * @property {number} [incidence_from]
+ * @property {number} [incidence_to]  
+ * @property {number} [incidence_days]
+ */ 
 
 /**
  * @typedef RuleSet
  * @type {object}
- * @property {'date_range' | 'static' | 'incidence_last_days'} type
  * @property {{date: string, link: string}} reference
  * @property {RuleLine[]} rules
  * 
- * @property {string} [from] inclusive date / only for 'date_range' rules
- * @property {string} [to] inclusive date / only for 'date_range' rules
- * 
- * @property {number} [max_incidence]  only for 'incidence_last_days' rules
- * @property {number} [over_days]   only for 'incidence_last_days' rules
+ * @property {RuleConditions} [conditions]
+
  */
 
 
@@ -95,7 +101,6 @@ export function getSummary(){
  * }}
  */
 export function getRulesFor(state, area){
-  console.log('__summary', __summary)
   let result = {
     globalCountryAnnotations: __summary.annotations?.de,
     globalStateAnnotations: __summary.annotations?.states[state],

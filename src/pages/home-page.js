@@ -50,7 +50,6 @@ class HomePage extends Component{
   }
 
   async areaSelected(area, ref){
-    console.log('select area', area)
     if(!area) return;
 
     let state = this.props.match.params.state;
@@ -72,7 +71,6 @@ class HomePage extends Component{
     this.props.history.push(`/${state}/${ags}/${area}`);    
 
     setTimeout(() => {
-      console.log('scroll to', ref)
       ref?.current?.scrollIntoView({behavior:'smooth', block:'center',inline:'center'});
     }, 400);    
   }

@@ -5,7 +5,7 @@ ni:
   areas:
     zusammenkuenfte_privat:
       rule_sets:
-        - type: static
+        - conditions: 
           reference:
             date: '1.1.2021'
             link: ''        

@@ -4,7 +4,7 @@ import * as ruleService from '../services/rulesService';
 import geo from '../static-data/geo';
 
 import './area-rule-container.scss';
-import ReactMarkdown from 'react-markdown';
+import { AreaRuleSet } from './area-rule-set';
 
 
 /**
@@ -23,7 +23,7 @@ export class AreaRuleContainer extends Component{
     area: PropTypes.string.isRequired,
     state: PropTypes.string.isRequired,
     stateIco: PropTypes.string,
-    district: PropTypes.string.isRequired,
+    district: PropTypes.string.isRequired
   }
 
   constructor(props){
@@ -39,6 +39,7 @@ export class AreaRuleContainer extends Component{
       stateName: null,
       globalCountryAnnotations: null,
       globalStateAnnotations: null,
+
     };
   }
 
@@ -50,6 +51,7 @@ export class AreaRuleContainer extends Component{
   
   async updateUI(){
     let rules = await ruleService.getRulesFor(this.props.state, this.props.area);
+
     let newState = {
       country: rules.country,
       state: rules.state,
@@ -62,15 +64,12 @@ export class AreaRuleContainer extends Component{
     if(state.ico){
       newState.stateIco = state.ico;
     } else{
-      newState.stateIco =  `https://avatars.dicebear.com/api/initials/${state.ico}.svg`;
+      newState.stateIco = `https://avatars.dicebear.com/api/initials/${state.ico}.svg`;
     }
+
     newState.stateName = state.name;
-    
-    
 
     this.setState(newState);
-
-    console.log('rule container', newState);
   }
 
   async componentDidMount(){
@@ -86,34 +85,8 @@ export class AreaRuleContainer extends Component{
     await this.updateUI();
   }
 
-  renderRuleIco(ruleStatus){
-    switch(ruleStatus){
-      case "allow": return <img alt="Erlaubt" src="https://img.icons8.com/flat-round/128/000000/checkmark.png" />;
-      case "forbidden": return <img alt="Verboten" src="https://img.icons8.com/flat-round/64/000000/no-entry--v1.png" />;
-
-      case "limit": return <img alt="Mit Einschränkungen" src="https://img.icons8.com/emoji/64/000000/warning-emoji.png" />;
-      case "nolimit": return <img alt="Ohne Einschränkungen" src="https://img.icons8.com/flat-round/128/000000/checkmark.png" />;
-      
-      case "open": return <img alt="Geöffnet" src="https://img.icons8.com/fluent/96/000000/open-sign.png" />;
-      case "closed": return <img alt="Info" src="https://img.icons8.com/fluent/96/000000/closed-sign.png" />;
-
-      default: return <img alt="Info" src="https://img.icons8.com/flat-round/64/000000/question-mark.png" />;
-    }
-  }  
-
-  renderRule(rule, idx){
-    return (
-      <div key={idx} className="rule-item">
-        <div className="rule-ico">{this.renderRuleIco(rule.status)}</div>
-        <ReactMarkdown className="rule-md">
-          {rule.text}
-        </ReactMarkdown>
-      </div>
-    );
-  }
 
   renderAnnotations(annotations){
-    console.log('annotations', annotations)
     return (
       Object.entries(annotations).map(([k,v]) => {
         return <div key={k} className={`annotation ${k}`}>{v}</div>
@@ -148,9 +121,12 @@ export class AreaRuleContainer extends Component{
               <label className="rule-main-title">Deutschlandweite Regelungen</label>
             </div>
             <div className="rule-main-ctr-body">
-              {country[0].rules.map((rule, i) => {
-                return this.renderRule(rule, i)
-              })}
+            <AreaRuleSet 
+                ruleSets={country}
+                state={this.props.state}
+                district={this.props.district}
+                noRulesMessage={`Aktuell sind keine Deutschlandweiten Regelungen bekannt`}
+              />
             </div>            
           </div>
         }
@@ -164,9 +140,11 @@ export class AreaRuleContainer extends Component{
               <label className="rule-main-title">Regelungen in {stateName}</label>
             </div>
             <div className="rule-main-ctr-body">
-              {state[0].rules.map((rule, i) => {
-                return this.renderRule(rule, i)
-              })}
+              <AreaRuleSet 
+                ruleSets={state}
+                state={this.props.state}
+                district={this.props.district}
+              />
             </div>
           </div>        
         }
