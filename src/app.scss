@@ -39,10 +39,14 @@ button:active {
     background-color: white !important;
     color: $primary !important;
 }
+.consentContent{
+    flex-basis: auto !important;
+}
 .consentBody{
     font-size: 0.8rem;
     background-color: white !important;
     color: $gray-700 !important;
+    flex-direction: column;
     h1{
         font-size: 0.9rem !important;
     }

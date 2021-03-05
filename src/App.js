@@ -64,6 +64,7 @@ export default class App extends Component{
 
               cookieName="consent"
               containerClasses="consentBody"
+              contentClasses="consentContent"
 
               buttonClasses="consentAccept"
               declineButtonClasses="consentDecline"
