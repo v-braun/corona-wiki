@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/corona-wiki/static/css/main.540c4c69.chunk.css",
-    "main.js": "/corona-wiki/static/js/main.1688eaf5.chunk.js",
-    "main.js.map": "/corona-wiki/static/js/main.1688eaf5.chunk.js.map",
-    "runtime-main.js": "/corona-wiki/static/js/runtime-main.4d77b1a0.js",
-    "runtime-main.js.map": "/corona-wiki/static/js/runtime-main.4d77b1a0.js.map",
+    "main.css": "/corona-wiki/static/css/main.842ada49.chunk.css",
+    "main.js": "/corona-wiki/static/js/main.578b19f3.chunk.js",
+    "main.js.map": "/corona-wiki/static/js/main.578b19f3.chunk.js.map",
+    "runtime-main.js": "/corona-wiki/static/js/runtime-main.20b5ea2e.js",
+    "runtime-main.js.map": "/corona-wiki/static/js/runtime-main.20b5ea2e.js.map",
     "static/css/2.77350861.chunk.css": "/corona-wiki/static/css/2.77350861.chunk.css",
-    "static/js/2.03cd62b3.chunk.js": "/corona-wiki/static/js/2.03cd62b3.chunk.js",
-    "static/js/2.03cd62b3.chunk.js.map": "/corona-wiki/static/js/2.03cd62b3.chunk.js.map",
-    "static/js/3.cae3395a.chunk.js": "/corona-wiki/static/js/3.cae3395a.chunk.js",
-    "static/js/3.cae3395a.chunk.js.map": "/corona-wiki/static/js/3.cae3395a.chunk.js.map",
+    "static/js/2.578cf682.chunk.js": "/corona-wiki/static/js/2.578cf682.chunk.js",
+    "static/js/2.578cf682.chunk.js.map": "/corona-wiki/static/js/2.578cf682.chunk.js.map",
+    "static/js/3.b4a46f5f.chunk.js": "/corona-wiki/static/js/3.b4a46f5f.chunk.js",
+    "static/js/3.b4a46f5f.chunk.js.map": "/corona-wiki/static/js/3.b4a46f5f.chunk.js.map",
     "index.html": "/corona-wiki/index.html",
     "static/css/2.77350861.chunk.css.map": "/corona-wiki/static/css/2.77350861.chunk.css.map",
-    "static/css/main.540c4c69.chunk.css.map": "/corona-wiki/static/css/main.540c4c69.chunk.css.map",
-    "static/js/2.03cd62b3.chunk.js.LICENSE.txt": "/corona-wiki/static/js/2.03cd62b3.chunk.js.LICENSE.txt"
+    "static/css/main.842ada49.chunk.css.map": "/corona-wiki/static/css/main.842ada49.chunk.css.map",
+    "static/js/2.578cf682.chunk.js.LICENSE.txt": "/corona-wiki/static/js/2.578cf682.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d77b1a0.js",
+    "static/js/runtime-main.20b5ea2e.js",
     "static/css/2.77350861.chunk.css",
-    "static/js/2.03cd62b3.chunk.js",
-    "static/css/main.540c4c69.chunk.css",
-    "static/js/main.1688eaf5.chunk.js"
+    "static/js/2.578cf682.chunk.js",
+    "static/css/main.842ada49.chunk.css",
+    "static/js/main.578b19f3.chunk.js"
   ]
 }
