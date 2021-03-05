@@ -22,6 +22,32 @@ button:active {
     transform: scale(0.99);
 }
 
+.consentAccept, .consentDecline{
+    font-size: 0.9rem !important;
+    margin: 0.5em 0.5em 1em 0.5em !important;
+    padding: 1em !important;
+}
+.consentAccept{
+    background-color: $primary !important;
+    color: white !important;
+
+}
+.consentDecline{
+    border-color: $primary !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    background-color: white !important;
+    color: $primary !important;
+}
+.consentBody{
+    font-size: 0.8rem;
+    background-color: white !important;
+    color: $gray-700 !important;
+    h1{
+        font-size: 0.9rem !important;
+    }
+}
+
 body{
 
     a, a:hover, a:active, a:visited{

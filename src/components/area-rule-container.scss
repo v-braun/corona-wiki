@@ -99,7 +99,7 @@
             .date-value{
                 font-weight: bold;
             }
-            .incidence-value, .incidence-days{
+            .incidence{
                 font-weight: bold;
                 color: $incidence;
             }
@@ -139,4 +139,15 @@
             }
         }
     }
+
+    .no-known-rules{
+        margin-top: 1em;
+        font-size: 0.8rem;
+        > a{
+            color: $primary;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+
 }

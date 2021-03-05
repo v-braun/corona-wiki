@@ -10,30 +10,26 @@ import * as moment from 'moment'
 * @augments {Component<{
     ruleSets: import('../services/rulesService').RuleSet[], 
     state: string,
-    district: string,
-    noRulesMessage: string,
+    district: string
 }, 
 {
   
 }
 >}
 */
-export class AreaRuleSet extends Component{
+export class AreaRuleSets extends Component{
 
   static propTypes = {
     ruleSets: PropTypes.any.isRequired,
     state: PropTypes.string.isRequired,
     district: PropTypes.string.isRequired,
     districtName: PropTypes.string.isRequired,
-    noRulesMessage: PropTypes.string.isRequired,
   }
 
   constructor(props){
     super(props);
 
     this.state = {
-      /** @type {import('../services/rulesService').RuleSet[]} */
-      activeRuleSets: null,
       todayIncidence: null
     };
   }
@@ -83,6 +79,7 @@ export class AreaRuleSet extends Component{
 
 
   async updateUI(){
+    return;
     let incidenceHistory = (await api.getHistory(`/districts/${this.props.district}/history/incidence/360`)).data[this.props.district].history;
     let today = moment().startOf('day');
     today = moment('2021-03-08', 'YYYY-MM-DD');
@@ -152,65 +149,54 @@ export class AreaRuleSet extends Component{
     return result.slice(0, result.length - 1);
   }
 
+  
   /**
    * 
    * @param {import('../services/rulesService').RuleSet} ruleSet 
    */
   renderRuleSetBanner(ruleSet){
+    console.log('redener', ruleSet);
     let dateFrom = this.__parseMomentOptional(ruleSet.conditions?.date_from);
     let dateTo = this.__parseMomentOptional(ruleSet.conditions?.date_to);
     let incidenceFrom = ruleSet.conditions?.incidence_from;
     let incidenceTo = ruleSet.conditions?.incidence_to;
     let incidenceDays = ruleSet.conditions?.incidence_days;
-    
-    
-    let dateItems = [];
-    let incidenceItems = [];
-    
-    if(dateFrom) dateItems.push(<span className="date-value">{`vom ${dateFrom.format('D. MMM. YYYY')}`}</span>);      
-    if(dateTo) dateItems.push(<span className="date-value">{`bis zum ${dateTo.format('D. MMM. YYYY')}`}</span>);
 
-    if(Number.isFinite(incidenceFrom)) incidenceItems.push(<span className="incidence-value">mehr als {incidenceFrom}</span>);
-    if(Number.isFinite(incidenceTo)) incidenceItems.push(<span className="incidence-value">weniger als {incidenceTo}</span>);
-    
-
-    if(dateItems.length <= 0 && incidenceItems.length <= 0) return;
-    
-    let htmlItems = [];
-    htmlItems.push(<span>Folgende Regelungen gelten </span>,);
-    if(dateItems.length > 0) {
-      htmlItems.push(...this.__joinHtmlNodes(dateItems, <span> </span>), <span> </span>);
+    if(!dateFrom && !dateTo && !Number.isFinite(incidenceFrom) && !Number.isFinite(incidenceTo)){
+      return;
     }
-    if(incidenceItems.length > 0){
-      htmlItems.push(<span>bei einer Inzidenz von </span>, ...this.__joinHtmlNodes(incidenceItems, <span> und </span>), <span> </span>);       
-      if(Number.isFinite(incidenceDays)) {
-        htmlItems.push(<span>über die letzten <span className="incidence-days">{incidenceDays} Tage</span></span>);
-      };
-      // htmlItems.push(<span>.</span>);       
-
-
-      if(Number.isFinite(this.state.todayIncidence)){
-        htmlItems.push(<br />);
-        htmlItems.push(<span>Aktuelle Inzidenz im LK {this.props.districtName}: <span className="incidence-value">{this.state.todayIncidence.toFixed(2)}</span> </span>);
-      }
-    }
-    // for(let i = 0; i < htmlItems.length; i++){
-    //   htmlItems[i].key = i.toString();
-    // }
-
+    
     return (
       <div className="rule-set-banner">
         <div className="rule-set-banner-ico">
           <img src="https://img.icons8.com/officel/80/000000/info.png"/>
         </div>
         <div className="rule-set-banner-content">
-          {htmlItems}
-        </div>
-      </div>
-    )
+          <span key="title">Folgende Regelungen gelten</span>
+          {dateFrom && <span key="dateFrom" className="date-value">{` vom ${dateFrom.format('D. MMM. YYYY')}`}</span>}
+          {dateTo && <span key="dateFrom" className="date-value">{` bis zum ${dateTo.format('D. MMM. YYYY')}`}</span>}
 
-    return undefined;
-  }
+          {(Number.isFinite(incidenceFrom) || Number.isFinite(incidenceTo)) && 
+            <span key="incidence-info">
+              <span key="incidenceTitle"> bei einer Inzidenz von</span>
+              {Number.isFinite(incidenceFrom) && 
+                <span key="incidence-from" className="incidence" > mehr als {incidenceFrom}</span>
+              }
+              {(Number.isFinite(incidenceFrom) && Number.isFinite(incidenceTo)) &&               
+                <span key="incidence-and"> und</span>
+              }
+              {Number.isFinite(incidenceTo) && 
+                <span key="incidence-to" className="incidence"> weniger als {incidenceTo}</span>
+              }
+              {Number.isFinite(incidenceDays) && 
+                <span key="incidence-days"> über die <span className="incidence">letzten {incidenceDays} Tage</span></span>
+              }
+            </span>
+          }
+        </div>
+      </div>      
+    );
+  }  
 
   async componentDidMount(){
     await this.updateUI();
@@ -219,8 +205,8 @@ export class AreaRuleSet extends Component{
   
   render(){
     return (
-      (this.state.activeRuleSets && this.state.activeRuleSets.length > 0) ?  
-        this.state.activeRuleSets.map((rs, i) => {
+      (this.props.ruleSets && this.props.ruleSets.length > 0) &&
+        this.props.ruleSets.map((rs, i) => {
           return <div key={i} className="rule-set">
             {this.renderRuleSetBanner(rs)}
             {rs.rules.map((rule, i) => {
@@ -228,8 +214,7 @@ export class AreaRuleSet extends Component{
             })}
           </div>
         })
-      :
-        <div className="no-ruleset">{this.props.noRulesMessage}</div>
+      
     );
   }
 

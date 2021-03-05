@@ -2,17 +2,19 @@ life_areas:
   zusammenkuenfte_privat:
     id: zusammenkuenfte_privat
     title: |-
-      Zusammenkünfte in privaten Räumen
+      Privates treffen Zuhause
     # title: |- 
     ico: https://img.icons8.com/officel/80/000000/meeting-room.png
   zusammenkuenfte_oeffentlich:
     id: zusammenkuenfte_oeffentlich
-    title: Zusammenkünfte im öffentlichen Bereich
+    title: Privates treffen Draußen
     # title: |- 
     ico: https://img.icons8.com/clouds/100/000000/meeting.png
   'gremien':
     id: 'gremien'
     title: Gremien
+    annotation: 'unknown'
+
     examples: 
       - Plenum
       - Gremien des Landtages

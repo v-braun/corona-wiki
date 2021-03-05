@@ -12,6 +12,7 @@ import './life-area-btn.scss';
   title: string,
   desc: string,
   ruleShort: string,
+  annotation: string,
   onClick: function,
 }, 
 {
@@ -27,6 +28,7 @@ export class LifeAreaButton extends Component{
     title: PropTypes.string.isRequired,
     desc: PropTypes.string,
     ruleShort: PropTypes.string,
+    annotation: PropTypes.string,
     onClick: PropTypes.func.isRequired,
   }
 
@@ -35,6 +37,19 @@ export class LifeAreaButton extends Component{
     this.btnRef = createRef();
   }
   
+  renderAnnotation(annotation){
+    switch(annotation){
+      case 'unknown': return (<div className="rule-short rule-short-na">Fehlende Infos</div>)
+      case 'closed': return (<div className="rule-short rule-short-danger">Geschloßen</div>)
+      case 'forbidden': return (<div className="rule-short rule-short-danger">Nicht erlaubt</div>)
+      case 'limit': return (<div className="rule-short rule-short-warn">Mit Einschränkungen</div>)
+      case 'nolimit': return (<div className="rule-short rule-short-success">Ohne Einschränkungen</div>)
+      case 'open': return (<div className="rule-short rule-short-success">Geöffnet</div>)
+      case 'allow': return (<div className="rule-short rule-short-success">Erlaubt</div>)
+
+      default: return (<div className="rule-short rule-short-unknown">&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;</div>)
+    }
+  }  
  
   renderRuleShort(ruleShort){
     switch(ruleShort){
@@ -71,6 +86,7 @@ export class LifeAreaButton extends Component{
       }
     } 
 
+
     return (
       <button  ref={this.btnRef} className={classes} type="button" onClick={() => this.props.onClick(this.props.id, this.btnRef)}>
         <div className="header-ctr">
@@ -81,7 +97,9 @@ export class LifeAreaButton extends Component{
             <ReactMarkdown className={titleCls}>
               {this.props.title}                
             </ReactMarkdown>
-            {this.renderRuleShort(this.props.ruleShort)}
+            {this.props.annotation && 
+              this.renderAnnotation(this.props.annotation)
+            }
           </div>
         </div>
         <div className="body-ctr">

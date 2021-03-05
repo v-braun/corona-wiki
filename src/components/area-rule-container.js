@@ -4,7 +4,7 @@ import * as ruleService from '../services/rulesService';
 import geo from '../static-data/geo';
 
 import './area-rule-container.scss';
-import { AreaRuleSet } from './area-rule-set';
+import { AreaRuleSets } from './area-rule-sets';
 
 
 /**
@@ -33,10 +33,12 @@ export class AreaRuleContainer extends Component{
 
     this.state = {
       /** @type {import('../services/rulesService').RuleSet[]} */
-      country: null,
+      activeCountryRules: null,
 
       /** @type {import('../services/rulesService').RuleSet[]} */
-      state: null,
+      activeStateRules: null,
+
+      
       stateIco: null,
       stateName: null,
 
@@ -54,11 +56,13 @@ export class AreaRuleContainer extends Component{
   }
   
   async updateUI(){
-    let rules = await ruleService.getRulesFor(this.props.state, this.props.area);
-
+    // let rules = await ruleService.getAllRulesFor(this.props.state, this.props.area);
+    let rules = await ruleService.getActiveRuleFor(this.props.state, this.props.district, this.props.area);
+console.log('rules', rules);
     let newState = {
-      country: rules.country,
-      state: rules.state,
+      activeCountryRules: rules.country,
+      activeStateRules: rules.state,
+      
       globalCountryAnnotations: rules.globalCountryAnnotations,
       globalStateAnnotations: rules.globalStateAnnotations,
     }
@@ -101,17 +105,18 @@ export class AreaRuleContainer extends Component{
 
 
   render(){
-    let country = this.state.country;
-    let state = this.state.state;
+    let activeCountryRules = this.state.activeCountryRules;
+    let activeStateRules = this.state.activeStateRules;
     let stateName = this.state.stateName;
     let stateIco = this.state.stateIco;
     let countryGlobalAnnotation = this.state.globalCountryAnnotations;
     let stateGlobalAnnotation = this.state.globalStateAnnotations;
-    console.log('country', country)
+    
     return (
       <div className="area-rules">
-        {country &&
-          <div className="rule-main-ctr rule-main-country">
+
+        {(activeCountryRules && activeCountryRules.length > 0 ) &&
+          <div key="country-container" className="rule-main-ctr rule-main-country">
             {countryGlobalAnnotation &&
               <div className="annotations global-annotations country-annotations">
                 {this.renderAnnotations(countryGlobalAnnotation)}
@@ -125,19 +130,24 @@ export class AreaRuleContainer extends Component{
               <label className="rule-main-title">Deutschlandweite Regelungen</label>
             </div>
             <div className="rule-main-ctr-body">
-            <AreaRuleSet 
-                ruleSets={country}
+            <AreaRuleSets 
+                ruleSets={activeCountryRules}
                 state={this.props.state}
                 district={this.props.district}
                 districtName={this.props.districtName}
-                noRulesMessage={`Aktuell sind keine Deutschlandweiten Regelungen bekannt`}
               />
             </div>            
           </div>
         }
 
-        {state && 
-          <div className="rule-main-ctr rule-main-state">
+        {(activeStateRules && activeStateRules.length > 0 ) &&
+          <div key="state-container" className="rule-main-ctr rule-main-state">
+            {stateGlobalAnnotation &&
+              <div className="annotations global-annotations state-annotations">
+                {this.renderAnnotations(stateGlobalAnnotation)}
+              </div>            
+            }
+
             <div className="rule-main-ctr-header">
               <div className="rule-main-ico">
                 <img alt={`Regelungen in ${stateName}`} src={stateIco}/>
@@ -145,8 +155,8 @@ export class AreaRuleContainer extends Component{
               <label className="rule-main-title">Regelungen in {stateName}</label>
             </div>
             <div className="rule-main-ctr-body">
-              <AreaRuleSet 
-                ruleSets={state}
+              <AreaRuleSets 
+                ruleSets={activeStateRules}
                 state={this.props.state}
                 district={this.props.district}
                 districtName={this.props.districtName}
@@ -154,9 +164,17 @@ export class AreaRuleContainer extends Component{
             </div>
           </div>        
         }
-        {/* {this.state.state ?? 
-          <div>{this.props.state.toString()}: {this.state?.toString()}</div>
-        } */}
+
+        {( !(activeCountryRules?.length) && !(activeStateRules?.length)) && 
+          <div className="no-known-rules">
+            Für diesen Lebensbereich sind leider keine Regelungen gepflegt.
+            <br />
+            <br />
+            Wir sind auf Hilfe angewiesen, wenn du beim Corona Wiki mitmachen willst,
+            dann melde dich <a href="https://github.com/v-braun/corona-wiki/issues/new">hier</a>.
+          </div>   
+        }
+
       </div>
     )
   }

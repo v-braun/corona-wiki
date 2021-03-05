@@ -1,5 +1,7 @@
 import rules from '../static-data/rules'
 import ruleSetTemplates from '../static-data/rules/rule_set_templates';
+import * as api from './coronaApi';
+import * as moment from 'moment'
 
 /**
  * @typedef {'unknown' | 'closed' | 'forbidden' | 'limit' | 'nolimit' | 'open'} RuleStatus
@@ -90,7 +92,6 @@ export function getSummary(){
 
 
 /**
- * 
  * @param {RuleSet[]} ruleSets 
  */
 function resolveRuleSetReferences(ruleSets){
@@ -118,6 +119,68 @@ function resolveRuleSetReferences(ruleSets){
 }
 
 
+function lastXDays(history, days){
+  if(history.length <= 0) return [];
+  return history.slice(Math.max(history.length - days, 0));
+}
+
+function parseMomentOptional(date, ctx){
+  if(!date) return null;
+  try{
+    return moment(date, 'YYYY-MM-DD');
+  }catch(e){
+    console.log('failed parse date', date, 'ctx', ctx);
+    return null;
+  }
+}
+
+/**
+ * 
+ * @param {RuleSet} rs 
+ */
+function isRuleSetActive(rs, incidenceHistory, today){
+  if(!rs.conditions) return true; // RS without conditions are dispayed always
+
+  let conditions = rs.conditions;
+
+  let fromDate = parseMomentOptional(conditions.date_from);
+  let toDate = parseMomentOptional(conditions.date_to);
+  // let toDate = this.__parseMomentOptional(rs.incidence_from);
+  // let toDate = this.__parseMomentOptional(rs.incidence_to);
+  if(fromDate && today.isBefore(fromDate)) return false;
+  if(toDate && today.isAfter(toDate)) return false;
+
+  if(Number.isFinite(conditions.incidence_days)) {
+    let lastDaysIncidence = lastXDays(incidenceHistory, conditions.incidence_days);
+    if(!Number.isFinite(conditions.incidence_from) && !Number.isFinite(conditions.incidence_to)){
+      console.error(`unexpected conditions.incidence_days (${conditions.incidence_days}) without incidence_from / incidence_from`, rs);
+      return false;
+    }
+
+    if(Number.isFinite(conditions.incidence_from)){
+      let matchedDays = lastDaysIncidence.filter(incidence => incidence.weekIncidence >= conditions.incidence_from);
+      if(matchedDays.length != lastDaysIncidence.length) return false;
+    }
+    if(Number.isFinite(conditions.incidence_to)){
+      let matchedDays = lastDaysIncidence.filter(incidence => incidence.weekIncidence <= conditions.incidence_to);
+      if(matchedDays.length != lastDaysIncidence.length) return false;
+    }
+    
+    return true;
+  } else{
+    let currentDateIncidence = lastXDays(incidenceHistory, 1)[0];
+    if(Number.isFinite(conditions.incidence_from)){
+      if(currentDateIncidence.weekIncidence < conditions.incidence_from) return false;
+    }
+    if(Number.isFinite(conditions.incidence_to)){
+      if(currentDateIncidence.weekIncidence > conditions.incidence_to) return false;
+    }
+
+    return true;
+  }
+}
+
+
 /**
  * 
  * @param {string} state the state (bundesland) to search for
@@ -129,16 +192,16 @@ function resolveRuleSetReferences(ruleSets){
  *  state: RuleSet[],
  * }}
  */
-export function getRulesFor(state, area){
+export function getAllRulesFor(state, area){
   let result = {
     globalCountryAnnotations: __summary.annotations?.de,
     globalStateAnnotations: __summary.annotations?.states[state],
 
     /** @type {RuleSet[]} */
-    country: null,
+    country: [],
 
     /** @type {RuleSet[]} */
-    state: null
+    state: []
   };
 
   let existingArea = __summary.areas[area];
@@ -153,3 +216,22 @@ export function getRulesFor(state, area){
   return result;
 }
 
+
+export async function getActiveRuleFor(state, district, area){
+  let today = moment().startOf('day');
+  today = moment('2021-03-08', 'YYYY-MM-DD');
+
+  let allRules = getAllRulesFor(state, area);
+  let historyRes = await api.getHistory(`/districts/${district}/history/incidence/360`);
+  let incidenceHistory = historyRes.data[district].history;
+
+  let countryRuleSets = allRules.country.filter(rs => isRuleSetActive(rs, incidenceHistory, today) );  
+  let stateRuleSets = allRules.state.filter(rs => isRuleSetActive(rs, incidenceHistory, today) );  
+
+  return {
+    country: countryRuleSets,
+    state: stateRuleSets,
+    globalCountryAnnotations: allRules.globalCountryAnnotations,
+    globalStateAnnotations: allRules.globalStateAnnotations,
+  };
+}

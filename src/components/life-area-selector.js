@@ -54,7 +54,8 @@ export class LifeAreaSelector extends Component{
         title: val.title,
         ico: val.ico,
         desc: val.desc,
-        ruleShort: 'unknown'
+        ruleShort: 'unknown',
+        annotation: val.annotation
       });
     }
 
@@ -81,6 +82,7 @@ export class LifeAreaSelector extends Component{
                 id={area.id}
                 desc={area.desc}
                 ruleShort={area.ruleShort}
+                annotation={area.annotation}
                 selected={area.id === this.props.selectedArea}
               />
             </div>

@@ -6,9 +6,8 @@ import {
 } from "react-router-dom";
 
 import AppMenu from './components/app-menu';
-
-
-
+import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
+import * as GTagOptIn from 'gtag-opt-in';
 
 import HomePage from './pages/home-page';
 import './app.scss';
@@ -16,6 +15,29 @@ import AboutPage from './pages/about-page';
 
 
 export default class App extends Component{
+
+  cookieAccepted(){
+    this.injectAnalytics();
+  }
+  cookieDeclined(){
+    GTagOptIn.optOut();
+    // console.log('cookieDeclined');
+  }
+
+  injectAnalytics(){
+    if(process.env.NODE_ENV !== 'production') return;
+    
+    let val = getCookieConsentValue('consent');
+    if(!val) return
+
+    GTagOptIn.optIn();
+  }
+
+  componentDidMount(){
+    GTagOptIn.register('G-11HR0GD49W');
+    this.injectAnalytics();
+  }
+
   render() {
     return (
       <Router>
@@ -30,6 +52,32 @@ export default class App extends Component{
               
           </header>
           <main id="app-main-content" className="app-content">
+          <CookieConsent
+            enableDeclineButton
+              location="top"
+              buttonText="Cookies akzeptieren"
+              declineButtonText="Cookies ablehnen"
+              overlay={true}
+
+              onAccept={() => this.cookieAccepted()}
+              onDecline={() => this.cookieDeclined()}
+
+              cookieName="consent"
+              containerClasses="consentBody"
+
+              buttonClasses="consentAccept"
+              declineButtonClasses="consentDecline"
+              
+              
+              expires={150}
+            >
+              <h1>Wir verwenden Cookies</h1>
+              ... um die Zugriffe auf unsere Website zu analysieren. 
+              <br />
+              Außerdem geben wir Informationen zu Ihrer Verwendung unserer Website an unsere Partner für Analysen weiter. 
+              <br />
+              Unsere Partner führen diese Informationen möglicherweise mit weiteren Daten zusammen, die Sie ihnen bereitgestellt haben oder die sie im Rahmen Ihrer Nutzung der Dienste gesammelt haben.
+            </CookieConsent>
 
             <Switch>
               <Route path={`/about`} component={AboutPage} />

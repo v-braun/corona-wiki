@@ -1,19 +1,19 @@
 ni:
-  annotations:
-    info: |- 
-      Folgende Regeln gelten für das Bundesland Niedersachsen
+  annotations: {}
+    # info: |- 
+    #   Folgende Regeln gelten für das Bundesland Niedersachsen
   areas: {}
-    # zusammenkuenfte_privat:
-    #   rule_sets:
-    #     - conditions: 
-    #       reference:
-    #         date: '1.1.2021'
-    #         link: ''        
-    #       rules:
-    #         - text: |- 
-    #             todo ...
-    #           status: forbidden
-    #         - text: |- 
-    #             todo ...
-    #           status: forbidden
+  #   zusammenkuenfte_privat:
+  #     rule_sets:
+  #       - conditions: 
+  #         reference:
+  #           date: '1.1.2021'
+  #           link: ''        
+  #         rules:
+  #           - text: |- 
+  #               todo ...
+  #             status: forbidden
+  #           - text: |- 
+  #               todo ...
+  #             status: forbidden
         
