@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/corona-wiki/static/css/main.491b57c9.chunk.css",
-    "main.js": "/corona-wiki/static/js/main.b7f83176.chunk.js",
-    "main.js.map": "/corona-wiki/static/js/main.b7f83176.chunk.js.map",
+    "main.css": "/corona-wiki/static/css/main.92042d7c.chunk.css",
+    "main.js": "/corona-wiki/static/js/main.20bbe08d.chunk.js",
+    "main.js.map": "/corona-wiki/static/js/main.20bbe08d.chunk.js.map",
     "runtime-main.js": "/corona-wiki/static/js/runtime-main.6a93f73d.js",
     "runtime-main.js.map": "/corona-wiki/static/js/runtime-main.6a93f73d.js.map",
     "static/css/2.77350861.chunk.css": "/corona-wiki/static/css/2.77350861.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.64910ce9.chunk.js.map": "/corona-wiki/static/js/3.64910ce9.chunk.js.map",
     "index.html": "/corona-wiki/index.html",
     "static/css/2.77350861.chunk.css.map": "/corona-wiki/static/css/2.77350861.chunk.css.map",
-    "static/css/main.491b57c9.chunk.css.map": "/corona-wiki/static/css/main.491b57c9.chunk.css.map",
+    "static/css/main.92042d7c.chunk.css.map": "/corona-wiki/static/css/main.92042d7c.chunk.css.map",
     "static/js/2.84825671.chunk.js.LICENSE.txt": "/corona-wiki/static/js/2.84825671.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6a93f73d.js",
     "static/css/2.77350861.chunk.css",
     "static/js/2.84825671.chunk.js",
-    "static/css/main.491b57c9.chunk.css",
-    "static/js/main.b7f83176.chunk.js"
+    "static/css/main.92042d7c.chunk.css",
+    "static/js/main.20bbe08d.chunk.js"
   ]
 }
