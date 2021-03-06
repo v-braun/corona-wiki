@@ -76,8 +76,8 @@ body{
             align-items: center;
             .app-title{
                 font-size: 2em;
-                color: darken($color: #db00ff, $amount: 10%);
-                background: linear-gradient(#0067FF, #db00ff);
+                color: darken($color: #2471f0, $amount: 10%);
+                background: linear-gradient(#3fe7f0, #2471f0);
     
                 
                 background-clip: text;
@@ -85,6 +85,7 @@ body{
             }
             >img{
                 max-height: 4em;
+                margin-right: 1em;
             }
         }
         .links{

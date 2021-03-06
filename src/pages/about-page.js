@@ -23,7 +23,7 @@ export default class AboutPage extends Component{
                 <a href="https://marlon-lueckert.de/">Marlon Lückert</a> für das Bereitstellen der <a href="https://github.com/marlon360/rki-covid-api">rki-covid-api</a>
               </li>
               <li>
-                <a href="https://icons8.de/">icons8</a> für die tolle Sammlung an Icons
+                <a href="https://icons8.de/">icons8</a> und <a href="https://www.flaticon.com/" title="Flaticon">flaticon</a> für die tolle Sammlung an Icons
               </li>
               <li>
                 <a href="https://www.heraldik-wiki.de/">Heraldik-Wiki</a> für die Sammlung an Wappen der Bundesländer und Landkreise

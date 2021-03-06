@@ -12,6 +12,7 @@ import * as GTagOptIn from 'gtag-opt-in';
 import HomePage from './pages/home-page';
 import './app.scss';
 import AboutPage from './pages/about-page';
+import logo from './logo.png'
 
 
 export default class App extends Component{
@@ -44,7 +45,7 @@ export default class App extends Component{
         <div id="app-main" className="app">
           <header className="app-header">
             <div className="title">
-              <img alt="Corona Wiki" src="https://img.icons8.com/nolan/96/coronavirus.png"/>
+              <img alt="Corona Wiki" src={logo} />
               <span className="app-title">Corona Wiki</span>              
             </div>
             
