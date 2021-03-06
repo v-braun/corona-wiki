@@ -1099,7 +1099,8 @@ let geo = {
       "ags": "03453",
       "name": "Cloppenburg",
       "county": "LK Cloppenburg",
-      "stateAbbreviation": "NI"
+      "stateAbbreviation": "NI",
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/DEU_Cloppenburg_COA.svg/140px-DEU_Cloppenburg_COA.svg.png"
     },
     "03454": {
       "ags": "03454",
