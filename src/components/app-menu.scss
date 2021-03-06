@@ -3,6 +3,8 @@
     margin-right: -1em;
     display: flex;
     align-items: center;
+
+    
     > .rc-menu-button{
         // height: 50px;
         padding: 0;
@@ -14,6 +16,7 @@
 
         .menu-kebab{
 
+          transform: scale(0.7);
 
             box-sizing: border-box;
             

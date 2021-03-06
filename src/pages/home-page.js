@@ -37,11 +37,11 @@ class HomePage extends Component{
     }
 
     if(this.props.match.params.district !== ags){ // not toggle
-      if(this.props.match.params.distric){
+      if(ags){
         path += `/${ags}`;
       }
       if(this.props.match.params.area){
-        path += `/${ags}/${this.props.match.params.area}`;
+        path += `/${this.props.match.params.area}`;
       }
     }
 

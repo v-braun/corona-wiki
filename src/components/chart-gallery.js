@@ -4,6 +4,7 @@ import { HScroll } from './horizontal-scroll-container';
 
 import PropTypes from 'prop-types'
 
+import './chart-gallery.scss';
 
 
 /**
@@ -21,36 +22,64 @@ export class ChartGallery extends Component{
     title: PropTypes.string.isRequired
   }  
 
+  constructor(props){
+    super(props);
+
+    this.state = {
+      expanded: false
+    }
+  }
+
+  toggleShow(){
+    this.setState({
+      expanded: !this.state.expanded
+    })
+  }
+
   render(){
     return (
-      <HScroll>
-        <HistoryChart 
-          title={`Inzidenz in ${this.props.title}`}
-          apiEndpoint={`/${this.props.type}/${this.props.metricKey}/history/incidence/360`}
-          historyStateOrDistrictProp={this.props.metricKey}
-          historyMetricProp='weekIncidence'
-          />                
-        <HistoryChart 
-          title={`Infektionen in ${this.props.title}`}
-          apiEndpoint={`/${this.props.type}/${this.props.metricKey}/history/cases/360`}
-          historyStateOrDistrictProp={this.props.metricKey}
-          historyMetricProp='cases'
-          />
+      <div>
+        <div className="collapsed-container" onClick={() => this.toggleShow()}>
+          <span>
+          Aktuelle Statistiken in <b>{this.props.title}</b>
+          </span>
+          {this.state.expanded ? 
+            <img src="https://img.icons8.com/nolan/50/chevron-up.png"/>
+            : <img src="https://img.icons8.com/nolan/50/chevron-down.png"/>
+          }
+        </div>
+        {this.state.expanded && 
+          <HScroll>
+            <HistoryChart 
+              title={`Inzidenz in ${this.props.title}`}
+              apiEndpoint={`/${this.props.type}/${this.props.metricKey}/history/incidence/360`}
+              historyStateOrDistrictProp={this.props.metricKey}
+              historyMetricProp='weekIncidence'
+              />                
+            <HistoryChart 
+              title={`Infektionen in ${this.props.title}`}
+              apiEndpoint={`/${this.props.type}/${this.props.metricKey}/history/cases/360`}
+              historyStateOrDistrictProp={this.props.metricKey}
+              historyMetricProp='cases'
+              />
 
-        <HistoryChart 
-          title={`Todesfälle in ${this.props.title}`}
-          apiEndpoint={`/${this.props.type}/${this.props.metricKey}/history/deaths/360`}
-          historyStateOrDistrictProp={this.props.metricKey}
-          historyMetricProp='deaths'
-          />
+            <HistoryChart 
+              title={`Todesfälle in ${this.props.title}`}
+              apiEndpoint={`/${this.props.type}/${this.props.metricKey}/history/deaths/360`}
+              historyStateOrDistrictProp={this.props.metricKey}
+              historyMetricProp='deaths'
+              />
 
-        <HistoryChart 
-          title={`Genesungen in ${this.props.title}`}
-          apiEndpoint={`/${this.props.type}/${this.props.metricKey}/history/recovered/360`}
-          historyStateOrDistrictProp={this.props.metricKey}
-          historyMetricProp='recovered'
-          />
-      </HScroll>
+            <HistoryChart 
+              title={`Genesungen in ${this.props.title}`}
+              apiEndpoint={`/${this.props.type}/${this.props.metricKey}/history/recovered/360`}
+              historyStateOrDistrictProp={this.props.metricKey}
+              historyMetricProp='recovered'
+              />
+          </HScroll>  
+        }
+      </div>        
+
     );
   }
 

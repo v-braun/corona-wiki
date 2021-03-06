@@ -62,7 +62,7 @@ body{
     .app-header{
 
         // margin: 0 3em 0 3em;
-        padding: 1em 1em 1em 1em;
+        padding: 0.5em 1em 0.5em 1em;
         border-bottom-width: 1px;
         border-bottom-style: solid;
         border-bottom-color: $gray-400;
@@ -82,6 +82,9 @@ body{
                 
                 background-clip: text;
                 -webkit-text-fill-color: transparent;            
+            }
+            >img{
+                max-height: 4em;
             }
         }
         .links{
