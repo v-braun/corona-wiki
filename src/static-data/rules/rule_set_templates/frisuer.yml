@@ -1,0 +1,28 @@
+frisuer:
+  - conditions:
+      date_from: '2021-03-01'
+      # incidence_from: 0
+      # incidence_days: 3
+      # incidence_to: 100 # eventuell sollte validiert werden @validate-rule
+    reference:
+      date: '4.3.2021'
+      link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
+    rules:
+      - text: "Dürfen öffnen"
+        status: open
+      - text: "Schnelltest kann notwendig sein"
+        status: limit
+
+  # Notbremse (alte regel) bei Inzidenz > 100 über 3 Tage 
+  # sollte nochmal validiert werden @validate-rule
+  - conditions:
+      date_from: '2021-03-08'
+      incidence_from: 100
+      incidence_days: 3
+    reference:
+      date: '4.3.2021'
+      link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
+    rules:
+      - text: "Leider **geschlossen**"
+        status: closed        
+      

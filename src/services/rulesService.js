@@ -134,6 +134,9 @@ function parseMomentOptional(date, ctx){
   }
 }
 
+
+
+
 /**
  * 
  * @param {RuleSet} rs 
@@ -219,16 +222,19 @@ export function getAllRulesFor(state, area){
 
 export async function getActiveRuleFor(state, district, area){
   let today = moment().startOf('day');
-  today = moment('2021-03-08', 'YYYY-MM-DD');
+  today = moment('2021-03-08', 'YYYY-MM-DD'); // todo simulate 8.3.2021
 
   let allRules = getAllRulesFor(state, area);
   let historyRes = await api.getHistory(`/districts/${district}/history/incidence/360`);
   let incidenceHistory = historyRes.data[district].history;
 
+  let currentIncidence = lastXDays(incidenceHistory, 1)[0];
+
   let countryRuleSets = allRules.country.filter(rs => isRuleSetActive(rs, incidenceHistory, today) );  
   let stateRuleSets = allRules.state.filter(rs => isRuleSetActive(rs, incidenceHistory, today) );  
 
   return {
+    districtIndicence: currentIncidence.weekIncidence,
     country: countryRuleSets,
     state: stateRuleSets,
     globalCountryAnnotations: allRules.globalCountryAnnotations,

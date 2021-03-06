@@ -30,21 +30,25 @@ class HomePage extends Component{
 
   async districtSelected(ags, ref){
     if(!ags) return;
-    if(this.props.match.params.district === ags){
-      // toggle
-      if(this.props.match.params.state){
-        this.props.history.push(`/${this.props.match.params.state}`);
-      } else{
-        this.props.history.push(`/`);
-      }
-      return;
+
+    let path = ``;
+    if(this.props.match.params.state){
+      path += `/${this.props.match.params.state}`;
     }
 
-    let state = this.props.match.params.state;
-    this.props.history.push(`/${state}/${ags}`);
+    if(this.props.match.params.district !== ags){ // not toggle
+      if(this.props.match.params.distric){
+        path += `/${ags}`;
+      }
+      if(this.props.match.params.area){
+        path += `/${ags}/${this.props.match.params.area}`;
+      }
+    }
+
+    this.props.history.push(path);
     
     setTimeout(() => {
-      ref?.current?.scrollIntoView({behavior:'smooth', block:'center',inline:'center'});
+      // ref?.current?.scrollIntoView({behavior:'smooth', block:'center',inline:'center'});
     }, 400);
 
   }
@@ -71,7 +75,7 @@ class HomePage extends Component{
     this.props.history.push(`/${state}/${ags}/${area}`);    
 
     setTimeout(() => {
-      ref?.current?.scrollIntoView({behavior:'smooth', block:'center',inline:'center'});
+      // ref?.current?.scrollIntoView({behavior:'smooth', block:'center',inline:'center'});
     }, 400);    
   }
 
@@ -159,7 +163,7 @@ class HomePage extends Component{
         }
 
         {currentArea && 
-          <section className="section">
+          <section className="section area-section">
             <div className="section-title area-title">Regelungen betreffend '{areaDisplayName}'</div>
             <div className="">
               <AreaRuleContainer 

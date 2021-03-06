@@ -8,18 +8,136 @@ de:
     zusammenkuenfte_privat:
       rule_sets:
         - include: private_treffen
-     
-
 
     zusammenkuenfte_oeffentlich:
       rule_sets:
         - include: private_treffen
 
-    
-    stationaer_indoor:
+    frisuer:
       rule_sets:
-        - rules:
-            - text: |- 
-                Bleiben leider Geschlossen
-              status: closed    
+        - include: frisuer
+
+    # koerpernahe dienstleistung (ausser frisere)
+    tattoo:
+      rule_sets:
+        - include: koerpernahe_dienstleistung
+
+    massage:
+      rule_sets:
+        - include: koerpernahe_dienstleistung
+
+    manikuere_pedikuere:
+      rule_sets:
+        - include: koerpernahe_dienstleistung
+
+    kosmetik:
+      rule_sets:
+        - include: koerpernahe_dienstleistung
+
+    piercing:
+      rule_sets:
+        - include: koerpernahe_dienstleistung
+
+    # handel_phase2 (Buchhandlungen, Blumengeschäfte und Gartenmärkte sowie Fahrschulen)
+    buchladen:
+      rule_sets:
+        - include: handel_phase2
+
+    blumengeschaeft:
+      rule_sets:
+        - include: handel_phase2
+
+    gartenmarkt:
+      rule_sets:
+        - include: handel_phase2
+
+    fahrschule:
+      rule_sets:
+        - include: handel_phase2        
+
+    # handel_phase1
+    # Lebensmittelgeschäfte, Abhol- und Lieferdienste, Getränkemärkte, Apotheken und Drogerien, Babyfachmärkte, 
+    # Sanitäts- und Reformhäuser, Optiker und Hörgeräteakustike
+    # Ebenfalls Auto- und Fahrradwerkstätten, Banken und Sparkassen, 
+    # Poststellen, Reinigungen und Waschsalons. Zeitungen, Tierbedarf und Futtermittel
+    lebensmittelgeschaefte:
+      rule_sets:
+        - include: handel_phase1
+    lieferdienste:
+      rule_sets:
+        - include: handel_phase1          
+    getraenkemaerkte:
+      rule_sets:
+        - include: handel_phase1          
+    apotheken:
+      rule_sets:
+        - include: handel_phase1          
+    drogerien:
+      rule_sets:
+        - include: handel_phase1          
+    babyfachmaerkte:
+      rule_sets:
+        - include: handel_phase1          
+    optiker:
+      rule_sets:
+        - include: handel_phase1          
+    hoergeraeteakustiker:
+      rule_sets:
+        - include: handel_phase1
+        
+    autowerkstaetten:
+      rule_sets:
+        - include: handel_phase1
+    fahrradwerkstaetten:
+      rule_sets:
+        - include: handel_phase1
+    banken:
+      rule_sets:
+        - include: handel_phase1
+    post:
+      rule_sets:
+        - include: handel_phase1
+    waschsalons:
+      rule_sets:
+        - include: handel_phase1
+    waschstrassen:
+      rule_sets:
+        - include: handel_phase1
+    tierbedarf:
+      rule_sets:
+        - include: handel_phase1
+
+
+    # kultur_phase3
+    museen:
+      rule_sets:
+        - include: kultur_phase3
+    galerien:
+      rule_sets:
+        - include: kultur_phase3
+    zoo:
+      rule_sets:
+        - include: kultur_phase3
+    botanische_gaerten:
+      rule_sets:
+        - include: kultur_phase3
+    gedenkstaetten:
+      rule_sets:
+        - include: kultur_phase3
+
+  
+  # handel_phase3
+    modelaeden:
+      rule_sets:
+        - include: handel_phase3
+    elektrofachmarkt:
+      rule_sets:
+        - include: handel_phase3
+
+    # stationaer_indoor:
+    #   rule_sets:
+    #     - rules:
+    #         - text: |- 
+    #             Bleiben leider Geschlossen
+    #           status: closed    
             

@@ -42,6 +42,7 @@ export class AreaRuleContainer extends Component{
       stateIco: null,
       stateName: null,
 
+      activeDistrictIncidence: null,
 
       globalCountryAnnotations: null,
       globalStateAnnotations: null,
@@ -58,10 +59,11 @@ export class AreaRuleContainer extends Component{
   async updateUI(){
     // let rules = await ruleService.getAllRulesFor(this.props.state, this.props.area);
     let rules = await ruleService.getActiveRuleFor(this.props.state, this.props.district, this.props.area);
-console.log('rules', rules);
+console.log('rules', rules)
     let newState = {
       activeCountryRules: rules.country,
       activeStateRules: rules.state,
+      activeDistrictIncidence: rules.districtIndicence,
       
       globalCountryAnnotations: rules.globalCountryAnnotations,
       globalStateAnnotations: rules.globalStateAnnotations,
@@ -111,6 +113,9 @@ console.log('rules', rules);
     let stateIco = this.state.stateIco;
     let countryGlobalAnnotation = this.state.globalCountryAnnotations;
     let stateGlobalAnnotation = this.state.globalStateAnnotations;
+    let activeDistrictIncidence = this.state.activeDistrictIncidence;
+
+
     
     return (
       <div className="area-rules">
@@ -135,6 +140,7 @@ console.log('rules', rules);
                 state={this.props.state}
                 district={this.props.district}
                 districtName={this.props.districtName}
+                districtIncidence={activeDistrictIncidence}
               />
             </div>            
           </div>
@@ -160,6 +166,7 @@ console.log('rules', rules);
                 state={this.props.state}
                 district={this.props.district}
                 districtName={this.props.districtName}
+                districtIncidence={activeDistrictIncidence}
               />
             </div>
           </div>        

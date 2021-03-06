@@ -24,7 +24,11 @@
         // background-color: $primary;
         // color: $white;
         border-color: $primary;
-        border-width: 2px;
+        border-width: 3px;
+
+        padding: calc(1em - 2px);
+
+        
     }
 
     .header-ctr{

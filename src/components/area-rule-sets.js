@@ -10,7 +10,9 @@ import * as moment from 'moment'
 * @augments {Component<{
     ruleSets: import('../services/rulesService').RuleSet[], 
     state: string,
-    district: string
+    district: string,
+    districtName: string,
+    districtIncidence: number,
 }, 
 {
   
@@ -24,6 +26,7 @@ export class AreaRuleSets extends Component{
     state: PropTypes.string.isRequired,
     district: PropTypes.string.isRequired,
     districtName: PropTypes.string.isRequired,
+    districtIncidence: PropTypes.number.isRequired,
   }
 
   constructor(props){
@@ -77,85 +80,12 @@ export class AreaRuleSets extends Component{
     return history.slice(Math.max(history.length - days, 0));
   }
 
-
-  async updateUI(){
-    return;
-    let incidenceHistory = (await api.getHistory(`/districts/${this.props.district}/history/incidence/360`)).data[this.props.district].history;
-    let today = moment().startOf('day');
-    today = moment('2021-03-08', 'YYYY-MM-DD');
-    
-    
-    let matchedRuleSets = this.props.ruleSets.filter(rs => {
-      if(!rs.conditions) return true; // RS without conditions are dispayed always
-
-      let conditions = rs.conditions;
-
-      let fromDate = this.__parseMomentOptional(conditions.date_from);
-      let toDate = this.__parseMomentOptional(conditions.date_to);
-      // let toDate = this.__parseMomentOptional(rs.incidence_from);
-      // let toDate = this.__parseMomentOptional(rs.incidence_to);
-      if(fromDate && today.isBefore(fromDate)) return false;
-      if(toDate && today.isAfter(toDate)) return false;
-
-      if(Number.isFinite(conditions.incidence_days)) {
-        let lastDaysIncidence = this.__lastXDays(incidenceHistory, conditions.incidence_days);
-        if(!Number.isFinite(conditions.incidence_from) && !Number.isFinite(conditions.incidence_to)){
-          console.error(`unexpected conditions.incidence_days (${conditions.incidence_days}) without incidence_from / incidence_from`, rs);
-          return false;
-        }
-
-        if(Number.isFinite(conditions.incidence_from)){
-          let matchedDays = lastDaysIncidence.filter(incidence => incidence.weekIncidence >= conditions.incidence_from);
-          if(matchedDays.length != lastDaysIncidence.length) return false;
-        }
-        if(Number.isFinite(conditions.incidence_to)){
-          let matchedDays = lastDaysIncidence.filter(incidence => incidence.weekIncidence <= conditions.incidence_to);
-          if(matchedDays.length != lastDaysIncidence.length) return false;
-        }
-        
-        return true;
-      } else{
-        let currentDateIncidence = this.__lastXDays(incidenceHistory, 1)[0];
-        if(Number.isFinite(conditions.incidence_from)){
-          if(currentDateIncidence.weekIncidence < conditions.incidence_from) return false;
-        }
-        if(Number.isFinite(conditions.incidence_to)){
-          if(currentDateIncidence.weekIncidence > conditions.incidence_to) return false;
-        }
-
-        return true;
-      }
-
-      
-    });
-    
-    let todayIncidence = this.__lastXDays(incidenceHistory, 1);
-    this.setState({
-      activeRuleSets: matchedRuleSets,
-      todayIncidence: todayIncidence[0].weekIncidence
-    });
-  }
-
-  __joinHtmlNodes(array, separator){
-    if(array.length <= 0) return;
-    if(array.length == 1) return array;
-
-    let result = []
-    for(let item of array){
-      result.push(item);
-      result.push(separator);
-    }
-
-    return result.slice(0, result.length - 1);
-  }
-
   
   /**
    * 
    * @param {import('../services/rulesService').RuleSet} ruleSet 
    */
   renderRuleSetBanner(ruleSet){
-    console.log('redener', ruleSet);
     let dateFrom = this.__parseMomentOptional(ruleSet.conditions?.date_from);
     let dateTo = this.__parseMomentOptional(ruleSet.conditions?.date_to);
     let incidenceFrom = ruleSet.conditions?.incidence_from;
@@ -191,6 +121,15 @@ export class AreaRuleSets extends Component{
               {Number.isFinite(incidenceDays) && 
                 <span key="incidence-days"> über die <span className="incidence">letzten {incidenceDays} Tage</span></span>
               }
+              {(Number.isFinite(incidenceFrom) || Number.isFinite(incidenceTo)) &&               
+                <span key="district-incidence">
+                  <i>
+                    <br />
+                    (Die aktuelle Inzidenz in <b>{this.props.districtName}</b> beträgt <span className="incidence">{this.props.districtIncidence.toFixed(2)}</span>)
+                  </i>
+
+                </span>
+              }
             </span>
           }
         </div>
@@ -198,9 +137,6 @@ export class AreaRuleSets extends Component{
     );
   }  
 
-  async componentDidMount(){
-    await this.updateUI();
-  }
 
   
   render(){
