@@ -59,7 +59,7 @@ export class AreaRuleContainer extends Component{
   async updateUI(){
     // let rules = await ruleService.getAllRulesFor(this.props.state, this.props.area);
     let rules = await ruleService.getActiveRuleFor(this.props.state, this.props.district, this.props.area);
-console.log('rules', rules)
+
     let newState = {
       activeCountryRules: rules.country,
       activeStateRules: rules.state,

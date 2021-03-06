@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types'
 import ReactMarkdown from 'react-markdown';
-import * as api from '../services/coronaApi';
 import * as moment from 'moment'
 
 
@@ -99,7 +98,7 @@ export class AreaRuleSets extends Component{
     return (
       <div className="rule-set-banner">
         <div className="rule-set-banner-ico">
-          <img src="https://img.icons8.com/officel/80/000000/info.png"/>
+          <img alt="Info" src="https://img.icons8.com/officel/80/000000/info.png"/>
         </div>
         <div className="rule-set-banner-content">
           <span key="title">Folgende Regelungen gelten</span>

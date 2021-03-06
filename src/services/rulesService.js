@@ -162,11 +162,11 @@ function isRuleSetActive(rs, incidenceHistory, today){
 
     if(Number.isFinite(conditions.incidence_from)){
       let matchedDays = lastDaysIncidence.filter(incidence => incidence.weekIncidence >= conditions.incidence_from);
-      if(matchedDays.length != lastDaysIncidence.length) return false;
+      if(matchedDays.length !== lastDaysIncidence.length) return false;
     }
     if(Number.isFinite(conditions.incidence_to)){
       let matchedDays = lastDaysIncidence.filter(incidence => incidence.weekIncidence <= conditions.incidence_to);
-      if(matchedDays.length != lastDaysIncidence.length) return false;
+      if(matchedDays.length !== lastDaysIncidence.length) return false;
     }
     
     return true;

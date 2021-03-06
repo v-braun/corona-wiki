@@ -41,6 +41,15 @@ export default class AboutPage extends Component{
             </a>
           </div>
         </section>        
+
+        <section className="section">
+          <div className="section-title">Kontakt</div>
+          <div className="section-content">
+            Entwickelt von  <a href="https://www.viktor-braun.de">
+              Viktor Braun
+            </a>
+          </div>
+        </section>                
         
       </div>
     )

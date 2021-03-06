@@ -59,6 +59,8 @@ export class LifeAreaSelector extends Component{
       });
     }
 
+    result = result.sort((a, b) => a.title.localeCompare(b.title));
+
     this.setState({
       areas: result
     });

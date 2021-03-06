@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import AppMenu from './components/app-menu';
-import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
+import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
 import * as GTagOptIn from 'gtag-opt-in';
 
 import HomePage from './pages/home-page';

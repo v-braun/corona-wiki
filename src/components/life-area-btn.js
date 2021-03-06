@@ -10,7 +10,6 @@ import './life-area-btn.scss';
   ico: string,
   selected: boolean,
   title: string,
-  desc: string,
   ruleShort: string,
   annotation: string,
   onClick: function,
@@ -26,7 +25,6 @@ export class LifeAreaButton extends Component{
     ico: PropTypes.string,
     selected: PropTypes.bool,
     title: PropTypes.string.isRequired,
-    desc: PropTypes.string,
     ruleShort: PropTypes.string,
     annotation: PropTypes.string,
     onClick: PropTypes.func.isRequired,
@@ -102,11 +100,11 @@ export class LifeAreaButton extends Component{
             }
           </div>
         </div>
-        <div className="body-ctr">
+        {/* <div className="body-ctr">
           {this.props.desc && 
             <ReactMarkdown className="desc area-md">{this.props.desc}</ReactMarkdown>
           }
-        </div>
+        </div> */}
       </button>
     )    
   }

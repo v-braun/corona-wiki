@@ -77,7 +77,7 @@ life_areas:
   lieferdienste:
     id: lieferdienste
     title: Abhol- und Lieferdienste
-    ico: "https://img.icons8.com/cotton/64/000000/delivery-scooter--v3.png"
+    ico: "https://img.icons8.com/cotton/96/000000/delivery-scooter--v1.png"
   getraenkemaerkte:
     id: getraenkemaerkte
     title: Getränkemärkte

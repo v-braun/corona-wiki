@@ -44,8 +44,8 @@ export class ChartGallery extends Component{
           Aktuelle Statistiken in <b>{this.props.title}</b>
           </span>
           {this.state.expanded ? 
-            <img src="https://img.icons8.com/nolan/50/chevron-up.png"/>
-            : <img src="https://img.icons8.com/nolan/50/chevron-down.png"/>
+            <img alt="zuklappen" src="https://img.icons8.com/nolan/50/chevron-up.png"/>
+            : <img alt="aufklappen" src="https://img.icons8.com/nolan/50/chevron-down.png"/>
           }
         </div>
         {this.state.expanded && 
