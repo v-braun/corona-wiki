@@ -7,9 +7,6 @@ import rules from '../static-data/rules';
 
 
 
-
-// console.log(districts);
-
 class DistrictNav extends Component{
   constructor(props){
     super(props)

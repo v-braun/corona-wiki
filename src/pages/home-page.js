@@ -15,8 +15,6 @@ import { AreaRuleContainer } from '../components/area-rule-container';
 import {SearchBox} from '../components/search-box';
 
 
-// console.log(districts);
-
 class HomePage extends Component{
 
   async stateSelected(abbr){
@@ -89,7 +87,6 @@ class HomePage extends Component{
         }
       }
     }
-    console.log('navigate to', path, searchResult);
 
     this.props.history.push(path);
   }

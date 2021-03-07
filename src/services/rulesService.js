@@ -129,7 +129,7 @@ function parseMomentOptional(date, ctx){
   try{
     return moment(date, 'YYYY-MM-DD');
   }catch(e){
-    console.log('failed parse date', date, 'ctx', ctx);
+    console.error('failed parse date', date, 'ctx', ctx);
     return null;
   }
 }

@@ -87,8 +87,6 @@ export class LifeAreaSelector extends Component{
       areas2Render = selectedItems;
     }
 
-    console.log('this.props.selectedArea', this.props.selectedArea);
-
     return (
       <HScroll innerRef={this.scrollRef}>
         {areas2Render.map(area => {
