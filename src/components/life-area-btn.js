@@ -63,15 +63,25 @@ export class LifeAreaButton extends Component{
     }
   }
 
+  scrollToMe(){
+    if(!this.props.selected) return;
+
+    let el = this.btnRef?.current
+    if(!el) return;
+
+    let scrollParent = el.parentElement?.parentElement?.parentElement;
+    scrollParent?.scrollTo({behavior:'smooth', left:el.offsetLeft});
+  }
+
   async componentDidUpdate(prevProps){
     if(this.props.selected !== prevProps.selected && this.props.selected){
-      let el = this.btnRef?.current
-      if(!el) return;
-
-      let scrollParent = el.parentElement?.parentElement?.parentElement;
-      scrollParent?.scrollTo({behavior:'smooth', left:el.offsetLeft});
+      this.scrollToMe();
     }
   }    
+
+  componentDidMount(){
+    this.scrollToMe();
+  }
 
 
   render(){        

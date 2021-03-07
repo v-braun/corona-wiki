@@ -128,12 +128,15 @@ export class AreaRuleContainer extends Component{
               </div>            
             }
 
-            <div className="rule-main-ctr-header">
-              <div className="rule-main-ico">
-                <img alt="Deutschlandweite Regelungen" src="https://img.icons8.com/cute-clipart/64/000000/germany.png"/>
+            {(activeStateRules && activeStateRules.length > 0 ) &&
+            // only if there are also state rules we show a hint that there are country rules (germany flag, etc.)
+              <div className="rule-main-ctr-header">
+                <div className="rule-main-ico">
+                  <img alt="Deutschlandweite Regelungen" src="https://img.icons8.com/cute-clipart/64/000000/germany.png"/>
+                </div>
+                <label className="rule-main-title">Deutschlandweite Regelungen</label>
               </div>
-              <label className="rule-main-title">Deutschlandweite Regelungen</label>
-            </div>
+            }
             <div className="rule-main-ctr-body">
             <AreaRuleSets 
                 ruleSets={activeCountryRules}

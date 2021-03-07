@@ -96,7 +96,8 @@ export class SearchBox extends Component{
   }
 
   onAddition (tag) {
-    const tags = [].concat(this.state.tags, tag)
+    let tags = this.state.tags.filter(t => t.item.type != tag.item.type); // remove existing of same type 
+    tags = [].concat(tags, tag)
     this.setState({ tags })
 
     if(!tags) return;

@@ -1,9 +1,7 @@
 de:
   annotations: {}
-    # warning: |- 
-    #   ACHTUNG: dies ist eine Preview funktion
-
-    #   Es wird keine Haftung für die korrektheit der Angaben übernommen!
+    # info: |- 
+    #   Es kann zu regionalen Abweichungen 
   areas:
     zusammenkuenfte_privat:
       rule_sets:
