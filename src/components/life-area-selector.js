@@ -73,19 +73,14 @@ export class LifeAreaSelector extends Component{
     await this.updateUI();
   }
 
-  async componentDidUpdate(prevProps){
-    if(this.props.selectedArea !== prevProps.selectedArea){
-      this.scrollRef?.current?.scrollTo({behavior:'smooth', left:0});
-    }
-  }  
 
 
   render(){        
     let areas2Render = this.state.areas;
-    if(this.props.selectedArea){
-      let selectedItems = this.state.areas.filter(s => s.id === this.props.selectedArea);
-      areas2Render = selectedItems;
-    }
+    // if(this.props.selectedArea){
+    //   let selectedItems = this.state.areas.filter(s => s.id === this.props.selectedArea);
+    //   areas2Render = selectedItems;
+    // }
 
     return (
       <HScroll innerRef={this.scrollRef}>
@@ -106,7 +101,7 @@ export class LifeAreaSelector extends Component{
           )
         })}
         
-        {this.props.selectedArea && 
+        {/* {this.props.selectedArea && 
             <button className="filter-btn scroll-item all-areas-btn" type="button" onClick={() => this.props.onClick(this.props.selectedArea, null)}>
               <div className="header-ctr">
                 <div className="ico-ctr">
@@ -118,7 +113,7 @@ export class LifeAreaSelector extends Component{
                 
               </div>
             </button>
-        }          
+        }           */}
       </HScroll>
     )    
   }

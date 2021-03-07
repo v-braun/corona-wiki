@@ -100,25 +100,16 @@ export class StateSelector extends Component{
       />
     );
   }
-  
-  componentDidUpdate(newProps){
-    if(this.props.selectedAbbr === newProps.selectedAbbr) return;
-    if(!this.scrollRef) return;
-
-    // if(!this.props.selectedAbbr){
-    this.scrollRef?.current?.scrollTo({behavior:'smooth', left:0});
-    // }
-  }
 
   
   render(){
-    let states2Render = []
-    if(this.props.selectedAbbr){
-      let selectedItems = this.state.states.filter(s => s.abbreviation === this.props.selectedAbbr);
-      states2Render.push(...selectedItems);
-    } else{
-      states2Render = this.state.states;
-    }
+    let states2Render = this.state.states;
+    // if(this.props.selectedAbbr){
+    //   let selectedItems = this.state.states.filter(s => s.abbreviation === this.props.selectedAbbr);
+    //   states2Render.push(...selectedItems);
+    // } else{
+    //   states2Render = this.state.states;
+    // }
     
     return (
         <HScroll innerRef={this.scrollRef}>
@@ -141,7 +132,7 @@ export class StateSelector extends Component{
               onClick={(abbr, ref) => this.props.onClick(abbr, ref)}
             />      
           )}
-          {this.props.selectedAbbr && 
+          {/* {this.props.selectedAbbr && 
             <button className="filter-btn scroll-item all-states-btn" type="button" onClick={() => this.props.onClick(this.props.selectedAbbr, null)}>
               <div className="header-ctr">
                 <div className="ico-ctr">
@@ -153,7 +144,7 @@ export class StateSelector extends Component{
                 
               </div>
             </button>
-          }
+          } */}
         </HScroll>      
     )
   }

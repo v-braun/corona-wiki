@@ -48,6 +48,27 @@ export class DistrictButton extends Component{
     super(props)
     this.btnRef = createRef();
   }
+
+  
+  scrollToMe(){
+    if(!this.props.selected) return;
+
+    let el = this.btnRef?.current
+    if(!el) return;
+
+    let scrollParent = el.parentElement?.parentElement;
+    scrollParent?.scrollTo({behavior:'smooth', left:el.offsetLeft});
+  }
+
+  componentDidMount(){
+    this.scrollToMe();
+  }
+
+  async componentDidUpdate(prevProps){
+    if(this.props.selected !== prevProps.selected && this.props.selected){
+      this.scrollToMe();
+    }
+  }    
   
   render(){
     let ico = this.props.ico;

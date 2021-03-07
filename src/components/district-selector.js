@@ -93,17 +93,15 @@ export class DistrictSelector extends Component{
       await this.updateUI();
     }
 
-    if(this.props.selectedAgs !== prevProps.selectedAgs){
-      this.scrollRef?.current?.scrollTo({behavior:'smooth', left:0});
-    }
+    
   }
   
   render(){
     let districts2Render = this.state.districts;
-    if(this.props.selectedAgs){
-      let selectedItems = this.state.districts.filter(s => s.ags === this.props.selectedAgs);
-      districts2Render = selectedItems;
-    }
+    // if(this.props.selectedAgs){
+    //   let selectedItems = this.state.districts.filter(s => s.ags === this.props.selectedAgs);
+    //   districts2Render = selectedItems;
+    // }
 
     return (
       <HScroll innerRef={this.scrollRef}>
@@ -126,7 +124,7 @@ export class DistrictSelector extends Component{
             onClick={(ags, ref) => this.props.onClick(ags, ref)}
           />      
         )}
-          {this.props.selectedAgs && 
+          {/* {this.props.selectedAgs && 
             <button className="filter-btn scroll-item all-districts-btn" type="button" onClick={() => this.props.onClick(this.props.selectedAgs, null)}>
               <div className="header-ctr">
                 <div className="ico-ctr">
@@ -138,7 +136,7 @@ export class DistrictSelector extends Component{
                 
               </div>
             </button>
-          }        
+          }         */}
       </HScroll>
     )
   }

@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, createRef } from 'react';
 import PropTypes from 'prop-types'
 
 
@@ -43,6 +43,21 @@ export class StateButton extends Component{
     weekIncidence: PropTypes.number.isRequired,
     onClick: PropTypes.func.isRequired
   }
+
+  constructor(props){
+    super(props)
+    this.btnRef = createRef();
+  }
+
+  async componentDidUpdate(prevProps){
+    if(this.props.selected !== prevProps.selected && this.props.selected){
+      let el = this.btnRef?.current
+      if(!el) return;
+
+      let scrollParent = el.parentElement?.parentElement;
+      scrollParent?.scrollTo({behavior:'smooth', left:el.offsetLeft});
+    }
+  }      
   
   render(){
     let ico = this.props.ico;
@@ -55,7 +70,7 @@ export class StateButton extends Component{
     }
 
     return (
-      <button className={classes} type="button" onClick={() => this.props.onClick(this.props.abbreviation)}>
+      <button ref={this.btnRef} className={classes} type="button" onClick={() => this.props.onClick(this.props.abbreviation)}>
         <div className="header-ctr">
           <div className="ico-ctr">
             <img alt={this.props.name} src={ico} />
