@@ -12,6 +12,8 @@ import './home-page.scss'
 import { LifeAreaSelector } from '../components/life-area-selector';
 import { AreaRuleContainer } from '../components/area-rule-container';
 
+import {SearchBox} from '../components/search-box';
+
 
 // console.log(districts);
 
@@ -50,6 +52,21 @@ class HomePage extends Component{
     setTimeout(() => {
       // ref?.current?.scrollIntoView({behavior:'smooth', block:'center',inline:'center'});
     }, 400);
+
+  }
+
+  async searchExecuted(searchResult){
+    if(!searchResult) return;
+    if(!searchResult.state) return; // no state selected, we cannot navigate
+    let path = `/${searchResult.state}`;
+
+    if(!searchResult.district) return; // no district, cannot continue nav
+    path += `/${searchResult.district}`;
+
+    if(!searchResult.area) return;
+    path += `/${searchResult.area}`;
+
+    this.props.history.push(path);
 
   }
 
@@ -100,6 +117,11 @@ class HomePage extends Component{
 
     return (
       <div id="home-page">
+        <section className="section">
+          <SearchBox
+            onSearched={(result) => this.searchExecuted(result)}
+          />
+        </section>
         <section className="section">
           <div className="section-title">Wählen Sie Ihr Bundesland</div>
           <div className="section-child-full">

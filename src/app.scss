@@ -17,6 +17,12 @@ button,
   color: unset;
 }
 
+input:focus-within,
+input:focus {
+    outline: none;
+}
+
+
 
 button:active {
     // transform: scale(0.99);
