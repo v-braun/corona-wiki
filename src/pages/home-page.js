@@ -55,46 +55,46 @@ class HomePage extends Component{
 
   }
 
-  async searchExecuted(searchResult){
-    if(!searchResult) return;
-    if(!searchResult.state) return; // no state selected, we cannot navigate
-    let path = `/${searchResult.state}`;
-
-    if(!searchResult.district) return; // no district, cannot continue nav
-    path += `/${searchResult.district}`;
-
-    if(!searchResult.area) return;
-    path += `/${searchResult.area}`;
-
-    this.props.history.push(path);
-
-  }
-
   async areaSelected(area, ref){
     if(!area) return;
 
-    let state = this.props.match.params.state;
-    let ags = this.props.match.params.district;    
-    if(this.props.match.params.area === area){
-      // toggle
-      if(ags){
-        this.props.history.push(`/${state}/${ags}`);
-      }
-      if(state){
-        this.props.history.push(`/${state}`);
-      } else{
-        this.props.history.push(`/`);
-      }
-      return;
+    let path = ``;
+    if(this.props.match.params.state){
+      path += `/${this.props.match.params.state}`;
     }
-    
+    if(this.props.match.params.district){
+      path += `/${this.props.match.params.district}`;
+    }        
 
-    this.props.history.push(`/${state}/${ags}/${area}`);    
+    if(this.props.match.params.area !== area){
+      // NOT toggle
+      path += `/${area}`;
+    }
 
-    setTimeout(() => {
-      // ref?.current?.scrollIntoView({behavior:'smooth', block:'center',inline:'center'});
-    }, 400);    
+    this.props.history.push(path);    
   }
+
+
+  async searchExecuted(searchResult){
+    if(!searchResult) return;
+
+    let path = ``;
+    if(searchResult.state){
+      path += `/${searchResult.state}`;
+      if(searchResult.district) {
+        path += `/${searchResult.district}`;
+  
+        if(searchResult.area){
+          path += `/${searchResult.area}`;
+        }
+      }
+    }
+    console.log('navigate to', path, searchResult);
+
+    this.props.history.push(path);
+  }
+
+
 
   render(){
     
@@ -104,8 +104,10 @@ class HomePage extends Component{
     let currentDistrict = this.props.match.params.district;
     let currentArea = this.props.match.params.area;
     let areaDisplayName = '';
+    let currentStateIco = '';
     if(currentState && geo.states[currentState]){
       stateDisplayName = geo.states[currentState].name;
+      currentStateIco = geo.states[currentState].ico;
     }
     if(currentDistrict && geo.districts[currentDistrict]){
       districtDisplayName = geo.districts[currentDistrict].name;
@@ -150,6 +152,7 @@ class HomePage extends Component{
             <div className="section-child-full">
               <DistrictSelector 
                 selectedStateAbbr={currentState}
+                selectedStateIco={currentStateIco}
                 selectedAgs={currentDistrict}
                 onClick={(ags, ref) => this.districtSelected(ags, ref)}
               />

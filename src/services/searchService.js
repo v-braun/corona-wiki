@@ -5,7 +5,7 @@ import Fuse from 'fuse.js';
 
 const db = [];
 for(let [k, area] of Object.entries(lifeAreas)){
-  let rec = {type: 'area', id: k, index: [area.title], name: area.title, ico: area.ico}
+  let rec = {type: 'area', id: k, index: [], name: area.title, ico: area.ico}
   if(area.examples){
     rec.index.push(...area.examples);
   }
@@ -17,7 +17,7 @@ for(let [k, district] of Object.entries(geo.districts)){
   let rec = {
     type: 'district', 
     id: k, 
-    index: [district.name], 
+    index: [], 
     ico: district.ico,
     name: district.name,
     state: district.stateAbbreviation, 
@@ -32,7 +32,9 @@ for(let [k, district] of Object.entries(geo.districts)){
 
 
 let fuse = new Fuse(db, {
-  keys: ['index']
+  keys: ['name', 'index'],
+  isCaseSensitive: false,
+  includeMatches: true,
 });
 
 
@@ -41,6 +43,6 @@ let fuse = new Fuse(db, {
  * @param {string} query 
  */
 export async function search(query){
-  let result = fuse.search(query);
+  let result = fuse.search(query, {limit: 5, });
   return result;
 }

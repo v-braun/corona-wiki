@@ -1,0 +1,27 @@
+@import "../colors.scss";
+
+.all-districts-btn{
+    .header-ctr{
+        flex-direction: column;
+        align-self: center;
+
+        .ico-ctr{
+            margin: 0;
+            max-width: 50px;
+            max-height: 50px;
+            margin-bottom: 1em;
+            
+            > img{
+                // filter: grayscale(0.3);
+            }
+        }
+        .title-ctr{
+            font-style: italic;
+            color: $gray-600;
+
+            .name{
+                font-size: 1rem;
+            }
+        }
+    }
+}

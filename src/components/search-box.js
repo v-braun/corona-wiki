@@ -1,4 +1,4 @@
-import { Component, createRef } from 'react';
+import { Component, createRef, Fragment } from 'react';
 import PropTypes from 'prop-types'
 
 import ReactTags from 'react-tag-autocomplete'
@@ -31,17 +31,62 @@ export class SearchBox extends Component{
   }
 
   renderTag(prop) {
+    let tag = prop.tag.item;
     return (
       // keeup on one line to keep space
-      <span id={prop.tag.id} className={`tag tag-${prop.tag.type}`}>{prop.tag.name} </span>
+      <span id={tag.id} className={`tag tag-${tag.type}`}>{tag.name} </span>
     )
   }
 
+  /**
+   * 
+   * @param {string} text 
+   * @param {*} match 
+   */
+  renderSuggestionText(text, match){
+    if(!match) return text;
+    if(!match.indices || match.indices.length < 0) return text;
+
+    // space for improvements (mark only first match not all substrings) #todo
+    let index = match.indices[0];
+    if(index.length < 2) return text;
+    let hilghlited = text.substr(index[0], index[1]-index[0]+1);
+    let before = text.substr(0, index[0]);
+    let after = text.substr(index[1]+1, text.length-before.length-hilghlited.length);
+    
+    return (<Fragment>
+      {before}<b>{hilghlited}</b>{after}
+    </Fragment>)
+  }
+
   renderSuggestion(prop){
-    return (
-      // keeup on one line to keep space
-      <span id={prop.item.id} className={`suggestion suggestion-${prop.item.type}`}>{prop.item.name} </span>
-    )    
+    let match = null;
+    if(prop.item.matches && prop.item.matches.length > 0){
+      match = prop.item.matches[0];
+    }
+
+    if(prop.item.item.type === 'district'){
+      return (<span id={prop.item.item.id} className={`suggestion suggestion-${prop.item.item.type}`}>{this.renderSuggestionText(prop.item.item.name, match)} </span>)
+    } 
+
+    // area
+    return (  
+      <span id={prop.item.item.id} className={`suggestion suggestion-${prop.item.item.type}`}>
+        {match?.key === 'name' ? 
+          <span className="area-name">{this.renderSuggestionText(prop.item.item.name, match)}</span>
+          :
+          <span className="area-name-with-hint">
+            <span className="area-name">
+              {this.renderSuggestionText(prop.item.item.name, null)}
+            </span>
+            <span className="area-example">
+              z.b.: {this.renderSuggestionText(match.value, match)}
+            </span>
+          </span>
+        } 
+      </span>
+    );
+    
   }
 
   onDelete (i) {
@@ -55,13 +100,13 @@ export class SearchBox extends Component{
     this.setState({ tags })
 
     if(!tags) return;
-    let district = tags.find(item => item.type === 'district');
-    let area = tags.find(item => item.type === 'area');
+    let district = tags.find(item => item.item.type === 'district');
+    let area = tags.find(item => item.item.type === 'area');
 
     let notification = {
-      state: district?.state,
-      district: district?.id,
-      area: area?.id
+      state: district?.item?.state,
+      district: district?.item?.id,
+      area: area?.item?.id
     }
 
     if(this.props.onSearched) this.props.onSearched(notification)
@@ -72,7 +117,8 @@ export class SearchBox extends Component{
     let suggestions = [];
     if(input){
       let matches = await searchSvc.search(input);
-      suggestions = matches.map(m => m.item);
+      // suggestions = matches.map(m => m.item);
+      suggestions = matches;
     }
 
     this.setState({
@@ -106,7 +152,7 @@ export class SearchBox extends Component{
         tagComponent={(prop) => this.renderTag(prop)}
         suggestionComponent={(prop) => this.renderSuggestion(prop)}
         suggestionsFilter={(suggestions, query) => this.suggestionsFilter(suggestions, query)}
-        placeholderText={`z.b.: Berlin Friseure`}
+        placeholderText={`z.b.: Berlin MediaMarkt`}
         />
 
 

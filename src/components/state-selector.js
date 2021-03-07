@@ -1,10 +1,12 @@
-import { Component } from 'react';
+import { Component, createRef } from 'react';
 import PropTypes from 'prop-types'
 import {StateButton} from './state-btn';
 import * as api from '../services/coronaApi';
 import geo from '../static-data/geo';
 import { HScroll } from './horizontal-scroll-container';
 
+
+import './state-selector.scss';
 
 /**
 * @augments {Component<{
@@ -42,6 +44,8 @@ export class StateSelector extends Component{
     this.state = {
       states: []
     }
+
+    this.scrollRef = createRef();
   }
 
   async componentDidMount(){
@@ -74,30 +78,83 @@ export class StateSelector extends Component{
       states: statesViewModel
     });
   }
+
+  renderStateButton(s){
+    return (
+      <StateButton 
+        key={s.abbreviation}
+        abbreviation={s.abbreviation} 
+        name={s.name}
+        selected={s.abbreviation === this.props.selectedAbbr}
+        weekIncidence={s.weekIncidence}
+        newCases={s.newCases}
+        newDeaths={s.newDeaths}
+        newRecovered={s.newRecovered}
+
+        cases={s.cases}
+        deaths={s.deaths}
+        recovered={s.recovered}
+
+        ico={s.ico}
+        onClick={(abbr, ref) => this.props.onClick(abbr, ref)}
+      />
+    );
+  }
+  
+  componentDidUpdate(newProps){
+    if(this.props.selectedAbbr === newProps.selectedAbbr) return;
+    if(!this.scrollRef) return;
+
+    // if(!this.props.selectedAbbr){
+    this.scrollRef?.current?.scrollTo({behavior:'smooth', left:0});
+    // }
+  }
+
   
   render(){
+    let states2Render = []
+    if(this.props.selectedAbbr){
+      let selectedItems = this.state.states.filter(s => s.abbreviation === this.props.selectedAbbr);
+      states2Render.push(...selectedItems);
+    } else{
+      states2Render = this.state.states;
+    }
+    
     return (
-      <HScroll>
-        {this.state.states.map(s => 
-          <StateButton 
-            key={s.abbreviation}
-            abbreviation={s.abbreviation} 
-            name={s.name}
-            selected={s.abbreviation === this.props.selectedAbbr}
-            weekIncidence={s.weekIncidence}
-            newCases={s.newCases}
-            newDeaths={s.newDeaths}
-            newRecovered={s.newRecovered}
+        <HScroll innerRef={this.scrollRef}>
+          {states2Render.map(s => 
+            <StateButton 
+              key={s.abbreviation}
+              abbreviation={s.abbreviation} 
+              name={s.name}
+              selected={s.abbreviation === this.props.selectedAbbr}
+              weekIncidence={s.weekIncidence}
+              newCases={s.newCases}
+              newDeaths={s.newDeaths}
+              newRecovered={s.newRecovered}
 
-            cases={s.cases}
-            deaths={s.deaths}
-            recovered={s.recovered}
+              cases={s.cases}
+              deaths={s.deaths}
+              recovered={s.recovered}
 
-            ico={s.ico}
-            onClick={(abbr, ref) => this.props.onClick(abbr, ref)}
-          />      
-        )}
-      </HScroll>
+              ico={s.ico}
+              onClick={(abbr, ref) => this.props.onClick(abbr, ref)}
+            />      
+          )}
+          {this.props.selectedAbbr && 
+            <button className="filter-btn scroll-item all-states-btn" type="button" onClick={() => this.props.onClick(this.props.selectedAbbr, null)}>
+              <div className="header-ctr">
+                <div className="ico-ctr">
+                  <img alt="Alle Bundesländer" src="https://img.icons8.com/cute-clipart/64/000000/germany.png"/>
+                </div>
+                <div className="title-ctr">
+                  <span className="name">weitere Bundesländer</span>
+                </div>              
+                
+              </div>
+            </button>
+          }
+        </HScroll>      
     )
   }
 

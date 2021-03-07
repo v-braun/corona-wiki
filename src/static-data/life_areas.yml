@@ -165,6 +165,9 @@ life_areas:
     id: elektrofachmarkt
     title: Elektrofachmärkte
     ico: "https://img.icons8.com/officel/80/000000/multiple-devices.png"
+    examples:
+      - MediaMarkt
+      - Saturn
 
       
   

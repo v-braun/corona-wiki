@@ -96,6 +96,14 @@
                     padding: 0;
     
                     > li{
+                        border-bottom-style: solid;
+                        border-bottom-width: 1px;
+                        border-bottom-color: $gray-300;
+                        min-height: 42px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
                         .suggestion{
                             padding: 0.25em 0.5em;
                             display: block;
@@ -106,6 +114,17 @@
                             }
                             &.suggestion-area{
                                 color: $secondary;
+                            }
+
+
+                            .area-name-with-hint{
+                                display: flex;
+                                flex-direction: column;
+                                .area-example{
+                                    // color: $gray-600;
+                                    font-size: 0.8rem;
+                                    font-style: italic;
+                                }
                             }
                         }
                         &.is-active{

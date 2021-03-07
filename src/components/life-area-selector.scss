@@ -1,0 +1,22 @@
+@import "../colors.scss";
+
+.all-areas-btn{
+    .header-ctr{
+        flex-direction: column;
+
+        .ico-ctr{
+            margin: 0 !important;
+
+            width: 50px;
+            height: 50px;
+        }
+        .title-ctr{
+            font-style: italic;
+            color: $gray-600;
+
+            .name{
+                font-size: 1rem;
+            }
+        }
+    }
+}

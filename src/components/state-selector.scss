@@ -1,0 +1,19 @@
+@import "../colors.scss";
+
+.all-states-btn{
+    .header-ctr{
+        flex-direction: column;
+
+        .ico-ctr{
+            margin: 0;
+        }
+        .title-ctr{
+            font-style: italic;
+            color: $gray-600;
+
+            .name{
+                font-size: 1rem;
+            }
+        }
+    }
+}
