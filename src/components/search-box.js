@@ -96,7 +96,7 @@ export class SearchBox extends Component{
   }
 
   onAddition (tag) {
-    let tags = this.state.tags.filter(t => t.item.type != tag.item.type); // remove existing of same type 
+    let tags = this.state.tags.filter(t => t.item.type !== tag.item.type); // remove existing of same type 
     tags = [].concat(tags, tag)
     this.setState({ tags })
 
@@ -137,7 +137,7 @@ export class SearchBox extends Component{
     return (
       <div className="search-box">
         <div className="search-ico">
-          <img src="https://img.icons8.com/officel/80/000000/search--v1.png"/>
+          <img alt="Suche" src="https://img.icons8.com/officel/80/000000/search--v1.png"/>
         </div>
         <div className="search-field-cnt">
 

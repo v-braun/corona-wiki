@@ -1,0 +1,18 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  labels:
+    {{- include "corona-wiki.labels" . | nindent 4 }}
+  name: {{ include "corona-wiki.fullname" . }}
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`{{ .Values.ingressRoute.host }}`)
+      services:
+        - name: {{ include "corona-wiki.fullname" . }}
+          passHostHeader: true
+          port: 80
+  tls:
+    certResolver: letsencrypt

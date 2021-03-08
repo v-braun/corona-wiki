@@ -1,0 +1,10 @@
+.github
+helm
+build
+node_modules
+.dockerignore
+.gitignore
+LICENSE
+README.md
+Dockerfile
+deploy.sh

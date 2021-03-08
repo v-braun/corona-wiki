@@ -18,20 +18,30 @@ import logo from './logo.png'
 export default class App extends Component{
 
   cookieAccepted(){
-    this.injectAnalytics();
+    try{
+      this.injectAnalytics();
+    } catch(e){
+      console.error(e);
+    }    
   }
   cookieDeclined(){
-    GTagOptIn.optOut();
-    // console.log('cookieDeclined');
+    try{
+      this.injectAnalytics();
+    } catch(e){
+      console.error(e);
+    }
   }
 
   injectAnalytics(){
     if(process.env.NODE_ENV !== 'production') return;
     
     let val = getCookieConsentValue('consent');
-    if(!val) return
+    if(val === true || val === 'true') {
+      GTagOptIn.optIn();      
+    } else{
+      GTagOptIn.optOut();      
+    }
 
-    GTagOptIn.optIn();
   }
 
   componentDidMount(){

@@ -48,6 +48,14 @@ export default class AboutPage extends Component{
             Entwickelt von  <a href="https://www.viktor-braun.de">
               Viktor Braun
             </a>
+            <br />
+            <br />
+
+            <span>Anregungen und Kritik an: 
+              <br />
+              <small><b>corona-wiki[at]viktor-braun.de</b></small>
+            </span>
+            
           </div>
         </section>                
         
