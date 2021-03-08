@@ -45,7 +45,7 @@ export default class App extends Component{
   }
 
   componentDidMount(){
-    GTagOptIn.register('G-11HR0GD49W');
+    GTagOptIn.register('UA-53006045-12');
     this.injectAnalytics();
   }
 

@@ -17,7 +17,7 @@ private_treffen:
         status: forbidden
       - text: Ein Haushalt darf **nicht** mehrere Personen treffen
         status: forbidden
-      - text: Man sollte sich **möglichst** mit dem **selben** Haushalten treffen
+      - text: Man sollte sich **möglichst** mit den **selben** Haushalten treffen
         status: limit
 
       
@@ -25,7 +25,7 @@ private_treffen:
   - conditions:
       # date_to: '2021-03-07'
       incidence_from: 100
-      incidence_days: 3
+      # incidence_days: 3
       date_from: '2021-03-08'            
     reference:
       date: '4.3.2021'
@@ -41,14 +41,14 @@ private_treffen:
         status: forbidden
       - text: Ein Haushalt darf **nicht** mehrere Personen treffen
         status: forbidden
-      - text: Man sollte sich **möglichst** mit dem **selben** Haushalten treffen
+      - text: Man sollte sich **möglichst** mit den **selben** Haushalten treffen
         status: limit              
 
   # bei einer Inzidenz > 35 und < 100 über 3 Tage
   - conditions:
       incidence_from: 35
       incidence_to: 100
-      incidence_days: 3
+      # incidence_days: 3
       date_from: '2021-03-08'
     reference:
       date: '4.3.2021'
@@ -60,7 +60,7 @@ private_treffen:
         status: forbidden
       - text: Kinder jünger als **14 Jahre** nicht eingeschlossen
         status: allow
-      - text: Man sollte sich **möglichst** mit dem **selben** Haushalten treffen
+      - text: Man sollte sich **möglichst** mit den **selben** Haushalten treffen
         status: limit
 
     # bei einer Inzidenz < 35
@@ -79,5 +79,5 @@ private_treffen:
         status: forbidden
       - text: Kinder jünger als **14 Jahre** nicht eingeschlossen
         status: allow
-      - text: Man sollte sich **möglichst** mit dem **selben** Haushalten treffen
+      - text: Man sollte sich **möglichst** mit den **selben** Haushalten treffen
         status: limit      

@@ -222,7 +222,7 @@ export function getAllRulesFor(state, area){
 
 export async function getActiveRuleFor(state, district, area){
   let today = moment().startOf('day');
-  today = moment('2021-03-08', 'YYYY-MM-DD'); // todo simulate 8.3.2021
+  // today = moment('2021-03-08', 'YYYY-MM-DD'); // todo simulate 8.3.2021
 
   let allRules = getAllRulesFor(state, area);
   let historyRes = await api.getHistory(`/districts/${district}/history/incidence/360`);

@@ -462,14 +462,14 @@ let geo = {
     },
     "14713": {
       "ags": "14713",
-      "name": "Leipzig",
+      "name": "Stadt Leipzig",
       "county": "SK Leipzig",
       "stateAbbreviation": "SN",
       "ico": null
     },
     "14729": {
       "ags": "14729",
-      "name": "Leipzig",
+      "name": "Landkreis Leipzig",
       "county": "LK Leipzig",
       "stateAbbreviation": "SN",
       "ico": null
