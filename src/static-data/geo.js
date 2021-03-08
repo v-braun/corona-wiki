@@ -462,14 +462,14 @@ let geo = {
     },
     "14713": {
       "ags": "14713",
-      "name": "Stadt Leipzig",
+      "name": "Leipzig (Stadt)",
       "county": "SK Leipzig",
       "stateAbbreviation": "SN",
       "ico": null
     },
     "14729": {
       "ags": "14729",
-      "name": "Landkreis Leipzig",
+      "name": "Leipzig (Landkreis)",
       "county": "LK Leipzig",
       "stateAbbreviation": "SN",
       "ico": null
@@ -923,7 +923,7 @@ let geo = {
     },
     "03241": {
       "ags": "03241",
-      "name": "Region Hannover",
+      "name": "Hannover",
       "county": "Region Hannover",
       "stateAbbreviation": "NI",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Wappen_der_Region_Hannover.svg/96px-Wappen_der_Region_Hannover.svg.png"
@@ -1069,7 +1069,7 @@ let geo = {
     },
     "03404": {
       "ags": "03404",
-      "name": "Osnabrück",
+      "name": "Osnabrück (Stadt)",
       "county": "SK Osnabrück",
       "stateAbbreviation": "NI",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/DEU_Landkreis_Osnabr%C3%BCck_COA.svg/111px-DEU_Landkreis_Osnabr%C3%BCck_COA.svg.png"
@@ -1139,7 +1139,7 @@ let geo = {
     },
     "03459": {
       "ags": "03459",
-      "name": "Osnabrück",
+      "name": "Osnabrück (Landkreis)",
       "county": "LK Osnabrück",
       "stateAbbreviation": "NI",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/DEU_Landkreis_Osnabr%C3%BCck_COA.svg/111px-DEU_Landkreis_Osnabr%C3%BCck_COA.svg.png"
@@ -1685,7 +1685,7 @@ let geo = {
     },
     "06611": {
       "ags": "06611",
-      "name": "Kassel",
+      "name": "Kassel (Stadt)",
       "county": "SK Kassel",
       "stateAbbreviation": "HE",
       "ico": null
@@ -1706,7 +1706,7 @@ let geo = {
     },
     "06633": {
       "ags": "06633",
-      "name": "Kassel",
+      "name": "Kassel (Landkreis)",
       "county": "LK Kassel",
       "stateAbbreviation": "HE",
       "ico": null
@@ -2301,7 +2301,7 @@ let geo = {
     },
     "09162": {
       "ags": "09162",
-      "name": "München",
+      "name": "München (Stadt)",
       "county": "SK München",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Muenchen_Kleines_Stadtwappen.svg/280px-Muenchen_Kleines_Stadtwappen.svg.png"
@@ -2406,7 +2406,7 @@ let geo = {
     },
     "09184": {
       "ags": "09184",
-      "name": "München",
+      "name": "München (Landkreis)",
       "county": "LK München",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Wappen_Landkreis_Muenchen.png/112px-Wappen_Landkreis_Muenchen.png"

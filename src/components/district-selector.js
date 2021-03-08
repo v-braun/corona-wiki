@@ -60,7 +60,7 @@ export class DistrictSelector extends Component{
 
       let geoDistrict = geo.districts[key];
       let vm = {
-        name: district.name,
+        name: geoDistrict.name,
         ags: district.ags,
         weekIncidence: district.weekIncidence,
 
