@@ -99,7 +99,7 @@ export default class App extends Component{
           </main>
 
           <footer id="app-footer">
-              <Link to="/about">Haftungsausschluss &amp; Impressumm</Link>
+              <Link to="/about">Haftungsausschluss &amp; Impressum</Link>
           </footer>
         </div>
       </Router>
