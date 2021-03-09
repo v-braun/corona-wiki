@@ -2616,7 +2616,7 @@ let geo = {
     },
     "09462": {
       "ags": "09462",
-      "name": "Bayreuth",
+      "name": "Bayreuth (Stadt)",
       "county": "SK Bayreuth",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Wappen_von_Bayreuth.svg/280px-Wappen_von_Bayreuth.svg.png"
@@ -2644,7 +2644,7 @@ let geo = {
     },
     "09472": {
       "ags": "09472",
-      "name": "Bayreuth",
+      "name": "Bayreuth (Landkreis)",
       "county": "LK Bayreuth",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Wappen_Landkreis_Bayreuth2.svg/110px-Wappen_Landkreis_Bayreuth2.svg.png"
