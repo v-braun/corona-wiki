@@ -2084,14 +2084,14 @@ let geo = {
     },
     "08212": {
       "ags": "08212",
-      "name": "Karlsruhe",
+      "name": "Karlsruhe (Stadt)",
       "county": "SK Karlsruhe",
       "stateAbbreviation": "BW",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/DEU_Karlsruhe_COA.svg/200px-DEU_Karlsruhe_COA.svg.png"
     },
     "08215": {
       "ags": "08215",
-      "name": "Karlsruhe",
+      "name": "Karlsruhe (Landkreis)",
       "county": "LK Karlsruhe",
       "stateAbbreviation": "BW",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/DEU_Landkreis_Karlsruhe_COA.svg/207px-DEU_Landkreis_Karlsruhe_COA.svg.png"
