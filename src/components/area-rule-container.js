@@ -128,13 +128,14 @@ export class AreaRuleContainer extends Component{
     let activeDistrictIncidence = this.state.activeDistrictIncidence;
     let activeStateIncidence = this.state.activeStateIncidence;
 
-
+    let hasCountryRules = (activeCountryRules && activeCountryRules.length > 0 );
+    let hasStateRules = (activeStateRules && activeStateRules.length > 0);
 
     
     return (
       <div className="area-rules">
 
-        {(activeCountryRules && activeCountryRules.length > 0 ) &&
+        {(hasCountryRules && !hasStateRules) &&
           <div key="country-container" className="rule-main-ctr rule-main-country">
             {countryGlobalAnnotation &&
               <div className="annotations global-annotations country-annotations">
@@ -142,15 +143,14 @@ export class AreaRuleContainer extends Component{
               </div>            
             }
 
-            {(activeStateRules && activeStateRules.length > 0 ) &&
-            // only if there are also state rules we show a hint that there are country rules (germany flag, etc.)
-              <div className="rule-main-ctr-header">
-                <div className="rule-main-ico">
-                  <img alt="Deutschlandweite Regelungen" src="https://img.icons8.com/cute-clipart/64/000000/germany.png"/>
-                </div>
-                <label className="rule-main-title">Deutschlandweite Regelungen</label>
+            
+            <div className="rule-main-ctr-header">
+              <div className="rule-main-ico">
+                <img alt="Deutschlandweite Regelungen" src="https://img.icons8.com/cute-clipart/64/000000/germany.png"/>
               </div>
-            }
+              <label className="rule-main-title">Deutschlandweite Regelungen</label>
+            </div>
+          
             <div className="rule-main-ctr-body">
             <AreaRuleSets 
                 ruleSets={activeCountryRules}
@@ -170,7 +170,7 @@ export class AreaRuleContainer extends Component{
           </div>
         }
 
-        {(activeStateRules && activeStateRules.length > 0 ) &&
+        {hasStateRules &&
           <div key="state-container" className="rule-main-ctr rule-main-state">
             {stateGlobalAnnotation &&
               <div className="annotations global-annotations state-annotations">
@@ -203,7 +203,7 @@ export class AreaRuleContainer extends Component{
           </div>        
         }
 
-        {( !(activeCountryRules?.length) && !(activeStateRules?.length)) && 
+        {( !hasStateRules && !hasCountryRules) && 
           <div className="no-known-rules">
             Für diesen Lebensbereich sind leider keine Regelungen gepflegt.
             <br />

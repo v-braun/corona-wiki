@@ -68,6 +68,16 @@ life_areas:
     ico: https://img.icons8.com/color/100/000000/driver-license-card.png
 
 
+  baumaerkte:
+    id: baumaerkte
+    title: Baumärkte
+    ico: "https://img.icons8.com/plasticine/100/000000/hacksaw.png"
+
+  moebelhaus:
+    id: moebelhaus
+    title: Möbelhauser
+    ico: "https://img.icons8.com/color/96/000000/furniture.png"
+    
 
 
   lebensmittelgeschaefte:

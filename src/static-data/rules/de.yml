@@ -131,6 +131,13 @@ de:
     elektrofachmarkt:
       rule_sets:
         - include: handel_phase3
+    baumaerkte:
+      rule_sets:
+        - include: handel_phase3
+    moebelhaus:
+      rule_sets:
+        - include: handel_phase3
+        
 
     # stationaer_indoor:
     #   rule_sets:

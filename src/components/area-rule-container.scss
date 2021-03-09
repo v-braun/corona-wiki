@@ -1,6 +1,19 @@
 @import '../colors.scss';
 
 .area-rules{
+    padding-bottom: 3em;
+
+    .rule-set{
+        border-bottom-style: dashed;
+        border-bottom-width: 1px;
+        border-bottom-color: $gray-500;
+        padding-bottom: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .rule-set:last-child{
+        border-bottom-style: none;
+    }
 
     .rule-main-ctr{
 
@@ -77,7 +90,7 @@
     }
 
     .rule-set-references{
-        padding-top: 2em;
+        padding-top: 1.5em;
         font-size: 0.8rem;
         .references-title{
             text-transform: uppercase;

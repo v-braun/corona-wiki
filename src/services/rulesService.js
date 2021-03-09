@@ -231,7 +231,8 @@ export function getAllRulesFor(state, area){
 
   let stateData = existingArea.states[state];
   if(!stateData) return result;
-  result.state = stateData?.rule_sets;
+  if(!stateData.rule_sets) return result;
+  result.state = resolveRuleSetReferences(stateData.rule_sets)
 
   return result;
 }

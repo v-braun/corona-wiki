@@ -2,7 +2,20 @@ ni:
   annotations: {}
     # info: |- 
     #   Folgende Regeln gelten für das Bundesland Niedersachsen
-  areas: {}
+  areas: 
+    modelaeden:
+      rule_sets:
+        - include: _ni_handel_phase3
+    elektrofachmarkt:
+      rule_sets:
+        - include: _ni_handel_phase3  
+    baumaerkte:
+      rule_sets:
+        - include: _ni_handel_phase3
+    moebelhaus:
+      rule_sets:
+        - include: _ni_handel_phase3
+        
   #   zusammenkuenfte_privat:
   #     rule_sets:
   #       - conditions: 

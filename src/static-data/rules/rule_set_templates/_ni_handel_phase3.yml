@@ -1,0 +1,32 @@
+# niedersachsen regelung für "sinstiger Einzelhandel"
+# https://www.stk.niedersachsen.de/startseite/presseinformationen/konkretisierung-der-beschlusse-der-ministerprasidentenkonferenz-fur-niedersachsen-198047.html
+
+
+handel_phase3:
+
+  - conditions:
+      date_from: '2021-03-08'
+      incidence_to: 100
+      # incidence_days: 3
+    references:
+      - date: '08.03.2021'
+        link: 'https://www.stk.niedersachsen.de/startseite/presseinformationen/konkretisierung-der-beschlusse-der-ministerprasidentenkonferenz-fur-niedersachsen-198047.html'
+    rules:
+      - text: "Terminshopping möglich"
+        status: limit
+      - text: "**Ein** Kunde pro **40 qm**"
+        status: limit
+      
+
+  # Notbremse (alte regel) bei Inzidenz > 100 über 3 Tage 
+  # sollte nochmal validiert werden @validate-rule
+  - conditions:
+      date_from: '2021-03-08'
+      incidence_from: 100 # eventuell sollte validiert werden @validate-rule
+      # incidence_days: 3
+    references:
+      - date: '08.03.2021'
+        link: 'https://www.stk.niedersachsen.de/startseite/presseinformationen/konkretisierung-der-beschlusse-der-ministerprasidentenkonferenz-fur-niedersachsen-198047.html'
+    rules:
+      - text: "Leider **geschlossen**"
+        status: closed  

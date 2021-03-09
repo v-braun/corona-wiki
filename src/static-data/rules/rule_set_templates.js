@@ -9,6 +9,8 @@ const kultur_phase3 = yaml('./rule_set_templates/kultur_phase3.yml').kultur_phas
 const handel_phase3 = yaml('./rule_set_templates/handel_phase3.yml').handel_phase3;
 
 
+const _ni_handel_phase3 = yaml('./rule_set_templates/_ni_handel_phase3.yml').handel_phase3;
+
 const ruleSetTemplates = {
   private_treffen,
   koerpernahe_dienstleistung,
@@ -17,6 +19,9 @@ const ruleSetTemplates = {
   handel_phase2,
   handel_phase3,
   kultur_phase3,
+
+  // niedersachsen templates
+  _ni_handel_phase3,
 }
 
 export default ruleSetTemplates;

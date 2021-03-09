@@ -14,7 +14,7 @@ koerpernahe_dienstleistung:
       date_from: '2021-03-08'
       # incidence_from: 0
       # incidence_days: 3
-      # incidence_to: 100 # eventuell sollte validiert werden @validate-rule
+      incidence_to: 100 # eventuell sollte validiert werden @validate-rule
     references:
       - date: '4.3.2021'
         link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'

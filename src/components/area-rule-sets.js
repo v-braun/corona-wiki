@@ -123,7 +123,7 @@ export class AreaRuleSets extends Component{
       <div className="rule-set-references">
         <div className="references-title">Einzelnachweise</div>
         {mapped.map((ref, i) => {
-          return <a key={i} className="ref-link" href={ref.url}>&bull; <b>{ref.title}</b> <span>(vom {ref.date})</span></a>
+          return <a key={i} target="blank" className="ref-link" href={ref.url}>&bull; <b>{ref.title}</b> <span>(vom {ref.date})</span></a>
         })}
         
       </div>
