@@ -124,7 +124,7 @@ export class AreaRuleSets extends Component{
                 <span key="district-incidence">
                   <i>
                     <br />
-                    (Die aktuelle Inzidenz in <b>{this.props.districtName}</b> beträgt <span className="incidence">{this.props.districtIncidence.toFixed(2)}</span>)
+                    (Die aktuelle Inzidenz in <b>{this.props.districtName}</b> beträgt <span className="incidence">{this.props.districtIncidence.toFixed(0)}</span>)
                   </i>
 
                 </span>

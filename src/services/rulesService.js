@@ -228,16 +228,26 @@ export async function getActiveRuleFor(state, district, area){
   let historyRes = await api.getHistory(`/districts/${district}/history/incidence/360`);
   let incidenceHistory = historyRes.data[district].history;
 
-  let currentIncidence = lastXDays(incidenceHistory, 1)[0];
+  let districtTodayData = await api.getTodayDataForDistrict(district);
+  let stateTodayData = await api.getTodayDataForState(state);
+  
+  let districtIncidence = districtTodayData.weekIncidence;
+  let stateIncidence = stateTodayData.weekIncidence;
+
+  // districtIncidence = lastXDays(incidenceHistory, 1)[0].weekIncidence;
 
   let countryRuleSets = allRules.country.filter(rs => isRuleSetActive(rs, incidenceHistory, today) );  
   let stateRuleSets = allRules.state.filter(rs => isRuleSetActive(rs, incidenceHistory, today) );  
 
   return {
-    districtIndicence: currentIncidence.weekIncidence,
+    districtIncidence: districtIncidence,
+    stateIncidence: stateIncidence,
     country: countryRuleSets,
     state: stateRuleSets,
     globalCountryAnnotations: allRules.globalCountryAnnotations,
     globalStateAnnotations: allRules.globalStateAnnotations,
   };
+
+
+  
 }

@@ -63,7 +63,7 @@ export class AreaRuleContainer extends Component{
     let newState = {
       activeCountryRules: rules.country,
       activeStateRules: rules.state,
-      activeDistrictIncidence: rules.districtIndicence,
+      activeDistrictIncidence: rules.districtIncidence,
       
       globalCountryAnnotations: rules.globalCountryAnnotations,
       globalStateAnnotations: rules.globalStateAnnotations,

@@ -32,6 +32,14 @@ export async function getDistricts(){
   return result.data;
 }
 
+export async function getTodayDataForDistrict(ags){
+  let result = await api.get(`/districts/${ags}`);
+  return result.data.data[ags];
+}
+export async function getTodayDataForState(abbreviation){
+  let result = await api.get(`/states/${abbreviation}`);
+  return result.data.data[abbreviation];
+}
 
 export async function getStatesCasesHistory(stateAbbreviation){
   // if(caches['getStatesCasesHistory']) return caches['getDistricts'];
