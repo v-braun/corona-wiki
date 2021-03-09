@@ -1,6 +1,6 @@
 {
   "name": "corona-wiki",
-  "version": "0.1.20",
+  "version": "0.1.21",
   "private": false,
   "homepage": "https://v-braun.github.io/corona-wiki",
   "dependencies": {

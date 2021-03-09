@@ -1,0 +1,22 @@
+# regelsets für NRW
+nw:
+  settings:
+    rule_incidence_src: state
+  annotations: {}
+    # info: |- 
+    #   Folgende Regeln gelten für das Bundesland Niedersachsen
+  areas: {}
+  #   zusammenkuenfte_privat:
+  #     rule_sets:
+  #       - conditions: 
+  #         reference:
+  #           date: '1.1.2021'
+  #           link: ''        
+  #         rules:
+  #           - text: |- 
+  #               todo ...
+  #             status: forbidden
+  #           - text: |- 
+  #               todo ...
+  #             status: forbidden
+        

@@ -8,6 +8,12 @@ import * as moment from 'moment'
  */
 
 /**
+ * @typedef {'country' | 'state'} RuleIncidenceSource
+ */
+
+
+
+/**
  * @typedef RuleLine
  * @type {object}
  * @property {string} text
@@ -60,6 +66,10 @@ function buildSummary(){
       de: rules.DE.annotations || [],
       states: {}
     },
+    settings: {
+      de: {},
+      states: {}
+    },
     areas: {}
   }
 
@@ -75,6 +85,9 @@ function buildSummary(){
     if(state.annotations){
       result.annotations.states[s] = state.annotations;
     }
+    if(state.settings){
+      result.settings.states[s] = state.settings;
+    }    
 
     for(let [a, rules] of Object.entries(state.areas)){
       initArea(result, a);
@@ -141,7 +154,7 @@ function parseMomentOptional(date, ctx){
  * 
  * @param {RuleSet} rs 
  */
-function isRuleSetActive(rs, incidenceHistory, today){
+function isRuleSetActive(rs, incidenceHistory, today, currentIncidence){
   if(!rs.conditions) return true; // RS without conditions are dispayed always
 
   let conditions = rs.conditions;
@@ -171,12 +184,12 @@ function isRuleSetActive(rs, incidenceHistory, today){
     
     return true;
   } else{
-    let currentDateIncidence = lastXDays(incidenceHistory, 1)[0];
+    let currentDateIncidence = currentIncidence;
     if(Number.isFinite(conditions.incidence_from)){
-      if(currentDateIncidence.weekIncidence < conditions.incidence_from) return false;
+      if(currentDateIncidence < conditions.incidence_from) return false;
     }
     if(Number.isFinite(conditions.incidence_to)){
-      if(currentDateIncidence.weekIncidence > conditions.incidence_to) return false;
+      if(currentDateIncidence > conditions.incidence_to) return false;
     }
 
     return true;
@@ -191,6 +204,7 @@ function isRuleSetActive(rs, incidenceHistory, today){
  * @returns {{
  *  globalCountryAnnotations: object,
  *  globalStateAnnotations: object,
+ *  globalStateSettings: {rule_incidence_src: RuleIncidenceSource },
  *  country: RuleSet[],
  *  state: RuleSet[],
  * }}
@@ -199,6 +213,9 @@ export function getAllRulesFor(state, area){
   let result = {
     globalCountryAnnotations: __summary.annotations?.de,
     globalStateAnnotations: __summary.annotations?.states[state],
+
+    globalStateSettings: __summary.settings?.states[state] || {},
+
 
     /** @type {RuleSet[]} */
     country: [],
@@ -225,8 +242,6 @@ export async function getActiveRuleFor(state, district, area){
   // today = moment('2021-03-08', 'YYYY-MM-DD'); // todo simulate 8.3.2021
 
   let allRules = getAllRulesFor(state, area);
-  let historyRes = await api.getHistory(`/districts/${district}/history/incidence/360`);
-  let incidenceHistory = historyRes.data[district].history;
 
   let districtTodayData = await api.getTodayDataForDistrict(district);
   let stateTodayData = await api.getTodayDataForState(state);
@@ -234,18 +249,35 @@ export async function getActiveRuleFor(state, district, area){
   let districtIncidence = districtTodayData.weekIncidence;
   let stateIncidence = stateTodayData.weekIncidence;
 
+
+  let incidenceHistory = [];
+  let ruleIncidence;
+  if(allRules.globalStateSettings.rule_incidence_src === 'state'){
+    // rule calculation is based on incidence of the state and not on district
+    let historyRes = await api.getHistory(`/states/${state}/history/incidence/360`);
+    incidenceHistory = historyRes.data[state].history;    
+    ruleIncidence = stateIncidence;
+  } else{
+    let historyRes = await api.getHistory(`/districts/${district}/history/incidence/360`);
+    incidenceHistory = historyRes.data[district].history;
+    ruleIncidence = districtIncidence;
+  }
+
+
   // districtIncidence = lastXDays(incidenceHistory, 1)[0].weekIncidence;
-
-  let countryRuleSets = allRules.country.filter(rs => isRuleSetActive(rs, incidenceHistory, today) );  
-  let stateRuleSets = allRules.state.filter(rs => isRuleSetActive(rs, incidenceHistory, today) );  
-
+  let countryRuleSets = allRules.country.filter(rs => isRuleSetActive(rs, incidenceHistory, today, ruleIncidence) );  
+  let stateRuleSets = allRules.state.filter(rs => isRuleSetActive(rs, incidenceHistory, today, ruleIncidence) );  
+  
   return {
     districtIncidence: districtIncidence,
     stateIncidence: stateIncidence,
     country: countryRuleSets,
     state: stateRuleSets,
+    
     globalCountryAnnotations: allRules.globalCountryAnnotations,
     globalStateAnnotations: allRules.globalStateAnnotations,
+
+    globalStateSettings: allRules.globalStateSettings,
   };
 
 

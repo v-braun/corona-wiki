@@ -1,6 +1,7 @@
 frisuer:
   - conditions:
       date_from: '2021-03-01'
+      incidence_to: 100
       # incidence_from: 0
       # incidence_days: 3
       # incidence_to: 100 # eventuell sollte validiert werden @validate-rule

@@ -43,9 +43,13 @@ export class AreaRuleContainer extends Component{
       stateName: null,
 
       activeDistrictIncidence: null,
+      activeStateIncidence: null,
 
       globalCountryAnnotations: null,
       globalStateAnnotations: null,
+
+
+      globalStateSettings: null,
 
     };
   }
@@ -59,14 +63,19 @@ export class AreaRuleContainer extends Component{
   async updateUI(){
     // let rules = await ruleService.getAllRulesFor(this.props.state, this.props.area);
     let rules = await ruleService.getActiveRuleFor(this.props.state, this.props.district, this.props.area);
-
+    
     let newState = {
       activeCountryRules: rules.country,
       activeStateRules: rules.state,
+
       activeDistrictIncidence: rules.districtIncidence,
+      activeStateIncidence: rules.stateIncidence,
+      
       
       globalCountryAnnotations: rules.globalCountryAnnotations,
       globalStateAnnotations: rules.globalStateAnnotations,
+
+      globalStateSettings: rules.globalStateSettings,
     }
 
     
@@ -109,11 +118,16 @@ export class AreaRuleContainer extends Component{
   render(){
     let activeCountryRules = this.state.activeCountryRules;
     let activeStateRules = this.state.activeStateRules;
+    
     let stateName = this.state.stateName;
     let stateIco = this.state.stateIco;
+
     let countryGlobalAnnotation = this.state.globalCountryAnnotations;
     let stateGlobalAnnotation = this.state.globalStateAnnotations;
+
     let activeDistrictIncidence = this.state.activeDistrictIncidence;
+    let activeStateIncidence = this.state.activeStateIncidence;
+
 
 
     
@@ -140,10 +154,17 @@ export class AreaRuleContainer extends Component{
             <div className="rule-main-ctr-body">
             <AreaRuleSets 
                 ruleSets={activeCountryRules}
+                
                 state={this.props.state}
+                stateName={this.state.stateName}
+
                 district={this.props.district}
                 districtName={this.props.districtName}
+
                 districtIncidence={activeDistrictIncidence}
+                stateIncidence={activeStateIncidence}
+
+                globalStateSettings={this.state.globalStateSettings}
               />
             </div>            
           </div>
@@ -166,10 +187,17 @@ export class AreaRuleContainer extends Component{
             <div className="rule-main-ctr-body">
               <AreaRuleSets 
                 ruleSets={activeStateRules}
+                
                 state={this.props.state}
+                stateName={this.state.stateName}
+
                 district={this.props.district}
                 districtName={this.props.districtName}
+
                 districtIncidence={activeDistrictIncidence}
+                stateIncidence={activeStateIncidence}
+              
+                globalStateSettings={this.state.globalStateSettings}
               />
             </div>
           </div>        

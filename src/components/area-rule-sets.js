@@ -8,10 +8,17 @@ import * as moment from 'moment'
 /**
 * @augments {Component<{
     ruleSets: import('../services/rulesService').RuleSet[], 
+    
     state: string,
+    stateName: string,
+    
     district: string,
     districtName: string,
+
     districtIncidence: number,
+    stateIncidence: number,
+
+    globalStateSettings: object,
 }, 
 {
   
@@ -22,17 +29,24 @@ export class AreaRuleSets extends Component{
 
   static propTypes = {
     ruleSets: PropTypes.any.isRequired,
+    
     state: PropTypes.string.isRequired,
+    stateName: PropTypes.string.isRequired,
+
     district: PropTypes.string.isRequired,
     districtName: PropTypes.string.isRequired,
+    
     districtIncidence: PropTypes.number.isRequired,
+    stateIncidence: PropTypes.number.isRequired,
+
+    globalStateSettings: PropTypes.object.isRequired,
   }
 
   constructor(props){
     super(props);
 
     this.state = {
-      todayIncidence: null
+      
     };
   }
 
@@ -90,6 +104,7 @@ export class AreaRuleSets extends Component{
     let incidenceFrom = ruleSet.conditions?.incidence_from;
     let incidenceTo = ruleSet.conditions?.incidence_to;
     let incidenceDays = ruleSet.conditions?.incidence_days;
+    let takeIncidenceFromState = this.props.globalStateSettings.rule_incidence_src === 'state';
 
     if(!dateFrom && !dateTo && !Number.isFinite(incidenceFrom) && !Number.isFinite(incidenceTo)){
       return;
@@ -120,14 +135,28 @@ export class AreaRuleSets extends Component{
               {Number.isFinite(incidenceDays) && 
                 <span key="incidence-days"> über die <span className="incidence">letzten {incidenceDays} Tage</span></span>
               }
-              {(Number.isFinite(incidenceFrom) || Number.isFinite(incidenceTo)) &&               
-                <span key="district-incidence">
-                  <i>
-                    <br />
-                    (Die aktuelle Inzidenz in <b>{this.props.districtName}</b> beträgt <span className="incidence">{this.props.districtIncidence.toFixed(0)}</span>)
-                  </i>
-
+              {(Number.isFinite(incidenceFrom) || Number.isFinite(incidenceTo)) &&
+                <span>
+                  {takeIncidenceFromState && 
+                    <i>
+                      <br />
+                      <br />
+                      In <b>{this.props.stateName}</b> gilt:
+                      <br />
+                      Die Inzidenz des Bundeslandes (<span className="incidence">{this.props.stateIncidence.toFixed(0)}</span>) ist Grundlage der Regelberechnung
+                    </i>
+                  }
+                  {!takeIncidenceFromState && 
+                    <span key="district-incidence">
+                      <i>
+                        <br />
+                        <br />
+                        Aktuelle Inzidenz in <b>{this.props.districtName}</b> beträgt <span className="incidence">{this.props.districtIncidence.toFixed(0)}</span>
+                      </i>
+                    </span>
+                  }
                 </span>
+
               }
             </span>
           }
@@ -139,6 +168,8 @@ export class AreaRuleSets extends Component{
 
   
   render(){
+    console.log('rendr rules for', this.props.globalStateSettings);
+
     return (
       (this.props.ruleSets && this.props.ruleSets.length > 0) &&
         this.props.ruleSets.map((rs, i) => {
