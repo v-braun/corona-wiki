@@ -2028,14 +2028,14 @@ let geo = {
     },
     "08121": {
       "ags": "08121",
-      "name": "Heilbronn",
+      "name": "Heilbronn (Stadt)",
       "county": "SK Heilbronn",
       "stateAbbreviation": "BW",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Wappen_Heilbronn.svg/204px-Wappen_Heilbronn.svg.png"
     },
     "08125": {
       "ags": "08125",
-      "name": "Heilbronn",
+      "name": "Heilbronn (Landkreis)",
       "county": "LK Heilbronn",
       "stateAbbreviation": "BW",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Wappen_Landkreis_Heilbronn.svg/204px-Wappen_Landkreis_Heilbronn.svg.png"
@@ -2714,7 +2714,7 @@ let geo = {
     },
     "09563": {
       "ags": "09563",
-      "name": "Fürth",
+      "name": "Fürth (Stadt)",
       "county": "SK Fürth",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/DEU_F%C3%BCrth_COA.svg/280px-DEU_F%C3%BCrth_COA.svg.png"
@@ -2749,7 +2749,7 @@ let geo = {
     },
     "09573": {
       "ags": "09573",
-      "name": "Fürth",
+      "name": "Fürth (Landkreis)",
       "county": "LK Fürth",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Wappen_Landkreis_Fuerth.png/108px-Wappen_Landkreis_Fuerth.png"
@@ -2868,7 +2868,7 @@ let geo = {
     },
     "09761": {
       "ags": "09761",
-      "name": "Augsburg",
+      "name": "Augsburg (Stadt)",
       "county": "SK Augsburg",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Augsburg_wappen.svg/280px-Augsburg_wappen.svg.png"
@@ -2903,7 +2903,7 @@ let geo = {
     },
     "09772": {
       "ags": "09772",
-      "name": "Augsburg",
+      "name": "Augsburg (Landkreis)",
       "county": "LK Augsburg",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Landkreis_Augsburg_Wappen.svg/107px-Landkreis_Augsburg_Wappen.svg.png"
