@@ -336,7 +336,7 @@ let geo = {
     },
     "13003": {
       "ags": "13003",
-      "name": "Rostock",
+      "name": "Rostock (Stadt)",
       "county": "SK Rostock",
       "stateAbbreviation": "MV",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Rostock_Wappen.svg/200px-Rostock_Wappen.svg.png"
@@ -357,7 +357,7 @@ let geo = {
     },
     "13072": {
       "ags": "13072",
-      "name": "Rostock",
+      "name": "Rostock (Landkreis)",
       "county": "LK Rostock",
       "stateAbbreviation": "MV",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/DEU_Landkreis_Rostock_COA.svg/140px-DEU_Landkreis_Rostock_COA.svg.png"
@@ -1062,7 +1062,7 @@ let geo = {
     },
     "03403": {
       "ags": "03403",
-      "name": "Oldenburg (Oldb)",
+      "name": "Oldenburg (Stadt)",
       "county": "SK Oldenburg",
       "stateAbbreviation": "NI",
       "ico": null
@@ -1132,7 +1132,7 @@ let geo = {
     },
     "03458": {
       "ags": "03458",
-      "name": "Oldenburg",
+      "name": "Oldenburg (Landkreis)",
       "county": "LK Oldenburg",
       "stateAbbreviation": "NI",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Wappen_landkreis_oldenburg.svg/107px-Wappen_landkreis_oldenburg.svg.png"
@@ -1853,7 +1853,7 @@ let geo = {
     },
     "07312": {
       "ags": "07312",
-      "name": "Kaiserslautern",
+      "name": "Kaiserslautern (Stadt)",
       "county": "SK Kaiserslautern",
       "stateAbbreviation": "RP",
       "ico": null
@@ -1944,7 +1944,7 @@ let geo = {
     },
     "07335": {
       "ags": "07335",
-      "name": "Kaiserslautern",
+      "name": "Kaiserslautern (Landkreis)",
       "county": "LK Kaiserslautern",
       "stateAbbreviation": "RP",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Wappen_Landkreis_Kaiserslautern.png/112px-Wappen_Landkreis_Kaiserslautern.png"
@@ -2308,7 +2308,7 @@ let geo = {
     },
     "09163": {
       "ags": "09163",
-      "name": "Rosenheim",
+      "name": "Rosenheim (Stadt)",
       "county": "SK Rosenheim",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Wappen_Rosenheim_Neu.svg/280px-Wappen_Rosenheim_Neu.svg.png"
@@ -2427,7 +2427,7 @@ let geo = {
     },
     "09187": {
       "ags": "09187",
-      "name": "Rosenheim",
+      "name": "Rosenheim (Landkreis)",
       "county": "LK Rosenheim",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Wappen_LandkreisRosenheim.png/106px-Wappen_LandkreisRosenheim.png"
@@ -2455,14 +2455,14 @@ let geo = {
     },
     "09261": {
       "ags": "09261",
-      "name": "Landshut",
+      "name": "Landshut (Stadt)",
       "county": "SK Landshut",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/DEU_Landshut_COA.svg/280px-DEU_Landshut_COA.svg.png"
     },
     "09262": {
       "ags": "09262",
-      "name": "Passau",
+      "name": "Passau (Stadt)",
       "county": "SK Passau",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Wappen_Passau.svg/280px-Wappen_Passau.svg.png"
@@ -2497,14 +2497,14 @@ let geo = {
     },
     "09274": {
       "ags": "09274",
-      "name": "Landshut",
+      "name": "Landshut (Landkreis)",
       "county": "LK Landshut",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wappen_Landkreis_Landshut.svg/110px-Wappen_Landkreis_Landshut.svg.png"
     },
     "09275": {
       "ags": "09275",
-      "name": "Passau",
+      "name": "Passau (Landkreis)",
       "county": "LK Passau",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Wappen_Landkreis_Passau.png/105px-Wappen_Landkreis_Passau.png"
@@ -2546,7 +2546,7 @@ let geo = {
     },
     "09362": {
       "ags": "09362",
-      "name": "Regensburg",
+      "name": "Regensburg (Stadt)",
       "county": "SK Regensburg",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Wappen_Regensburg.svg/280px-Wappen_Regensburg.svg.png"
@@ -2588,7 +2588,7 @@ let geo = {
     },
     "09375": {
       "ags": "09375",
-      "name": "Regensburg",
+      "name": "Regensburg (Landkreis)",
       "county": "LK Regensburg",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Wappen_Landkreis_Regensburg.svg/111px-Wappen_Landkreis_Regensburg.svg.png"
@@ -2623,14 +2623,14 @@ let geo = {
     },
     "09463": {
       "ags": "09463",
-      "name": "Coburg",
+      "name": "Coburg (Stadt)",
       "county": "SK Coburg",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/DEU_Coburg_COA.svg/280px-DEU_Coburg_COA.svg.png"
     },
     "09464": {
       "ags": "09464",
-      "name": "Hof",
+      "name": "Hof (Stadt)",
       "county": "SK Hof",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/DEU_Hof_COA.svg/280px-DEU_Hof_COA.svg.png"
@@ -2651,7 +2651,7 @@ let geo = {
     },
     "09473": {
       "ags": "09473",
-      "name": "Coburg",
+      "name": "Coburg (Landkreis)",
       "county": "LK Coburg",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Wappen_Landkreis_Coburg.png/108px-Wappen_Landkreis_Coburg.png"
@@ -2665,7 +2665,7 @@ let geo = {
     },
     "09475": {
       "ags": "09475",
-      "name": "Hof",
+      "name": "Hof (Landkreis)",
       "county": "LK Hof",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Wappen_Landkreis_Hof.svg/100px-Wappen_Landkreis_Hof.svg.png"
@@ -2700,7 +2700,7 @@ let geo = {
     },
     "09561": {
       "ags": "09561",
-      "name": "Ansbach",
+      "name": "Ansbach (Stadt)",
       "county": "SK Ansbach",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Wappen_von_Ansbach.svg/280px-Wappen_von_Ansbach.svg.png"
@@ -2735,7 +2735,7 @@ let geo = {
     },
     "09571": {
       "ags": "09571",
-      "name": "Ansbach",
+      "name": "Ansbach (Landkreis)",
       "county": "LK Ansbach",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Wappen_Landkreis_Ansbach.png/106px-Wappen_Landkreis_Ansbach.png"
@@ -2784,28 +2784,28 @@ let geo = {
     },
     "09661": {
       "ags": "09661",
-      "name": "Aschaffenburg",
+      "name": "Aschaffenburg (Stadt)",
       "county": "SK Aschaffenburg",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wappen_Aschaffenburg.svg/280px-Wappen_Aschaffenburg.svg.png"
     },
     "09662": {
       "ags": "09662",
-      "name": "Schweinfurt",
+      "name": "Schweinfurt (Stadt)",
       "county": "SK Schweinfurt",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/DEU_Schweinfurt_COA.svg/280px-DEU_Schweinfurt_COA.svg.png"
     },
     "09663": {
       "ags": "09663",
-      "name": "Würzburg",
+      "name": "Würzburg (Stadt)",
       "county": "SK Würzburg",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Wappen_von_Wuerzburg.svg/280px-Wappen_von_Wuerzburg.svg.png"
     },
     "09671": {
       "ags": "09671",
-      "name": "Aschaffenburg",
+      "name": "Aschaffenburg (Landkreis)",
       "county": "LK Aschaffenburg",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Wappen_Landkreis_Aschaffenburg.svg/280px-Wappen_Landkreis_Aschaffenburg.svg.png"
@@ -2854,14 +2854,14 @@ let geo = {
     },
     "09678": {
       "ags": "09678",
-      "name": "Schweinfurt",
+      "name": "Schweinfurt (Landkreis)",
       "county": "LK Schweinfurt",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Wappen_Landkreis_Schweinfurt.png/111px-Wappen_Landkreis_Schweinfurt.png"
     },
     "09679": {
       "ags": "09679",
-      "name": "Würzburg",
+      "name": "Würzburg (Landkreis)",
       "county": "LK Würzburg",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wappen_Landkreis_Wuerzburg.png/131px-Wappen_Landkreis_Wuerzburg.png"
