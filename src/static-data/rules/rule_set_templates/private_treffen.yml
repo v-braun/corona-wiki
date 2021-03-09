@@ -13,7 +13,7 @@ private_treffen:
         status: allow
       - text: "Kinder jünger als **6 Jahre** nicht eingeschlossen"
         status: allow
-      - text: "**Mehrere** Personen dürfen **nicht** sich nicht mit einem Haushalt treffen"
+      - text: "**Mehrere** Personen dürfen sich **nicht** mit einem Haushalt treffen"
         status: forbidden
       - text: Ein Haushalt darf **nicht** mehrere Personen treffen
         status: forbidden
@@ -37,7 +37,7 @@ private_treffen:
         status: allow
       - text: "Kinder jünger als **6 Jahre** nicht eingeschlossen"
         status: allow
-      - text: "**Mehrere** Personen dürfen **nicht** sich nicht mit einem Haushalt treffen"
+      - text: "**Mehrere** Personen dürfen sich **nicht** mit einem Haushalt treffen"
         status: forbidden
       - text: Ein Haushalt darf **nicht** mehrere Personen treffen
         status: forbidden
@@ -56,8 +56,8 @@ private_treffen:
     rules:
       - text: "**Ein** Haushalt darf sich mit **einem** weiteren Haushalt treffen"
         status: allow
-      - text: "Zwei Haushalte Zusammen dürfen nicht mehr als **fünf** Personen entsprechen"
-        status: forbidden
+      - text: "Zwei Haushalte zusammen, dürfen nicht mehr als **fünf** Personen entsprechen"
+        status: limit
       - text: Kinder jünger als **14 Jahre** nicht eingeschlossen
         status: allow
       - text: Man sollte sich **möglichst** mit den **selben** Haushalten treffen
@@ -75,8 +75,8 @@ private_treffen:
     rules:
       - text: "**Ein** Haushalt darf sich mit **zwei** weiteren Haushalten treffen"
         status: allow
-      - text: "Drei Haushalte Zusammen dürfen nicht mehr als **zehn** Personen entsprechen"
-        status: forbidden
+      - text: "Drei Haushalte zusammen, dürfen nicht mehr als **zehn** Personen entsprechen"
+        status: limit
       - text: Kinder jünger als **14 Jahre** nicht eingeschlossen
         status: allow
       - text: Man sollte sich **möglichst** mit den **selben** Haushalten treffen

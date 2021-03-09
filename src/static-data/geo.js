@@ -2609,7 +2609,7 @@ let geo = {
     },
     "09461": {
       "ags": "09461",
-      "name": "Bamberg",
+      "name": "Bamberg (Stadt)",
       "county": "SK Bamberg",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wappen_Bamberg.svg/280px-Wappen_Bamberg.svg.png"
@@ -2637,7 +2637,7 @@ let geo = {
     },
     "09471": {
       "ags": "09471",
-      "name": "Bamberg",
+      "name": "Bamberg (Landkreis)",
       "county": "LK Bamberg",
       "stateAbbreviation": "BY",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Wappen_Landkreis_Bamberg.png/101px-Wappen_Landkreis_Bamberg.png"

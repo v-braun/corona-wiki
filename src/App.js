@@ -2,7 +2,8 @@ import { Component } from 'react';
 import {
   HashRouter as Router, 
   Switch, 
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 
 import AppMenu from './components/app-menu';
@@ -96,6 +97,10 @@ export default class App extends Component{
               <Route path={`/:state?/:district?/:area?/:idx?`} component={HomePage} />
             </Switch>            
           </main>
+
+          <footer id="app-footer">
+              <Link to="/about">Haftungsausschluss &amp; Impressumm</Link>
+          </footer>
         </div>
       </Router>
     );

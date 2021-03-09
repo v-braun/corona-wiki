@@ -15,6 +15,17 @@ export default class AboutPage extends Component{
         </section>
 
         <section className="section">
+          <div className="section-title">Haftungsausschluss</div>
+          <div className="section-content">
+            Das Corona Wiki ist auf externe Datenquellen und auf manuell gepflegte redaktionelle Inhalte angewiesen.
+            <br />
+            Daher kann keinerlei Haftung für die Aktualität, Richtigkeit und Vollständigkeit übernommen werden.
+            <br />
+            Im Zweifel sollten offizielle Verlautbarungen der einschlägigen Behörden konsultiert und ihr Verhalten danach ausgerichtet werden.
+          </div>
+        </section>        
+
+        <section className="section">
           <div className="section-title">Danke ❤️</div>
           <div className="section-content">
             <span>Ein Dank geht an:</span>
@@ -55,9 +66,23 @@ export default class AboutPage extends Component{
               <br />
               <small><b>corona-wiki[at]viktor-braun.de</b></small>
             </span>
-            
           </div>
-        </section>                
+        </section>         
+
+        <section className="section">
+          <div className="section-title">Impressum</div>
+          <div className="section-content">
+          <br />
+            Angaben gemäß § 5 TMG
+            <br />
+            <br />
+            Viktor Braun
+            <br />
+            Friedrichstr. 52
+            <br />
+            38102 Braunschweig
+          </div>
+        </section>                   
         
       </div>
     )
