@@ -76,6 +76,28 @@
         text-align: center;
     }
 
+    .rule-set-references{
+        padding-top: 2em;
+        font-size: 0.8rem;
+        .references-title{
+            text-transform: uppercase;
+            // text-decoration: dashed;
+            // font-weight: bold;
+            color: $gray-700;
+            padding-bottom: 0.25em;
+        }
+        .ref-link{
+            padding-left: 0.25em;
+            color: darken($color: $primary, $amount: 30%);
+            >span{
+                font-style: italic;
+            }
+            >b{
+                text-decoration: underline;
+            }
+        }
+    }
+
     .rule-set-banner{
         display: flex;
         border-color: $primary;

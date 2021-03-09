@@ -34,7 +34,7 @@ import * as moment from 'moment'
 /**
  * @typedef RuleSet
  * @type {object}
- * @property {{date: string, link: string}} reference
+ * @property {{date: string, link: string}[]} references
  * @property {RuleLine[]} rules
  * 
  * @property {RuleConditions} [conditions]

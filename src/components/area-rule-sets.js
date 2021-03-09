@@ -93,6 +93,42 @@ export class AreaRuleSets extends Component{
     return history.slice(Math.max(history.length - days, 0));
   }
 
+  /**
+   * 
+   * @param {import('../services/rulesService').RuleSet} ruleSet 
+   */
+  renderRuleSetReference(ruleSet){
+    let references = ruleSet?.references;
+    if(!references || references.length <= 0) return;
+
+    let mapped = references.map(r => {
+      let linkTitle = null;
+      if(r.link){
+        try{
+          const {hostname} = new URL(r.link)
+          linkTitle = hostname;
+        }catch(e){
+          console.error('could not parse link', ruleSet.reference.link, 'context', ruleSet);
+        }
+      }
+
+      return {
+        title: linkTitle,
+        url: r.link,
+        date: r.date
+      };
+    }).filter(r => r.title);
+
+    return (
+      <div className="rule-set-references">
+        <div className="references-title">Einzelnachweise</div>
+        {mapped.map((ref, i) => {
+          return <a key={i} className="ref-link" href={ref.url}>&bull; <b>{ref.title}</b> <span>(vom {ref.date})</span></a>
+        })}
+        
+      </div>
+    );
+  }
   
   /**
    * 
@@ -168,8 +204,6 @@ export class AreaRuleSets extends Component{
 
   
   render(){
-    console.log('rendr rules for', this.props.globalStateSettings);
-
     return (
       (this.props.ruleSets && this.props.ruleSets.length > 0) &&
         this.props.ruleSets.map((rs, i) => {
@@ -178,6 +212,7 @@ export class AreaRuleSets extends Component{
             {rs.rules.map((rule, i) => {
               return this.renderRule(rule, i)
             })}
+            {this.renderRuleSetReference(rs)}
           </div>
         })
       

@@ -5,9 +5,9 @@ frisuer:
       # incidence_from: 0
       # incidence_days: 3
       # incidence_to: 100 # eventuell sollte validiert werden @validate-rule
-    reference:
-      date: '4.3.2021'
-      link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
+    references:
+      - date: '4.3.2021'
+        link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
     rules:
       - text: "Dürfen öffnen"
         status: open
@@ -20,9 +20,9 @@ frisuer:
       date_from: '2021-03-08'
       incidence_from: 100
       # incidence_days: 3
-    reference:
-      date: '4.3.2021'
-      link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
+    references:
+      - date: '4.3.2021'
+        link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
     rules:
       - text: "Leider **geschlossen**"
         status: closed        

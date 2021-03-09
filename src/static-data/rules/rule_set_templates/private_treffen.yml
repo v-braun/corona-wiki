@@ -3,9 +3,9 @@ private_treffen:
   - conditions:
       # date_from: '2021-01-01'
       date_to: '2021-03-07'
-    reference:
-      date: '4.3.2021'
-      link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
+    references:
+      - date: '4.3.2021'
+        link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
     rules:
       - text: "**Eine** Person darf sich mit **einem** Haushalt treffen"
         status: allow
@@ -27,9 +27,9 @@ private_treffen:
       incidence_from: 100
       # incidence_days: 3
       date_from: '2021-03-08'            
-    reference:
-      date: '4.3.2021'
-      link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
+    references:
+      - date: '4.3.2021'
+        link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
     rules:
       - text: "**Eine** Person darf sich mit **einem** Haushalt treffen"
         status: allow
@@ -50,9 +50,9 @@ private_treffen:
       incidence_to: 100
       # incidence_days: 3
       date_from: '2021-03-08'
-    reference:
-      date: '4.3.2021'
-      link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
+    references:
+      - date: '4.3.2021'
+        link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
     rules:
       - text: "**Ein** Haushalt darf sich mit **einem** weiteren Haushalt treffen"
         status: allow
@@ -69,9 +69,9 @@ private_treffen:
       incidence_to: 35
       # incidence_days: 1
       date_from: '2021-03-08'
-    reference:
-      date: '4.3.2021'
-      link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
+    references:
+      - date: '4.3.2021'
+        link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
     rules:
       - text: "**Ein** Haushalt darf sich mit **zwei** weiteren Haushalten treffen"
         status: allow

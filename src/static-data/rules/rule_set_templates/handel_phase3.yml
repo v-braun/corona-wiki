@@ -7,9 +7,9 @@ handel_phase3:
       # incidence_from: 0
       # incidence_days: 3
       incidence_to: 50 # eventuell sollte validiert werden @validate-rule
-    reference:
-      date: '4.3.2021'
-      link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
+    references:
+      - date: '4.3.2021'
+        link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
     rules:
       - text: "Dürfen öffnen"
         status: open
@@ -23,9 +23,9 @@ handel_phase3:
       incidence_from: 50 # eventuell sollte validiert werden @validate-rule
       incidence_to: 100
       # incidence_days: 3
-    reference:
-      date: '4.3.2021'
-      link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
+    references:
+      - date: '4.3.2021'
+        link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
     rules:
       - text: "Terminshopping möglich"
         status: limit
@@ -39,9 +39,9 @@ handel_phase3:
       date_from: '2021-03-08'
       incidence_from: 100 # eventuell sollte validiert werden @validate-rule
       # incidence_days: 3
-    reference:
-      date: '4.3.2021'
-      link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
+    references:
+      - date: '4.3.2021'
+        link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
     rules:
       - text: "Leider **geschlossen**"
         status: closed  
