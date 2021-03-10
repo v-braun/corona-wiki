@@ -10,6 +10,8 @@ const handel_phase3 = yaml('./rule_set_templates/handel_phase3.yml').handel_phas
 
 
 const _ni_handel_phase3 = yaml('./rule_set_templates/_ni_handel_phase3.yml').handel_phase3;
+const _by_handel_phase1 = yaml('./rule_set_templates/_by_handel_phase1.yml')._by_handel_phase1;
+
 
 const ruleSetTemplates = {
   private_treffen,
@@ -22,6 +24,9 @@ const ruleSetTemplates = {
 
   // niedersachsen templates
   _ni_handel_phase3,
+
+  // Bayern templates
+  _by_handel_phase1,
 }
 
 export default ruleSetTemplates;

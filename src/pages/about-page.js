@@ -72,7 +72,7 @@ export default class AboutPage extends Component{
         <section className="section">
           <div className="section-title">Impressum</div>
           <div className="section-content">
-          <br />
+            <br />
             Angaben gemäß § 5 TMG
             <br />
             <br />

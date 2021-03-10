@@ -1,0 +1,20 @@
+# niedersachsen regelung für "sinstiger Einzelhandel"
+# https://www.stk.niedersachsen.de/startseite/presseinformationen/konkretisierung-der-beschlusse-der-ministerprasidentenkonferenz-fur-niedersachsen-198047.html
+
+# erweite Liste des Handlees in Bayern 
+# Betrifft: 
+# Blumenfachgeschäfte, Gartenmärkte, Gärtnereien, Baumschulen, Baumärkte
+# Buchhandlungen
+_by_handel_phase1:
+
+  - conditions:
+      # date_from: '2021-01-01'
+      # date_to: '2021-03-07'
+    references:
+      - date: '05.03.2021'
+        link: 'https://www.verkuendung-bayern.de/baymbl/2021-171/'
+    rules:
+      - text: "Dürfen öffnen"
+        status: open
+      - text: "**Ein** Kunde pro **10 qm** bzw. **20 qm**, abhängig von Verkaufsfläche"
+        status: limit        

@@ -10,11 +10,12 @@ RUN apk add --update \
 
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
+RUN npm install react-scripts@3.4.1 -g
+
 COPY package.json ./
 COPY package-lock.json ./
 
 RUN npm ci --silent
-RUN npm install react-scripts@3.4.1 -g --silent
 COPY . ./
 
 # overwrite the homepage

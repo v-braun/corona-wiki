@@ -923,7 +923,7 @@ let geo = {
     },
     "03241": {
       "ags": "03241",
-      "name": "Hannover",
+      "name": "Hannover (Region)",
       "county": "Region Hannover",
       "stateAbbreviation": "NI",
       "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Wappen_der_Region_Hannover.svg/96px-Wappen_der_Region_Hannover.svg.png"
