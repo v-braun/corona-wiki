@@ -66,6 +66,10 @@ function buildSummary(){
       de: rules.DE.annotations || [],
       states: {}
     },
+    references: {
+      de: rules.DE.references,
+      states: {}
+    },
     settings: {
       de: {},
       states: {}
@@ -87,6 +91,9 @@ function buildSummary(){
     }
     if(state.settings){
       result.settings.states[s] = state.settings;
+    }    
+    if(state.references){
+      result.references.states[s] = state.references;
     }    
 
     for(let [a, rules] of Object.entries(state.areas)){
@@ -207,6 +214,7 @@ function isRuleSetActive(rs, incidenceHistory, today, currentIncidence){
  *  globalStateSettings: {rule_incidence_src: RuleIncidenceSource },
  *  country: RuleSet[],
  *  state: RuleSet[],
+ *  references: {{date: string, link: string}[]},
  * }}
  */
 export function getAllRulesFor(state, area){
@@ -216,6 +224,8 @@ export function getAllRulesFor(state, area){
 
     globalStateSettings: __summary.settings?.states[state] || {},
 
+    /** @type {{date: string, link: string}[]} */
+    references: [],
 
     /** @type {RuleSet[]} */
     country: [],
@@ -227,7 +237,14 @@ export function getAllRulesFor(state, area){
   let existingArea = __summary.areas[area];
   if(!existingArea) return result;
   let ruleSets = existingArea.country?.rule_sets;
-  result.country = resolveRuleSetReferences(ruleSets)
+  result.country = resolveRuleSetReferences(ruleSets);
+  if(__summary.references.de){
+    result.references = [].concat(__summary.references.de);
+  }
+
+  if(__summary.references.states && __summary.references.states[state]){
+    result.references = __summary.references.states[state].concat(result.references);
+  }
 
   let stateData = existingArea.states[state];
   if(!stateData) return result;
@@ -274,6 +291,8 @@ export async function getActiveRuleFor(state, district, area){
     stateIncidence: stateIncidence,
     country: countryRuleSets,
     state: stateRuleSets,
+
+    references: allRules.references,
     
     globalCountryAnnotations: allRules.globalCountryAnnotations,
     globalStateAnnotations: allRules.globalStateAnnotations,

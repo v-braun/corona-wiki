@@ -97,9 +97,12 @@
             // text-decoration: dashed;
             // font-weight: bold;
             color: $gray-700;
-            padding-bottom: 0.25em;
+            // padding-bottom: 0.25em;
+            margin-bottom: 0.5em;
         }
         .ref-link{
+            display: block;
+            margin-bottom: 0.75em;
             padding-left: 0.25em;
             color: darken($color: $primary, $amount: 30%);
             >span{

@@ -42,6 +42,8 @@ export class AreaRuleContainer extends Component{
       stateIco: null,
       stateName: null,
 
+      references: null,
+
       activeDistrictIncidence: null,
       activeStateIncidence: null,
 
@@ -71,6 +73,7 @@ export class AreaRuleContainer extends Component{
       activeDistrictIncidence: rules.districtIncidence,
       activeStateIncidence: rules.stateIncidence,
       
+      references: rules.references,
       
       globalCountryAnnotations: rules.globalCountryAnnotations,
       globalStateAnnotations: rules.globalStateAnnotations,
@@ -131,6 +134,7 @@ export class AreaRuleContainer extends Component{
     let hasCountryRules = (activeCountryRules && activeCountryRules.length > 0 );
     let hasStateRules = (activeStateRules && activeStateRules.length > 0);
 
+    let references = this.state.references;
     
     return (
       <div className="area-rules">
@@ -160,6 +164,8 @@ export class AreaRuleContainer extends Component{
 
                 district={this.props.district}
                 districtName={this.props.districtName}
+
+                references={references}
 
                 districtIncidence={activeDistrictIncidence}
                 stateIncidence={activeStateIncidence}
@@ -193,6 +199,8 @@ export class AreaRuleContainer extends Component{
 
                 district={this.props.district}
                 districtName={this.props.districtName}
+
+                references={references}
 
                 districtIncidence={activeDistrictIncidence}
                 stateIncidence={activeStateIncidence}

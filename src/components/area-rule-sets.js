@@ -8,6 +8,8 @@ import * as moment from 'moment'
 /**
 * @augments {Component<{
     ruleSets: import('../services/rulesService').RuleSet[], 
+
+    references: [],
     
     state: string,
     stateName: string,
@@ -35,6 +37,8 @@ export class AreaRuleSets extends Component{
 
     district: PropTypes.string.isRequired,
     districtName: PropTypes.string.isRequired,
+
+    references: PropTypes.array,
     
     districtIncidence: PropTypes.number.isRequired,
     stateIncidence: PropTypes.number.isRequired,
@@ -97,8 +101,7 @@ export class AreaRuleSets extends Component{
    * 
    * @param {import('../services/rulesService').RuleSet} ruleSet 
    */
-  renderRuleSetReference(ruleSet){
-    let references = ruleSet?.references;
+  renderRuleSetReference(references){
     if(!references || references.length <= 0) return;
 
     let mapped = references.map(r => {
@@ -108,7 +111,7 @@ export class AreaRuleSets extends Component{
           const {hostname} = new URL(r.link)
           linkTitle = hostname;
         }catch(e){
-          console.error('could not parse link', ruleSet.reference.link, 'context', ruleSet);
+          console.error('could not parse link', r, 'context', references);
         }
       }
 
@@ -212,7 +215,7 @@ export class AreaRuleSets extends Component{
             {rs.rules.map((rule, i) => {
               return this.renderRule(rule, i)
             })}
-            {this.renderRuleSetReference(rs)}
+            {this.renderRuleSetReference(this.props.references)}
           </div>
         })
       

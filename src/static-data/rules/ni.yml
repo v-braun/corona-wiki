@@ -1,4 +1,7 @@
 ni:
+  references:
+      - date: '08.03.2021'
+        link: 'https://www.stk.niedersachsen.de/startseite/presseinformationen/konkretisierung-der-beschlusse-der-ministerprasidentenkonferenz-fur-niedersachsen-198047.html'
   annotations: {}
     # info: |- 
     #   Folgende Regeln gelten für das Bundesland Niedersachsen
