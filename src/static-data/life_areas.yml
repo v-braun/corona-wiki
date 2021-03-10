@@ -2,12 +2,12 @@ life_areas:
   zusammenkuenfte_privat:
     id: zusammenkuenfte_privat
     title: |-
-      Privates treffen Zuhause
+      Privates treffen zuhause
     # title: |- 
     ico: https://img.icons8.com/officel/80/000000/meeting-room.png
   zusammenkuenfte_oeffentlich:
     id: zusammenkuenfte_oeffentlich
-    title: Privates treffen Draußen
+    title: Privates treffen draußen
     # title: |- 
     ico: https://img.icons8.com/clouds/100/000000/meeting.png
 
