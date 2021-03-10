@@ -1,21 +1,11 @@
 # laut beschluss vom 3. mrz (Buchhandlungen, Blumengeschäfte, Gartenmärkte)
 
-handel_phase2:
-  # alte regel gültig bis zum 2021-03-07
-  - conditions:
-      # date_from: '2021-01-01'
-      date_to: '2021-03-07'
-    references:
-      - date: '4.3.2021'
-        link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
-    rules:
-      - text: "Leider **geschlossen**"
-        status: closed
+__handel_0open_100closed:
       
   - conditions:
       date_from: '2021-03-08'
       incidence_to: 100
-      # incidence_days: 3
+      incidence_days: 3
       # incidence_from: 0
       # incidence_days: 3
       # incidence_to: 100 # eventuell sollte validiert werden @validate-rule

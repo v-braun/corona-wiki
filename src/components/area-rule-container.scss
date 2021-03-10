@@ -33,6 +33,8 @@
             display: flex;
             align-items: center;
             > .rule-main-ico{
+                display: flex;
+                align-items: center;
                 $ico-size: 35px;
                 max-width: $ico-size;
                 max-height: $ico-size;
@@ -54,7 +56,7 @@
         &.rule-main-state{
             .rule-main-ctr-header{
                 > .rule-main-ico{
-                    padding: 5px;
+                    // padding: 5px;
                 }
             }
         }

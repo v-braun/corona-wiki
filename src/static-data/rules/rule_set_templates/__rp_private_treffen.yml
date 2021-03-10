@@ -1,0 +1,40 @@
+#  sonderrgel für RLP
+__rp_private_treffen:
+
+
+      
+  # Notbremse (alte regel) bei Inzidenz > 100 über 3 Tage 
+  - conditions:
+      # date_to: '2021-03-07'
+      incidence_from: 100
+      incidence_days: 3
+      date_from: '2021-03-08'            
+    rules:
+      - text: "**Eine** Person darf sich mit **einem** Haushalt treffen"
+        status: allow
+      - text: "Ein Haushalt darf sich mit **einer** Person treffen"
+        status: allow
+      - text: "Kinder jünger als **6 Jahre** nicht eingeschlossen"
+        status: allow
+      - text: "**Mehrere** Personen dürfen sich **nicht** mit einem Haushalt treffen"
+        status: forbidden
+      - text: Ein Haushalt darf **nicht** mehrere Personen treffen
+        status: forbidden
+      - text: Man sollte sich **möglichst** mit den **selben** Haushalten treffen
+        status: limit              
+
+  # bei einer Inzidenz > 35 und < 100 über 3 Tage
+  - conditions:
+      incidence_from: 0
+      incidence_to: 100
+      incidence_days: 3
+      date_from: '2021-03-08'
+    rules:
+      - text: "**Ein** Haushalt darf sich mit **einem** weiteren Haushalt treffen"
+        status: allow
+      - text: "Zwei Haushalte zusammen, dürfen nicht mehr als **fünf** Personen entsprechen"
+        status: limit
+      - text: Kinder jünger als **14 Jahre** nicht eingeschlossen
+        status: allow
+      - text: Man sollte sich **möglichst** mit den **selben** Haushalten treffen
+        status: limit

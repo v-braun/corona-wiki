@@ -1,0 +1,19 @@
+rp:
+  references:
+    - date: '08.03.2021'
+      link: 'https://corona.rlp.de/de/aktuelles/corona-regeln-im-ueberblick/'  
+  annotations: {}
+    # info: |- 
+    #   Folgende Regeln gelten für das Bundesland Niedersachsen
+  areas: 
+#  RLP Erweiterungen:
+# Zukünftig dürfen sich die Personen eines Haustandes mit den Personen eines weiteren Hausstandes treffen, solange sie dabei nicht mehr als fünf Personen sind. 
+# Kinder bis einschließlich 14 Jahre zählen nicht mit. 
+
+    zusammenkuenfte_privat:
+      rule_sets:
+        - include: __rp_private_treffen
+
+    zusammenkuenfte_oeffentlich:
+      rule_sets:
+        - include: __rp_private_treffen

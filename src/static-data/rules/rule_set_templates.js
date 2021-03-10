@@ -1,32 +1,48 @@
 import yaml from 'yaml.macro'
 
-const private_treffen = yaml('./rule_set_templates/private_treffen.yml').private_treffen;
-const koerpernahe_dienstleistung = yaml('./rule_set_templates/koerpernahe_dienstleistung.yml').koerpernahe_dienstleistung;
-const frisuer = yaml('./rule_set_templates/frisuer.yml').frisuer;
-const handel_phase2 = yaml('./rule_set_templates/handel_phase2.yml').handel_phase2;
-const handel_phase1 = yaml('./rule_set_templates/handel_phase1.yml').handel_phase1;
-const kultur_phase3 = yaml('./rule_set_templates/kultur_phase3.yml').kultur_phase3;
-const handel_phase3 = yaml('./rule_set_templates/handel_phase3.yml').handel_phase3;
+// durchgehend offen
+const __handel_0open = yaml('./rule_set_templates/__handel_0open.yml').__handel_0open;
+
+// < 100 offen, > 100 geschlossen
+const __handel_0open_100closed = yaml('./rule_set_templates/__handel_0open_100closed.yml').__handel_0open_100closed;
+
+// < 50 offen, < 100 Terminshopping, > 100 geschlossen
+const __handel_0open_50book_100closed = yaml('./rule_set_templates/__handel_0open_50book_100closed.yml').__handel_0open_50book_100closed;
+// < 100 Terminshopping, > 100 geschlossen
+const __handel_0book_100closed = yaml('./rule_set_templates/__handel_0book_100closed.yml').__handel_0book_100closed;
 
 
-const _ni_handel_phase3 = yaml('./rule_set_templates/_ni_handel_phase3.yml').handel_phase3;
-const _by_handel_phase1 = yaml('./rule_set_templates/_by_handel_phase1.yml')._by_handel_phase1;
+const __dienstleistung_0open_100closed = yaml('./rule_set_templates/__dienstleistung_0open_100closed.yml').__dienstleistung_0open_100closed;
+const __dienstleistung_closed = yaml('./rule_set_templates/__dienstleistung_closed.yml').__dienstleistung_closed;
+
+
+const __private_treffen = yaml('./rule_set_templates/__private_treffen.yml').__private_treffen;
+const __kultur_0open_50book_100closed = yaml('./rule_set_templates/__kultur_0open_50book_100closed.yml').__kultur_0open_50book_100closed;
+
+
+// state specific
+const __rp_private_treffen = yaml('./rule_set_templates/__rp_private_treffen.yml').__rp_private_treffen;
+
 
 
 const ruleSetTemplates = {
-  private_treffen,
-  koerpernahe_dienstleistung,
-  frisuer,
-  handel_phase1,
-  handel_phase2,
-  handel_phase3,
-  kultur_phase3,
+  __handel_0open,
+  __handel_0open_100closed,
+  __handel_0open_50book_100closed,
 
-  // niedersachsen templates
-  _ni_handel_phase3,
+  __dienstleistung_0open_100closed,
 
-  // Bayern templates
-  _by_handel_phase1,
+  __dienstleistung_closed,
+
+  __private_treffen,
+  __kultur_0open_50book_100closed,
+
+  __handel_0book_100closed,
+
+
+// state specific
+  __rp_private_treffen,
+
 }
 
 export default ruleSetTemplates;

@@ -1,3 +1,5 @@
+@import "../colors.scss";
+
 .collapsed-container{
   font-size: 0.7rem;
   
@@ -22,5 +24,30 @@
     max-height: 20px;
     margin-right: 1.5em;
 
+  }
+
+
+}
+.expanded-container{
+  .charts-btns{
+    display: flex;
+    button{
+      
+      margin-top: 0.5em;
+      margin-left: 1em;
+      width: 2.5em;
+      height: 2.5em;
+
+      background-color: transparent;
+      border-style: solid;
+      border-width: 1px;
+      border-color: $gray-500;     
+      
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

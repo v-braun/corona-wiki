@@ -1,0 +1,10 @@
+__dienstleistung_closed:
+  - conditions:
+      date_from: '2021-03-08'
+      # incidence_from: 100
+      # incidence_days: 3
+
+    rules:
+      - text: "Leider **geschlossen**"
+        status: closed        
+      

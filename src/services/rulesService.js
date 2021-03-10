@@ -141,7 +141,9 @@ function resolveRuleSetReferences(ruleSets){
 
 function lastXDays(history, days){
   if(history.length <= 0) return [];
-  return history.slice(Math.max(history.length - days, 0));
+  let records = history.slice(Math.max(history.length - days, 0));
+  let result = records.map(r => r.weekIncidence);
+  return result;
 }
 
 function parseMomentOptional(date, ctx){
@@ -154,7 +156,20 @@ function parseMomentOptional(date, ctx){
   }
 }
 
+function firstIndexWhere(data, days, cond){
+  let matches = 0;
+  for(let i = data.length - 1; i >= 0; i--){
+    if(cond(data[i])){
+      matches++;
+    } else{
+      matches = 0;
+    }
 
+    if(matches == days) return i;
+  }
+
+  return -1;
+}
 
 
 /**
@@ -173,23 +188,99 @@ function isRuleSetActive(rs, incidenceHistory, today, currentIncidence){
   if(fromDate && today.isBefore(fromDate)) return false;
   if(toDate && today.isAfter(toDate)) return false;
 
+  
+
+
   if(Number.isFinite(conditions.incidence_days)) {
-    let lastDaysIncidence = lastXDays(incidenceHistory, conditions.incidence_days);
-    if(!Number.isFinite(conditions.incidence_from) && !Number.isFinite(conditions.incidence_to)){
-      console.error(`unexpected conditions.incidence_days (${conditions.incidence_days}) without incidence_from / incidence_from`, rs);
-      return false;
+    // algo (example 'to'):
+    // IF last x days < to -> we are fine
+    // IF last x days > 'to' -> we are out
+
+    // what about a < x, b > x, c < x ??
+    //  --> we take last_days * 3 of history data
+    // go back in time and try to find values where x days in a roll > x
+    // or where x days in a roll < x
+
+
+    // 
+    // try to get the 
+
+    // [oldest, old, new]
+    let lastIncidences = lastXDays(incidenceHistory, (conditions.incidence_days - 1));
+    lastIncidences = [...lastIncidences].concat([currentIncidence]);
+
+    // lastIncidences = [0, 51, 20]; // fake data
+
+    if(Number.isFinite(conditions.incidence_to)){
+      let matchedDays = lastIncidences.filter(incidence => incidence <= conditions.incidence_to);
+
+      // none of last days matched to condition
+      if(matchedDays.length <= 0) return false;
+
+      if(matchedDays.length !== lastIncidences.length) {
+        // not all last days where <= to value
+        // we have to run the difuse check
+        let muchOlderIncidences = lastXDays(incidenceHistory, (conditions.incidence_days * 2) -1 );
+        muchOlderIncidences = [...muchOlderIncidences].concat(currentIncidence);
+
+        // muchOlderIncidences = [55,54,5,20,30,70,40];
+
+        let idxWhereBelow = firstIndexWhere(muchOlderIncidences, conditions.incidence_days, (incidence) => incidence <= conditions.incidence_to);
+        let idxWhereAbove = firstIndexWhere(muchOlderIncidences, conditions.incidence_days, (incidence) => incidence > conditions.incidence_to);
+
+        if(idxWhereAbove === -1 && idxWhereBelow === -1){
+          console.error('difuse situation detected', rs, incidenceHistory, window.document.location.href);
+          return false;
+        }
+
+        if(idxWhereAbove > idxWhereBelow){
+          // prev. we where above, now we should wait
+          return false;
+        }
+
+        // from here everything fine
+        // the to rule matched
+      } else{
+        // all matched to condition... we are fine here
+      }
     }
 
     if(Number.isFinite(conditions.incidence_from)){
-      let matchedDays = lastDaysIncidence.filter(incidence => incidence.weekIncidence >= conditions.incidence_from);
-      if(matchedDays.length !== lastDaysIncidence.length) return false;
-    }
-    if(Number.isFinite(conditions.incidence_to)){
-      let matchedDays = lastDaysIncidence.filter(incidence => incidence.weekIncidence <= conditions.incidence_to);
-      if(matchedDays.length !== lastDaysIncidence.length) return false;
+      let matchedDays = lastIncidences.filter(incidence => incidence > conditions.incidence_from);
+      // none of last days matched to condition
+      if(matchedDays.length <= 0) return false;
+
+      if(matchedDays.length !== lastIncidences.length) {
+        // not all last days where <= to value
+        // we have to run the difuse check
+        let muchOlderIncidences = lastXDays(incidenceHistory, (conditions.incidence_days * 2) -1 );
+        muchOlderIncidences = [...muchOlderIncidences].concat(currentIncidence);
+
+        // muchOlderIncidences = [55,54,5,20,30,70,40];
+        
+        let idxWhereAbove = firstIndexWhere(muchOlderIncidences, conditions.incidence_days, (incidence) => incidence >= conditions.incidence_from);
+        let idxWhereBelow = firstIndexWhere(muchOlderIncidences, conditions.incidence_days, (incidence) => incidence < conditions.incidence_from);
+
+        if(idxWhereAbove === -1 && idxWhereBelow === -1){
+          console.error('difuse situation detected', rs, incidenceHistory, window.document.location.href);
+          return false;
+        }
+
+        if(idxWhereBelow > idxWhereAbove){
+          // prev. we where above, now we should wait
+          return false;
+        }
+
+        // from here everything fine
+        // the to rule matched
+      } else{
+        // all matched to condition... we are fine here
+      }
     }
     
+    // to and from OK
     return true;
+
   } else{
     let currentDateIncidence = currentIncidence;
     if(Number.isFinite(conditions.incidence_from)){

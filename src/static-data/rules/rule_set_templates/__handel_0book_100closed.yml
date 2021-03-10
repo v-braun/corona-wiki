@@ -2,10 +2,11 @@
 # https://www.stk.niedersachsen.de/startseite/presseinformationen/konkretisierung-der-beschlusse-der-ministerprasidentenkonferenz-fur-niedersachsen-198047.html
 
 
-handel_phase3:
+__handel_0book_100closed:
 
   - conditions:
       date_from: '2021-03-08'
+      incidence_days: 3
       incidence_to: 100
       # incidence_days: 3
     references:
@@ -22,6 +23,7 @@ handel_phase3:
   # sollte nochmal validiert werden @validate-rule
   - conditions:
       date_from: '2021-03-08'
+      incidence_days: 3
       incidence_from: 100 # eventuell sollte validiert werden @validate-rule
       # incidence_days: 3
     references:

@@ -8,138 +8,140 @@ de:
   areas:
     zusammenkuenfte_privat:
       rule_sets:
-        - include: private_treffen
+        - include: __private_treffen
 
     zusammenkuenfte_oeffentlich:
       rule_sets:
-        - include: private_treffen
+        - include: __private_treffen
 
     frisuer:
       rule_sets:
-        - include: frisuer
+        - include: __dienstleistung_0open_100closed
 
     # koerpernahe dienstleistung (ausser frisere)
     tattoo:
       rule_sets:
-        - include: koerpernahe_dienstleistung
+        - include: __dienstleistung_0open_100closed
 
     massage:
       rule_sets:
-        - include: koerpernahe_dienstleistung
+        - include: __dienstleistung_0open_100closed
 
     manikuere_pedikuere:
       rule_sets:
-        - include: koerpernahe_dienstleistung
+        - include: __dienstleistung_0open_100closed
 
     kosmetik:
       rule_sets:
-        - include: koerpernahe_dienstleistung
+        - include: __dienstleistung_0open_100closed
 
     piercing:
       rule_sets:
-        - include: koerpernahe_dienstleistung
+        - include: __dienstleistung_0open_100closed
 
-    # handel_phase2 (Buchhandlungen, Blumengeschäfte und Gartenmärkte sowie Fahrschulen)
+    # __handel_0open_100closed geöffnet von 0 bis 100 ohne terminschopping 
+    # (Buchhandlungen, Blumengeschäfte und Gartenmärkte sowie Fahrschulen)
     buchladen:
       rule_sets:
-        - include: handel_phase2
+        - include: __handel_0open_100closed
 
     blumengeschaeft:
       rule_sets:
-        - include: handel_phase2
+        - include: __handel_0open_100closed
 
     gartenmarkt:
       rule_sets:
-        - include: handel_phase2
+        - include: __handel_0open_100closed
 
     fahrschule:
       rule_sets:
-        - include: handel_phase2        
+        - include: __handel_0open_100closed        
 
-    # handel_phase1
+    # __handel_0open
     # Lebensmittelgeschäfte, Abhol- und Lieferdienste, Getränkemärkte, Apotheken und Drogerien, Babyfachmärkte, 
     # Sanitäts- und Reformhäuser, Optiker und Hörgeräteakustike
     # Ebenfalls Auto- und Fahrradwerkstätten, Banken und Sparkassen, 
     # Poststellen, Reinigungen und Waschsalons. Zeitungen, Tierbedarf und Futtermittel
     lebensmittelgeschaefte:
       rule_sets:
-        - include: handel_phase1
+        - include: __handel_0open
     lieferdienste:
       rule_sets:
-        - include: handel_phase1          
+        - include: __handel_0open          
     getraenkemaerkte:
       rule_sets:
-        - include: handel_phase1          
+        - include: __handel_0open          
     apotheken:
       rule_sets:
-        - include: handel_phase1          
+        - include: __handel_0open          
     drogerien:
       rule_sets:
-        - include: handel_phase1          
+        - include: __handel_0open          
     babyfachmaerkte:
       rule_sets:
-        - include: handel_phase1          
+        - include: __handel_0open          
     optiker:
       rule_sets:
-        - include: handel_phase1          
+        - include: __handel_0open          
     hoergeraeteakustiker:
       rule_sets:
-        - include: handel_phase1
+        - include: __handel_0open
         
     autowerkstaetten:
       rule_sets:
-        - include: handel_phase1
+        - include: __handel_0open
     fahrradwerkstaetten:
       rule_sets:
-        - include: handel_phase1
+        - include: __handel_0open
     banken:
       rule_sets:
-        - include: handel_phase1
+        - include: __handel_0open
     post:
       rule_sets:
-        - include: handel_phase1
+        - include: __handel_0open
     waschsalons:
       rule_sets:
-        - include: handel_phase1
+        - include: __handel_0open
     waschstrassen:
       rule_sets:
-        - include: handel_phase1
+        - include: __handel_0open
     tierbedarf:
       rule_sets:
-        - include: handel_phase1
+        - include: __handel_0open
 
 
-    # kultur_phase3
+    # __kultur_0open_50book_100closed
     museen:
       rule_sets:
-        - include: kultur_phase3
+        - include: __kultur_0open_50book_100closed
     galerien:
       rule_sets:
-        - include: kultur_phase3
+        - include: __kultur_0open_50book_100closed
     zoo:
       rule_sets:
-        - include: kultur_phase3
+        - include: __kultur_0open_50book_100closed
     botanische_gaerten:
       rule_sets:
-        - include: kultur_phase3
+        - include: __kultur_0open_50book_100closed
     gedenkstaetten:
       rule_sets:
-        - include: kultur_phase3
+        - include: __kultur_0open_50book_100closed
 
   
-  # handel_phase3
+  # __handel_0open_50book_100closed
+  # offen / terminschopping / geschlossen
     modelaeden:
       rule_sets:
-        - include: handel_phase3
+        - include: __handel_0open_50book_100closed
     elektrofachmarkt:
       rule_sets:
-        - include: handel_phase3
+        - include: __handel_0open_50book_100closed
     baumaerkte:
       rule_sets:
-        - include: handel_phase3
+        - include: __handel_0open_50book_100closed
     moebelhaus:
       rule_sets:
-        - include: handel_phase3
+        - include: __handel_0open_50book_100closed
         
 
     # stationaer_indoor:
