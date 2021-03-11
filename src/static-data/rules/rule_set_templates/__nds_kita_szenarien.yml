@@ -8,9 +8,9 @@ __nds_kita_szenarien:
       incidence_days: 3
     references:
       - date: '4.3.2021'
-        link: 'https://bit.ly/2PSxHau'
+        link: 'https://www.mk.niedersachsen.de/startseite/aktuelles/presseinformationen/kitas-offnen-am-8-marz-in-festen-gruppen-schrittweise-weitere-schuloffnungen-ab-15-marz-tonne-grosser-schritt-nach-vorne-bei-den-kleinsten-bis-ostern-besuchen-alle-schulerinnen-und-schuler-ihre-schule-198040.html'
     rules:
-      - text: "Kita-Szenario B (eingeschränkter Regelbetrieb)"
+      - text: "Szenario B: **Alle** Kinder dürfen wieder in die Betreuung. Es gelten ggf. Einschränkungen beim bringen & holen (je Einrichtung geregelt)"
         status: limit
 
   # Nur Betreuung für Kinder mit Eltern in systemrelevanten Berufen  
@@ -19,8 +19,8 @@ __nds_kita_szenarien:
       incidence_from: 100
     references:
       - date: '4.3.2021'
-        link: 'https://bit.ly/2PSxHau'
+        link: 'https://www.mk.niedersachsen.de/startseite/aktuelles/presseinformationen/kitas-offnen-am-8-marz-in-festen-gruppen-schrittweise-weitere-schuloffnungen-ab-15-marz-tonne-grosser-schritt-nach-vorne-bei-den-kleinsten-bis-ostern-besuchen-alle-schulerinnen-und-schuler-ihre-schule-198040.html'
     rules:
-      - text: "Kita-Szenario C (Notbetreuung)"
+      - text: "Szenario C: **Notbetreuung** nur für Kinder mit Eltern in systemrelevanten Berufen"
         status: limit      
       
