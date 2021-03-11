@@ -1,0 +1,20 @@
+# Groß und Einzelhandel ausnahmen:
+# Abhol- und Lieferdienste, Getränkemärkte, Apotheken und Drogerien, Babyfachmärkte, Sanitäts- und Reformhäuser, Optiker und Hörgeräteakustiker.
+# https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724
+
+__dienstleistung_0open:
+  # alte regel gültig bis zum 2021-03-07
+  - conditions:
+      # date_from: '2021-01-01'
+      # date_to: '2021-03-07'
+    # references:
+    #   - date: '4.3.2021'
+    #     link: 'https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-diese-regeln-und-einschraenkung-gelten-1734724'
+    rules:
+      - text: "Dürfen öffnen"
+        status: open
+      - text: "Schnelltest kann notwendig sein"
+        status: limit
+      - text: "**Termin** kann notwendig sein"
+        status: limit
+      

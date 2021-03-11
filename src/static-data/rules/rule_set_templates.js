@@ -13,6 +13,7 @@ const __handel_0book_100closed = yaml('./rule_set_templates/__handel_0book_100cl
 
 
 const __dienstleistung_0open_100closed = yaml('./rule_set_templates/__dienstleistung_0open_100closed.yml').__dienstleistung_0open_100closed;
+const __dienstleistung_0open = yaml('./rule_set_templates/__dienstleistung_0open.yml').__dienstleistung_0open;
 const __dienstleistung_closed = yaml('./rule_set_templates/__dienstleistung_closed.yml').__dienstleistung_closed;
 
 
@@ -24,7 +25,6 @@ const __kultur_0open_50book_100closed = yaml('./rule_set_templates/__kultur_0ope
 const __rp_private_treffen = yaml('./rule_set_templates/__rp_private_treffen.yml').__rp_private_treffen;
 
 
-
 const ruleSetTemplates = {
   __handel_0open,
   __handel_0open_100closed,
@@ -33,6 +33,7 @@ const ruleSetTemplates = {
   __dienstleistung_0open_100closed,
 
   __dienstleistung_closed,
+  __dienstleistung_0open,
 
   __private_treffen,
   __kultur_0open_50book_100closed,

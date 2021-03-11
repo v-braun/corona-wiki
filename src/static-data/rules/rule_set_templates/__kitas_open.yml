@@ -1,0 +1,16 @@
+__kitas_open:
+
+
+      
+  - conditions:
+      # date_from: '2021-03-08'            
+    rules:
+      - text: "Betreuung darf stattfinden"
+        status: allow
+      - text: "Einschränkungen sind möglich"
+        status: limit
+      - text: "Betreuung eventuell in festen Gruppen"
+        status: limit        
+      
+
+

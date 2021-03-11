@@ -6,6 +6,7 @@ ni:
     # info: |- 
     #   Folgende Regeln gelten für das Bundesland Niedersachsen
   areas: 
+
     modelaeden:
       rule_sets:
         - include: __handel_0book_100closed
@@ -18,6 +19,45 @@ ni:
     moebelhaus:
       rule_sets:
         - include: __handel_0book_100closed
+
+
+# NI dürfen einige koerpernahe dienstleistung öffnen
+# auch über 100 
+# https://www.stk.niedersachsen.de/startseite/presseinformationen/konkretisierung-der-beschlusse-der-ministerprasidentenkonferenz-fur-niedersachsen-198047.html
+    frisuer:
+      rule_sets:
+        - include: __dienstleistung_0open
+    # koerpernahe dienstleistung (ausser frisere)
+    tattoo:
+      rule_sets:
+        - include: __dienstleistung_0open
+    massage:
+      rule_sets:
+        - include: __dienstleistung_0open
+    manikuere_pedikuere:
+      rule_sets:
+        - include: __dienstleistung_0open
+
+    kosmetik:
+      rule_sets:
+        - include: __dienstleistung_0open
+
+    piercing:
+      rule_sets:
+        - include: __dienstleistung_0open
+
+
+    buchladen:
+      rule_sets:
+        - include: __handel_0open
+
+    blumengeschaeft:
+      rule_sets:
+        - include: __handel_0open
+
+    gartenmarkt:
+      rule_sets:
+        - include: __handel_0open        
         
   #   zusammenkuenfte_privat:
   #     rule_sets:

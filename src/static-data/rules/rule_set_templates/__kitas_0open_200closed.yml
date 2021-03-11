@@ -1,0 +1,27 @@
+__kitas_0open_200closed:
+
+      
+  - conditions:
+      incidence_to: 200
+      incidence_days: 3
+      # date_from: '2021-03-08'            
+    rules:
+      - text: "Betreuung darf stattfinden"
+        status: allow
+      - text: "Einschränkungen sind möglich"
+        status: limit
+      - text: "Betreuung eventuell in festen Gruppen"
+        status: limit        
+      
+
+  # bei einer Inzidenz > 35 und < 100 über 3 Tage
+  - conditions:
+      incidence_from: 200
+      incidence_days: 3
+      date_from: '2021-03-08'
+    rules:
+      - text: "Leider keine Regelbetreuung möglich"
+        status: closed
+      - text: "Notbetreuung eventuell möglich"
+        status: limit
+      
