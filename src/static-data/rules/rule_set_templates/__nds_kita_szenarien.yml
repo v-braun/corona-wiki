@@ -1,0 +1,26 @@
+# laut beschluss vom 4. mrz (kita in nds)
+
+__nds_kita_szenarien:
+      
+  - conditions:
+      date_from: '2021-03-08'
+      incidence_to: 100
+      incidence_days: 3
+    references:
+      - date: '4.3.2021'
+        link: 'https://bit.ly/2PSxHau'
+    rules:
+      - text: "Kita-Szenario B (eingeschränkter Regelbetrieb)"
+        status: limit
+
+  # Nur Betreuung für Kinder mit Eltern in systemrelevanten Berufen  
+  - conditions:
+      date_from: '2021-03-08'
+      incidence_from: 100
+    references:
+      - date: '4.3.2021'
+        link: 'https://bit.ly/2PSxHau'
+    rules:
+      - text: "Kita-Szenario C (Notbetreuung)"
+        status: limit      
+      
