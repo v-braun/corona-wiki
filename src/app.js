@@ -100,6 +100,7 @@ export default class App extends Component{
 
           <footer id="app-footer">
               <Link to="/about">Haftungsausschluss &amp; Impressum</Link>
+              <div className="disclaimer-short">Alle Angaben erfolgen ohne Gewähr auf Vollständigkeit und Richtigkeit.</div>
           </footer>
         </div>
       </Router>

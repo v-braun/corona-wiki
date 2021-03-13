@@ -23,4 +23,16 @@
         top: 5px;
         position: relative;
     }
+
+    .dsgvo-section{
+        .dsgvo-container{
+            padding: 1em;
+            max-height: 30vh;
+            overflow-y: scroll;
+            border-style: solid;
+            border-width: 2px;
+            border-color: $gray-600;
+        }
+
+    }
 }
