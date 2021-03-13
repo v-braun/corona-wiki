@@ -20,7 +20,7 @@ const api = axios.create({
 
 export async function getStates(){
   // if(longTermCache['getStates']) return caches['getStates'];
-  let result = await api.get('/states');
+  let result = await api.get('/states/');
   // longTermCache['getStates'] = result.data;
   return result.data;
 }

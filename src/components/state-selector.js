@@ -50,6 +50,7 @@ export class StateSelector extends Component{
 
   async componentDidMount(){
     let statesApiModel = await api.getStates();
+    if(statesApiModel.error) return; // todo: show error messages here
     let statesViewModel = [];
     for(const [key, state] of Object.entries(statesApiModel.data)){
       let geoState = geo.states[key];
