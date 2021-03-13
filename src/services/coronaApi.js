@@ -27,7 +27,7 @@ export async function getStates(){
 
 export async function getDistricts(){
   // if(longTermCache['getDistricts']) return caches['getDistricts'];
-  let result = await api.get('/districts');
+  let result = await api.get('/districts/');
   // longTermCache['getDistricts'] = result.data;
   return result.data;
 }
@@ -44,7 +44,7 @@ export async function getTodayDataForState(abbreviation){
 export async function getStatesCasesHistory(stateAbbreviation){
   // if(caches['getStatesCasesHistory']) return caches['getDistricts'];
   
-  let result = await api.get(`/states/${stateAbbreviation}/history/cases`);
+  let result = await api.get(`/states/${stateAbbreviation}/history/cases/`);
   return result.data;
 }
 

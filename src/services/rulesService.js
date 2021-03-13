@@ -368,11 +368,11 @@ export async function getActiveRuleFor(state, district, area){
   let ruleIncidence;
   if(allRules.globalStateSettings.rule_incidence_src === 'state'){
     // rule calculation is based on incidence of the state and not on district
-    let historyRes = await api.getHistory(`/states/${state}/history/incidence/360`);
+    let historyRes = await api.getHistory(`/states/${state}/history/incidence/360/`);
     incidenceHistory = historyRes.data[state].history;    
     ruleIncidence = stateIncidence;
   } else{
-    let historyRes = await api.getHistory(`/districts/${district}/history/incidence/360`);
+    let historyRes = await api.getHistory(`/districts/${district}/history/incidence/360/`);
     incidenceHistory = historyRes.data[district].history;
     ruleIncidence = districtIncidence;
   }
