@@ -21,6 +21,13 @@ const __private_treffen = yaml('./rule_set_templates/__private_treffen.yml').__p
 const __kultur_0open_50book_100closed = yaml('./rule_set_templates/__kultur_0open_50book_100closed.yml').__kultur_0open_50book_100closed;
 
 
+
+const __kitas_open = yaml('./rule_set_templates/__kitas_open.yml').__kitas_open;
+const __kitas_0open_200closed = yaml('./rule_set_templates/__kitas_0open_200closed.yml').__kitas_0open_200closed;
+const __kitas_0open_150closed = yaml('./rule_set_templates/__kitas_0open_150closed.yml').__kitas_0open_150closed;
+const __kitas_0open_100closed = yaml('./rule_set_templates/__kitas_0open_100closed.yml').__kitas_0open_100closed;
+
+
 // state specific
 const __rp_private_treffen = yaml('./rule_set_templates/__rp_private_treffen.yml').__rp_private_treffen;
 
@@ -39,6 +46,11 @@ const ruleSetTemplates = {
   __kultur_0open_50book_100closed,
 
   __handel_0book_100closed,
+
+  __kitas_open,
+  __kitas_0open_200closed,
+  __kitas_0open_150closed,
+  __kitas_0open_100closed,  
 
 
 // state specific

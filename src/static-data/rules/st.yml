@@ -1,0 +1,15 @@
+st:
+  references: []
+    
+  annotations: {}
+    # info: |- 
+    #   Folgende Regeln gelten für das Bundesland ...
+  areas: 
+
+
+    kitas:
+      rule_sets:
+        - include: __kitas_open
+          references:
+              - date: '25.02.21'
+                link: 'https://coronavirus.sachsen-anhalt.de/news-detail/news/eingeschraenkter-regelbetrieb-in-kitas-ab-1-maerz-1/'

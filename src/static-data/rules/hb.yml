@@ -1,0 +1,14 @@
+hb:
+  references: []
+    # - date: '..'
+    #   link: 'https://...'  
+  annotations: {}
+    # info: |- 
+    #   Folgende Regeln gelten für das Bundesland Niedersachsen
+  areas: 
+    kitas:
+      rule_sets:
+        - include: __kitas_0open_200closed
+          references:
+              - date: '12.02.21'
+                link: 'https://www.gesetzblatt.bremen.de/fastmedia/218/2021_02_12_GBl_Nr_0015_signed.pdf'

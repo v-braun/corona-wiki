@@ -1,0 +1,14 @@
+mv:
+  references: []
+    # - date: '..'
+    #   link: 'https://...'  
+  annotations: {}
+    # info: |- 
+    #   Folgende Regeln gelten für das Bundesland Niedersachsen
+  areas: 
+    kitas:
+      rule_sets:
+        - include: __kitas_0open_150closed
+          references:
+              - date: '22.02.2021'
+                link: 'https://www.regierung-mv.de/Landesregierung/sm/Service/Corona/Kindertagesf%C3%B6rderung/'

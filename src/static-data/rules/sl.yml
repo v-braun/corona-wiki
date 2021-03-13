@@ -1,0 +1,15 @@
+sl:
+  references: []
+    
+  annotations: {}
+    # info: |- 
+    #   Folgende Regeln gelten für das Bundesland Niedersachsen
+  areas: 
+
+
+    kitas:
+      rule_sets:
+        - include: __kitas_open
+          references:
+              - date: '12.02.21'
+                link: 'https://www.saarland.de/DE/portale/corona/faq/bildung-kultur/schulen-kitas/schulen-kitas_node.html'

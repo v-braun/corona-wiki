@@ -1,0 +1,14 @@
+bw:
+  references: []
+    # - date: '..'
+    #   link: 'https://...'  
+  annotations: {}
+    # info: |- 
+    #   Folgende Regeln gelten für das Bundesland Niedersachsen
+  areas: 
+    kitas:
+      rule_sets:
+        - include: __kitas_open
+          references:
+              - date: '22.02.21'
+                link: 'https://km-bw.de/,Lde/Startseite/Ablage+Einzelseiten+gemischte+Themen/CoronaVO+Kita'

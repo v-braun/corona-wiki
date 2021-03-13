@@ -5,7 +5,14 @@ nw:
   annotations: {}
     # info: |- 
     #   Folgende Regeln gelten für das Bundesland Niedersachsen
-  areas: {}
+  areas: 
+
+    kitas:
+      rule_sets:
+        - include: __kitas_open
+          references:
+              - date: '22.02.21'
+                link: 'https://www.land.nrw/de/wichtige-fragen-und-antworten-zum-corona-virus#06b8ce74'
   #   zusammenkuenfte_privat:
   #     rule_sets:
   #       - conditions: 

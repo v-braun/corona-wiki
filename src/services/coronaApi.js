@@ -39,7 +39,7 @@ export async function getStates(){
 
 export async function getDistricts(){
   // if(longTermCache['getDistricts']) return caches['getDistricts'];
-  let result = await api.get('/districts/');
+  let result = await apiGet('/districts/');
   // longTermCache['getDistricts'] = result.data;
   return result.data;
 }

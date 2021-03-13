@@ -144,6 +144,12 @@ de:
         - include: __handel_0open_50book_100closed
         
 
+
+
+    kitas:
+      rule_sets: []
+        
+
     # stationaer_indoor:
     #   rule_sets:
     #     - rules:

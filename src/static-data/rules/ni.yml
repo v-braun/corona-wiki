@@ -61,6 +61,15 @@ ni:
     gartenmarkt:
       rule_sets:
         - include: __handel_0open        
+
+
+
+    kitas:
+      rule_sets:
+        - include: __kitas_0open_100closed
+          references:
+              - date: '08.03.20201'
+                link: 'https://www.niedersachsen.de/Coronavirus/hinweise_fur_schulen_und_kitas/hinweise-fur-schulen-und-kitas-191128.html'
         
   #   zusammenkuenfte_privat:
   #     rule_sets:

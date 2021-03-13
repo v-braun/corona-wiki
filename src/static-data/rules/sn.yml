@@ -1,0 +1,15 @@
+sn:
+  references: []
+    
+  annotations: {}
+    # info: |- 
+    #   Folgende Regeln gelten für das Bundesland ...
+  areas: 
+
+
+    kitas:
+      rule_sets:
+        - include: __kitas_open
+          references:
+              - date: '09.02.21'
+                link: 'https://www.coronavirus.sachsen.de/eltern-lehrkraefte-erzieher-schueler-4144.html'

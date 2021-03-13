@@ -1,0 +1,15 @@
+sh:
+  references: []
+    
+  annotations: {}
+    # info: |- 
+    #   Folgende Regeln gelten für das Bundesland ...
+  areas: 
+
+
+    kitas:
+      rule_sets:
+        - include: __kitas_open
+          references:
+              - date: '10.03.21'
+                link: 'https://www.schleswig-holstein.de/DE/Landesregierung/I/_startseite/Artikel2021/I/210310_schulen_kitas.html;jsessionid=F46339CE0E15F86A4DB5E3171729A682.delivery1-replication'

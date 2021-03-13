@@ -17,3 +17,11 @@ rp:
     zusammenkuenfte_oeffentlich:
       rule_sets:
         - include: __rp_private_treffen
+
+
+    kitas:
+      rule_sets:
+        - include: __kitas_open
+          references:
+              - date: '08.03.21'
+                link: 'https://corona.rlp.de/de/themen/schulen-kitas/faqs-kita/'

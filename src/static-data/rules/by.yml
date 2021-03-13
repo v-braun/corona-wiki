@@ -62,6 +62,12 @@ by:
 
     
     
+    kitas:
+      rule_sets:
+        - include: __kitas_0open_100closed
+          references:
+              - date: '05.03.2021'
+                link: 'https://www.verkuendung-bayern.de/baymbl/2021-171/'
         
   #   zusammenkuenfte_privat:
   #     rule_sets:

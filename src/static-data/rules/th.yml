@@ -1,0 +1,15 @@
+th:
+  references: []
+    
+  annotations: {}
+    # info: |- 
+    #   Folgende Regeln gelten für das Bundesland ...
+  areas: 
+
+
+    kitas:
+      rule_sets:
+        - include: __kitas_0open_200closed
+          references:
+              - date: '19.02.21'
+                link: 'https://bildung.thueringen.de/aktuell/keine-oeffnung-von-kindergaerten-und-schulen-in-corona-hotspots'

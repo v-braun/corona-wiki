@@ -1,0 +1,14 @@
+bb:
+  references: []
+    # - date: '..'
+    #   link: 'https://...'  
+  annotations: {}
+    # info: |- 
+    #   Folgende Regeln gelten für das Bundesland Niedersachsen
+  areas: 
+    kitas:
+      rule_sets:
+        - include: __kitas_0open_200closed
+          references:
+              - date: '06.03.2021'
+                link: 'https://mbjs.brandenburg.de/media_fast/6288/infoschreiben_7._eindaemmungsverordnung_kitas.pdf'

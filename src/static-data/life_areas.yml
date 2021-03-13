@@ -180,7 +180,14 @@ life_areas:
       - Saturn
 
       
+  'kitas':
+    id: 'kitas'
+    title: Kitas
+    ico: https://img.icons8.com/color/96/000000/seesaw.png      
+    examples:
+      - Kindertagesstätte
   
+    
   # 'gremien':
   #   id: 'gremien'
   #   title: Gremien
