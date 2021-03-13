@@ -891,7 +891,8 @@ let geo = {
       "ags": "03154",
       "name": "Helmstedt",
       "county": "LK Helmstedt",
-      "stateAbbreviation": "NI"
+      "stateAbbreviation": "NI",
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Stadtwappen_Helmstedt.png/140px-Stadtwappen_Helmstedt.png"
     },
     "03155": {
       "ags": "03155",
@@ -961,7 +962,7 @@ let geo = {
       "name": "Nienburg (Weser)",
       "county": "LK Nienburg (Weser)",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Nienburg_wappen.jpg/140px-Nienburg_wappen.jpg"
     },
     "03257": {
       "ags": "03257",
@@ -1002,7 +1003,8 @@ let geo = {
       "ags": "03355",
       "name": "Lüneburg",
       "county": "LK Lüneburg",
-      "stateAbbreviation": "NI"
+      "stateAbbreviation": "NI",
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/DEU_L%C3%BCneburg_COA.svg/140px-DEU_L%C3%BCneburg_COA.svg.png"
     },
     "03356": {
       "ags": "03356",
@@ -1016,14 +1018,14 @@ let geo = {
       "name": "Rotenburg (Wümme)",
       "county": "LK Rotenburg (Wümme)",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/DEU_Rotenburg_%28W%C3%BCmme%29_COA.svg/140px-DEU_Rotenburg_%28W%C3%BCmme%29_COA.svg.png"
     },
     "03358": {
       "ags": "03358",
       "name": "Heidekreis",
       "county": "LK Heidekreis",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Wappen_des_Heidekreises.svg/140px-Wappen_des_Heidekreises.svg.png"
     },
     "03359": {
       "ags": "03359",
@@ -1051,21 +1053,21 @@ let geo = {
       "name": "Delmenhorst",
       "county": "SK Delmenhorst",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/DEU_Delmenhorst_COA.svg/140px-DEU_Delmenhorst_COA.svg.png"
     },
     "03402": {
       "ags": "03402",
       "name": "Emden",
       "county": "SK Emden",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/DEU_Emden_COA.svg/140px-DEU_Emden_COA.svg.png"
     },
     "03403": {
       "ags": "03403",
       "name": "Oldenburg (Stadt)",
       "county": "SK Oldenburg",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/DEU_Oldenburg_COA.svg/140px-DEU_Oldenburg_COA.svg.png"
     },
     "03404": {
       "ags": "03404",
@@ -1079,7 +1081,7 @@ let geo = {
       "name": "Wilhelmshaven",
       "county": "SK Wilhelmshaven",
       "stateAbbreviation": "NI",
-      "ico": null
+      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/DEU_Wilhelmshaven_COA.svg/140px-DEU_Wilhelmshaven_COA.svg.png"
     },
     "03451": {
       "ags": "03451",
