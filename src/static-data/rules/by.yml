@@ -41,6 +41,25 @@ by:
     piercing:
       rule_sets:
         - include: __dienstleistung_closed
+    # Körpernahe Dienstleistungen die offen bleiben
+    # https://www.verkuendung-bayern.de/baymbl/2021-171/
+    # 2Abweichend von Satz 1 und von Abs. 1 Satz 1 dürfen die Dienstleistungen
+    # der Friseure sowie im hygienisch oder pflegerisch erforderlichen Umfang
+    # die nichtmedizinische Fuß-, Hand-, Nagel- und Gesichtspflege angeboten
+    # werden; insoweit gilt Abs. 1 Satz 4 entsprechend mit den Maßgaben, dass
+    # das Personal eine medizinische Gesichtsmaske im Rahmen der
+    # arbeitsschutzrechtlichen Bestimmungen tragen und eine Steuerung des
+    # Zutritts durch vorherige Terminreservierung erfolgen muss.
+    frisuer:
+      rule_sets:
+        - include: __dienstleistung_0open
+    manikuere_pedikuere:
+      rule_sets:
+        - include: __dienstleistung_0open
+    kosmetik:
+      rule_sets:
+        - include: __dienstleistung_0open
+
     
     
         
