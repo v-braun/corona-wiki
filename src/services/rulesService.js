@@ -129,8 +129,13 @@ function resolveRuleSetReferences(ruleSets){
     }
 
     for(let referencedSet of reference ){
-      referencedSet['__include_tpl_name'] = item.include;
-      result.push(referencedSet);
+      let refCopy = JSON.parse(JSON.stringify(referencedSet))
+      refCopy['__include_tpl_name'] = item.include;
+      if(item.references){
+        refCopy.references = item.references;
+      }
+      
+      result.push(refCopy);
     }    
   
   }

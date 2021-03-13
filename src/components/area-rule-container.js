@@ -134,7 +134,11 @@ export class AreaRuleContainer extends Component{
     let hasCountryRules = (activeCountryRules && activeCountryRules.length > 0 );
     let hasStateRules = (activeStateRules && activeStateRules.length > 0);
 
-    let references = this.state.references;
+    let references = this.state.references || [];
+    let ruleReferences = activeStateRules?.filter(r => r.references)?.flatMap(r => r.references);
+    if(ruleReferences){
+      references = [...ruleReferences].concat(references);
+    }
     
     return (
       <div className="area-rules">

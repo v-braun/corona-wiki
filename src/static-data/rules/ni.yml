@@ -54,6 +54,9 @@ ni:
     blumengeschaeft:
       rule_sets:
         - include: __handel_0open
+          # references:
+          #     - date: '08.03.2021'
+          #       link: 'https ....'
 
     gartenmarkt:
       rule_sets:
