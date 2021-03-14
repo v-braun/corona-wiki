@@ -71,6 +71,34 @@ ni:
               - date: '08.03.20201'
                 link: 'https://www.niedersachsen.de/Coronavirus/hinweise_fur_schulen_und_kitas/hinweise-fur-schulen-und-kitas-191128.html'
         
+
+    schulen:
+      rule_sets:      
+        - conditions: 
+            date_from: '2021-03-14'
+            date_to: '2021-03-21'
+          references:
+            - date: '04.03.21'
+              link: 'https://www.mk.niedersachsen.de/startseite/aktuelles/presseinformationen/kitas-offnen-am-8-marz-in-festen-gruppen-schrittweise-weitere-schuloffnungen-ab-15-marz-tonne-grosser-schritt-nach-vorne-bei-den-kleinsten-bis-ostern-besuchen-alle-schulerinnen-und-schuler-ihre-schule-198040.html'
+          rules:
+            - text: "Grundschulen: in allen Klassen kann **Wechselunterricht** stattfinden"
+              status: limit
+            - text: "Für Abschlussklassen kann **Wechselunterricht** stattfinden"
+              status: limit              
+            - text: "Für Klassen 5 bis 7 kann **Wechselunterricht** stattfinden"
+              status: limit
+            - text: "Für Klassen 12 und 13 kann **Wechselunterricht** stattfinden"
+              status: limit
+              
+        - conditions: 
+            date_from: '2021-03-22'
+          references:
+            - date: '04.03.21'
+              link: 'https://www.mk.niedersachsen.de/startseite/aktuelles/presseinformationen/kitas-offnen-am-8-marz-in-festen-gruppen-schrittweise-weitere-schuloffnungen-ab-15-marz-tonne-grosser-schritt-nach-vorne-bei-den-kleinsten-bis-ostern-besuchen-alle-schulerinnen-und-schuler-ihre-schule-198040.html'
+          rules:
+            - text: "Für **alle** Klassen **Wechselunterricht** stattfinden"
+              status: limit
+
   #   zusammenkuenfte_privat:
   #     rule_sets:
   #       - conditions: 

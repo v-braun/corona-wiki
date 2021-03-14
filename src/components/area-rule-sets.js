@@ -157,7 +157,7 @@ export class AreaRuleSets extends Component{
         <div className="rule-set-banner-content">
           <span key="title">Folgende Regelungen gelten</span>
           {dateFrom && <span key="dateFrom" className="date-value">{` vom ${dateFrom.format('D. MMM. YYYY')}`}</span>}
-          {dateTo && <span key="dateFrom" className="date-value">{` bis zum ${dateTo.format('D. MMM. YYYY')}`}</span>}
+          {dateTo && <span key="dateTo" className="date-value">{` bis zum ${dateTo.format('D. MMM. YYYY')}`}</span>}
 
           {(Number.isFinite(incidenceFrom) || Number.isFinite(incidenceTo)) && 
             <span key="incidence-info">

@@ -13,3 +13,18 @@ st:
           references:
               - date: '25.02.21'
                 link: 'https://coronavirus.sachsen-anhalt.de/news-detail/news/eingeschraenkter-regelbetrieb-in-kitas-ab-1-maerz-1/'
+
+
+    schulen:
+      rule_sets:      
+        - conditions: 
+            # date_from: '2021-03-14'
+            # date_to: '2021-03-21'
+          references:
+            - date: '07.03.21'
+              link: 'https://mb.sachsen-anhalt.de/themen/schule-und-unterricht/faq/'
+          rules:
+            - text: "In allen Schulen kann **Präsenzunterricht** stattfinden"
+              status: allow
+            - text: "Eventueller **Wechselunterricht**"
+              status: limit

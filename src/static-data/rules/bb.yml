@@ -12,3 +12,20 @@ bb:
           references:
               - date: '06.03.2021'
                 link: 'https://mbjs.brandenburg.de/media_fast/6288/infoschreiben_7._eindaemmungsverordnung_kitas.pdf'
+
+
+    schulen:
+      rule_sets:      
+        - conditions: 
+            # incidence_to: 100
+            # incidence_days: 3
+            # date_from: '2021-03-08'            
+          references:
+            - date: '15.02.2021'
+              link: 'https://mbjs.brandenburg.de/bildung/weitere-themen/chronologie-corona-massnahmen-an-schulen.html'
+          rules:
+            - text: "Für Klassen 1 bis 6 kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
+              status: allow
+            - text: "Eventuell ab 15. Mrz.: In allen Schulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
+              status: limit
+              

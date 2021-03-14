@@ -25,3 +25,16 @@ rp:
           references:
               - date: '08.03.21'
                 link: 'https://corona.rlp.de/de/themen/schulen-kitas/faqs-kita/'
+
+
+    schulen:
+      rule_sets:      
+        - conditions: 
+            # date_from: '2021-03-14'
+            # date_to: '2021-03-21'
+          references:
+            - date: '10.03.21'
+              link: 'https://corona.rlp.de/de/themen/schulen-kitas/schule-allgemein/'
+          rules:
+            - text: "In allen Schulen kann **Präsenzunterricht** stattfinden (**eventuell im Wechsel**)"
+              status: allow

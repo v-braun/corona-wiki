@@ -186,6 +186,12 @@ life_areas:
     ico: https://img.icons8.com/color/96/000000/seesaw.png      
     examples:
       - Kindertagesstätte
+
+
+  schulen:
+    id: schulen
+    title: Schulen
+    ico: https://img.icons8.com/cotton/64/000000/school-1-1.png
   
     
   # 'gremien':

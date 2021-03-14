@@ -10,5 +10,20 @@ hb:
       rule_sets:
         - include: __kitas_0open_200closed
           references:
-              - date: '12.02.21'
-                link: 'https://www.gesetzblatt.bremen.de/fastmedia/218/2021_02_12_GBl_Nr_0015_signed.pdf'
+            - date: '12.02.21'
+              link: 'https://www.gesetzblatt.bremen.de/fastmedia/218/2021_02_12_GBl_Nr_0015_signed.pdf'
+
+
+    schulen:
+      rule_sets:      
+        - conditions: 
+            # incidence_to: 100
+            # incidence_days: 3
+            # date_from: '2021-03-08'            
+          references:
+            - date: '12.02.21'
+              link: 'https://www.gesetzblatt.bremen.de/fastmedia/218/2021_02_12_GBl_Nr_0015_signed.pdf'
+          rules:
+            - text: "In allen Schulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
+              status: allow
+              

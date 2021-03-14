@@ -26,4 +26,18 @@ nw:
   #           - text: |- 
   #               todo ...
   #             status: forbidden
-        
+
+
+    schulen:
+      rule_sets:      
+        - conditions: 
+            # date_from: '2021-03-14'
+            # date_to: '2021-03-21'
+          references:
+            - date: '10.03.21'
+              link: 'https://www.schulministerium.nrw/themen/schulsystem/regelungen-fuer-schulen-ab-dem-15-maerz-2021'
+          rules:
+            - text: "Für Abschlussklassen kann **Präsenzunterricht** stattfinden"
+              status: open
+            - text: "In allen anderen Klassen kann **Wechselunterricht** stattfinden"
+              status: limit        

@@ -149,6 +149,8 @@ de:
     kitas:
       rule_sets: []
         
+    schulen:
+      rule_sets: []
 
     # stationaer_indoor:
     #   rule_sets:

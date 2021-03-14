@@ -12,3 +12,26 @@ bw:
           references:
               - date: '22.02.21'
                 link: 'https://km-bw.de/,Lde/Startseite/Ablage+Einzelseiten+gemischte+Themen/CoronaVO+Kita'
+
+
+    schulen:
+      rule_sets:      
+        - conditions: {}
+            # incidence_to: 200
+            # incidence_days: 3
+            # date_from: '2021-03-08'            
+          references:
+            - date: '22.02.21'
+              link: 'https://km-bw.de/,Lde/Startseite/Ablage+Einzelseiten+gemischte+Themen/CoronaVO+Kita'            
+          rules:
+            - text: "In Grundschulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
+              status: allow
+            - text: "Klassen 5 und 6 kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
+              status: allow
+            - text: "**Abschlussklassen** kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
+              status: allow              
+            - text: "**Ab Klasse 7** (Ausnahme Abschlussklassen) haben Fernunterricht"
+              status: limit
+            - text: "Notbetreuung kann angeboten werden"
+              status: limit              
+

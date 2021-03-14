@@ -1,5 +1,5 @@
 import yaml from 'yaml.macro'
 
-const bb = yaml('./bb.yml').bb;
+const hb = yaml('./hb.yml').hb;
 
-export default bb;
+export default hb;

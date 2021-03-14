@@ -181,7 +181,7 @@ function firstIndexWhere(data, days, cond){
  * 
  * @param {RuleSet} rs 
  */
-function isRuleSetActive(rs, incidenceHistory, today, currentIncidence){
+function isRuleSetActive(rs, incidenceHistory, today, currentIncidence, district){
   if(!rs.conditions) return true; // RS without conditions are dispayed always
 
   let conditions = rs.conditions;
@@ -193,8 +193,9 @@ function isRuleSetActive(rs, incidenceHistory, today, currentIncidence){
   if(fromDate && today.isBefore(fromDate)) return false;
   if(toDate && today.isAfter(toDate)) return false;
 
+  if(conditions.districts_not?.indexOf && conditions.districts_not?.indexOf(district) !== -1) return false;
+  if(conditions.districts_only?.indexOf && conditions.districts_only?.indexOf(district) === -1) return false;
   
-
 
   if(Number.isFinite(conditions.incidence_days)) {
     // algo (example 'to'):
@@ -225,7 +226,7 @@ function isRuleSetActive(rs, incidenceHistory, today, currentIncidence){
       if(matchedDays.length !== lastIncidences.length) {
         // not all last days where <= to value
         // we have to run the difuse check
-        let muchOlderIncidences = lastXDays(incidenceHistory, (conditions.incidence_days * 2) -1 );
+        let muchOlderIncidences = lastXDays(incidenceHistory, (conditions.incidence_days * 3) -1 );
         muchOlderIncidences = [...muchOlderIncidences].concat(currentIncidence);
 
         // muchOlderIncidences = [55,54,5,20,30,70,40];
@@ -258,7 +259,7 @@ function isRuleSetActive(rs, incidenceHistory, today, currentIncidence){
       if(matchedDays.length !== lastIncidences.length) {
         // not all last days where <= to value
         // we have to run the difuse check
-        let muchOlderIncidences = lastXDays(incidenceHistory, (conditions.incidence_days * 2) -1 );
+        let muchOlderIncidences = lastXDays(incidenceHistory, (conditions.incidence_days * 3) -1 );
         muchOlderIncidences = [...muchOlderIncidences].concat(currentIncidence);
 
         // muchOlderIncidences = [55,54,5,20,30,70,40];
@@ -379,8 +380,8 @@ export async function getActiveRuleFor(state, district, area){
 
 
   // districtIncidence = lastXDays(incidenceHistory, 1)[0].weekIncidence;
-  let countryRuleSets = allRules.country.filter(rs => isRuleSetActive(rs, incidenceHistory, today, ruleIncidence) );  
-  let stateRuleSets = allRules.state.filter(rs => isRuleSetActive(rs, incidenceHistory, today, ruleIncidence) );  
+  let countryRuleSets = allRules.country.filter(rs => isRuleSetActive(rs, incidenceHistory, today, ruleIncidence, district) );  
+  let stateRuleSets = allRules.state.filter(rs => isRuleSetActive(rs, incidenceHistory, today, ruleIncidence, district) );  
   
   return {
     districtIncidence: districtIncidence,
