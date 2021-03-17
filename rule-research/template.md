@@ -133,7 +133,7 @@ Abbr: **NI**
 
 ------------------------------------------------------------
 
-BL: ***Nordrhein-Westfalen*
+BL: **Nordrhein-Westfalen**
 Abbr: **NW**
 
 **Refeerenz:**
