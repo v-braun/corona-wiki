@@ -990,7 +990,7 @@ let geo = {
       "name": "Harburg",
       "county": "LK Harburg",
       "stateAbbreviation": "NI",
-      "ico": "https://raw.githubusercontent.com/v-braun/corona-wiki/master/src/static-data/wappen/harburg.png"
+      "ico": "https://raw.githubusercontent.com/v-braun/corona-wiki/master/src/static-data/wappen/harburg2.png"
     },
     "03354": {
       "ags": "03354",
