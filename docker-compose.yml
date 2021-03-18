@@ -1,0 +1,27 @@
+---
+# - docker-compose um schnell testen zu können auf http://localhost:3000
+#   `docker-compose up -d`
+# - bei Änderungen an Dateien muss der Container neugestartet werden
+#   `docker-compose restart`
+# - bei Änderungen der package(-lock).json muss das Image neu gebaut werden
+# - verwendet build stage aus Dockerfile und ändert entrypoint
+
+version: "3"
+
+services:
+  corona:
+    container_name: "corona"
+    hostname: "corona"
+    build:
+      context: "."
+      target: "build"
+      args:
+        - "HOST_NAME=localhost"
+    entrypoint: ["npm", "start"]
+    restart: "no"
+    volumes:
+      - "./public/:/app/public/"
+      - "./scripts/:/app/scripts/"
+      - "./src/:/app/src/"
+    ports:
+      - "3000:3000/tcp"
