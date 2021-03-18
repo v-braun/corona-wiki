@@ -990,7 +990,7 @@ let geo = {
       "name": "Harburg",
       "county": "LK Harburg",
       "stateAbbreviation": "NI",
-      "ico": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wappen-Landkreis-Harburg.png/103px-Wappen-Landkreis-Harburg.png"
+      "ico": "https://www.landkreis-harburg.de/static/bilder/layoutbilder/logo.svg"
     },
     "03354": {
       "ags": "03354",
