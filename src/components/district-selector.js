@@ -70,7 +70,8 @@ export class DistrictSelector extends Component{
 
         cases: district.cases,
         deaths: district.deaths,
-        recovered: district.recovered,        
+        recovered: district.recovered,
+        population: district.population,        
 
         ico: geoDistrict?.ico
       };
@@ -119,6 +120,7 @@ export class DistrictSelector extends Component{
             cases={s.cases}
             deaths={s.deaths}
             recovered={s.recovered}
+            population={s.population}
 
             ico={s.ico}
             onClick={(ags, ref) => this.props.onClick(ags, ref)}

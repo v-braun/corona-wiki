@@ -38,7 +38,8 @@ export class DistrictButton extends Component{
 
     cases: PropTypes.number.isRequired,
     deaths: PropTypes.number.isRequired,
-    recovered: PropTypes.number.isRequired,    
+    recovered: PropTypes.number.isRequired,
+    population: PropTypes.number.isRequired,    
 
     weekIncidence: PropTypes.number.isRequired,
     onClick: PropTypes.func.isRequired
@@ -89,9 +90,13 @@ export class DistrictButton extends Component{
           <div className="title-ctr">
             <span className="name">{this.props.name}</span>
 
+              <span className="fg-population">
+                {this.props.population.toFixed(0)} Einwohner
+              </span>
               <span className="fg-incidence">
                 (Inzidenz: {this.props.weekIncidence.toFixed(0)})
-              </span>            
+              </span>        
+                       
           </div>
         </div>
 
