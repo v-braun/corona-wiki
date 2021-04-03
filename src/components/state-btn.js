@@ -80,7 +80,7 @@ export class StateButton extends Component{
             <span className="name">{this.props.name}</span>
 
               <span className="fg-population">
-                {this.props.population.toFixed(0)} Einwohner
+                {this.props.population.toLocaleString()} Einwohner
               </span>
               <span className="fg-incidence">
                 (Inzidenz: {this.props.weekIncidence.toFixed(0)})
