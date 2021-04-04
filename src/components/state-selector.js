@@ -62,10 +62,12 @@ export class StateSelector extends Component{
         newCases: state.delta.cases,
         newDeaths: state.delta.deaths,
         newRecovered: state.delta.recovered,
+        population: state.population,
 
         cases: state.cases,
         deaths: state.deaths,
         recovered: state.recovered,        
+
 
         ico: geoState?.ico
       };
@@ -95,6 +97,7 @@ export class StateSelector extends Component{
         cases={s.cases}
         deaths={s.deaths}
         recovered={s.recovered}
+        population={s.population}
 
         ico={s.ico}
         onClick={(abbr, ref) => this.props.onClick(abbr, ref)}
@@ -128,6 +131,7 @@ export class StateSelector extends Component{
               cases={s.cases}
               deaths={s.deaths}
               recovered={s.recovered}
+              population={s.population}
 
               ico={s.ico}
               onClick={(abbr, ref) => this.props.onClick(abbr, ref)}
