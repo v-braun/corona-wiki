@@ -8,38 +8,21 @@ mv:
   areas: 
     kitas:
       rule_sets:
-        - include: __kitas_0open_150closed
-          references:
-              - date: '22.02.2021'
-                link: 'https://www.regierung-mv.de/Landesregierung/sm/Service/Corona/Kindertagesf%C3%B6rderung/'
-
+        - include: __kitas_0open_165closed
 
     schulen:
       rule_sets:      
         - conditions: 
-            incidence_to: 150
-            incidence_days: 3        
-            # incidence_to: 100
+            incidence_to: 165
             # incidence_days: 3
             # date_from: '2021-03-08'            
-          references:
-            - date: '12.02.21'
-              link: 'https://www.regierung-mv.de/Landesregierung/bm/Blickpunkte/Coronavirus/Coronavirus-%E2%80%93-Informationen-f%C3%BCr-schule/Zu-den-Regelungen-f%C3%BCr-die-Schulorganisation/'
           rules:
             - text: "In allen Schulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
               status: allow
         - conditions: 
-            incidence_from: 150
-            incidence_days: 3
+            incidence_from: 165
+            # incidence_days: 3
             # date_from: '2021-03-08'            
-          references:
-            - date: '12.02.21'
-              link: 'https://www.regierung-mv.de/Landesregierung/bm/Blickpunkte/Coronavirus/Coronavirus-%E2%80%93-Informationen-f%C3%BCr-schule/Zu-den-Regelungen-f%C3%BCr-die-Schulorganisation/'
           rules:
             - text: "In allen Schulen kann leider nur **Distanzunterricht** stattfinden"
               status: limit
-            - text: "Für **Abschlussklassen** kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
-              status: allow
-
-        
-              

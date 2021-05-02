@@ -16,7 +16,7 @@ de:
 
     frisuer:
       rule_sets:
-        - include: __dienstleistung_0open_100closed
+        - include: __dienstleistung_0open
 
     # koerpernahe dienstleistung (ausser frisere)
     tattoo:
@@ -29,7 +29,7 @@ de:
 
     manikuere_pedikuere:
       rule_sets:
-        - include: __dienstleistung_0open_100closed
+        - include: __dienstleistung_0open
 
     kosmetik:
       rule_sets:
@@ -43,19 +43,19 @@ de:
     # (Buchhandlungen, Blumengeschäfte und Gartenmärkte sowie Fahrschulen)
     buchladen:
       rule_sets:
-        - include: __handel_0open_100closed
+        - include: __handel_0open
 
     blumengeschaeft:
       rule_sets:
-        - include: __handel_0open_100closed
+        - include: __handel_0open
 
     gartenmarkt:
       rule_sets:
-        - include: __handel_0open_100closed
+        - include: __handel_0open
 
     fahrschule:
       rule_sets:
-        - include: __handel_0open_100closed        
+        - include: __handel_0open        
 
     # __handel_0open
     # Lebensmittelgeschäfte, Abhol- und Lieferdienste, Getränkemärkte, Apotheken und Drogerien, Babyfachmärkte, 
@@ -132,16 +132,16 @@ de:
   # offen / terminschopping / geschlossen
     modelaeden:
       rule_sets:
-        - include: __handel_0open_50book_100closed
+        - include: __handel_0open_100cm_150closed
     elektrofachmarkt:
       rule_sets:
-        - include: __handel_0open_50book_100closed
+        - include: __handel_0open_100cm_150closed  
     baumaerkte:
       rule_sets:
-        - include: __handel_0open_50book_100closed
+        - include: __handel_0open_100cm_150closed
     moebelhaus:
       rule_sets:
-        - include: __handel_0open_50book_100closed
+        - include: __handel_0open_100cm_150closed
         
 
 

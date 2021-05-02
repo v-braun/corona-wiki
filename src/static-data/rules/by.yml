@@ -6,59 +6,6 @@ by:
     # info: |- 
     #   Folgende Regeln gelten für das Bundesland Niedersachsen
   areas: 
-  # bayern erweiterung der phase1
-  # In Landkreisen und kreisfreien Städten, in denen eine 7-Tage-Inzidenz von 100 überschritten wird, 
-  # ist die Öffnung von Ladengeschäften mit Kundenverkehr für Handels-, Dienstleistungs- und Handwerksbetriebe untersagt. 
-  # 2Ausgenommen sind der Lebensmittelhandel inklusive Direktvermarktung, Lieferdienste, Getränkemärkte, Reformhäuser, Babyfachmärkte, 
-  # Apotheken, Sanitätshäuser, Drogerien, Optiker, Hörgeräteakustiker, Tankstellen, Kfz-Werkstätten, Fahrradwerkstätten, Banken und Sparkassen, Pfandleihäuser, Filialen des Brief- und Versandhandels, 
-  # Reinigungen und Waschsalons, 
-  # 🚨 Blumenfachgeschäfte, Gartenmärkte, Gärtnereien, Baumschulen, Baumärkte, <--- 
-  # der Verkauf von Presseartikeln, Versicherungsbüros, 
-  # 🚨 Buchhandlungen, <---
-  # Tierbedarf und Futtermittel und sonstige für die tägliche Versorgung unverzichtbare Ladengeschäfte sowie der Großhandel
-    baumaerkte:
-      rule_sets:
-        - include: __handel_0open
-    buchladen:
-      rule_sets:
-        - include: __handel_0open        
-    blumengeschaeft:
-      rule_sets:
-        - include: __handel_0open        
-    gartenmarkt:
-      rule_sets:
-        - include: __handel_0open
-
-    # Körpernahe Dienstleistungen die geschlossen bleiben:
-    # https://www.verkuendung-bayern.de/baymbl/2021-171/
-    # (2) 1Dienstleistungen, bei denen eine körperliche Nähe zum Kunden unabdingbar ist, wie zum Beispiel Massagepraxen, Tattoo-Studios oder ähnliche Betriebe sind untersagt
-    tattoo:
-      rule_sets:
-        - include: __dienstleistung_closed
-    massage:
-      rule_sets:
-        - include: __dienstleistung_closed      
-    piercing:
-      rule_sets:
-        - include: __dienstleistung_closed
-    # Körpernahe Dienstleistungen die offen bleiben
-    # https://www.verkuendung-bayern.de/baymbl/2021-171/
-    # 2Abweichend von Satz 1 und von Abs. 1 Satz 1 dürfen die Dienstleistungen
-    # der Friseure sowie im hygienisch oder pflegerisch erforderlichen Umfang
-    # die nichtmedizinische Fuß-, Hand-, Nagel- und Gesichtspflege angeboten
-    # werden; insoweit gilt Abs. 1 Satz 4 entsprechend mit den Maßgaben, dass
-    # das Personal eine medizinische Gesichtsmaske im Rahmen der
-    # arbeitsschutzrechtlichen Bestimmungen tragen und eine Steuerung des
-    # Zutritts durch vorherige Terminreservierung erfolgen muss.
-    frisuer:
-      rule_sets:
-        - include: __dienstleistung_0open
-    manikuere_pedikuere:
-      rule_sets:
-        - include: __dienstleistung_0open
-    kosmetik:
-      rule_sets:
-        - include: __dienstleistung_0open
 
     
     
@@ -96,18 +43,3 @@ by:
               status: allow
 
 
-
-  #   zusammenkuenfte_privat:
-  #     rule_sets:
-  #       - conditions: 
-  #         reference:
-  #           date: '1.1.2021'
-  #           link: ''        
-  #         rules:
-  #           - text: |- 
-  #               todo ...
-  #             status: forbidden
-  #           - text: |- 
-  #               todo ...
-  #             status: forbidden
-        

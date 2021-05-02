@@ -9,22 +9,21 @@ st:
 
     kitas:
       rule_sets:
-        - include: __kitas_open
-          references:
-              - date: '25.02.21'
-                link: 'https://coronavirus.sachsen-anhalt.de/news-detail/news/eingeschraenkter-regelbetrieb-in-kitas-ab-1-maerz-1/'
-
+        - include: __kitas_0open_165closed
 
     schulen:
       rule_sets:      
         - conditions: 
-            # date_from: '2021-03-14'
-            # date_to: '2021-03-21'
-          references:
-            - date: '07.03.21'
-              link: 'https://mb.sachsen-anhalt.de/themen/schule-und-unterricht/faq/'
+            incidence_to: 165
+            incidence_days: 3
+            # date_from: '2021-03-08'            
           rules:
-            - text: "In allen Schulen kann **Präsenzunterricht** stattfinden"
+            - text: "In allen Schulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
               status: allow
-            - text: "Eventueller **Wechselunterricht**"
+        - conditions: 
+            incidence_from: 165
+            incidence_days: 3
+            # date_from: '2021-03-08'            
+          rules:
+            - text: "In allen Schulen kann leider nur **Distanzunterricht** stattfinden"
               status: limit

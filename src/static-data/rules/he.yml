@@ -1,32 +1,28 @@
 he:
-  references: []
-    # - date: '..'
-    #   link: 'https://...'  
+  references: 
+    - date: '30.04.21'
+      link: 'https://www.hessen.de/fuer-buerger/corona-in-hessen/das-gilt-in-hessen#Schule'  
   annotations: {}
     # info: |- 
     #   Folgende Regeln gelten für das Bundesland Niedersachsen
   areas: 
     kitas:
       rule_sets:
-        - include: __kitas_open
-          references:
-              - date: '22.02.2021'
-                link: 'https://soziales.hessen.de/kita-regelbetrieb-seit-dem-6-juli'
-
+        - include: __kitas_0open_165closed
 
     schulen:
       rule_sets:      
         - conditions: 
-            # incidence_to: 100
-            # incidence_days: 3
+            incidence_to: 165
+            incidence_days: 3
             # date_from: '2021-03-08'            
-          references:
-            - date: '09.03.21'
-              link: 'https://kultusministerium.hessen.de/schulsystem/umgang-mit-corona-an-schulen/fuer-eltern/elternbriefe/aktuelle-information-fuer-eltern-zum-schul-und-unterrichtsbetrieb-vor-und-nach-den-osterferien'
           rules:
-            - text: "Für Klassen 1 bis 6 kann **Wechselunterricht** stattfinden"
-              status: limit
-            - text: "**Ab 22. März:** Ab Klasse 7 kann **Wechselunterricht** stattfinden"
-              status: limit
-            - text: "Für Abschlussklassen kann **Präsenzunterricht** stattfinden"
+            - text: "In allen Schulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
               status: allow
+        - conditions: 
+            incidence_from: 165
+            incidence_days: 3
+            # date_from: '2021-03-08'            
+          rules:
+            - text: "In allen Schulen kann leider nur **Distanzunterricht** stattfinden"
+              status: limit

@@ -1,31 +1,30 @@
 bb:
-  references: []
-    # - date: '..'
-    #   link: 'https://...'  
+  references: 
+    - date: '24.04.2021'
+      link: 'https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/brandenburg-corona-massnahmen-lockerung-ausgang-kontakt-erlaubt.html'
   annotations: {}
     # info: |- 
     #   Folgende Regeln gelten für das Bundesland Niedersachsen
   areas: 
     kitas:
       rule_sets:
-        - include: __kitas_0open_200closed
-          references:
-              - date: '06.03.2021'
-                link: 'https://mbjs.brandenburg.de/media_fast/6288/infoschreiben_7._eindaemmungsverordnung_kitas.pdf'
+        - include: __kitas_0open_165closed
 
 
     schulen:
       rule_sets:      
-        - conditions: 
-            # incidence_to: 100
-            # incidence_days: 3
-            # date_from: '2021-03-08'            
-          references:
-            - date: '15.02.2021'
-              link: 'https://mbjs.brandenburg.de/bildung/weitere-themen/chronologie-corona-massnahmen-an-schulen.html'
+        - conditions:
+            incidence_to: 165
+            incidence_days: 3
           rules:
-            - text: "Für Klassen 1 bis 6 kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
-              status: allow
-            - text: "Eventuell ab 15. Mrz.: In allen Schulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
+            - text: "Für alle Klassen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
               status: limit
+
+        - conditions:
+            incidence_from: 165
+            incidence_days: 3
+          rules:
+            - text: "Nur für Abschlussklassen ist Präsenzunterricht möglich"
+              status: limit
+            
               

@@ -11,6 +11,8 @@ const __handel_0open_50book_100closed = yaml('./rule_set_templates/__handel_0ope
 // < 100 Terminshopping, > 100 geschlossen
 const __handel_0book_100closed = yaml('./rule_set_templates/__handel_0book_100closed.yml').__handel_0book_100closed;
 
+const __handel_0open_100cm_150closed = yaml('./rule_set_templates/__handel_0open_100cm_150closed.yml').__handel_0open_100cm_150closed;
+
 
 const __dienstleistung_0open_100closed = yaml('./rule_set_templates/__dienstleistung_0open_100closed.yml').__dienstleistung_0open_100closed;
 const __dienstleistung_0open = yaml('./rule_set_templates/__dienstleistung_0open.yml').__dienstleistung_0open;
@@ -26,6 +28,7 @@ const __kitas_open = yaml('./rule_set_templates/__kitas_open.yml').__kitas_open;
 const __kitas_0open_200closed = yaml('./rule_set_templates/__kitas_0open_200closed.yml').__kitas_0open_200closed;
 const __kitas_0open_150closed = yaml('./rule_set_templates/__kitas_0open_150closed.yml').__kitas_0open_150closed;
 const __kitas_0open_100closed = yaml('./rule_set_templates/__kitas_0open_100closed.yml').__kitas_0open_100closed;
+const __kitas_0open_165closed = yaml('./rule_set_templates/__kitas_0open_165closed.yml').__kitas_0open_165closed;
 
 
 // state specific
@@ -36,6 +39,7 @@ const ruleSetTemplates = {
   __handel_0open,
   __handel_0open_100closed,
   __handel_0open_50book_100closed,
+  __handel_0open_100cm_150closed,
 
   __dienstleistung_0open_100closed,
 
@@ -51,6 +55,7 @@ const ruleSetTemplates = {
   __kitas_0open_200closed,
   __kitas_0open_150closed,
   __kitas_0open_100closed,  
+  __kitas_0open_165closed,
 
 
 // state specific

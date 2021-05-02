@@ -6,41 +6,23 @@ sh:
     #   Folgende Regeln gelten für das Bundesland ...
   areas: 
 
-
     kitas:
       rule_sets:
-        - include: __kitas_open
-          references:
-              - date: '10.03.21'
-                link: 'https://www.schleswig-holstein.de/DE/Landesregierung/I/_startseite/Artikel2021/I/210310_schulen_kitas.html;jsessionid=F46339CE0E15F86A4DB5E3171729A682.delivery1-replication'
+        - include: __kitas_0open_165closed
 
     schulen:
       rule_sets:      
         - conditions: 
-            # gilt für alle ausser:
-            # Flensburg, Herzogtum Lauenburg und Kreis Segeberg
-            districts_not: ['01001', '01053', '01060']
-          references:
-            - date: '12.03.21'
-              link: 'https://www.schleswig-holstein.de/DE/Schwerpunkte/Coronavirus/Schulen_Hochschulen/tabelle_schuloeffnungen_20_21.html#doc055b39e8-7180-49d9-8f49-89e506d1fe5cbodyText2'
+            incidence_to: 100
+            incidence_days: 3
+            # date_from: '2021-03-08'            
           rules:
-            - text: "Für **Abschlussklassen** kann **Präsenzunterricht** stattfinden"
+            - text: "In allen Schulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
               status: allow
-            - text: "Für die Klassen 1 bis 6 kann **Präsenzunterricht** (eventuell im Wechsel) stattfinden"
-              status: limit
-            - text: "Ab Klasse 7 kann **Präsenzunterricht** (eventuell im Wechsel) stattfinden"
-              status: limit
         - conditions: 
-            # gilt nur für:
-            # Flensburg, Herzogtum Lauenburg und Kreis Segeberg
-            districts_only: ['01001', '01053', '01060'] 
-          references:
-            - date: '12.03.21'
-              link: 'https://www.schleswig-holstein.de/DE/Schwerpunkte/Coronavirus/Schulen_Hochschulen/tabelle_schuloeffnungen_20_21.html#doc055b39e8-7180-49d9-8f49-89e506d1fe5cbodyText2'
+            incidence_from: 100
+            incidence_days: 3
+            # date_from: '2021-03-08'            
           rules:
-            - text: "Für **Abschlussklassen** kann **Präsenzunterricht** stattfinden"
-              status: allow
-            - text: "Für die Klassen 1 bis 6 kann **Präsenzunterricht** (eventuell im Wechsel) stattfinden"
-              status: limit
-            - text: "Ab Klasse 7 kann leider nur **Distanzunterricht** stattfinden"
+            - text: "In allen Schulen kann leider nur **Distanzunterricht** stattfinden"
               status: limit

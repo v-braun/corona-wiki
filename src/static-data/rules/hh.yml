@@ -8,29 +8,24 @@ hh:
   areas: 
     kitas:
       rule_sets:
-        - include: __kitas_open
-          references:
-              - date: '04.03.2021'
-                link: 'https://www.hamburg.de/kindertagesbetreuung-allgemein/13701524/coronavirus-elterninfo/#zwei'
+        - include: __kitas_0open_165closed
 
 
     schulen:
       rule_sets:      
         - conditions: 
-            # incidence_to: 100
+            incidence_to: 200
             # incidence_days: 3
             # date_from: '2021-03-08'            
-          references:
-            - date: '12.02.21'
-              link: 'https://www.hamburg.de/bsb/13679646/corona-faqs/#anker_1'
           rules:
-            - text: "Grundschule: für Klassen 1 bis 6 kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
+            - text: "In allen Schulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
               status: allow
-            - text: "Gymnasien: für Klassen 6, 10 und 12 kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
-              status: allow              
-            - text: "Für Abschlussklassen 9, 10 und 13 kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
-              status: allow
-            - text: "Für alle anderen Klassen kann leider nur **Distanzunterricht** stattfinden"
+        - conditions: 
+            incidence_from: 200
+            # incidence_days: 3
+            # date_from: '2021-03-08'            
+          rules:
+            - text: "In allen Schulen kann leider nur **Distanzunterricht** stattfinden"
               status: limit
 
               

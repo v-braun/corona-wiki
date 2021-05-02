@@ -8,28 +8,22 @@ be:
   areas: 
     kitas:
       rule_sets:
-        - include: __kitas_open
-          references:
-              - date: '07.03.2021'
-                link: 'https://www.berlin.de/corona/massnahmen/schulen-und-kitas/'
+        - include: __kitas_0open_165closed
 
 
     schulen:
       rule_sets:      
-        - conditions: 
-            # incidence_to: 100
-            # incidence_days: 3
-            # date_from: '2021-03-08'            
-          references:
-            - date: '09.03.2021'
-              link: 'https://www.berlin.de/sen/bjf/corona/schule/'
+        - conditions:
+            incidence_to: 165
+            incidence_days: 3
           rules:
-            - text: "Für Klassen 1 bis 6 kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
-              status: allow
-            - text: "Ab dem 17. Mrz: Für Klassen 10 bis 13 kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
+            - text: "Für alle Klassen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
               status: limit
-            - text: "Für **Abschlussklassen** kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
-              status: allow
-            - text: "Für Klassen 7, 8 und 9 kann leider nur **Distanzunterricht** stattfinden "
-              status: forbidden
-              
+
+        - conditions:
+            incidence_from: 165
+            incidence_days: 3
+          rules:
+            - text: "Nur für Abschlussklassen ist Präsenzunterricht möglich"
+              status: limit
+            

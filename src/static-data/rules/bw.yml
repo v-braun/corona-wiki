@@ -1,37 +1,29 @@
 bw:
-  references: []
-    # - date: '..'
-    #   link: 'https://...'  
+  references: 
+    - date: '24.04.2021'
+      link: 'https://www.baden-wuerttemberg.de/fileadmin/redaktion/dateien/PDF/Coronainfos/210423_Auf_einen_Blick_mit_Bundesregelungen_V2.pdf'
   annotations: {}
     # info: |- 
     #   Folgende Regeln gelten für das Bundesland Niedersachsen
   areas: 
     kitas:
       rule_sets:
-        - include: __kitas_open
-          references:
-              - date: '22.02.21'
-                link: 'https://km-bw.de/,Lde/Startseite/Ablage+Einzelseiten+gemischte+Themen/CoronaVO+Kita'
+        - include: __kitas_0open_165closed
 
 
     schulen:
       rule_sets:      
-        - conditions: {}
-            # incidence_to: 200
-            # incidence_days: 3
-            # date_from: '2021-03-08'            
-          references:
-            - date: '22.02.21'
-              link: 'https://km-bw.de/,Lde/Startseite/Ablage+Einzelseiten+gemischte+Themen/CoronaVO+Kita'            
+        - conditions:
+            incidence_to: 165
+            incidence_days: 3
           rules:
-            - text: "In Grundschulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
-              status: allow
-            - text: "Klassen 5 und 6 kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
-              status: allow
-            - text: "**Abschlussklassen** kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
-              status: allow              
-            - text: "**Ab Klasse 7** (Ausnahme Abschlussklassen) haben Fernunterricht"
+            - text: "Für alle Klassen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
               status: limit
-            - text: "Notbetreuung kann angeboten werden"
-              status: limit              
+
+        - conditions:
+            incidence_from: 165
+            incidence_days: 3
+          rules:
+            - text: "Nur für Abschlussklassen ist Präsenzunterricht möglich"
+              status: limit         
 

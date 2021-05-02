@@ -1,0 +1,22 @@
+__schulen_0open_165closed:
+
+      
+  - conditions:
+      incidence_to: 165
+      incidence_days: 3
+      # date_from: '2021-03-08'            
+    rules:
+      - text: "Für alle Klassen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
+        status: allow
+      
+
+  # bei einer Inzidenz > 35 und < 100 über 3 Tage
+  - conditions:
+      incidence_from: 165
+      incidence_days: 3
+    rules:
+      - text: "Leider keine Regelbetreuung möglich"
+        status: closed
+      - text: "Notbetreuung eventuell möglich"
+        status: limit
+      

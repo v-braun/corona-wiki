@@ -6,24 +6,23 @@ sn:
     #   Folgende Regeln gelten für das Bundesland ...
   areas: 
 
-
     kitas:
       rule_sets:
-        - include: __kitas_open
-          references:
-              - date: '09.02.21'
-                link: 'https://www.coronavirus.sachsen.de/eltern-lehrkraefte-erzieher-schueler-4144.html'
+        - include: __kitas_0open_165closed
 
     schulen:
       rule_sets:      
         - conditions: 
-            # date_from: '2021-03-14'
-            # date_to: '2021-03-21'
-          references:
-            - date: '05.03.21'
-              link: 'https://www.bildung.sachsen.de/blog/index.php/2021/03/05/fahrplan-fuer-schuloeffnungen-steht-fest/'
+            incidence_to: 165
+            incidence_days: 3
+            # date_from: '2021-03-08'            
           rules:
-            - text: "In allen Schulen kann **Präsenzunterricht** stattfinden"
+            - text: "In allen Schulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
               status: allow
-            - text: "Eventueller **Wechselunterricht**"
-              status: limit              
+        - conditions: 
+            incidence_from: 165
+            incidence_days: 3
+            # date_from: '2021-03-08'            
+          rules:
+            - text: "In allen Schulen kann leider nur **Distanzunterricht** stattfinden"
+              status: limit

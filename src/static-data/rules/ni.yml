@@ -1,7 +1,7 @@
 ni:
   references:
-      - date: '08.03.2021'
-        link: 'https://www.stk.niedersachsen.de/startseite/presseinformationen/konkretisierung-der-beschlusse-der-ministerprasidentenkonferenz-fur-niedersachsen-198047.html'
+      - date: '24.04.2021'
+        link: 'https://www.niedersachsen.de/Coronavirus/informationen_in_leichter_sprache/welche-regeln-macht-das-land-niedersachsen-gegen-die-ansteckung-mit-dem-corona-virus-196935.html'
   annotations: {}
     # info: |- 
     #   Folgende Regeln gelten für das Bundesland Niedersachsen
@@ -9,16 +9,16 @@ ni:
 
     modelaeden:
       rule_sets:
-        - include: __handel_0book_100closed
+        - include: __handel_0open_100cm_150closed
     elektrofachmarkt:
       rule_sets:
-        - include: __handel_0book_100closed  
+        - include: __handel_0open_100cm_150closed  
     baumaerkte:
       rule_sets:
-        - include: __handel_0book_100closed
+        - include: __handel_0open_100cm_150closed
     moebelhaus:
       rule_sets:
-        - include: __handel_0book_100closed
+        - include: __handel_0open_100cm_150closed
 
 
 # NI dürfen einige koerpernahe dienstleistung öffnen
@@ -30,21 +30,21 @@ ni:
     # koerpernahe dienstleistung (ausser frisere)
     tattoo:
       rule_sets:
-        - include: __dienstleistung_0open
+        - include: __dienstleistung_0open_100closed
     massage:
       rule_sets:
-        - include: __dienstleistung_0open
+        - include: __dienstleistung_0open_100closed
     manikuere_pedikuere:
       rule_sets:
         - include: __dienstleistung_0open
 
     kosmetik:
       rule_sets:
-        - include: __dienstleistung_0open
+        - include: __dienstleistung_0open_100closed
 
     piercing:
       rule_sets:
-        - include: __dienstleistung_0open
+        - include: __dienstleistung_0open_100closed
 
 
     buchladen:
@@ -67,38 +67,35 @@ ni:
     kitas:
       rule_sets:
         - include: __kitas_0open_100closed
-          references:
-              - date: '08.03.20201'
-                link: 'https://www.niedersachsen.de/Coronavirus/hinweise_fur_schulen_und_kitas/hinweise-fur-schulen-und-kitas-191128.html'
         
 
     schulen:
       rule_sets:      
         - conditions: 
-            date_from: '2021-03-14'
-            date_to: '2021-03-21'
-          references:
-            - date: '04.03.21'
-              link: 'https://www.mk.niedersachsen.de/startseite/aktuelles/presseinformationen/kitas-offnen-am-8-marz-in-festen-gruppen-schrittweise-weitere-schuloffnungen-ab-15-marz-tonne-grosser-schritt-nach-vorne-bei-den-kleinsten-bis-ostern-besuchen-alle-schulerinnen-und-schuler-ihre-schule-198040.html'
+            date_from: '2021-04-24'
+            incidence_to: 100
+            incidence_days: 3
+          rules:
+            - text: "Für **alle** Klassen **Wechselunterricht** stattfinden"
+              status: limit
+        - conditions: 
+            date_from: '2021-04-24'
+            incidence_from: 100
+            incidence_to: 165
+            incidence_days: 3
           rules:
             - text: "Grundschulen: in allen Klassen kann **Wechselunterricht** stattfinden"
               status: limit
             - text: "Für Abschlussklassen kann **Wechselunterricht** stattfinden"
-              status: limit              
-            - text: "Für Klassen 5 bis 7 kann **Wechselunterricht** stattfinden"
               status: limit
-            - text: "Für Klassen 12 und 13 kann **Wechselunterricht** stattfinden"
-              status: limit
-              
         - conditions: 
-            date_from: '2021-03-22'
-          references:
-            - date: '04.03.21'
-              link: 'https://www.mk.niedersachsen.de/startseite/aktuelles/presseinformationen/kitas-offnen-am-8-marz-in-festen-gruppen-schrittweise-weitere-schuloffnungen-ab-15-marz-tonne-grosser-schritt-nach-vorne-bei-den-kleinsten-bis-ostern-besuchen-alle-schulerinnen-und-schuler-ihre-schule-198040.html'
+            date_from: '2021-04-24'
+            incidence_from: 165
+            incidence_days: 3
           rules:
-            - text: "Für **alle** Klassen **Wechselunterricht** stattfinden"
+            - text: "Nur für Schüler des 4. Schuljahres ist Wechselunterricht möglich"
               status: limit
-
+            
   #   zusammenkuenfte_privat:
   #     rule_sets:
   #       - conditions: 

@@ -1,29 +1,30 @@
 hb:
-  references: []
-    # - date: '..'
-    #   link: 'https://...'  
+  references: 
+    - date: '30.04.21'
+      link: 'https://www.butenunbinnen.de/nachrichten/gesellschaft/corona-notbremse-inzidenz-regeln-grafik-bremen-100.html'
   annotations: {}
     # info: |- 
     #   Folgende Regeln gelten für das Bundesland Niedersachsen
   areas: 
     kitas:
       rule_sets:
-        - include: __kitas_0open_200closed
-          references:
-            - date: '12.02.21'
-              link: 'https://www.gesetzblatt.bremen.de/fastmedia/218/2021_02_12_GBl_Nr_0015_signed.pdf'
-
+        - include: __kitas_0open_165closed
+          
 
     schulen:
       rule_sets:      
         - conditions: 
-            # incidence_to: 100
+            incidence_to: 165
             # incidence_days: 3
             # date_from: '2021-03-08'            
-          references:
-            - date: '12.02.21'
-              link: 'https://www.gesetzblatt.bremen.de/fastmedia/218/2021_02_12_GBl_Nr_0015_signed.pdf'
           rules:
             - text: "In allen Schulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
               status: allow
+        - conditions: 
+            incidence_from: 165
+            # incidence_days: 3
+            # date_from: '2021-03-08'            
+          rules:
+            - text: "In allen Schulen kann leider nur **Distanzunterricht** stattfinden"
+              status: limit
               

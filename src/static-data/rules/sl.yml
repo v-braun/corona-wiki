@@ -6,26 +6,23 @@ sl:
     #   Folgende Regeln gelten für das Bundesland Niedersachsen
   areas: 
 
-
     kitas:
       rule_sets:
-        - include: __kitas_open
-          references:
-              - date: '12.02.21'
-                link: 'https://www.saarland.de/DE/portale/corona/faq/bildung-kultur/schulen-kitas/schulen-kitas_node.html'
-
-
+        - include: __kitas_0open_165closed
 
     schulen:
       rule_sets:      
         - conditions: 
-            # date_from: '2021-03-14'
-            # date_to: '2021-03-21'
-          references:
-            - date: '08.03.21'
-              link: 'https://www.saarland.de/DE/portale/corona/faq/bildung-kultur/schulen-kitas/schulen-kitas_node.html'
+            incidence_to: 165
+            incidence_days: 3
+            # date_from: '2021-03-08'            
           rules:
-            - text: "In allen Schulen kann **Präsenzunterricht** stattfinden (**eventuell im Wechsel**)"
+            - text: "In allen Schulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
               status: allow
-            - text: "Für **Abschlussklassen** kann Präsenzunterricht in **Vollzeit** stattfinden"
-              status: allow
+        - conditions: 
+            incidence_from: 165
+            incidence_days: 3
+            # date_from: '2021-03-08'            
+          rules:
+            - text: "In allen Schulen kann leider nur **Distanzunterricht** stattfinden"
+              status: limit

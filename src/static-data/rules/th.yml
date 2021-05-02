@@ -6,38 +6,23 @@ th:
     #   Folgende Regeln gelten für das Bundesland ...
   areas: 
 
-
     kitas:
       rule_sets:
-        - include: __kitas_0open_200closed
-          references:
-              - date: '19.02.21'
-                link: 'https://bildung.thueringen.de/aktuell/keine-oeffnung-von-kindergaerten-und-schulen-in-corona-hotspots'
-
+        - include: __kitas_0open_165closed
 
     schulen:
       rule_sets:      
         - conditions: 
-            incidence_to: 100
+            incidence_to: 165
             incidence_days: 3
             # date_from: '2021-03-08'            
-          references:
-            - date: '01.03.2021'
-              link: 'https://bildung.thueringen.de/ministerium/coronavirus/schule'
           rules:
             - text: "In allen Schulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
               status: allow
         - conditions: 
-            incidence_from: 100
+            incidence_from: 165
             incidence_days: 3
             # date_from: '2021-03-08'            
-          references:
-            - date: '01.03.2021'
-              link: 'https://bildung.thueringen.de/ministerium/coronavirus/schule'
           rules:
-            - text: "Für die Klassen 1 bis 6 kann **Präsenzunterricht** stattfinden (im Wechsel)"
-              status: allow
-            - text: "Ab Klasse 7 kann leider nur **Distanzunterricht** stattfinden"
+            - text: "In allen Schulen kann leider nur **Distanzunterricht** stattfinden"
               status: limit
-            - text: "Für **Abschlussklassen** kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
-              status: allow

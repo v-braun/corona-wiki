@@ -6,38 +6,24 @@ nw:
     # info: |- 
     #   Folgende Regeln gelten für das Bundesland Niedersachsen
   areas: 
-
     kitas:
       rule_sets:
-        - include: __kitas_open
-          references:
-              - date: '22.02.21'
-                link: 'https://www.land.nrw/de/wichtige-fragen-und-antworten-zum-corona-virus#06b8ce74'
-  #   zusammenkuenfte_privat:
-  #     rule_sets:
-  #       - conditions: 
-  #         reference:
-  #           date: '1.1.2021'
-  #           link: ''        
-  #         rules:
-  #           - text: |- 
-  #               todo ...
-  #             status: forbidden
-  #           - text: |- 
-  #               todo ...
-  #             status: forbidden
-
+        - include: __kitas_0open_165closed
 
     schulen:
       rule_sets:      
         - conditions: 
-            # date_from: '2021-03-14'
-            # date_to: '2021-03-21'
-          references:
-            - date: '10.03.21'
-              link: 'https://www.schulministerium.nrw/themen/schulsystem/regelungen-fuer-schulen-ab-dem-15-maerz-2021'
+            incidence_to: 165
+            incidence_days: 3
+            # date_from: '2021-03-08'            
           rules:
-            - text: "Für Abschlussklassen kann **Präsenzunterricht** stattfinden"
-              status: open
-            - text: "In allen anderen Klassen kann **Wechselunterricht** stattfinden"
-              status: limit        
+            - text: "In allen Schulen kann **Präsenzunterricht** stattfinden (eventuell im Wechsel)"
+              status: allow
+        - conditions: 
+            incidence_from: 165
+            incidence_days: 3
+            # date_from: '2021-03-08'            
+          rules:
+            - text: "In allen Schulen kann leider nur **Distanzunterricht** stattfinden"
+              status: limit
+  
