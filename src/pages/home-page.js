@@ -13,6 +13,7 @@ import { LifeAreaSelector } from '../components/life-area-selector';
 import { AreaRuleContainer } from '../components/area-rule-container';
 
 import {SearchBox} from '../components/search-box';
+import { StatsisticGallery } from '../components/statsistic-gallery';
 
 
 class HomePage extends Component{
@@ -117,6 +118,13 @@ class HomePage extends Component{
     return (
       <div id="home-page">
         <section className="section">
+          <div className="section-title">Aktuelle Statistiken</div>
+          <div className="section-child-full">
+            <StatsisticGallery />
+          </div>
+        </section>
+        <section className="section">
+          <div className="section-title">Corona Regeln</div>
           <SearchBox
             onSearched={(result) => this.searchExecuted(result)}
           />

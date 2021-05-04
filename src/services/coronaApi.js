@@ -30,6 +30,27 @@ async function apiGet(endpoint){
 
 // let longTermCache = {};
 
+export async function getGermany(){
+  // if(longTermCache['getStates']) return caches['getStates'];
+  let result = await apiGet('/germany/');
+  // longTermCache['getStates'] = result.data;
+  return result.data;
+}
+
+export async function getVaccinations(){
+  // if(longTermCache['getStates']) return caches['getStates'];
+  let result = await apiGet('/vaccinations/');
+  // longTermCache['getStates'] = result.data;
+  return result.data;
+}
+
+export async function getVaccinationHistory(){
+  // if(longTermCache['getStates']) return caches['getStates'];
+  let result = await apiGet('/vaccinations/history');
+  // longTermCache['getStates'] = result.data;
+  return result.data;
+}
+
 export async function getStates(){
   // if(longTermCache['getStates']) return caches['getStates'];
   let result = await apiGet('/states/');
