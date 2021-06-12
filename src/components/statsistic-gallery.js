@@ -93,12 +93,25 @@ export class StatsisticGallery extends Component{
     let both = [];
     let first = [];
     let second = [];
-    for(let i = vacHistApiModel.data.history.length - 1; i >= (vacHistApiModel.data.history.length - 7); i--){
-      let rec = vacHistApiModel.data.history[i];
-      both.push(rec.firstVaccination + rec.secondVaccination);
-      first.push(rec.firstVaccination);
-      second.push(rec.secondVaccination);
+    if(vacHistApiModel.data.history.length >= 6){
+      console.log('calculate avgr last 7 days');
+      for(let i = vacHistApiModel.data.history.length - 1; i >= (vacHistApiModel.data.history.length - 7); i--){
+        let rec = vacHistApiModel.data.history[i];
+        both.push(rec.firstVaccination + rec.secondVaccination);
+        first.push(rec.firstVaccination);
+        second.push(rec.secondVaccination);
+      }
+    } else {
+      console.log('not enough history ', vacHistApiModel.data.history.length);
+      let firstDelta = vacApiModel.data.delta;
+      let secondDelta = vacApiModel.data.secondVaccination.delta;
+      for(let i = 0; i < 7; i++){
+        both.push(firstDelta + secondDelta);
+        first.push(firstDelta);
+        second.push(secondDelta);        
+      }
     }
+
 
     let totalRecovered = (casesApiModel.recovered * 2); // assume 'dunkelziffer' * 2
 
