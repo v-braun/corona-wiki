@@ -105,6 +105,9 @@ export class StatsisticGallery extends Component{
       console.log('not enough history ', vacHistApiModel.data.history.length);
       let firstDelta = vacApiModel.data.delta;
       let secondDelta = vacApiModel.data.secondVaccination.delta;
+      firstDelta = Math.max(firstDelta, 300000);
+      secondDelta = Math.max(secondDelta, 600000);
+      
       for(let i = 0; i < 7; i++){
         both.push(firstDelta + secondDelta);
         first.push(firstDelta);
