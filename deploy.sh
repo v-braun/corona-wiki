@@ -11,6 +11,9 @@ docker build \
 -t $REGISTRY/$APP_NAME:"latest" \
 -t "$REGISTRY/$APP_NAME:$CURRENT_VERSION"
 
+# auth
+az acr login --name vbrps1acr --subscription fcc96ab7-d068-4336-9c46-a1ec93568084
+
 # push
 docker push $REGISTRY/$APP_NAME:"latest" 
 docker push "$REGISTRY/$APP_NAME:$CURRENT_VERSION"
